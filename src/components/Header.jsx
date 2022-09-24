@@ -54,7 +54,7 @@ const Header = () => {
 						tabIndex='0'
 					  >
 
-						platzi@example.com
+						johncedillo@gmail.com
 			          </div>
 					</li>
 					<li>
