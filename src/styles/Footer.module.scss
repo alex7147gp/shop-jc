@@ -1,0 +1,67 @@
+@import 'vars';
+
+
+.Fot {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	margin: 5px;
+
+}
+
+.global {
+	background-color: #f0f0f0;
+    border-bottom: 1px solid $--very-light-pink;
+}
+
+
+
+.right {
+	width: 30%;
+	padding: 15px;
+
+}	
+
+.middle {
+	width: 30%;
+	padding: 15px
+}
+
+.left {
+	width: 30%;
+	padding: 15px;
+}
+
+.right ul, .middle ul, .left ul {
+	list-style: none;
+    flex-direction: column;
+	display: flex;
+	padding: 0;
+
+}
+
+.right li, .middle li, .left li {
+	margin: 5px;
+}  
+
+.spa {
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.spa span {
+    font-family: Inter,sans-serif;
+    font-size: 12px;
+    line-height: 140%;
+}
+
+.spa2 {
+	font-family: Inter,sans-serif;
+    font-size: 12px;
+    line-height: 140%;
+} 

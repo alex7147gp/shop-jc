@@ -1,80 +1,55 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Menu from '@components/Menu';
 import MyOrder from '@containers/MyOrder';
-import menu from '@icons/icon_menu.svg';
-import logo from '@logos/logo_yard_sale.svg';
+import logo from '@logos/jc.ico';
 import AppContext from '@context/AppContext';
-import shoppingCart from '@icons/icon_shopping_cart.svg';
 import styles from '@styles/Header.module.scss';
+import Search from '@logos/icons8-search.svg';
 
-const Header = () => {
 
-	const { state, toggleOrder, toggleMenu } = useContext(AppContext);
+
+const Header = () => { 
+
+	const { state } = useContext(AppContext);
 
 	return (
 		<>
 		  <nav className={styles.Nav}>
-		  	<Image src={menu} alt="menu" className={styles.menu} />
+            <div className={styles['navbar-logo']}>	
+            	<ul>
+            		<li>
+            	      <Link href="/">
+					    <Image width={40} height={40} src={logo} alt="logo" className={styles['nav-logo']} />
+				      </Link>
+            		</li>
+            	</ul>
+			</div>
+		    <div className={styles['navbar-search']}>
+              <div>
+                <form>
+                  <div>
+                    <input type="text" name="search" autoComplete="off" placeholder="Search styles, brands & more "/>
+                  </div>
+                  <button>
+                    <Image src={Search} alt="search"/>
+                  </button>
+                </form>
+              </div>
+		    </div>
 			<div className={styles['navbar-left']}>
-				<Link href="/">
-					<Image src={logo} alt="logo" className={styles['nav-logo']} />
-				</Link>
 				<ul>
 					<li>
-						<Link href="/">All</Link>
+						<Link href="/categories">Categories</Link>
 					</li>
 					<li>
-						<Link href="/">Clothes</Link>
+						<Link href="/">Mejores</Link>
 					</li>
 					<li>
-						<Link href="/">Electronics</Link>
-					</li>
-					<li>
-						<Link href="/">Furnitures</Link>
-					</li>
-					<li>
-						<Link href="/">Toys</Link>
-					</li>
-					<li>
-						<Link href="/">Others</Link>
+						<Link href="/">Ofertas de hoy</Link>
 					</li>
 				</ul>
 			</div>
-			<div className={styles['navbar-right']}>
-				<ul>
-					<li> 
-					  <div className={styles['more-clickable-area'],
-				        styles['navbar-email'],
-					    styles.pointer} 
-					    onClick={() => toggleMenu()}
-					    onKeyPress={() => toggleMenu()}
-					    role='button'
-						tabIndex='0'
-					  >
-
-						johncedillo77@gmail.com
-			          </div>
-					</li>
-					<li>
-						<div className={styles['navbar-shopping-cart']}
-						  onClick={() => toggleOrder()}
-						  onKeyPress={() => toggleOrder()}
-						  role='button'
-						  tabIndex='0'
-					    >
-						  <Image className={styles['more-clickable-area'], 
-						    styles.pointer} 
-						    src={shoppingCart} 
-						    alt="shopping cart" 
-						  />
-						{state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
-					    </div>
-					</li>
-				</ul>
-			</div>
-			{state.menuIsOpen && <Menu />}
 		  </nav>	
 		  {state.orderIsOpen && <MyOrder />}
 	    </>	

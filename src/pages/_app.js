@@ -1,7 +1,9 @@
 import Script from "next/script";
-import Header from "components/Header";
+import Header from "@components/Header";
 import AppContext from "@context/AppContext";
 import useInitialState from "@hooks/useInitialState";
+import { Footer }  from "@components/Footer";
+
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -22,6 +24,7 @@ function MyApp({ Component, pageProps }) {
       </Script>
       <Header />
       <Component {...pageProps} />
+      <Footer />
     </AppContext.Provider>
   );
 }

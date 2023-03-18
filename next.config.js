@@ -7,7 +7,8 @@ const nextConfig = {
       domains: ['placeimg.com',
        'api.lorem.space.com',
        'vuzoon.com',
-       'www.complementosdelcafe.com'
+       'www.complementosdelcafe.com',
+       'images.pexels.com'
       ],
     },
 };

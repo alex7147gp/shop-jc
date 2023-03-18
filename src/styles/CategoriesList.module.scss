@@ -1,0 +1,16 @@
+@import 'vars';
+
+.CategoriesList {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 280px);
+	gap: 70px;
+	place-content: center;
+	margin: 4em 0 0 0;
+	padding: 0px;
+}
+
+@media (max-width: 640px) {
+	.CategoriesList {
+		grid-template-columns: repeat(auto-fill, 140px);
+	}
+}

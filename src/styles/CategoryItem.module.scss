@@ -1,0 +1,77 @@
+@import 'vars';
+
+.CategoryItem {
+	width: 300px;
+    padding: 10px;
+    margin: 0px;
+    background-color: seashell;
+}
+
+.categoryHead {
+	display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+
+}
+
+.categoryHead img {
+    width: 240px;
+	height: 240px;
+	border-radius: 20px;
+	object-fit: cover;
+}
+
+.categoryHead span {
+	padding: 20px;
+	width: 120%;
+}
+
+.categoryTema {
+	
+}
+
+.categoryTema ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+    align-items: initial;
+}
+
+.categoryTema ul li {
+	margin-top: 20px;
+}
+
+.category-info {
+	display: flex;
+	align-items: center;
+	margin-top: 12px;
+	justify-content: center;
+    padding: 10px;
+} 
+
+.category-info button {
+	width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: white;
+    background-color: cyan;
+}
+
+.disable {
+	cursor: not-allowed
+}
+@media (max-width: 640px) {
+	.cards-container {
+		grid-template-columns: repeat(auto-fill, 140px);
+	}
+	.categoryItem {
+		width: 140px;
+	}
+	.categorytem img {
+		width: 140px;
+		height: 140px;
+	}
+}
