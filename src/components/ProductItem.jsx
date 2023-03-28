@@ -1,56 +1,70 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import styles from '@styles/ProductItem.module.scss';
-import AppContext from '@context/AppContext';
-import addToCartImage from '@icons/bt_add_to_cart.svg';
 import Image from 'next/image';
 
 import Link from "next/link";
 
 
 const ProductItem = ({ product }) => {
-	const { state, addToCart } = useContext(AppContext);
 
-	const handleClick = item => {
-		addToCart(item);
-	};
 
-	return (
+    
+
+    return (
 		<div className={styles.ProductItem}>
-			<Link href={`/Products/${product.id}`}>
-			  <Image loader={() => product.images[0]} 
-			    src={product.images[0]} 
-			    alt={product.title} 
-			    width={240} 
-			    height={240} 
-			    layaut="responsive"
-			 />
-			</Link>     
+			<div className={styles.Image}>
+			  <Link href={`/Products/${product.id}`}>
+			    <Image 
+			      src={product.imagen} 
+			      alt={product.title} 
+                  layout="responsive"
+                  width={40} 
+                  height={40} 
+			   />
+			  </Link>
+			</div>       
 			<div className={styles['product-info']}>
 				<div>
-					<p>${product.price}</p>
-					<p>{product.title}</p>
+					<h2>{product.titulo.substring(0, 60)}...</h2>
+					<p>{product.precio}</p>
 				</div>
-				<figure> 
-				  <div className={styles['more-clickable-area']} 
-				    onClick={() => handleClick(product)}
-					onKeyPress={() => handleClick(product)}
-				    role='button'
-				    tabIndex='0' 
-				  >
-				    {state.cart.includes(product) ? <Image 
-				      className={styles.disabled, styles['disable add-to-cart-btn']} 
-					  src={addToCartImage}
-					  width={50}
-					  height={50} 
-					  alt="added to cart" 
-				      /> 
-				    : <Image className={styles['add-to-cart-btn'], styles.pointer} 
-				        src={addToCartImage} 
-					    alt="add to cart" 
-					  />
-				    }
-				  </div>	
-				</figure>
+				<div>
+				      <Image 
+				        className={styles.disabled, styles['disable add-to-cart-btn']} 
+					    src={"https://d1ttb1lnpo2lvz.cloudfront.net/37cbb331/img/stars-5.svg"}
+					    width={15}
+					    height={15} 
+					    alt="added to cart" 
+				      />
+				      <Image 
+				        className={styles.disabled, styles['disable add-to-cart-btn']} 
+					    src={"https://d1ttb1lnpo2lvz.cloudfront.net/37cbb331/img/stars-5.svg"}
+					    width={15}
+					    height={15} 
+					    alt="added to cart" 
+				      />
+				      <Image 
+				        className={styles.disabled, styles['disable add-to-cart-btn']} 
+					    src={"https://d1ttb1lnpo2lvz.cloudfront.net/37cbb331/img/stars-5.svg"}
+					    width={15}
+					    height={15} 
+					    alt="added to cart" 
+				      />
+				      <Image 
+				        className={styles.disabled, styles['disable add-to-cart-btn']} 
+					    src={"https://d1ttb1lnpo2lvz.cloudfront.net/37cbb331/img/stars-5.svg"}
+					    width={15}
+					    height={15} 
+					    alt="added to cart" 
+				      />
+				      <Image 
+				        className={styles.disabled, styles['disable add-to-cart-btn']} 
+					    src={"https://d1ttb1lnpo2lvz.cloudfront.net/37cbb331/img/stars-5.svg"}
+					    width={15}
+					    height={15} 
+					    alt="added to cart" 
+				      />   
+				    </div>   
 			</div>
 		</div>
 	);

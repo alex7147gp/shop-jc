@@ -3,29 +3,36 @@ import styles from '@styles/CategoryItem.module.scss';
 import Image from 'next/image';
 import Link from "next/link";
 
-const CategoryItem = ({ product }) => {
+const CategoryItem = ({ sugerencias }) => {
+
+  const temas = sugerencias.temas;
+  
+  const temaList = [];
+
+  const getTemas = () => {
+  	temas.forEach((item) => {
+  		temaList.push(<li>{item}</li>);
+  	});
+  	return temaList;
+  };
 
 	return (
 		<div className={styles.CategoryItem}>
-			<Link href={`/categories/${product.id}`}>
+			<Link href={`/categories/${sugerencias.categorie}`}>
 			  <div className={styles.categoryHead}>
 			    <Image  
-			      src={product.img} 
-			      alt={product.title} 
+			      src={sugerencias.img} 
+			      alt={sugerencias.title} 
 			      width={120} 
 			      height={120} 
 			      layaut="responsive"
 			   />
-			    <span>{product.title}</span> 
+			    <span>{sugerencias.title}</span> 
 			  </div> 
 			</Link>
 			<div className={styles.categoryTema}>
 			  <ul>
-			  		<li>{product.temas[0]}</li>
-			  		<li>{product.temas[1]}</li>
-			  		<li>{product.temas[2]}</li>
-			  		<li>{product.temas[3]}</li>
-			  		<li>{product.temas[4]}</li>
+			    {getTemas()}
 			  </ul>
 			</div>     
 			<div className={styles['category-info']}>

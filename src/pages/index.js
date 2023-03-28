@@ -4,6 +4,13 @@ import ProductList from "@containers/ProductList";
 import HeadS from "@components/Head";
 import HeadPage from "@components/HeadPage";
 
+import Slider from "@components/Slider";
+
+
+import Newslatter from "@components/Newslatter";
+import CategorieOfert from "@components/CategorieOfert";
+
+
 export default function Home() {
   return (
     <div style={{
@@ -18,7 +25,10 @@ export default function Home() {
         title={"Mejores ofertados"}
         description={"Productos minusiosamente comparados de bajo costo y alta calidad"} 
       />
+      <Slider />
       <ProductList />
+      <CategorieOfert />
+      <Newslatter />  
     </div>
   );
 };

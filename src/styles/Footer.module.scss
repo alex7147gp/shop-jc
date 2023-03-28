@@ -7,12 +7,15 @@
 	justify-content: space-between;
 	padding: 20px;
 	margin: 5px;
+	color: white; 
+  font-size: .75rem;
 
 }
 
 .global {
-	background-color: #f0f0f0;
+	background-color: #171e40;
     border-bottom: 1px solid $--very-light-pink;
+   
 }
 
 
@@ -58,10 +61,18 @@
     font-family: Inter,sans-serif;
     font-size: 12px;
     line-height: 140%;
+    color: white; 
 }
 
 .spa2 {
 	font-family: Inter,sans-serif;
     font-size: 12px;
     line-height: 140%;
-} 
+    color: white; 
+}
+
+@media (max-width: 640px) {
+  .Fot {
+    flex-direction: column;
+  }
+}

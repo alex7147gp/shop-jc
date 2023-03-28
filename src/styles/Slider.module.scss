@@ -1,0 +1,86 @@
+@import 'vars';
+
+
+
+.Contenedor {
+  width:100%;
+  height:100vh;
+  display:flex;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+.Arrow {
+  width: 50px;
+  height: 50px;
+  background-color: #fff7f7;
+  border-radius: 50% ;
+  display: flex; 
+  align-items:center;
+  justify-content:center;
+  position: absolute; 
+  top: 0;
+  bottom:0;
+  cursor: pointer;
+  margin: auto;
+  z-index: 2;
+}
+.Wrapper {
+  height: 100%;
+  display: flex;  
+  transition: all 1.5s ease;
+
+}
+.Slide {
+  width:100vw;
+  height:100vh;
+  display: flex;
+  align-items: center;
+}
+.ImgContainer {
+  margin-left: 70px;
+  flex:1;	
+}
+.ImgContainer img {
+  height:80%;
+  padding-left:150px
+}
+.InfoContainer {
+  flex:1;
+  padding:80px;
+}
+.Title {
+  font-size: 50px	
+}
+.Description {
+  margin:20px 0;
+  font-size: 20px
+}
+.Button {
+  padding: 10px;
+  font-size: 15px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .Contenedor {
+    display: none;
+    height: 70vh;
+  }
+  .Arrow {
+    width: 25px;
+    height: 25px;
+  }
+  .Wrapper {
+    height: 70%;
+  }
+  .ImgContainer {
+    height: 40%;
+  }
+  .ImgContainer img {
+    height: 50%;
+  }
+}
+
+

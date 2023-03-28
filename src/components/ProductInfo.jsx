@@ -1,28 +1,46 @@
 import React from 'react';
 import Image from 'next/image';
-import addToCart from '@icons/bt_add_to_cart.svg';
+
+import HeadS from "components/Head";
 import styles from '@styles/ProductInfo.module.scss';
 
-const ProductInfo = () => {
+
+import Sugerencias from 'components/Sugerencias';
+
+
+import Link from "next/link";
+
+
+
+const ProductInfo = ({ product }) => {
+
+
 	return (
-		<>
-			<Image 
-			  src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"  
-              alt="bike"
-			  width={240} 
-			  height={240} 
-			  layaut="responsive" 
-			/>
-			  
-			<div className={styles.ProductInfo}>
-				<p>$35,00</p>
-				<p>Bike</p>
-				<p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
-				<button className={styles['primary-button add-to-button']}>
-					<Image src={addToCart} alt="add to cart" />
-					Add to cart
-				</button>
-			</div>
+		<>  
+ 
+      {product && <div>
+        <HeadS title={product.titulo} description={product.descripcion} img={product.imagen}/>        
+        <div className={styles.Container}>
+          <div className={styles.Wrapper}>
+            <div className={styles.ImgContainer}>
+              <Image width={420} height={420}  alt={product.titulo} src={product.imagen}/>
+            </div>
+            <div className={styles.InfoContainer}>
+              <h1 className={styles.Title}>{product.titulo}</h1>
+              <p className={styles.Desc}>{product.descripcion}</p>
+              <span className={styles.Price}>{product.precio}</span>
+              <Link href={product.url}>
+                <button className={styles.Button}>
+                  Ver oferta
+                </button>
+              </Link>  
+           </div>
+          </div> 
+        </div>
+
+      
+        <Sugerencias />
+       </div>} 
 		</>
 	);
 };

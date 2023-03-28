@@ -25,7 +25,13 @@
             ],
             "@hooks/*": [
               "hooks/*"
-            ], 
+            ],
+            "@amazon/*": [
+                "assets/amazon/*"
+            ],
+            "@baners/*": [
+                "assets/baners/*"
+            ]
         }
     }
 }

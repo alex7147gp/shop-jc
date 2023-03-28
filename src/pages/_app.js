@@ -4,7 +4,10 @@ import AppContext from "@context/AppContext";
 import useInitialState from "@hooks/useInitialState";
 import { Footer }  from "@components/Footer";
 
+import HeadS from "@components/Head";
+
 import "../styles/globals.css";
+
 
 function MyApp({ Component, pageProps }) {
   const initialState = useInitialState();
@@ -22,6 +25,10 @@ function MyApp({ Component, pageProps }) {
           gtag('config', 'G-PZ99Y7KNEL');
         `}
       </Script>
+      <HeadS
+        title={"JC shop"}
+        description={"Mejores productos de oferta en el mercado"}
+      />
       <Header />
       <Component {...pageProps} />
       <Footer />

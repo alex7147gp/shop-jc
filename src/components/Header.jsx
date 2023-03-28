@@ -1,18 +1,17 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import MyOrder from '@containers/MyOrder';
 import logo from '@logos/jc.ico';
-import AppContext from '@context/AppContext';
+
 import styles from '@styles/Header.module.scss';
 import Search from '@logos/icons8-search.svg';
 
 
-
+ 
 const Header = () => { 
 
-	const { state } = useContext(AppContext);
 
+	
 	return (
 		<>
 		  <nav className={styles.Nav}>
@@ -20,11 +19,12 @@ const Header = () => {
             	<ul>
             		<li>
             	      <Link href="/">
-					    <Image width={40} height={40} src={logo} alt="logo" className={styles['nav-logo']} />
-				      </Link>
+					            <Image width={40} height={40} src={logo} alt="logo" className={styles['nav-logo']} />
+				            </Link>
             		</li>
+            		<li className={styles.Logo}>JCshop</li>
             	</ul>
-			</div>
+			      </div>
 		    <div className={styles['navbar-search']}>
               <div>
                 <form>
@@ -51,7 +51,6 @@ const Header = () => {
 				</ul>
 			</div>
 		  </nav>	
-		  {state.orderIsOpen && <MyOrder />}
 	    </>	
 	);
 };

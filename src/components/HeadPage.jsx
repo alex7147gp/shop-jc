@@ -1,9 +1,10 @@
 import styles from '@styles/HeaderPage.module.scss';
-
+import Ofert from "components/Ofert";
 
 const HeadPage = ({ title, description }) => {
 	return(
-      <div>
+      <div style={{ marginTop: "60px" }}>
+        <Ofert />
         <div className={styles.HeadP}>
           <h1>{title}</h1>
           <p>{description}</p>
@@ -15,5 +16,5 @@ const HeadPage = ({ title, description }) => {
 };
 
 
-export default HeadPage;;
+export default HeadPage;
 

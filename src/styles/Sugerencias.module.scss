@@ -1,0 +1,18 @@
+@import 'vars';
+
+
+
+.Container {
+  margin: 20px
+}
+
+.Wrapper {
+  padding:20px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.Item {
+	margin: 10px;
+}

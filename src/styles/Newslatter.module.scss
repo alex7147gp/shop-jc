@@ -1,0 +1,66 @@
+@import 'vars';
+
+
+
+.Container {
+  height:60vh;
+  background-color: #fcf5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+}
+
+.Title {
+  font-size: 40px;
+  margin-bottom: 20px;	
+}
+
+.Description {
+  font-size: 24px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.InputContainer {
+  width: 50%;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between; 
+  border: 1px solid lightgray;
+}
+
+.Input {
+  border: none;   
+  flex: 8;
+  margin-left: 20px;
+  outline: 0; 
+}
+
+.Button {
+  flex: 1;
+  border: none;
+  background-color: teal;
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .Container {
+    height: 50vh;
+  }
+
+  .Title {
+    font-size: 15px;
+  }
+
+  .Description {
+    font-size: 15px;
+  }
+
+  .InputContainer {
+    width: 60%;
+  }
+
+}
+
