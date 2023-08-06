@@ -1,77 +1,63 @@
 @import 'vars';
 
 .Container {
-  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  padding-top: 90px;
 }
 .Wrapper {
-  padding: 20px;
   display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 .ImgContainer {
-  width: 70%;
-  flex: 1 1;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  flex: 1;
+  padding: 16px;
 }
 .ImgContainer img {
-  width: 220px;
-  height: 220px;
-  margin:50px 20px;
-  padding: 20px 20px;	
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .InfoContainer {
-  flex: 1 1;
-  display: flex;
-  padding: 10px 50px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex: 1;
+  padding: 16px;
 }
 .Title {
-  font-weight: 200;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
 }
 .Desc {
-  margin: 20px 0px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #666;
 }
 .Price {
-  font-weight: 100;
-  font-size: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
 }
-.FilterContainer {
-  width: 50%;
-  margin: 30px 0px;
-  display: flex;
-  justify-content: space-between;	
-}
-.Filter {
-  display: flex;
-  align-items: center;
-}
-.FilterTitle{
-  font-size: 20px;  
-  font-weight: 200;
-}
-.FilterColor {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: solmon ;
-  margin: 0px 5px;
-  cursor: pointer;
-}
+
 .Button {
-  background: #FFD814;
-  border-color: #FCD200;
-  display: flex;
-  height: 30px;
-  width: 150px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  border-radius: 10px;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  margin: 20px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+.Button:hover {
+  background-color: #0056b3;
 }
 @media (max-width: 640px) {
   .Wrapper {

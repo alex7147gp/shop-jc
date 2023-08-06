@@ -18,8 +18,8 @@ const ProductItem = ({ product }) => {
 			      src={product.imagen} 
 			      alt={product.title} 
                   layout="responsive"
-                  width={40} 
-                  height={40} 
+                  width={80} 
+                  height={80} 
 			   />
 			  </Link>
 			</div>       
@@ -28,43 +28,6 @@ const ProductItem = ({ product }) => {
 					<h2>{product.titulo.substring(0, 60)}...</h2>
 					<p>{product.precio}</p>
 				</div>
-				<div>
-				      <Image 
-				        className={styles.disabled, styles['disable add-to-cart-btn']} 
-					    src={"https://d1ttb1lnpo2lvz.cloudfront.net/37cbb331/img/stars-5.svg"}
-					    width={15}
-					    height={15} 
-					    alt="added to cart" 
-				      />
-				      <Image 
-				        className={styles.disabled, styles['disable add-to-cart-btn']} 
-					    src={"https://d1ttb1lnpo2lvz.cloudfront.net/37cbb331/img/stars-5.svg"}
-					    width={15}
-					    height={15} 
-					    alt="added to cart" 
-				      />
-				      <Image 
-				        className={styles.disabled, styles['disable add-to-cart-btn']} 
-					    src={"https://d1ttb1lnpo2lvz.cloudfront.net/37cbb331/img/stars-5.svg"}
-					    width={15}
-					    height={15} 
-					    alt="added to cart" 
-				      />
-				      <Image 
-				        className={styles.disabled, styles['disable add-to-cart-btn']} 
-					    src={"https://d1ttb1lnpo2lvz.cloudfront.net/37cbb331/img/stars-5.svg"}
-					    width={15}
-					    height={15} 
-					    alt="added to cart" 
-				      />
-				      <Image 
-				        className={styles.disabled, styles['disable add-to-cart-btn']} 
-					    src={"https://d1ttb1lnpo2lvz.cloudfront.net/37cbb331/img/stars-5.svg"}
-					    width={15}
-					    height={15} 
-					    alt="added to cart" 
-				      />   
-				    </div>   
 			</div>
 		</div>
 	);

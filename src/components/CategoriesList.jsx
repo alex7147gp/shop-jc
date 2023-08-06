@@ -2,6 +2,8 @@ import React from 'react';
 import CategoryItem from '@components/CategoryItem';
 import styles from '@styles/CategoriesList.module.scss';
 
+import CategoryOfert from "@components/CategoryOfert"
+
 import categorie from '@amazon/categorie';
 
 

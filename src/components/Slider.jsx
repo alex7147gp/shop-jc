@@ -11,10 +11,10 @@ import Link from "next/link";
 import Products from "@amazon/products";
 
 
-const Silder = () => {
+const Silder = ({ products }) => {
   
 
-  const product = Products;
+  const product = products ? products : Products;
 
   const [sliderIndex, setSliderIndex] = useState(0);
   const handleClick = (direction)=>{

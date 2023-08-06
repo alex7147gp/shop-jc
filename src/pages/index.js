@@ -1,17 +1,7 @@
-import ProductList from "@containers/ProductList";
-
-
 import HeadS from "@components/Head";
-import HeadPage from "@components/HeadPage";
+import Home from "../templates/Home"
 
-import Slider from "@components/Slider";
-
-
-import Newslatter from "@components/Newslatter";
-import CategorieOfert from "@components/CategorieOfert";
-
-
-export default function Home() {
+export default function HomeOne() {
   return (
     <div style={{
       padding: "0px",
@@ -21,14 +11,7 @@ export default function Home() {
         title={"JC shop"}
         description={"Los mejores productos comparados minusiosamente para que conpre los mejores"}
       />
-      <HeadPage 
-        title={"Mejores ofertados"}
-        description={"Productos minusiosamente comparados de bajo costo y alta calidad"} 
-      />
-      <Slider />
-      <ProductList />
-      <CategorieOfert />
-      <Newslatter />  
+      <Home />
     </div>
   );
 };

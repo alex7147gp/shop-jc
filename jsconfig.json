@@ -17,6 +17,9 @@
             "@logos/*": [
                 "assets/logos/*"
             ],
+            "@images/*": [
+                "assets/images/*"  
+            ],
             "@context/*": [
                 "context/*"
             ],
@@ -28,6 +31,24 @@
             ],
             "@amazon/*": [
                 "assets/amazon/*"
+            ],
+            "@accessories/*": [
+                "assets/accessories/*"
+            ],
+            "@computers/*": [
+                "assets/computers/*"
+            ],
+            "@gaming/*": [
+                "assets/gaming/*"  
+            ],
+            "@smartHomeDevices/*": [
+                "assets/smartHomeDevices/*"
+            ],
+            "@consumerElectricts/*": [
+                "assets/consumerElectricts/*"
+            ],
+            "@smartphones/*": [
+                "assets/smartphones/*"
             ],
             "@baners/*": [
                 "assets/baners/*"

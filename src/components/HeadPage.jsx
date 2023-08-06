@@ -9,8 +9,6 @@ const HeadPage = ({ title, description }) => {
           <h1>{title}</h1>
           <p>{description}</p>
         </div>
-        <div>
-        </div>
       </div>   
 	);
 };

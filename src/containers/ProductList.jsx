@@ -7,13 +7,13 @@ import styles from '@styles/ProductList.module.scss';
 import Products from '@amazon/products';
 
 
-const ProductList = () => {
-	const products = Products;
+const ProductList = ({ products }) => {
+	const product = products ? products : Products ;
 
 	return (
 		<section className={styles['main-container']}>
 			<div className={styles.ProductList}>
-				{products.map(product => (
+				{product.map(product => (
 					<ProductItem product={product} key={product.id} />
 				))}
 			</div>

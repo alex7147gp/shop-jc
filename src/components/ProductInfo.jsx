@@ -23,7 +23,12 @@ const ProductInfo = ({ product }) => {
         <div className={styles.Container}>
           <div className={styles.Wrapper}>
             <div className={styles.ImgContainer}>
-              <Image width={420} height={420}  alt={product.titulo} src={product.imagen}/>
+              <Image 
+                width={320} 
+                height={320}  
+                alt={product.titulo} 
+                src={product.imagen}
+              />
             </div>
             <div className={styles.InfoContainer}>
               <h1 className={styles.Title}>{product.titulo}</h1>
@@ -37,7 +42,7 @@ const ProductInfo = ({ product }) => {
            </div>
           </div> 
         </div>
-
+ 
       
         <Sugerencias />
        </div>} 

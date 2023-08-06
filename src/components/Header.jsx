@@ -40,13 +40,19 @@ const Header = () => {
 			<div className={styles['navbar-left']}>
 				<ul>
 					<li>
-						<Link href="/categories">Categories</Link>
+						<Link href="/smartPhones">Smartphones</Link>
 					</li>
 					<li>
-						<Link href="/">Mejores</Link>
+						<Link href="/computers">Computers, laptops</Link>
 					</li>
 					<li>
-						<Link href="/">Ofertas de hoy</Link>
+						<Link href="/smartHomeDevices">smart home devices</Link>
+					</li>
+					<li>
+						<Link href="/accessories">Accessories</Link>
+					</li>
+					<li>
+						<Link href="/gaming">Gaming and consoles</Link>
 					</li>
 				</ul>
 			</div>
@@ -56,3 +62,5 @@ const Header = () => {
 };
 
 export default Header;
+
+

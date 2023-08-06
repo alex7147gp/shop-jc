@@ -1,0 +1,43 @@
+@import 'vars';
+
+
+
+.productSummary {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.productImage{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.productDescription {
+  flex: 1;
+}
+
+.h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.ul li {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}

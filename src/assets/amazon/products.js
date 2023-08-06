@@ -77,12 +77,12 @@ const Products =  [
   },
   {
     "id": "B07Z6RDJ39",
-    "titulo": "Solo Stove Bonfire 2.0 con soporte, hoguera sin humo | Chimeneas de leña con cenicero extraíble, hoguera portátil para exteriores, para acampar, acero inoxidable, H: 16.75 in x Dia: 19.5 in, 21.75 lbs",
-    "descripcion": "HOGAR DE FUEGO MÁS ÚNICO: Bonfire empuja los límites de la eficiencia del flujo de aire de combustión y el diseño minimalista al aire libre con su construcción de acero inoxidable. Fue brillantemente diseñado para brindar una experiencia de fuego en el patio trasero que no se puede duplicar. La nueva versión 2.0 cuenta con una placa base extraíble y un cenicero para facilitar la limpieza. MENOS HUMO, MÁS LLAMA: La estufa de camping cuenta con nuestro exclusivo flujo de aire de 360° y diseño de doble pared con orificios de ventilación en la parte inferior para que el oxígeno alimente el fuego desde abajo, creando una ráfaga de aire caliente sobre el fuego y reduciendo el humo sin el uso de baterías. y ventiladores en sus chimeneas. Disfruta de un fuego sin el olor post-fuego en tu cabello y ropa.",
-    "imagen": "https://m.media-amazon.com/images/I/61Nc6luPYKL._AC_SX425_.jpg",
+    "titulo": "Apple AirPods Pro (2nd Generation) Wireless Earbuds, Up to 2X More Active Noise Cancelling, Adaptive Transparency, Personalized Spatial Audio, MagSafe Charging Case, Bluetooth Headphones for iPhone",
+    "descripcion": "The Apple-designed H2 chip pushes advanced audio performance even further, resulting in smarter noise cancellation and more immersive sound. The low-distortion, custom-built driver delivers crisp, clear high notes and deep, rich bass in stunning definition. So every sound is more vivid than ever..Note : If the size of the earbud tips does not match the size of your ear canals or the headset is not worn properly in your ears, you may not obtain the correct sound qualities or call performance. Change the earbud tips to ones that fit more snugly in your ear",
+    "imagen": "https://m.media-amazon.com/images/I/61f1YfTkTDL._AC_SL1500_.jpg",
     "categoria": "Hogarycocina",
     "precio": "$247.99",
-    "url": "https://www.amazon.com/Solo-Stove-Bonfire-2-0-Stand/dp/B0B7BFJ5Y6?th=1&linkCode=li2&tag=jcshop0d8-20&linkId=27d2cf67c25afbd9ec19c311f1c481c9&language=en_US&ref_=as_li_ss_il"
+    "url": "https://amzn.to/3Qm1ZPS"
   },
   {
     "id": "B08SW1YY26",
@@ -95,40 +95,40 @@ const Products =  [
   },
   {
     "id": "B08X7JX9MB",
-    "titulo": "Christopher Knight Home Evelyn Sillón moderno de tela de mediados de siglo, beige y nogal",
-    "descripcion": "MODERNO DE MEDIADOS DE SIGLO: combinando las icónicas patas abiertas con una hermosa tapicería capitoné, nuestro sillón club ofrece una apariencia de mediados de siglo a su salón. Con sus líneas limpias y su aspecto sobrio, esta silla utiliza nuevos materiales para reinventar un diseño tradicional. COSTADO WAFFLE TUFED: Las costuras capitoné en los asientos ofrecen un toque adicional de sofisticación que realza su diseño contemporáneo. El patrón de punto de gofre agrega un poco de textura sin sacrificar la comodidad. PATAS DE MADERA DE ABEDUL: Esta silla está sostenida por hermosas patas de madera de abedul cónicas que ofrecen una apariencia atractiva y una estructura duradera. Su grano fino absorbe bien las manchas, dando a esta pieza un acabado magnífico. DIMENSIONES: Elija un accesorio que tenga el tamaño perfecto para usted y sus muebles. Este sillón club mide 30.50 de ancho x 31.50 de profundidad x 32.50 de alto. Te encantará cuánto puede transformarse tu espacio con la simple adición de este encantador juego de sala de estar.",
-    "imagen": "https://m.media-amazon.com/images/I/71+Lzu1-BGL._AC_SX466_.jpg",
+    "titulo": "TP-Link AX1800 WiFi 6 Router (Archer AX21) – Dual Band Wireless Internet Router, Gigabit Router, USB port, Works with Alexa - A Certified for Humans Device",
+    "descripcion": "VPN Server and Client: Archer AX21 Supports both VPN Server and VPN Client (Open/PPTP/L2TP over Ipsec), Certified for Humans: Smart home made easy for non-experts. Setup with Alexa is simple, Dual-Band WiFi 6 Internet Router: Wi-Fi 6(802.11ax) technology achieves faster speeds, greater capacity and reduced network congestion compared to the previous generation, Next-Gen 1.8 Gbps Speeds: Enjoy smoother and more stable streaming, gaming, downloading and more with WiFi speeds up to 1.8 Gbps (1200 Mbps on 5 GHz band and 574 Mbps on 2.4 GHz band)",
+    "imagen": "https://m.media-amazon.com/images/I/61O4qvVY6XL._AC_SL1492_.jpg",
     "categoria": "Hogarycocina",
-    "precio": "$169.99",
-    "url": "https://www.amazon.com/Evelyn-Century-Modern-Fabric-Chair/dp/B07F266PMS?th=1&linkCode=li2&tag=jcshop0d8-20&linkId=f6cb9f641e19d9cc5248c7ee842de21d&language=en_US&ref_=as_li_ss_il"
+    "precio": "$73",
+    "url": "https://amzn.to/3OgSXRB"
   },
   {
     "id": "B091G5RC9X",
-    "titulo": "DEWALT 20V MAX Taladro inalámbrico y controlador de impacto, kit combinado de herramientas eléctricas con 2 baterías y cargador (DCK240C2)",
-    "descripcion": "DCD771 en kit combinado de taladro inalámbrico con transmisión de 2 velocidades (0-450 / 0-1500 RPM) El motor de alto rendimiento DCD771 del kit combinado de herramientas inalámbricas ofrece 300 vatios de unidad (UWO) de capacidad de potencia para completar una amplia gama de aplicaciones El diseño compacto y liviano DCD771 del kit combinado de taladro/atornillador de impacto cabe en áreas estrechas El mandril de trinquete de manga simple DCD771 de 1/2 pulgada proporciona una fuerza de agarre de broca apretada El mango ergonómico DCD771 brinda comodidad y control DCF885 Diseño compacto (5,55 pulgadas de adelante hacia atrás), liviano (2,8 libras) que se adapta a áreas estrechas El mandril hexagonal de 1/4 de pulgada de carga con una mano DCF885 acepta puntas de broca de 1 pulgada DCF885 cuenta con 3 anillos de luz LED con un retraso de 20 segundos para brindar visibilidad sin sombras",
-    "imagen": "https://m.media-amazon.com/images/I/81mMDZtYP4L._AC_SY355_.jpg",
+    "titulo": "CRUA 32' Curved Gaming Monitor,144Hz QHD(2560x1440P) VA 1800R Display,95% sRGB,1ms(GTG) Support FreeSync Computer Monitor, Narrow Bezel Desktop PC Monitors Compatible HDMI, DP- Black(Support VESA)",
+    "descripcion": "QHD 1440P Gaming Monitor: 31.5 inch monitor uses VA panel, 1800R curvature, 3-sided narrow bezel design, Adjustable angle before and after -5° to 15°(±2°), reduces fatigue even after long-term use. Monitor aspect ratio 16:9, VESA 100*100mm installable design, for the added utility of wise space management. 144Hz Monitor Supports AMD FreeSync technology: CRUA 32 curved monitor supports 144Hz refresh rate, FreeSync technology synchronization, and 1msGTG response time, which can effectively prevent tearing (image shift) and freezing (screen capture) for clear video playback and provide, an incredible image quality.",
+    "imagen": "https://m.media-amazon.com/images/I/81aid10SzTL._AC_SL1500_.jpg",
     "categoria": "Hogarycocina",
-    "precio": "$159.00",
-    "url": "https://www.amazon.com/DEWALT-DCK240C2-Lithium-Driver-Impact/dp/B00IJ0ALYS?th=1&linkCode=li2&tag=jcshop0d8-20&linkId=61cacd1672762d71463f5ee63ec785d2&language=en_US&ref_=as_li_ss_il"
+    "precio": "$259",
+    "url": "https://amzn.to/44QtTYW"
   },
   {
     "id": "B08PZ3C59K",
-    "titulo": "SHAPERMINT - Pantalones cortos moldeadores de cintura alta para mujer, control de barriga, tecnología de adelgazamiento de muslos",
-    "descripcion": "90 % nailon, 10 % elastano. Importado Cierre de tirador. Lavar a maquina CONSEJO DE TALLAS: ¡Consulte siempre nuestra tabla de tallas para obtener el mejor ajuste! Para un alisado perfecto y comodidad durante todo el día, selecciona tu talla real. Si está entre tallas, tome la talla más grande. COMODIDAD Y CONTROL: ¡Nuestras fajas para el control de la barriga fueron hechas para un uso diario cómodo y para suavizar su barriga! Se adapta muy bien debajo de todo tipo de ropa. PERMANECE EN SU LUGAR: ¡Nuestros shorts moldeadores de cintura alta se mantienen en su lugar para un ajuste seguro durante todo el día! Ya sea que te estés recuperando del posparto, usándolos debajo de un vestido o relajándote en casa. Nuestras prendas moldeadoras para mujer con control de barriga son ligeras y transpirables.",
-    "imagen": "https://m.media-amazon.com/images/I/71cJRK7sMLL._AC_UL1500_.jpg",
+    "titulo": "Aureday 74’’ Camera Tripod with Travel Bag,Cell Phone Tripod with Wireless Remote and Phone Holder, Compatible with DSLR Cameras,Cell Phones,Projector,Webcam,Spotting Scopes(Black)",
+    "descripcion": "【Broad Applicability】Extends from 20.87 to 74in, this tripod fully adapts to a range of different user heights and enables you to compose your photos more creatively than ever before",
+    "imagen": "https://m.media-amazon.com/images/I/714guSSdC0L._AC_SL1500_.jpg",
     "categoria": "Belleza",
     "precio": "$25.99 - $26.99",
-    "url": "https://www.amazon.com/EMPETUA-Shapermint-Waisted-Shaper-Shorts/dp/B07YNY75LX?qid=1679949527&s=fashion-womens-intl-ship&sr=1-4&linkCode=li2&tag=jcshop0d8-20&linkId=bb1e3e0877b4b00d515add9f15d2aecd&language=en_US&ref_=as_li_ss_il"
+    "url": "https://amzn.to/3Qq6h91"
   },
   {
     "id": "B08PZ3C57R",
-    "titulo": "WOOSEA Vestido largo de cóctel de noche con cuello en V sin mangas para mujer",
-    "descripcion": "Poliéster/Spandex, Elástico Cierre elástico Poliéster/Spandex, la tela es elástica, elástica, cómoda Sin mangas, cuello en V, largo hasta el suelo, sin forro, vestidos largos. Línea A, ajustado, cintura cruzada, cintura alta, dobladillo de sirena dividido, color sólido, longitud larga, Ocasión: formal, noche, invitado de boda, novia, dama de honor, gala, fiesta, baile, regreso a casa, graduación, ocasión especial. (Consejos especiales) ¡Compruebe la información sobre el tamaño en la descripción del producto a continuación antes de decidirse a comprarlo!！",
-    "imagen": "https://m.media-amazon.com/images/I/61iTIlfCryL._AC_UL1500_.jpg",
+    "titulo": "Canon EOS Rebel T7 DSLR Camera with 18-55mm Lens | Built-in Wi-Fi | 24.1 MP CMOS Sensor | DIGIC 4+ Image Processor and Full HD Videos",
+    "descripcion": "24.1 Megapixel CMOS (APS-C) sensor with is 100–6400 (H: 12800), Built-in Wi-Fi and NFC technology, 9-Point AF system and AI Servo AF, Optical Viewfinder with approx 95% viewing coverage, Use the EOS Utility Webcam Beta Software (Mac and Windows) to turn your compatible Canon camera into a high-quality webcam. Compatible Lenses- Canon EF Lenses (including EF-S lenses, excluding EF-M lenses)",
+    "imagen": "https://m.media-amazon.com/images/I/61BKYlNqH6L._AC_SL1000_.jpg",
     "categoria": "Belleza",
-    "precio": "$58.99",
-    "url": "https://www.amazon.com/WOOSEA-Women-Sleeveless-Evening-Cocktail/dp/B07VWG6DLS?qid=1679950005&rnid=1040660&s=fashion-womens-intl-ship&sr=1-1&linkCode=li2&tag=jcshop0d8-20&linkId=627741b1bd49342d3deb235870711da4&language=en_US&ref_=as_li_ss_il"
+    "precio": "$399",
+    "url": "https://amzn.to/47f6BgH"
   },  
 ];
 
-export default Products;  
+export default Products;
