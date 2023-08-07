@@ -44,7 +44,7 @@
             "@smartHomeDevices/*": [
                 "assets/smartHomeDevices/*"
             ],
-            "@consumerElectricts/*": [
+            "@consumerElectrics/*": [
                 "assets/consumerElectricts/*"
             ],
             "@smartphones/*": [
