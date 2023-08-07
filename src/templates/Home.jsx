@@ -5,7 +5,7 @@ import Slider from "@components/Slider";
 import HeadPage from "@components/HeadPage";
 
 import CategorieOfert from "@components/CategorieOfert";
-import ReviewOfert from "@components/ReviewOfert"
+import ReviewOfert from "@components/ReviewOfert";
 
 import products from "@amazon/products";
 
@@ -13,7 +13,7 @@ const Home = () => {
 	return (
 		<>
 		  <HeadPage 
-            title={"Mejores ofertados"}
+            title={"JCshop"}
             description={"Productos minusiosamente comparados de bajo costo y alta calidad"} 
           />
 	      <Slider products={products} />

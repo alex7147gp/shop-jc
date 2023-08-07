@@ -4,7 +4,7 @@ import ProsAndCons from '@components/ProsAndCons';
 import UserReviews from '@components/UserReviews';
 import BuyButton from '@components/BuyButton';
 
-import styles from "@styles/ReviewsPage.module.scss"
+import styles from "@styles/ReviewsPage.module.scss";
 
 const ReviewsPage = () => {
   
@@ -20,8 +20,7 @@ const ReviewsPage = () => {
 };
  
 export default ReviewsPage;
-
-
+ 
 
 
 

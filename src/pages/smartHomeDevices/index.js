@@ -1,7 +1,7 @@
 import HeadS from "@components/Head";
-import Page from "../../templates/Page"
+import Page from "../../templates/Page";
 
-import products from "@smartHomeDevices/products"
+import products from "@smartHomeDevices/products";
 
 
 export default function SmartHomeDevices() {

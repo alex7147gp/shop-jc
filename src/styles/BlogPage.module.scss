@@ -1,0 +1,14 @@
+@import 'vars';
+
+
+.blogContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 80px;
+}
+
+/* Estilos para la separación entre secciones */
+.blogContainer > * {
+  margin-bottom: 30px;
+}

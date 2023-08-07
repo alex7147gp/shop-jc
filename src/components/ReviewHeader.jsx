@@ -5,7 +5,7 @@ const ReviewHeader = () => {
   
   return (
     <div className={styles.reviewHeader}>
-      <h1 className={styles.h1} ></h1>
+      <h1 className={styles.h1}>titulo</h1>
       <div className={styles.rating}>
         {/* Mostrar puntuación o calificación aquí */}
         <span className={styles.span} >4.5</span>

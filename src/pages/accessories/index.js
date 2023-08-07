@@ -1,7 +1,7 @@
 import HeadS from "@components/Head";
-import Page from "../../templates/Page"
+import Page from "../../templates/Page";
 
-import products from "@accessories/products"
+import products from "@accessories/products";
 
 
 export default function Accessories() {

@@ -1,0 +1,24 @@
+@import 'vars';
+
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  line-height: 1.5;
+}

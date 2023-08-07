@@ -24,7 +24,7 @@ const CategorieOfert = ()=> {
                     height={200}  
 			            />
                   <div className={styles.Info}>
-                    <Link href={`/reviews/${item.categorie}`}>
+                    <Link href="/smartPhones">
                       <button className={styles.Button}>See more</button>      
                     </Link>
                   </div>

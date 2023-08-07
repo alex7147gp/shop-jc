@@ -1,7 +1,7 @@
 import HeadS from "@components/Head";
-import Page from "../../templates/Page"
+import Page from "../../templates/Page";
 
-import products from "@gaming/products"
+import products from "@gaming/products";
 
 
 export default function Gaming() {

@@ -1,7 +1,5 @@
 import HeadS from "@components/Head";
-import ReviewPage from "../../../templates/ReviewPage"
-
-import products from "@smartphones/products"
+import BlogPage from "../../../templates/BlogPage";
 
 export default function SmartPhones() {
   return (
@@ -13,7 +11,7 @@ export default function SmartPhones() {
         title={"SmartPhones"}
         description={"Los mejores productos comparados minusiosamente para que conpre los mejores"}
       />
-      <ReviewPage />
+      <BlogPage />
     </div>
   );
 };

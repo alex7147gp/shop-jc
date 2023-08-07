@@ -1,7 +1,7 @@
 import HeadS from "@components/Head";
-import Page from "../../templates/Page"
+import Page from "../../templates/Page";
 
-import products from "@consumerElectricts/products"
+import products from "@consumerElectricts/products";
 
 
 export default function ConsumerElectronics() {

@@ -50,6 +50,9 @@
             "@smartphones/*": [
                 "assets/smartphones/*"
             ],
+            "@blogs/*": [
+                "assets/blogs/*"  
+            ],
             "@baners/*": [
                 "assets/baners/*"
             ]

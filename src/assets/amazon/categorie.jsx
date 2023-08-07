@@ -92,4 +92,3 @@ const Categorie = [
 ];
 
 export default Categorie;
-export default Categorie;

@@ -43,7 +43,7 @@ const Products =  [
     "categoria": "Electronica",
     "precio": "1,398$",
     "url": "https://amzn.to/47gf0AI"
-  },,{
+  },{
     "id": "B08PQCKPMB",
     "titulo": "Ulefone Note 16 Pro Unlocked Cell Phone 16GB+256GB, 8-Core, 6.52' Display Smartphone Unlocked, Android 13, 50MP AI Camera Mobile Phone, 4400 mAh, Dual 4G LTE, Fingerprint Unlock, U.S. Version, Purple",
     "descripcion": "Unlocked and ready to use with your preferred GSM Carrier. The Note 16 Pro works with T-Mobile, Metro PCS, and others. (❗Not compatible with AT&T, Cricket or with CDMA Networks like Verizon, Sprint, and Boost Mobile)",

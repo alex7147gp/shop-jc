@@ -1,21 +1,20 @@
-import logo from '@logos/jc.ico';
-import accessories from "@images/accessories.jpg"
-import audio from "@images/audio.jpg"
-import batteries from "@images/batteries.jpg"
-import camerasAccessories from "@images/cameras-accessories.jpg"
-import cameras from "@images/cameras.jpg"
-import computers from "@images/computers.jpg"
-import gaming from "@images/gaming.jpg"
-import headphones from "@images/headphones.jpg"
-import homeTheater from "@images/home-theater.jpg"
-import projectors from "@images/projectores.jpg"
-import scanners from "@images/scanners.jpg"
-import smartHome from "@images/smart-home.jpg"
-import smartPhones from "@images/smartPhones.jpg"
-import tablets from "@images/tablets.jpg"
-import tvs from "@images/tvs.jpg"
-import usb from "@images/usb.jpg"
-import laptops from "@images/laptops.jpg"
+import accessories from "@images/accessories.jpg";
+import audio from "@images/audio.jpg";
+import batteries from "@images/batteries.jpg";
+import camerasAccessories from "@images/cameras-accessories.jpg";
+import cameras from "@images/cameras.jpg";
+import computers from "@images/computers.jpg";
+import gaming from "@images/gaming.jpg";
+import headphones from "@images/headphones.jpg";
+import homeTheater from "@images/home-theater.jpg";
+import projectors from "@images/projectores.jpg";
+import scanners from "@images/scanners.jpg";
+import smartHome from "@images/smart-home.jpg";
+import smartPhones from "@images/smartPhones.jpg";
+import tablets from "@images/tablets.jpg";
+import tvs from "@images/tvs.jpg";
+import usb from "@images/usb.jpg";
+import laptops from "@images/laptops.jpg";
 
 const categories = [
     {
@@ -40,7 +39,7 @@ const categories = [
     },
     {
       "title": "Camera Accessories",
-      "img": cameras-accessories,
+      "img": camerasAccessories,
       "description": "Enhance your photography experience with our camera accessories."
     },
     {
@@ -103,6 +102,6 @@ const categories = [
       "img": usb,
       "description": "Find USB-C products and accessories for fast and versatile connectivity."
     }
-  ]
+  ];
 
-export default categories  
+export default categories;

@@ -1,5 +1,5 @@
 import HeadS from "@components/Head";
-import Page from "../../templates/Page"
+import Page from "../../templates/Page";
 
 export default function Products() {
   return (
