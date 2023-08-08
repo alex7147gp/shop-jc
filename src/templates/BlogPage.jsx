@@ -6,10 +6,10 @@ import Conclusion from '@components/Conclusion';
 
 import styles from "@styles/BlogPage.module.scss";
 
-const BlogPage = ({ titulo, intro }) => {
+const BlogPage = ({ titulo, intro, img }) => {
   return (
     <div className={styles.blogContainer}>
-      <GuiaHeader titulo={titulo} intro={intro} />
+      <GuiaHeader titulo={titulo} intro={intro} img={img} />
       <EspecificacionesTecnicas />
       <RendimientoGraficos />
       <Conclusion />

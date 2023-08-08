@@ -1,5 +1,10 @@
 import HeadS from "@components/Head";
-import BlogPage from "../../../templates/BlogPage";
+import Page from "../../templates/Page";
+
+import ReviewOfert from "@components/ReviewOfert";
+import CategorieOfert from "@components/CategorieOfert";
+
+import products from '@blogs/gaming';
 
 export default function SmartPhones() {
   return (
@@ -8,10 +13,15 @@ export default function SmartPhones() {
       margin: "0px",
       }}>
       <HeadS
-        title={"SmartPhones"}
-        description={"Los mejores productos comparados minusiosamente para que conpre los mejores"}
+        title={"¡Explora el Universo Gaming con Nuestras Reseñas de Juegos!"}
+        description={"Descubre lo mejor del mundo gaming a través de nuestras reseñas detalladas. Opiniones honestas y análisis profundos para ayudarte en tus decisiones de compra."}
       />
-      <BlogPage />
+      <Page 
+       title={"Reseñas de Gaming - Descubre lo Mejor"}
+       description={"Bienvenido al paraíso del gaming. Nuestras reseñas te sumergirán en el mundo de los videojuegos con análisis detallados y opiniones apasionadas. Desde las últimas novedades hasta los clásicos atemporales, estamos aquí para guiarte en tus elecciones de juegos. ¡Prepárate para vivir aventuras virtuales como nunca antes!"}
+      />
+      <ReviewOfert product={products} />
+      <CategorieOfert />
     </div>
   );
 };

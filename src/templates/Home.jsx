@@ -4,10 +4,14 @@ import ProductList from '@containers/ProductList';
 import Slider from "@components/Slider";
 import HeadPage from "@components/HeadPage";
 
-import CategorieOfert from "@components/CategorieOfert";
 import ReviewOfert from "@components/ReviewOfert";
+import CategorieOfert from "@components/CategorieOfert";
 
 import products from "@amazon/products";
+import categories from '@amazon/categories';
+
+
+import productsb from '@blogs/products';
 
 const Home = () => {
 	return (
@@ -18,8 +22,8 @@ const Home = () => {
           />
 	      <Slider products={products} />
 	      <ProductList products={products}/>
-          <CategorieOfert />
-          <ReviewOfert />
+	      <ReviewOfert product={productsb} />
+          <CategorieOfert categorie={categories} />
 		</>
 	);
 };

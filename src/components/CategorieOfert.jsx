@@ -7,16 +7,17 @@ import Image from 'next/image';
 import styles from '@styles/CategorieOfert.module.scss';
 
 
-const categorie = categories;
+const CategorieOfert = ({ categorie }) => {
 
-const CategorieOfert = ()=> {
+  const categoriea = categorie ? categorie : categories;
+
 	return (
     <>
-     <h1>Recomedation</h1>
+     <h3>Recomedation</h3>
        <div className={styles.ContainerOfert}>
-         {categorie.slice(0,4).map(item =>
-              <div className={styles.Container} key={categorie.id}>
-                  <h2 className={styles.Title}>{item.title}</h2>
+         {categoriea.slice(0,4).map(item =>
+              <div className={styles.Container} key={categoriea.id}>
+                  <h4 className={styles.Title}>{item.title}</h4>
                   <Image 
                     src={item.img} 
                     alt={item.title} 
@@ -24,14 +25,14 @@ const CategorieOfert = ()=> {
                     height={200}  
 			            />
                   <div className={styles.Info}>
-                    <Link href="/smartPhones">
+                    <Link href={`/${item.url}`}>
                       <button className={styles.Button}>See more</button>      
                     </Link>
                   </div>
               </div>
         	
        )}
-       </div>
+       </div> 
      </>  
 	);
 };
