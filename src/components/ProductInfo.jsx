@@ -34,7 +34,7 @@ const ProductInfo = ({ product }) => {
               <h1 className={styles.Title}>{product.titulo}</h1>
               <p className={styles.Desc}>{product.descripcion}</p>
               <span className={styles.Price}>{product.precio}</span>
-              <Link href={product.url}>
+              <Link href={product.url} target="_blank">
                 <button className={styles.Button}>
                   Ver oferta
                 </button>

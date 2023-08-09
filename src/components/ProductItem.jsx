@@ -13,19 +13,20 @@ const ProductItem = ({ product }) => {
     return (
 		<div className={styles.ProductItem}>
 			<div className={styles.Image}>
-			  <Link href={`/Products/${product.id}`}>
 			    <Image 
 			      src={product.imagen} 
 			      alt={product.title} 
                   layout="responsive"
                   width={80} 
-                  height={80} 
+                  height={80}
+
 			   />
-			  </Link>
 			</div>       
 			<div className={styles['product-info']}>
 				<div>
-					<h2>{product.titulo.substring(0, 60)}...</h2>
+					<Link href={product.url} target="_blank">
+					  <h2>{product.titulo.substring(0, 60)}...</h2>
+					</Link>
 					<p>{product.precio}</p>
 				</div>
 			</div>

@@ -10,8 +10,8 @@ const GuiaHeader = ({titulo, intro, img}) => {
           className={styles.image}
           src={img}
           alt="Guía para elegir la Computadora Perfecta para Gaming"
-          width={300}  
-          height={250}  
+          width={350}  
+          height={280}  
         />
       </div>
       <div className={styles.textContainer}>
@@ -22,6 +22,6 @@ const GuiaHeader = ({titulo, intro, img}) => {
       </div> 
     </div>
   );
-};
+}; 
 
 export default GuiaHeader;

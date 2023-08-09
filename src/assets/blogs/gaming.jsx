@@ -9,7 +9,7 @@ const Products =  [
     "imagen": gaming,
     "categoria": "gaming",
     "fecha": "actualizado agosto 8, 2023",
-    "url": "reviews/gaming/Como-elegir-la-computadora-perfecta-para-gaming"
+    "url": "blog/gaming/como-elegir-la-computadora-perfecta-para-gaming"
   }
 ];
 

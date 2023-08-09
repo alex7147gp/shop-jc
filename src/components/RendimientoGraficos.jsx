@@ -1,29 +1,37 @@
 import styles from '@styles/RendimientoGraficos.module.scss';
 
-const RendimientoGraficos = () => {
-  // Datos de ejemplo de rendimiento y gráficos
+const RendimientoGraficos = ({ 
+  tituloRend,
+  titulor1,
+  descr1,
+  titulor2,
+  descr2,
+  titulor3,
+  descr3
+  }) => {
+
   const rendimientoGraficos = [
     {
       id: 1,
-      categoria: 'Tarjeta Gráfica',
-      descripcion: 'Busca una tarjeta gráfica dedicada con suficiente memoria VRAM para lograr un rendimiento óptimo en los juegos actuales.',
+      categoria: titulor1,
+      descripcion: descr1,
     },
     {
       id: 2,
-      categoria: 'Resolución y Frecuencia de Actualización',
-      descripcion: 'Una alta resolución y frecuencia de actualización aseguran una experiencia de juego más nítida y fluida.',
+      categoria: titulor2,
+      descripcion: descr2,
     },
     {
       id: 3,
-      categoria: 'FPS (Frames Per Second)',
-      descripcion: 'Los FPS altos proporcionan una jugabilidad más suave y reactiva, especialmente en juegos de acción rápida.',
+      categoria: titulor3,
+      descripcion: descr3,
     },
     // Agregar más datos aquí
   ];
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.h2}>Rendimiento y Gráficos</h2>
+      <h2 className={styles.h2}>{tituloRend}</h2>
       <ul className={styles.listaRendimientoGraficos}>
         {rendimientoGraficos.map((item) => (
           <li key={item.id}>
