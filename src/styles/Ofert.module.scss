@@ -3,7 +3,7 @@
 
 
 .Container {
-  width:100%;
+  width: calc(100%);
   display:flex;
   overflow-x:hidden;
 }
@@ -31,7 +31,13 @@
 }
 
 @media (max-width: 640px) {
+  .Container {
+    width:100%;
+    display: none;
+    overflow-x:hidden;
+  }
   .SliderO {
     font-size: 10px;
   }
+
 }

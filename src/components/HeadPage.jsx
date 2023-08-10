@@ -3,7 +3,7 @@ import Ofert from "components/Ofert";
 
 const HeadPage = ({ title, description }) => {
 	return(
-      <div style={{ marginTop: "60px" }}>
+      <div className={styles.Container}>
         <Ofert />
         <div className={styles.HeadP}>
           <h1>{title}</h1>

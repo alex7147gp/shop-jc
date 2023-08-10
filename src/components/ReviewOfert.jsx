@@ -24,7 +24,7 @@ const ReviewOfert = ({ product }) => {
                 alt={articulo.titulo} 
                 width={300} 
                 height={250}  
-              />
+              /> 
             </div>
             <Link href={`/${articulo.url}`}>
               <h4 className={styles.h2}>{articulo.titulo}</h4>

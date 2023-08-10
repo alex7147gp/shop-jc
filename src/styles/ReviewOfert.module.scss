@@ -4,6 +4,9 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .h1 {
@@ -16,6 +19,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  justify-content: center;
 }
 
 .articulo {
@@ -28,6 +32,7 @@
   width: 300px;
   height: 250px;
   border-radius: 8px;
+  display: flex;
 } 
 
 .productImage .img {
@@ -43,4 +48,19 @@
 .p {
   font-size: 14px;
   color: #666;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 10px;
+  }
+
+  .articulosContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .productImage {
+    width: 100%;
+    height: auto;
+  }
 }

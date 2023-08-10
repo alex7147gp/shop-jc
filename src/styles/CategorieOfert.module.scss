@@ -49,12 +49,11 @@
   object-fit: cover;
   border-radius: 8px;
 }
-
+ 
 @media (max-width: 640px) {
 
   .ContainerOfert {
     padding: 0px;
-    flex-direction: column;
   }
 
   .Containr img {
