@@ -8,21 +8,28 @@ export const Footer = () => {
           <div className={styles['right']} >
             <h2>Mejores</h2>
             <ul>
-             <li><Link href="/">Monitores</Link></li>
-             <li><Link href="/">Aspiradoras-sin-cable</Link></li>
-             <li><Link href="/">Taladros</Link></li>
-             <li><Link href="/">Sillas para jugar</Link></li>
-             <li><Link href="/">Auriculares</Link></li>
+              <li>
+                <Link href="/smartPhones">Smartphones</Link>
+              </li>
+              <li>
+                <Link href="/computers">Computers, laptops</Link>
+              </li>
+              <li>
+                <Link href="/smartHomeDevices">smart home devices</Link>
+              </li>
+              <li>
+                <Link href="/accessories">Accessories</Link>
+              </li>
+              <li>
+                <Link href="/gaming">Gaming and consoles</Link>
+              </li>
             </ul>
           </div>
           <div className={styles['middle']}>
             <h2>Contactar</h2>
             <ul>
-             <li><Link href="/">Contactar</Link></li>
              <li><Link href="/PoliticaDePrivacidad">Política de privacidad</Link></li>
              <li><Link href="/TerminosDelServicio">Términos del servicio</Link></li>
-             <li><Link href="/categories">Categorías</Link></li>
-             <li><Link href="/">Acerca de</Link></li>
             </ul>
           </div>
           <div className={styles['left']}>

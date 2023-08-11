@@ -36,6 +36,10 @@ export default function SmartPhones() {
         descr2={"Una alta resolución y frecuencia de actualización aseguran una experiencia de juego más nítida y fluida."}
         titulor3={"FPS (Frames Per Second)"}
         descr3={"Los FPS altos proporcionan una jugabilidad más suave y reactiva, especialmente en juegos de acción rápida."}
+        imagen={"https://m.media-amazon.com/images/I/71yl7YJUTKL._AC_SL1500_.jpg"}
+        tituloP={"Frigidaire EFMIS179 Gaming Light Up Mini Beverage Refrigerator"}
+        descripcion={"ENHANCE YOUR GAMING EXPERIENCE AND KEEP BEVERAGES AND SNACKS CLOSE SO YOU CAN PLAY UNINTERRUPTED"} 
+        url={"https://amzn.to/44Q8AXi"}
       />
       <ReviewOfert product={products} />
       <CategorieOfert />

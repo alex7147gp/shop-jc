@@ -1,3 +1,4 @@
+import ProductA from "@components/ProductA";
 import styles from '@styles/EspecificacionesTecnicas.module.scss';
 
 const EspecificacionesTecnicas = ({ 
@@ -7,7 +8,11 @@ const EspecificacionesTecnicas = ({
   titulo2,
   desc2,
   titulo3,
-  desc3
+  desc3,
+  imagen,
+  titulo,
+  descripcion,
+  url
   }) => {
   // Datos de ejemplo de especificaciones técnicas
   const especificaciones = [
@@ -15,6 +20,7 @@ const EspecificacionesTecnicas = ({
       id: 1,
       categoria: titulo1,
       descripcion: desc1,
+
     },
     {
       id: 2,
@@ -38,6 +44,13 @@ const EspecificacionesTecnicas = ({
             <p className={styles.p}>{especificacion.descripcion}</p>
           </li>
         ))}
+        {titulo && <ProductA
+            imagen={imagen}
+            titulo={titulo}
+            descripcion={descripcion}
+            url={url}
+        />
+        }
       </ul>
     </div>
   );

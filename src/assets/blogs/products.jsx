@@ -4,6 +4,9 @@ import phonePlegable from "@images/phone-plegable.jpg";
 import consola from "@images/consola.jpg";
 import tablets from "@images/tablets.jpg";
 
+import pcGaming from "@images/pc-gaming.jpg";
+import tablets1 from "@images/tablets1.jpg";
+
 const Productsb =  [
   {
     "id": "B08GGGBKRQ",
@@ -40,6 +43,24 @@ const Productsb =  [
     "categoria": "tablets",
     "fecha": "actualizado agosto 10, 2023",
     "url": "blog/tablets/las-tablets-pueden-renplazar-a-las-computadoras"
+  },
+  {
+    "id": "B10GGGBKRQ",
+    "titulo": "¿Qué Componentes son Esenciales para una PC Gaming?",
+    "descripcion": "En el apasionante mundo del gaming, una PC de gaming bien construida es clave para disfrutar de una experiencia inmersiva y de alto rendimiento en tus juegos favoritos. Pero, ¿cuáles son los componentes esenciales que debes considerar al armar tu propia PC de gaming? En este artículo, te guiaremos a través de los elementos fundamentales que deben estar presentes en tu configuración para asegurar una experiencia de juego fluida y emocionante.",
+    "imagen": pcGaming,
+    "categoria": "gaming",
+    "fecha": "actualizado agosto 11, 2023",
+    "url": "blog/gaming/que-componentes-son-esenciales-para-una-pc-gaming"
+  },
+  {
+    "id": "B00GGGBKRQ",
+    "titulo": "Factores Clave a Considerar al Comprar una Tableta",
+    "descripcion": "Las tablets se han convertido en dispositivos indispensables en nuestras vidas, ofreciendo una combinación perfecta entre portabilidad y funcionalidad. Sin embargo, con tantas opciones disponibles en el mercado, es fundamental considerar diversos factores antes de realizar una compra. En este artículo, exploraremos los factores clave que debes tener en cuenta al comprar una tableta para asegurarte de que se adapte a tus necesidades y preferencias.",
+    "imagen": tablets1,
+    "categoria": "tablets",
+    "fecha": "actualizado agosto 11, 2023",
+    "url": "blog/tablets/factores-claves-aconsiderar-al-comprar-una-tablet"
   }
 ];
 

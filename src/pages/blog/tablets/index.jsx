@@ -4,7 +4,7 @@ import HeadPage from "@components/HeadPage";
 import ReviewOfert from "@components/ReviewOfert";
 import CategorieOfert from "@components/CategorieOfert";
 
-import products from '@blogs/products';
+import products from '@blogs/tablets';
 
 export default function Tablets() {
   return (

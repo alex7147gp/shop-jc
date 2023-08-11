@@ -1,13 +1,25 @@
-import styles from '@styles./ProductoA.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
 
-const ProductoA = ({ imagen, titulo, descripcion, precio, porcentajeAhorro }) => {
+import styles from '@styles/ProductA.module.scss';
+
+
+const ProductoA = ({ imagen, titulo, descripcion, url }) => {
   return (
     <div className={styles.container}>
-      <img src={imagen} alt={titulo} className={styles.imagen} />
+      <Link href={url}>
+        <Image
+          className={styles.imagen} 
+          src={imagen} 
+          alt={titulo} 
+          width={200} 
+          height={200}        
+      />
+      </Link>
       <h3 className={styles.titulo}>{titulo}</h3>
       <p className={styles.descripcion}>{descripcion}</p>
-      <p className={styles.precio}>Precio: {precio}</p>
-      <p className={styles.ahorro}>Ahorra: {porcentajeAhorro}%</p>
+      <p className={styles.precio}>Precio: $43</p>
+      <p className={styles.ahorro}>Ahorra: 20%</p>
     </div>
   );
 };

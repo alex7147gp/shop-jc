@@ -1,6 +1,9 @@
 import gaming from "@images/gaming.jpg";
 import consola from "@images/consola.jpg";
 
+import pcGaming from "@images/pc-gaming.jpg";
+
+
 const Products =  [
   {
     "id": "B08GGGBKRQ",
@@ -19,6 +22,15 @@ const Products =  [
     "categoria": "gaming",
     "fecha": "actualizado agosto 10, 2023",
     "url": "blog/gaming/cual-es-la-mejor-consola-de-videojuegos-del-2023"
+  },
+  {
+    "id": "B10GGGBKRQ",
+    "titulo": "¿Qué Componentes son Esenciales para una PC Gaming?",
+    "descripcion": "En el apasionante mundo del gaming, una PC de gaming bien construida es clave para disfrutar de una experiencia inmersiva y de alto rendimiento en tus juegos favoritos. Pero, ¿cuáles son los componentes esenciales que debes considerar al armar tu propia PC de gaming? En este artículo, te guiaremos a través de los elementos fundamentales que deben estar presentes en tu configuración para asegurar una experiencia de juego fluida y emocionante.",
+    "imagen": pcGaming,
+    "categoria": "gaming",
+    "fecha": "actualizado agosto 11, 2023",
+    "url": "blog/gaming/que-componentes-son-esenciales-para-una-pc-gaming"
   }
 ];
 

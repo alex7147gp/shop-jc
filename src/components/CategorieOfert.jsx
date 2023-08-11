@@ -12,7 +12,7 @@ const CategorieOfert = ({ categorie }) => {
   const categoriea = categorie ? categorie : categories;
 
 	return (
-    <>
+    <div className={styles.ContainerA}>
      <h3>Recomedation</h3>
        <div className={styles.ContainerOfert}>
          {categoriea.slice(0,4).map(item =>
@@ -33,7 +33,7 @@ const CategorieOfert = ({ categorie }) => {
         	
        )}
        </div> 
-     </>  
+     </div>  
 	);
 };
 

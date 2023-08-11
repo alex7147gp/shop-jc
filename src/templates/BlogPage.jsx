@@ -24,7 +24,15 @@ const BlogPage = ({
   titulor2,
   descr2,
   titulor3,
-  descr3
+  descr3,
+  imagen,
+  tituloP,
+  descripcion,
+  url,
+  tituloOp1,
+  descOp1,
+  tituloOp2,
+  descOp2
   }) => {
   return (
     <div className={styles.blogContainer}>
@@ -37,6 +45,10 @@ const BlogPage = ({
         desc2={desc2}
         titulo3={titulo3}
         desc3={desc3}
+        imagen={imagen}
+        titulo={tituloP}
+        descripcion={descripcion}
+        url={url}
         />
       <RendimientoGraficos
         tituloRend={tituloRend}
@@ -46,6 +58,10 @@ const BlogPage = ({
         descr2={descr2}
         titulor3={titulor3}
         descr3={descr3}
+        tituloOp1={tituloOp1}
+        descOp1={descOp1}
+        tituloOp2={tituloOp2}
+        descOp2={descOp2}
       />
       <Conclusion dconclucion={dconclucion}/>
     </div>

@@ -1,6 +1,13 @@
 @import 'vars';
 
 
+.ContainerA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .ContainerOfert {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
