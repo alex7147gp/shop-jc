@@ -71,7 +71,7 @@ const Productsb =  [
     "imagen": laptops,
     "categoria": "computers",
     "fecha": "actualizado agosto 12, 2023",
-    "url": "blog/computers/cual-es-la-mejor-laptip-para-el-trabajo-y-estudio"
+    "url": "blog/computers/cual-es-la-mejor-laptop-para-el-trabajo-y-estudio"
   },
   {
     "id": "B00GGGBKRQ",
