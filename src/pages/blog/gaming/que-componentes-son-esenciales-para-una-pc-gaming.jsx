@@ -39,6 +39,18 @@ export default function SmartPhones() {
         descOp1={"El enfriamiento adecuado es esencial para evitar el sobrecalentamiento y garantizar un rendimiento óptimo. Considera opciones de enfriamiento como ventiladores y sistemas de refrigeración líquida para mantener tus componentes a temperaturas seguras mientras juegas."}
         tituloOp2={"Monitor: Visualiza la Acción"}
         descOp2={"Aunque no es un componente interno, el monitor también es crucial para una experiencia de gaming completa. Elige un monitor con alta tasa de actualización y baja latencia para obtener imágenes suaves y una experiencia de juego más envolvente."}
+        //product1
+        imagen={"https://m.media-amazon.com/images/I/71gv2U3IPZL._AC_SL1500_.jpg"}
+        tituloP={"XFX Speedster SWFT 210 Radeon RX 6600 CORE Gaming Graphics Card with 8GB"}
+        descripcion={"Memory Speed:14 GBPS.Minimum Power Supply Requirement: 550 watt"} 
+        precio={450}
+        url={"https://amzn.to/456xBh1"}
+        //product2
+        imagen2={"https://m.media-amazon.com/images/I/61ZZHq3rWtL._SL1500_.jpg"}
+        tituloP2={"Vetroo V360 White 360mm CPU Water Liquid Cooler AMD/Intel LGA1200 Ready"}
+        descripcion2={"Addressable RGB Sync: The Addressabe RGB lighting on the fans and pump can sync with motherboard via 5V 3pin interface, provide even and rich illumination."}
+        precio2={110}
+        url2={"https://amzn.to/3Yuitrn"}
       />
       <ReviewOfert product={products} />
       <CategorieOfert />

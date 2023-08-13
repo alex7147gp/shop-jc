@@ -36,6 +36,18 @@ export default function SmartPhones() {
         descr2={"Si bien las tablets admiten la multitarea, es posible que no sean tan eficientes como las computadoras en términos de administración de ventanas y tareas simultáneas. Las computadoras generalmente ofrecen una experiencia de multitarea más fluida y eficiente."}
         titulor3={"Almacenamiento y Conectividad"}
         descr3={"Algunas tablets tienen limitaciones en términos de almacenamiento interno y puertos de conectividad. Las computadoras ofrecen más opciones en este sentido, lo que puede ser importante para profesionales que manejan grandes cantidades de datos o necesitan conectar varios dispositivos."}
+        //product1
+        imagen={"https://m.media-amazon.com/images/I/81rBUAM2NpL._AC_SL1500_.jpg"}
+        tituloP={"2021 Apple 11-inch iPad Pro (Wi-Fi, 128GB)"}
+        descripcion={"Apple M1 chip for next-level performance - Go further with all-day battery life"} 
+        precio={630}
+        url={"https://amzn.to/3OQT5sy"}
+        //product2
+        imagen2={"https://m.media-amazon.com/images/I/61stmTPwiLL._AC_SL1500_.jpg"}
+        tituloP2={"Xiaomi Pad 6 WiFi Version 11 inches 144Hz"}
+        descripcion2={"Processor Snapdragon 870 4 speakers Dolby Atmos supported Octa-core (1x3.2 GHz Kryo 585 & 3x2.42 GHz Kryo 585 & 4x1.80 GHz Kryo 585) Adreno 650"}
+        precio2={390}
+        url2={"https://amzn.to/455UKQC"}
       />
       <ReviewOfert product={products} />
       <CategorieOfert />

@@ -36,6 +36,18 @@ export default function SmartPhones() {
         descr2={"Las pantallas plegables permiten una multitarea más intuitiva al dividir la pantalla en secciones para diferentes aplicaciones. Esto facilita la realización de múltiples tareas al mismo tiempo, lo que mejora la eficiencia y la productividad."}
         titulor3={"Diseño Innovador"}
         descr3={"Los teléfonos plegables presentan diseños únicos y llamativos que capturan la atención. Estos dispositivos son una combinación de estilo y funcionalidad, lo que los convierte en una opción atractiva para aquellos que buscan lo último en tecnología."}
+        //product1
+        imagen={"https://m.media-amazon.com/images/I/61LyIe34PVL._AC_SL1500_.jpg"}
+        tituloP={"SAMSUNG Galaxy Z Fold 5 Cell Phone, Factory Unlocked Android Smartphone, 512GB"}
+        descripcion={"Launch Offer:  Order the new Samsung Galaxy Z Fold5 now and get a $200 Amazon Gift card (Please select the Gift Card Bundle variation for redemption)"} 
+        precio={1920}
+        url={"https://amzn.to/455Wo4W"}
+        //product2
+        imagen2={"https://m.media-amazon.com/images/I/61tDRWK9L8L._AC_SL1500_.jpg"}
+        tituloP2={"Motorola razr+ | 2023 | Unlocked"}
+        descripcion2={"Compatible with T-Mobile 5G and Verizon 5G. Ready for 5G on other select networks dependent on availability; contact your service provider for details"}
+        precio2={1000}
+        url2={"https://amzn.to/3s6rBqa"}
       />
       <ReviewOfert product={products} />
       <CategorieOfert />

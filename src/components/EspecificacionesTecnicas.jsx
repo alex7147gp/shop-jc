@@ -12,6 +12,7 @@ const EspecificacionesTecnicas = ({
   imagen,
   titulo,
   descripcion,
+  precio,
   url
   }) => {
   // Datos de ejemplo de especificaciones técnicas
@@ -48,6 +49,7 @@ const EspecificacionesTecnicas = ({
             imagen={imagen}
             titulo={titulo}
             descripcion={descripcion}
+            precio={precio}
             url={url}
         />
         }

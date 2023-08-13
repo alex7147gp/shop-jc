@@ -28,7 +28,13 @@ const BlogPage = ({
   imagen,
   tituloP,
   descripcion,
+  precio,
   url,
+  imagen2,
+  tituloP2,
+  descripcion2,
+  precio2,
+  url2,
   tituloOp1,
   descOp1,
   tituloOp2,
@@ -48,6 +54,7 @@ const BlogPage = ({
         imagen={imagen}
         titulo={tituloP}
         descripcion={descripcion}
+        precio={precio}
         url={url}
         />
       <RendimientoGraficos
@@ -62,6 +69,11 @@ const BlogPage = ({
         descOp1={descOp1}
         tituloOp2={tituloOp2}
         descOp2={descOp2}
+        imagen={imagen2}
+        titulo={tituloP2}
+        descripcion={descripcion2}
+        precio={precio2}
+        url={url2}
       />
       <Conclusion dconclucion={dconclucion}/>
     </div>

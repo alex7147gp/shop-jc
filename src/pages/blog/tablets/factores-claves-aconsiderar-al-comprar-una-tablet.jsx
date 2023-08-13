@@ -36,6 +36,18 @@ export default function SmartPhones() {
         descr2={"La duración de la batería es esencial, especialmente si planeas usar tu tableta mientras estás fuera de casa. Busca una tableta que ofrezca una duración de batería lo suficientemente larga para satisfacer tus necesidades diarias. Ten en cuenta que la duración real puede variar según el uso y la configuración."}
         titulor3={"Calidad de la Pantalla"}
         descr3={"La calidad de la pantalla es fundamental para la experiencia de visualización. Considera la resolución, el brillo, la saturación de color y la tecnología de la pantalla. Una pantalla de alta resolución con colores vibrantes es ideal para ver videos, jugar y trabajar en tareas visuales."}
+        //product1
+        imagen={"https://m.media-amazon.com/images/I/617YbhelvtL._AC_SL1500_.jpg"}
+        tituloP={"Lenovo Tab P11 (2nd Gen) - 2023"}
+        descripcion={"Get Drawn In: Get drawn deeper into the story in 1080p full-HD with an expansive 11.5” 2K display"} 
+        precio={300}
+        url={"https://amzn.to/45qFYUt"}
+        //product2
+        imagen2={"https://m.media-amazon.com/images/I/71Mt4JAZQtL._AC_SL1500_.jpg"}
+        tituloP2={"Tablet 10.1 inch Android 12"}
+        descripcion2={"FEONAL Tablet is powered by Octa-Core Processor. 2023 newest Android 12 tablet provides + 40% faster processing speed than regular Quad-Core. 10.1-inch Tablet screen size with 1920x1200 resolution support, perfect for home entertainment and office."}
+        precio2={129}
+        url2={"https://amzn.to/458N2FI"}
       />
       <ReviewOfert product={products} />
       <CategorieOfert />

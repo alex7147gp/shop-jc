@@ -1,3 +1,4 @@
+import ProductA from "@components/ProductA";
 import styles from '@styles/RendimientoGraficos.module.scss';
 
 const RendimientoGraficos = ({ 
@@ -11,7 +12,12 @@ const RendimientoGraficos = ({
   tituloOp1,
   descOp1,
   tituloOp2,
-  descOp2
+  descOp2,
+  imagen,
+  titulo,
+  descripcion,
+  precio,
+  url
   }) => {
 
   const rendimientoGraficos = [
@@ -51,6 +57,14 @@ const RendimientoGraficos = ({
             <h3 className={styles.categoria}>{tituloOp2}</h3>
             <p className={styles.p}>{descOp2}</p>
           </li> 
+        }
+        { titulo && <ProductA
+            imagen={imagen}
+            titulo={titulo}
+            descripcion={descripcion}
+            precio={precio}
+            url={url}
+        />
         }
       </ul>
     </div>

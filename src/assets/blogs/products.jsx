@@ -6,6 +6,8 @@ import tablets from "@images/tablets.jpg";
 
 import pcGaming from "@images/pc-gaming.jpg";
 import tablets1 from "@images/tablets1.jpg";
+import laptops from "@images/laptops.jpg";
+import smartPhones2 from "@images/smartPhones2.jpg";
 
 const Productsb =  [
   {
@@ -61,6 +63,24 @@ const Productsb =  [
     "categoria": "tablets",
     "fecha": "actualizado agosto 11, 2023",
     "url": "blog/tablets/factores-claves-aconsiderar-al-comprar-una-tablet"
+  },
+  {
+    "id": "B08GGGBKRQ",
+    "titulo": "¿Cuál es la Mejor Laptop para Trabajo y Estudio?",
+    "descripcion": "En la era digital en la que vivimos, contar con una laptop confiable y eficiente se ha convertido en una necesidad para llevar a cabo tareas de trabajo y estudio de manera efectiva. Sin embargo, el mercado ofrece una amplia gama de opciones, lo que puede hacer que la elección de la laptop adecuada sea una tarea desafiante. En este artículo, analizaremos los factores clave que debes considerar para encontrar la mejor laptop que se adapte a tus necesidades de trabajo y estudio.",
+    "imagen": laptops,
+    "categoria": "computers",
+    "fecha": "actualizado agosto 12, 2023",
+    "url": "blog/computers/cual-es-la-mejor-laptip-para-el-trabajo-y-estudio"
+  },
+  {
+    "id": "B00GGGBKRQ",
+    "titulo": "¿Cómo Puedo Mejorar la Duración de la Batería de mi Smartphone?",
+    "descripcion": "En el mundo moderno, los smartphones son herramientas indispensables que nos mantienen conectados y organizados. Sin embargo, la duración de la batería a menudo puede ser un desafío, especialmente cuando dependemos tanto de estos dispositivos en nuestra vida diaria. En este artículo, exploraremos consejos y estrategias para mejorar la duración de la batería de tu smartphone y asegurarte de que te acompañe durante todo el día.",
+    "imagen": smartPhones2,
+    "categoria": "smartphones",
+    "fecha": "actualizado agosto 9, 2023",
+    "url": "blog/smartPhones/los-mejores-telefonos-plegables"
   }
 ];
 

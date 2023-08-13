@@ -36,10 +36,18 @@ export default function SmartPhones() {
         descr2={"Una alta resolución y frecuencia de actualización aseguran una experiencia de juego más nítida y fluida."}
         titulor3={"FPS (Frames Per Second)"}
         descr3={"Los FPS altos proporcionan una jugabilidad más suave y reactiva, especialmente en juegos de acción rápida."}
-        imagen={"https://m.media-amazon.com/images/I/71yl7YJUTKL._AC_SL1500_.jpg"}
-        tituloP={"Frigidaire EFMIS179 Gaming Light Up Mini Beverage Refrigerator"}
-        descripcion={"ENHANCE YOUR GAMING EXPERIENCE AND KEEP BEVERAGES AND SNACKS CLOSE SO YOU CAN PLAY UNINTERRUPTED"} 
-        url={"https://amzn.to/44Q8AXi"}
+        //product1
+        imagen={"https://m.media-amazon.com/images/I/71hvVLqlgaL._AC_SL1500_.jpg"}
+        tituloP={"Gaming Desktop PC, Intel Quad I7 up to 3.8Ghz,GeForce GTX 1660 Super 6G GDDR6, 16G, 1TB SSD, WiFi, BT 5.0, RGB Keyboard & Mouse, W10P64"}
+        descripcion={"This computer is well-suited for a variety of tasks including gaming, study, home, business, photo and video editing, streaming, day trading, crypto trading, and more."} 
+        precio={350}
+        url={"https://amzn.to/3OAjLfO"}
+        //product2
+        imagen2={"https://m.media-amazon.com/images/I/71DgPQNRm6L._AC_SL1500_.jpg"}
+        tituloP2={"KOORUI 27 Inch QHD Gaming Monitor 144 Hz, VA, 1ms, DCI-P3 90% Color Gamut, Adaptive Sync, (2560x1440, HDMI, DisplayPort) Black"}
+        descripcion2={"EXCEPTIONAL PICTURE QUALITY: The 27 inch QHD (2560*1440) display with the DCI-P3 90% wide color gamut brings what you’re watching to life in over 16.7M colors."}
+        precio2={180}
+        url2={"https://amzn.to/3EcSgV7"}
       />
       <ReviewOfert product={products} />
       <CategorieOfert />

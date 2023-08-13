@@ -36,6 +36,18 @@ export default function SmartPhones() {
         descr2={"El rendimiento y la calidad gráfica son cruciales para una experiencia de juego inmersiva. Considera la potencia de la consola y su capacidad para manejar juegos en resolución 4K o incluso 8K, si buscas una experiencia visual impresionante."}
         titulor3={"Compatibilidad y Retrocompatibilidad"}
         descr3={"Si ya tienes una biblioteca de juegos de una generación anterior, la compatibilidad y retrocompatibilidad pueden ser importantes. Asegúrate de que la consola sea compatible con los juegos que deseas jugar."}
+        //product1
+        imagen={"https://m.media-amazon.com/images/I/51eOztNdCkL._SL1500_.jpg"}
+        tituloP={"PlayStation 5 Console (PS5)"}
+        descripcion={"Model Number CFI-1215A01X.PS5 Digital Edition is an all-digital version of the PS5 console with no disc drive."} 
+        precio={450}
+        url={"https://amzn.to/449lq1A"}
+        //product2
+        imagen2={"https://m.media-amazon.com/images/I/51wea7ifCaL._SL1001_.jpg"}
+        tituloP2={"Xbox Series X & Game Pass Ultimate: 3 Months Membership [Digital Code]"}
+        descripcion2={"XBOX SERIES X: The fastest, most powerful Xbox ever. Explore rich new worlds with 12 teraflops of raw graphic processing power, DirectX ray tracing, a custom SSD, and 4K gaming.*"}
+        precio2={530}
+        url2={"https://amzn.to/3QwsjXO"}
       />
       <ReviewOfert product={products} />
       <CategorieOfert />

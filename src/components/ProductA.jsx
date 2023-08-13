@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from '@styles/ProductA.module.scss';
 
 
-const ProductoA = ({ imagen, titulo, descripcion, url }) => {
+const ProductoA = ({ imagen, titulo, descripcion, precio, url }) => {
   return (
     <div className={styles.container}>
       <Link href={url}>
@@ -18,7 +18,7 @@ const ProductoA = ({ imagen, titulo, descripcion, url }) => {
       </Link>
       <h3 className={styles.titulo}>{titulo}</h3>
       <p className={styles.descripcion}>{descripcion}</p>
-      <p className={styles.precio}>Precio: $43</p>
+      <p className={styles.precio}>Precio: {precio}</p>
       <p className={styles.ahorro}>Ahorra: 20%</p>
     </div>
   );
