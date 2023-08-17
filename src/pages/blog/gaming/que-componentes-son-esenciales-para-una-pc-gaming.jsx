@@ -52,7 +52,7 @@ export default function SmartPhones() {
         precio2={110}
         url2={"https://amzn.to/3Yuitrn"}
       />
-      <ReviewOfert product={products} />
+      <ReviewOfert product={products} article={"Gaming"} />
       <CategorieOfert />
     </div>
   );

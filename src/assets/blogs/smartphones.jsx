@@ -1,7 +1,7 @@
 import phonePlegable from "@images/phone-plegable.jpg";
 import smartPhones2 from "@images/smartPhones2.jpg";
 
-const Productsb =  [
+const ProductsS =  [
   {
     "id": "B08GGGBKRQ",
     "titulo": "Los Mejores Teléfonos Plegables que Cambiarán tu Experiencia Móvil",
@@ -22,4 +22,4 @@ const Productsb =  [
   }
 ];
 
-export default Productsb;
+export default ProductsS;

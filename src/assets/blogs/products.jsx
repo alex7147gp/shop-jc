@@ -8,6 +8,10 @@ import pcGaming from "@images/pc-gaming.jpg";
 import tablets1 from "@images/tablets1.jpg";
 import laptops from "@images/laptops.jpg";
 import smartPhones2 from "@images/smartPhones2.jpg";
+import audio1 from "@images/audio-bluethooth.jpg";
+import laptops1 from "@images/laptops1.jpg";
+
+import tablets2 from "@images/tablets2.jpg";
 
 const Productsb =  [
   {
@@ -81,6 +85,33 @@ const Productsb =  [
     "categoria": "smartphones",
     "fecha": "actualizado agosto 9, 2023",
     "url": "blog/smartPhones/los-mejores-telefonos-plegables"
+  },
+  {
+    "id": "B08GGGBKRQ",
+    "titulo": "Auriculares Bluetooth: Los Mejores para tu Smartphone",
+    "descripcion": "En el mundo moderno, los auriculares Bluetooth se han convertido en un accesorio esencial para complementar la experiencia de uso de tu smartphone. La comodidad, la libertad de movimiento y la calidad de sonido que ofrecen los auriculares Bluetooth los convierten en una elección popular para usuarios de todas las edades. En este artículo, exploraremos una variedad de opciones y marcas para ayudarte a elegir los mejores auriculares Bluetooth para tu smartphone.",
+    "imagen": audio1,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 16, 2023",
+    "url": "blog/accessories/lod-mejores-auriculares-bluethooth-para-tu-smartphone"
+  },
+    {
+    "id": "B00GGGBKRQ",
+    "titulo": "Computadoras de Escritorio vs Portátiles: Cuál Elegir",
+    "descripcion": "En el mundo actual, la elección entre una computadora de escritorio y una laptop es una decisión importante que depende de tus necesidades, estilo de vida y preferencias. Ambos dispositivos tienen sus propias ventajas y desventajas, y en este artículo exploraremos en detalle las características de cada uno para ayudarte a tomar la mejor decisión según tus requerimientos.",
+    "imagen": laptops1,
+    "categoria": "computers",
+    "fecha": "actualizado agosto 17, 2023",
+    "url": "blog/computers/computadora-de-escritorio-versus-laptop"
+  },
+    {
+    "id": "B01GGGBKRQ",
+    "titulo": "Tablets para Dibujo: Creatividad al Alcance de tu Mano",
+    "descripcion": "En el mundo de la creatividad y el diseño, las tablets para dibujo se han convertido en una herramienta esencial para artistas digitales, ilustradores y diseñadores gráficos. Estos dispositivos ofrecen una forma intuitiva y versátil de expresar tus ideas y crear obras de arte de manera digital. En este artículo, exploraremos las características, ventajas y consideraciones clave al elegir una tablet para dibujo que permita desatar tu creatividad al máximo.",
+    "imagen": tablets2,
+    "categoria": "computers",
+    "fecha": "actualizado agosto 17, 2023",
+    "url": "blog/computers/las-mejores-tablets-para-dibujo"
   }
 ];
 

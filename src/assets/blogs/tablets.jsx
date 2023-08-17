@@ -1,7 +1,10 @@
 import tablets from "@images/tablets.jpg";
 import tablets1 from "@images/tablets1.jpg";
 
-const Productsb =  [
+import tablets2 from "@images/tablets2.jpg";
+
+
+const ProductsT =  [
   {
     "id": "B08GGGBKRQ",
     "titulo": "¿Las Tablets Pueden Remplazar a las Computadoras para Uso Profesional?",
@@ -19,7 +22,16 @@ const Productsb =  [
     "categoria": "tablets",
     "fecha": "actualizado agosto 11, 2023",
     "url": "blog/tablets/factores-claves-aconsiderar-al-comprar-una-tablet"
+  },
+  {
+    "id": "B01GGGBKRQ",
+    "titulo": "Tablets para Dibujo: Creatividad al Alcance de tu Mano",
+    "descripcion": "En el mundo de la creatividad y el diseño, las tablets para dibujo se han convertido en una herramienta esencial para artistas digitales, ilustradores y diseñadores gráficos. Estos dispositivos ofrecen una forma intuitiva y versátil de expresar tus ideas y crear obras de arte de manera digital. En este artículo, exploraremos las características, ventajas y consideraciones clave al elegir una tablet para dibujo que permita desatar tu creatividad al máximo.",
+    "imagen": tablets2,
+    "categoria": "computers",
+    "fecha": "actualizado agosto 17, 2023",
+    "url": "blog/computers/las-mejores-tablets-para-dibujo"
   }
 ];
 
-export default Productsb;
+export default ProductsT;

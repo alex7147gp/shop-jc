@@ -1,7 +1,7 @@
 import laptops from "@images/laptops.jpg";
+import laptops1 from "@images/laptops1.jpg";
 
-
-const Products =  [
+const ProductsC =  [
   {
     "id": "B08GGGBKRQ",
     "titulo": "¿Cuál es la Mejor Laptop para Trabajo y Estudio?",
@@ -10,7 +10,16 @@ const Products =  [
     "categoria": "computers",
     "fecha": "actualizado agosto 12, 2023",
     "url": "blog/computers/cual-es-la-mejor-laptop-para-el-trabajo-y-estudio"
-  }
+  },
+  {
+    "id": "B00GGGBKRQ",
+    "titulo": "Computadoras de Escritorio vs Portátiles: Cuál Elegir",
+    "descripcion": "En el mundo actual, la elección entre una computadora de escritorio y una laptop es una decisión importante que depende de tus necesidades, estilo de vida y preferencias. Ambos dispositivos tienen sus propias ventajas y desventajas, y en este artículo exploraremos en detalle las características de cada uno para ayudarte a tomar la mejor decisión según tus requerimientos.",
+    "imagen": laptops1,
+    "categoria": "computers",
+    "fecha": "actualizado agosto 17, 2023",
+    "url": "blog/computers/computadora-de-escritorio-versus-laptop-cual-es-mejor"
+  },
 ];
 
-export default Products;
+export default ProductsC;

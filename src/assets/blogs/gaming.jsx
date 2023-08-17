@@ -4,7 +4,7 @@ import consola from "@images/consola.jpg";
 import pcGaming from "@images/pc-gaming.jpg";
 
 
-const Products =  [
+const ProductsG =  [
   {
     "id": "B08GGGBKRQ",
     "titulo": "Cómo Elegir la Computadora Perfecta para Gaming",
@@ -34,4 +34,4 @@ const Products =  [
   }
 ];
 
-export default Products;
+export default ProductsG;

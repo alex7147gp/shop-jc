@@ -1,10 +1,15 @@
 import HeadS from "@components/Head";
-import Page from "../../templates/Page";
+import HeadPage from "@components/HeadPage";
 
 import ReviewOfert from "@components/ReviewOfert";
 import CategorieOfert from "@components/CategorieOfert";
 
-import products from '@blogs/products';
+import productsC from '@blogs/computers';
+import productsG from '@blogs/gaming';
+import productsS from '@blogs/smartphones';
+import productsT from '@blogs/tablets';
+import productsA from '@blogs/accessories';
+
 
 export default function Reviews() {
   return (
@@ -16,11 +21,15 @@ export default function Reviews() {
         title={"¡Descubre el Futuro de la Tecnología con Nuestras Reseñas Tecnológicas!"}
         description={"Descubre las mejores reseñas tecnológicas en línea. Encuentra análisis detallados de productos y gadgets para tomar decisiones informadas en tus compras tecnológicas."}
       />
-      <Page 
+      <HeadPage
        title={"Reseñas Tecnológicas - Encuentra los Mejores Productos"}
        description={"¿Interesado en la última tecnología? Sumérgete en el mundo de la innovación con nuestras reseñas tecnológicas. Desde smartphones hasta dispositivos inteligentes y wearables, te ofrecemos un análisis detallado de los productos más novedosos. Toma decisiones informadas y mantente a la vanguardia tecnológica. ¡Prepárate para un futuro lleno de avances tecnológicos emocionantes!"}
       />
-      <ReviewOfert product={products} />
+      <ReviewOfert product={productsS} article={"smartPhones"} />
+      <ReviewOfert product={productsG} article={"Gaming"} />
+      <ReviewOfert product={productsC} article={"Computers"} />
+      <ReviewOfert product={productsT} article={"Tablets"} />
+      <ReviewOfert product={productsA} article={"Accessories"} />
       <CategorieOfert />
     </div>
   );

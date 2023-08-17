@@ -4,7 +4,7 @@ import HeadPage from "@components/HeadPage";
 import ReviewOfert from "@components/ReviewOfert";
 import CategorieOfert from "@components/CategorieOfert";
 
-import products from '@blogs/tablets';
+import productsT from '@blogs/tablets';
 
 export default function Tablets() {
   return (
@@ -20,7 +20,7 @@ export default function Tablets() {
         title={"Reseñas de Tablets - Explora las Mejores Opciones"}
         description={"Sumérgete en el universo de las tablets con nuestras reseñas detalladas. Desde las últimas innovaciones hasta las opciones clásicas, nuestra guía te llevará a través de un viaje de tecnología y funcionalidad. Ya sea para trabajo o entretenimiento, te ayudaremos a encontrar la tablet perfecta para satisfacer todas tus necesidades digitales. ¡Explora, compara y elige sabiamente!"} 
       />
-      <ReviewOfert product={products} />
+      <ReviewOfert product={productsT} article={"Tablets"} />
       <CategorieOfert />
     </div>
   );
