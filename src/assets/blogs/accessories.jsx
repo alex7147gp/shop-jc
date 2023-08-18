@@ -1,5 +1,8 @@
 import audio1 from "@images/audio-bluethooth.jpg";
 import accessories1 from "@images/accessories1.jpg";
+import accessories2 from "@images/accessories2.jpg";
+
+
 
 const ProductsA =  [
   {
@@ -19,6 +22,15 @@ const ProductsA =  [
     "categoria": "accessories",
     "fecha": "actualizado agosto 17, 2023",
     "url": "blog/accessories/los-mejores-lentes-para-smartphones"
+  },
+  {
+    "id": "B08GGGBKRQ",
+    "titulo": "Cargadores Inalámbricos para Smartphones: Carga sin Enredos",
+    "descripcion": "En el mundo actual, donde los smartphones se han convertido en una extensión esencial de nuestras vidas, la necesidad de mantener nuestros dispositivos cargados y listos para su uso es más crucial que nunca. Los cargadores inalámbricos para smartphones han revolucionado la forma en que recargamos nuestros dispositivos, eliminando los enredos de cables y proporcionando una experiencia de carga conveniente y sin complicaciones. En este artículo, exploraremos los beneficios y características de los cargadores inalámbricos, así como su importancia en la era moderna.",
+    "imagen": accessories2,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 18, 2023",
+    "url": "blog/accessories/porque-usar-cargadores-inalambricos"
   }
 ];
 

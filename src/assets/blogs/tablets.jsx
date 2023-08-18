@@ -30,7 +30,7 @@ const ProductsT =  [
     "imagen": tablets2,
     "categoria": "computers",
     "fecha": "actualizado agosto 17, 2023",
-    "url": "blog/computers/las-mejores-tablets-para-dibujo"
+    "url": "blog/tablets/las-mejores-tablets-para-dibujo"
   }
 ];
 

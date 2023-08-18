@@ -26,10 +26,10 @@ export default function Reviews() {
        description={"¿Interesado en la última tecnología? Sumérgete en el mundo de la innovación con nuestras reseñas tecnológicas. Desde smartphones hasta dispositivos inteligentes y wearables, te ofrecemos un análisis detallado de los productos más novedosos. Toma decisiones informadas y mantente a la vanguardia tecnológica. ¡Prepárate para un futuro lleno de avances tecnológicos emocionantes!"}
       />
       <ReviewOfert product={productsS} article={"smartPhones"} />
-      <ReviewOfert product={productsG} article={"Gaming"} />
-      <ReviewOfert product={productsC} article={"Computers"} />
-      <ReviewOfert product={productsT} article={"Tablets"} />
-      <ReviewOfert product={productsA} article={"Accessories"} />
+      <ReviewOfert product={productsG} article={"gaming"} />
+      <ReviewOfert product={productsC} article={"computers"} />
+      <ReviewOfert product={productsT} article={"tablets"} />
+      <ReviewOfert product={productsA} article={"accessories"} />
       <CategorieOfert />
     </div>
   );

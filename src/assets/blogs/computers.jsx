@@ -1,6 +1,9 @@
 import laptops from "@images/laptops.jpg";
 import laptops1 from "@images/laptops1.jpg";
 
+import computers1 from "@images/computers1.jpg";
+
+
 const ProductsC =  [
   {
     "id": "B08GGGBKRQ",
@@ -19,6 +22,15 @@ const ProductsC =  [
     "categoria": "computers",
     "fecha": "actualizado agosto 17, 2023",
     "url": "blog/computers/computadora-de-escritorio-versus-laptop-cual-es-mejor"
+  },
+  {
+    "id": "B01GGGBKRQ",
+    "titulo": "Cómo Mejorar el Rendimiento de tu Computadora: Guía Práctica",
+    "descripcion": "Tu computadora es una herramienta indispensable en tu vida diaria, ya sea para trabajar, estudiar, entretenerse o mantenerse conectado con el mundo. Con el tiempo, es posible que notes que su rendimiento disminuye. Las aplicaciones tardan más en abrirse, los programas se ejecutan lentamente y la multitarea se vuelve un desafío. Pero no te preocupes, hay medidas que puedes tomar para mejorar el rendimiento de tu computadora y devolverle su agilidad original. En esta guía práctica, te presentamos consejos y trucos para optimizar tu PC y hacer que funcione como nueva.",
+    "imagen": computers1,
+    "categoria": "computers",
+    "fecha": "actualizado agosto 18, 2023",
+    "url": "blog/computers/como-mejorar-el-rendimiento-de-tu-computadora"
   },
 ];
 

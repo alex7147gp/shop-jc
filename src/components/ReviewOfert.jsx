@@ -14,7 +14,9 @@ const ReviewOfert = ({ product, article = "Articles"}) => {
 	return (
     <>
      <div className={styles.container}>
-      <h3 className={styles.h1}>{article}</h3>
+      <Link href={`/blog/${article == "Articles" ? "" : article}`}>
+        <h3 className={styles.h1}>{article}</h3>
+      </Link>
       <div className={styles.articulosContainer}>
         {productsa.slice(0, 6).map((articulo) => (
           <div className={styles.articulo} key={articulo.id}>
