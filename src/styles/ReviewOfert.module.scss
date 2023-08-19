@@ -1,7 +1,7 @@
 @import 'vars';
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -23,13 +23,11 @@
 }
 
 .articulo {
-  border: 1px solid #ccc;
   padding: 10px;
-  border-radius: 8px;
 }
 
 .productImage {
-  width: 300px;
+  width: 350px;
   height: 250px;
   border-radius: 8px;
   display: flex;

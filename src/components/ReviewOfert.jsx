@@ -24,7 +24,7 @@ const ReviewOfert = ({ product, article = "Articles"}) => {
               <Image 
                 src={articulo.imagen} 
                 alt={articulo.titulo} 
-                width={300} 
+                width={350} 
                 height={250}  
               /> 
             </div>

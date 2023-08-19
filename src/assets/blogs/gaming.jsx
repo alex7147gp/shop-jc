@@ -2,7 +2,7 @@ import gaming from "@images/gaming.jpg";
 import consola from "@images/consola.jpg";
 
 import pcGaming from "@images/pc-gaming.jpg";
-
+import gaming1 from "@images/gaming1.jpg";
 
 const ProductsG =  [
   {
@@ -31,6 +31,15 @@ const ProductsG =  [
     "categoria": "gaming",
     "fecha": "actualizado agosto 11, 2023",
     "url": "blog/gaming/que-componentes-son-esenciales-para-una-pc-gaming"
+  },
+  {
+    "id": "B01GGGBKRQ",
+    "titulo": "Ratones Ergonómicos para Gaming: Precisión y Comodidad",
+    "descripcion": "Los ratones ergonómicos para gaming han revolucionado la forma en que los jugadores interactúan con sus computadoras mientras compiten en sus títulos favoritos. Estos dispositivos no solo ofrecen precisión y velocidad en los movimientos, sino que también priorizan la comodidad del usuario durante largas sesiones de juego. En este artículo, exploraremos las características y ventajas de los ratones ergonómicos para gaming y cómo han influido en la experiencia de juego de los entusiastas.",
+    "imagen": gaming1,
+    "categoria": "gaming",
+    "fecha": "actualizado agosto 19, 2023",
+    "url": "blog/gaming/los-mejores-ratones-ergonomicos-para-gaming"
   }
 ];
 

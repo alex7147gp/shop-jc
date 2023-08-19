@@ -2,7 +2,7 @@ import laptops from "@images/laptops.jpg";
 import laptops1 from "@images/laptops1.jpg";
 
 import computers1 from "@images/computers1.jpg";
-
+import computers2 from "@images/computers2.jpg";
 
 const ProductsC =  [
   {
@@ -31,6 +31,15 @@ const ProductsC =  [
     "categoria": "computers",
     "fecha": "actualizado agosto 18, 2023",
     "url": "blog/computers/como-mejorar-el-rendimiento-de-tu-computadora"
+  },
+    {
+    "id": "B01GGGBKRQ",
+    "titulo": "Teclados Mecánicos para Computadoras: Eleva tu Experiencia",
+    "descripcion": "Los teclados mecánicos han sido durante mucho tiempo la elección favorita de los entusiastas de la informática y los gamers. Estos dispositivos ofrecen una experiencia de escritura y juego única gracias a su construcción y tecnología especializada. En este artículo, exploraremos las ventajas y características de los teclados mecánicos para computadoras y cómo pueden elevar tu experiencia de uso a niveles insospechados.",
+    "imagen": computers2,
+    "categoria": "computers",
+    "fecha": "actualizado agosto 19, 2023",
+    "url": "blog/computers/los-mejores-teclados-mecanicos-para-tu-computadora"
   },
 ];
 
