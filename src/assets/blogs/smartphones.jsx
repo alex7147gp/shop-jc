@@ -1,6 +1,9 @@
 import phonePlegable from "@images/phone-plegable.jpg";
 import smartPhones2 from "@images/smartPhones2.jpg";
 
+import smartPhones3 from "@images/smartPhones3.jpg";
+import smartPhones4 from "@images/smartPhones4.jpg";
+
 const ProductsS =  [
   {
     "id": "B08GGGBKRQ",
@@ -19,6 +22,24 @@ const ProductsS =  [
     "categoria": "smartphones",
     "fecha": "actualizado agosto 9, 2023",
     "url": "blog/smartPhones/como-puedo-mejorar-la-duracion-de-bateria-de-mi-smartphone"
+  },
+  {
+    "id": "B10GGGBKRQ",
+    "titulo": "Los 5 Mejores Teléfonos Android: Análisis Detallado",
+    "descripcion": "En un mundo tecnológico en constante evolución, los teléfonos Android se destacan como líderes en innovación y funcionalidad. Con una amplia gama de opciones disponibles, puede resultar abrumador elegir el teléfono adecuado que se adapte a tus necesidades. En este artículo, realizaremos un análisis detallado de los 5 mejores teléfonos Android disponibles en el mercado actual.",
+    "imagen": smartPhones4,
+    "categoria": "smartphones",
+    "fecha": "actualizado agosto 20, 2023",
+    "url": "blog/smartPhones/los-5-mejores-telefonos-android-del-mercado"
+  },
+  {
+    "id": "B01GGGBKRQ",
+    "titulo": "Cómo Elegir el Teléfono Android Perfecto: Factores Clave",
+    "descripcion": "En el vasto mundo de los teléfonos Android, la elección del dispositivo perfecto puede ser un desafío abrumador. Con una amplia gama de marcas, modelos y características, es importante considerar varios factores clave antes de tomar una decisión. En este artículo, te guiaré a través de los aspectos más importantes que debes tener en cuenta al elegir el teléfono Android perfecto para ti.",
+    "imagen": smartPhones3,
+    "categoria": "smartphones",
+    "fecha": "actualizado agosto 20, 2023",
+    "url": "blog/smartPhones/como-elegir-el-telefono-perfecto"
   }
 ];
 
