@@ -20,7 +20,7 @@ export default function SmartPhones() {
         title={"Reseñas de Computadoras - Encuentra las Mejores"}
         description={"Adéntrate en el mundo de la tecnología con nuestras reseñas de computadoras. Descubre análisis exhaustivos, comparativas y opiniones genuinas que te ayudarán a elegir la computadora perfecta para tus necesidades. Desde rendimiento hasta diseño, estamos aquí para guiarte en tu elección tecnológica. ¡Prepárate para tomar decisiones informadas y encontrar la computadora de tus sueños!"} 
       />
-      <ReviewOfert product={productsC} article={"Ccomputers"} />
+      <ReviewOfert product={productsC} article={"computers"} />
       <CategorieOfert />
     </div>
   );

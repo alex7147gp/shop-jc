@@ -1,12 +1,13 @@
+import Link from "next/link";
 import styles from "@styles/BuyButton.module.scss";
 
 
-const BuyButton = () => {
+const BuyButton = ({ url }) => {
   return (
     <div className={styles.buyButton}>
-      <a className={styles.a} href="url_de_la_pagina_de_compra" target="_blank" rel="noopener noreferrer">
+      <Link className={styles.a} href={url} target="_blank" rel="noopener noreferrer">
         <button className={styles.button} >Comprar ahora</button>
-      </a>
+      </Link>
     </div>
   );
 };

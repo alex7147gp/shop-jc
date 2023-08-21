@@ -2,7 +2,7 @@ import tablets from "@images/tablets.jpg";
 import tablets1 from "@images/tablets1.jpg";
 
 import tablets2 from "@images/tablets2.jpg";
-
+import tablets3 from "@images/tablets3.jpg";
 
 const ProductsT =  [
   {
@@ -24,13 +24,22 @@ const ProductsT =  [
     "url": "blog/tablets/factores-claves-aconsiderar-al-comprar-una-tablet"
   },
   {
-    "id": "B01GGGBKRQ",
+    "id": "B10GGGBKRQ",
     "titulo": "Tablets para Dibujo: Creatividad al Alcance de tu Mano",
     "descripcion": "En el mundo de la creatividad y el diseño, las tablets para dibujo se han convertido en una herramienta esencial para artistas digitales, ilustradores y diseñadores gráficos. Estos dispositivos ofrecen una forma intuitiva y versátil de expresar tus ideas y crear obras de arte de manera digital. En este artículo, exploraremos las características, ventajas y consideraciones clave al elegir una tablet para dibujo que permita desatar tu creatividad al máximo.",
     "imagen": tablets2,
-    "categoria": "computers",
+    "categoria": "tablets",
     "fecha": "actualizado agosto 17, 2023",
     "url": "blog/tablets/las-mejores-tablets-para-dibujo"
+  },
+  {
+    "id": "B01GGGBKRQ",
+    "titulo": "Tablets para Lectura: Acceso a Bibliotecas Virtuales",
+    "descripcion": "En la era digital actual, las tablets se han convertido en una herramienta esencial para los amantes de la lectura. Gracias a su portabilidad y versatilidad, ofrecen acceso a una amplia gama de libros y contenidos en línea. En este artículo, exploraremos las mejores tablets diseñadas específicamente para la lectura y cómo pueden brindarte acceso a bibliotecas virtuales en tus manos.",
+    "imagen": tablets3,
+    "categoria": "tablets",
+    "fecha": "actualizado agosto 21, 2023",
+    "url": "blog/tablets/las-mejores-tablets-para-lectura"
   }
 ];
 

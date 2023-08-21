@@ -1,11 +1,11 @@
 import styles from "@styles/ReviewHeader.module.scss";
 
 
-const ReviewHeader = () => {
+const ReviewHeader = ({ titulo, description }) => {
   
   return (
     <div className={styles.reviewHeader}>
-      <h1 className={styles.h1}>titulo</h1>
+      <h1 className={styles.h1}>{titulo}</h1>
       <div className={styles.rating}>
         {/* Mostrar puntuación o calificación aquí */}
         <span className={styles.span} >4.5</span>
@@ -13,8 +13,7 @@ const ReviewHeader = () => {
         <span className={styles.span} >⭐️⭐️⭐️⭐️⭐️</span>
       </div>
       <p className={styles.introduction}>
-        Este es un review sobre el mejor controlador de apertura de garaje inteligente.
-        Aquí encontrarás detalles sobre sus características y rendimiento.
+        {description}
       </p>
     </div>
   );

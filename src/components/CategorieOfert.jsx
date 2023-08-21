@@ -25,7 +25,7 @@ const CategorieOfert = ({ categorie }) => {
                     height={200}  
 			            />
                   <div className={styles.Info}>
-                    <Link href={`/${item.url}`}>
+                    <Link href={`/${item.url}`} target="_blank">
                       <button className={styles.Button}>See more</button>      
                     </Link>
                   </div>
