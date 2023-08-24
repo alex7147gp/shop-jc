@@ -4,6 +4,9 @@ import smartPhones2 from "@images/smartPhones2.jpg";
 import smartPhones3 from "@images/smartPhones3.jpg";
 import smartPhones4 from "@images/smartPhones4.jpg";
 
+import smartPhones5 from "@images/smartPhones5.jpg";
+import smartPhones6 from "@images/smartPhones6.jpg";
+
 const ProductsS =  [
   {
     "id": "B08GGGBKRQ",
@@ -24,6 +27,15 @@ const ProductsS =  [
     "url": "blog/smartPhones/como-puedo-mejorar-la-duracion-de-bateria-de-mi-smartphone"
   },
   {
+    "id": "B02GGGBKRQ",
+    "titulo": "Cómo Elegir el Teléfono Android Perfecto: Factores Clave",
+    "descripcion": "En el vasto mundo de los teléfonos Android, la elección del dispositivo perfecto puede ser un desafío abrumador. Con una amplia gama de marcas, modelos y características, es importante considerar varios factores clave antes de tomar una decisión. En este artículo, te guiaré a través de los aspectos más importantes que debes tener en cuenta al elegir el teléfono Android perfecto para ti.",
+    "imagen": smartPhones3,
+    "categoria": "smartphones",
+    "fecha": "actualizado agosto 10, 2023",
+    "url": "blog/smartPhones/como-elegir-el-telefono-perfecto"
+  },
+  {
     "id": "B10GGGBKRQ",
     "titulo": "Los 5 Mejores Teléfonos Android: Análisis Detallado",
     "descripcion": "En un mundo tecnológico en constante evolución, los teléfonos Android se destacan como líderes en innovación y funcionalidad. Con una amplia gama de opciones disponibles, puede resultar abrumador elegir el teléfono adecuado que se adapte a tus necesidades. En este artículo, realizaremos un análisis detallado de los 5 mejores teléfonos Android disponibles en el mercado actual.",
@@ -33,13 +45,22 @@ const ProductsS =  [
     "url": "blog/smartPhones/los-5-mejores-telefonos-android-del-mercado"
   },
   {
-    "id": "B01GGGBKRQ",
-    "titulo": "Cómo Elegir el Teléfono Android Perfecto: Factores Clave",
-    "descripcion": "En el vasto mundo de los teléfonos Android, la elección del dispositivo perfecto puede ser un desafío abrumador. Con una amplia gama de marcas, modelos y características, es importante considerar varios factores clave antes de tomar una decisión. En este artículo, te guiaré a través de los aspectos más importantes que debes tener en cuenta al elegir el teléfono Android perfecto para ti.",
-    "imagen": smartPhones3,
+    "id": "B20GGGBKRQ",
+    "titulo": "¿Cuál es el mejor teléfono Android en cuanto a duración de batería?",
+    "descripcion": "En el mundo actual, donde la tecnología móvil desempeña un papel crucial en nuestra vida diaria, la duración de la batería se ha convertido en uno de los factores más importantes al elegir un teléfono Android. A medida que los dispositivos móviles continúan mejorando en términos de rendimiento y funciones, también lo hacen en términos de consumo de energía. En este artículo, exploraremos los teléfonos Android que se destacan por su excepcional duración de batería y cómo pueden brindarte una experiencia móvil sin preocupaciones.",
+    "imagen": smartPhones5,
     "categoria": "smartphones",
-    "fecha": "actualizado agosto 20, 2023",
-    "url": "blog/smartPhones/como-elegir-el-telefono-perfecto"
+    "fecha": "actualizado agosto 22, 2023",
+    "url": "blog/smartPhones/mejores-telefonos-en-cuanto-a-bateria"
+  },
+  {
+    "id": "B02GGGBKRQ",
+    "titulo": "¿Qué modelo de teléfono Android es mejor para fotografía?",
+    "descripcion": "En la era actual de la fotografía móvil, donde capturar momentos especiales se ha vuelto más accesible que nunca, la elección del teléfono adecuado puede marcar la diferencia en la calidad de tus fotos. Los fabricantes de teléfonos Android han puesto un énfasis significativo en mejorar las capacidades fotográficas de sus dispositivos, lo que ha llevado a una amplia gama de modelos que se destacan en este aspecto. En este artículo, exploraremos algunos de los modelos de teléfonos Android que ofrecen una experiencia fotográfica excepcional y cómo pueden elevar tu creatividad.",
+    "imagen": smartPhones6,
+    "categoria": "smartphones",
+    "fecha": "actualizado agosto 22, 2023",
+    "url": "blog/smartPhones/mejores-telefonos-para-fotografias"
   }
 ];
 

@@ -4,6 +4,8 @@ import laptops1 from "@images/laptops1.jpg";
 import computers1 from "@images/computers1.jpg";
 import computers2 from "@images/computers2.jpg";
 
+import computers3 from "@images/computers3.jpg";
+
 const ProductsC =  [
   {
     "id": "B08GGGBKRQ",
@@ -32,7 +34,7 @@ const ProductsC =  [
     "fecha": "actualizado agosto 18, 2023",
     "url": "blog/computers/como-mejorar-el-rendimiento-de-tu-computadora"
   },
-    {
+  {
     "id": "B01GGGBKRQ",
     "titulo": "Teclados Mecánicos para Computadoras: Eleva tu Experiencia",
     "descripcion": "Los teclados mecánicos han sido durante mucho tiempo la elección favorita de los entusiastas de la informática y los gamers. Estos dispositivos ofrecen una experiencia de escritura y juego única gracias a su construcción y tecnología especializada. En este artículo, exploraremos las ventajas y características de los teclados mecánicos para computadoras y cómo pueden elevar tu experiencia de uso a niveles insospechados.",
@@ -41,6 +43,15 @@ const ProductsC =  [
     "fecha": "actualizado agosto 19, 2023",
     "url": "blog/computers/los-mejores-teclados-mecanicos-para-tu-computadora"
   },
+  {
+    "id": "B01GGGBKRQ",
+    "titulo": "MacBook vs Windows Laptop: Elige la Mejor laptop",
+    "descripcion": "La eterna comparación entre MacBook y laptops con Windows ha sido una discusión común entre los usuarios de computadoras en todo el mundo. Ambas opciones tienen sus propias ventajas y desventajas, y elegir entre ellas puede ser una tarea desafiante. En este artículo, exploraremos en detalle las diferencias y similitudes entre MacBook y laptops con Windows, con el objetivo de ayudarte a tomar una decisión informada sobre cuál es la mejor opción para ti.",
+    "imagen": computers3,
+    "categoria": "computers",
+    "fecha": "actualizado agosto 23, 2023",
+    "url": "blog/computers/cual-es-mejor-laptop-entre-macbook-y-windows"
+  }
 ];
 
 export default ProductsC;

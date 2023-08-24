@@ -2,6 +2,7 @@ import HeadS from "@components/Head";
 import Page from "../../templates/Page";
 
 import products from "@smartphones/products";
+import smartPhones from "@images/smartPhones.jpg";
 
 export default function SmartPhones() {
   return (
@@ -12,6 +13,10 @@ export default function SmartPhones() {
       <HeadS
         title={" ¡Explora la Tecnología de Punta con Nuestra Selección de Teléfonos Inteligentes!"}
         description={" Encuentra los mejores teléfonos inteligentes en línea. Descubre una amplia selección de smartphones con características avanzadas y rendimiento excepcional."}
+        keywords={"Smartphones, Teléfonos inteligentes, Mejores smartphones, Reviews de smartphones, Comparativa de smartphones, Últimos modelos de smartphones, Novedades en smartphones, Marcas de smartphones, Comprar smartphone, Android smartphones, iOS smartphones, Smartphones económicos, Smartphones de gama alta, Características de smartphones, Cámaras de smartphones, Rendimiento de smartphones, Duración de la batería en smartphones, Accesorios para smartphones, Tecnología móvil, Tendencias en smartphones"}
+        urlC={"/smartPhones"}
+        url={"/smartPhones"}
+        img={smartPhones}
       />
       <Page 
        title={"Teléfonos Inteligentes - Encuentra los Mejores"}

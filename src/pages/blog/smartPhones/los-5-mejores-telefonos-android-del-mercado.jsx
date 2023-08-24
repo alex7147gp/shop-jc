@@ -16,6 +16,10 @@ export default function SmartPhones() {
       <HeadS
         title={"Los 5 Mejores Teléfonos Android: Análisis Detallado y Comparativa"}
         description={"Descubre los 5 mejores teléfonos Android en el mercado con nuestro análisis detallado. Compara sus características y elige el ideal para ti."}
+        keywords={"Los 5 Mejores Teléfonos Android, Análisis Detallado y Comparativa de Smartphones Android, Reseñas de los Mejores Dispositivos Móviles, Comparación de Rendimiento entre Teléfonos Android, Elegir el Mejor Smartphone Android, Consejos para Selección de Teléfonos Móviles, Tecnología en los Mejores Teléfonos Android, Experiencia de Uso con Dispositivos Destacados, Rendimiento y Características en Teléfonos Android, Selección de Smartphones para Diferentes Necesidades, Innovación y Rendimiento en Teléfonos Android"}
+        urlC={"/blog/smartPhones/los-5-mejores-telefonos-android-del-mercado"}
+        url={"/blog/smartPhones/los-5-mejores-telefonos-android-del-mercado"}
+        img={smartPhones4}
       />
       <BlogPage 
         titulo={"Los 5 Mejores Teléfonos Android: Análisis Detallado"}

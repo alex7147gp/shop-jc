@@ -16,6 +16,10 @@ export default function SmartPhones() {
       <HeadS
         title={"Cargadores Inalámbricos para Smartphones: Carga sin Enredos"}
         description={"Descubre cómo los cargadores inalámbricos para smartphones te ofrecen carga sin enredos. Explora nuestra guía completa y elige el cargador perfecto para mantener tus dispositivos siempre listos."}
+        keywords={"Cargadores Inalámbricos para Smartphones, Carga sin Enredos, Guía de Cargadores Inalámbricos, Cargar Teléfonos de Forma Inalámbrica, Mejores opciones de Cargadores Inalámbricos, Reseñas de Cargadores para Smartphones, Comparativa de Cargadores Inalámbricos, Elegir Cargadores Inalámbricos, Consejos para Cargar Sin Cables, Tecnología de Carga Inalámbrica, Experiencia de Carga sin Enchufes, Selección de Cargadores para Dispositivos Móviles, Compatibilidad con Teléfonos Inalámbricos, Carga Rápida e Inalámbrica, Práctica Carga Inalámbrica"}
+        urlC={"/blog/accessories/porque-usar-cargadores-inalambricos"}
+        url={"/blog/accessories/porque-usar-cargadores-inalambricos"}
+        img={accessories2}
       />
       <BlogPage 
         titulo={"Cargadores Inalámbricos para Smartphones: Carga sin Enredos"}

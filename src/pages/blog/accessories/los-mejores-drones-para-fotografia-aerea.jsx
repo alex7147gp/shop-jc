@@ -16,6 +16,10 @@ export default function SmartPhones() {
       <HeadS
         title={"Los Mejores Drones para Fotografía Aérea: Guía Completa"}
         description={"Descubre los mejores drones para fotografía aérea en nuestra guía Completa. Captura vistas impresionantes desde las alturas."}
+        keywords={"Los Mejores Drones para Fotografía Aérea, Guía Completa de Drones, Drones para Fotografía, Fotografía Aérea con Drones, Mejores opciones de drones, Reseñas de Drones para Fotografía, Comparativa de Drones para Fotografía Aérea, Elegir Drones para Fotografía, Consejos para Fotografía Aérea con Drones, Tecnología de Drones para Capturas Aéreas, Cámaras en Drones, Captura de Imágenes desde el Aire, Experiencia de Fotografía con Drones, Selección de Drones para Fotografía Aérea, Paisajes desde el Aire, Creatividad en Fotografía con Drones"}
+        urlC={"/blog/accessories/los-mejores-drones-para-fotografia-aerea"}
+        url={"/blog/accessories/los-mejores-drones-para-fotografia-aerea"}
+        img={accessories3}
       />
       <BlogPage 
         titulo={"¿Cuáles son los mejores drones para fotografía aérea?"}

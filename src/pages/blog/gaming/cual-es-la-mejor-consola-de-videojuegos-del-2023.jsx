@@ -16,6 +16,10 @@ export default function SmartPhones() {
       <HeadS
         title={"¿Cuál es la Mejor Consola de Videojuegos en 2023? Guía y Comparativas"}
         description={" Descubre la mejor consola de videojuegos en 2023. Lee nuestra guía y comparativas para elegir la plataforma de juego perfecta para ti."}
+        keywords={"¿Cuál es la Mejor Consola de Videojuegos en 2023?, Guía y Comparativas de Consolas de Juegos, Elección de la Mejor Consola para Jugar, Reseñas de Consolas de Videojuegos, Comparativa de Consolas en 2023, Elegir la Consola Perfecta para Juegos, Consejos para Selección de Consola de Videojuegos, Tecnología en Consolas Gaming, Experiencia de Juego en Consolas de Última Generación, Rendimiento y Gráficos en Consolas, Novedades en Consolas de Juegos, Evaluación de Opciones de Consolas, Mejores Consolas para Jugar en 2023"}
+        urlC={"/blog/gaming/cual-es-la-mejor-consola-de-videojuegos-del-2023"}
+        url={"/blog/gaming/cual-es-la-mejor-consola-de-videojuegos-del-2023"}
+        img={consola}
       />
       <BlogPage 
         titulo={"¿Cuál es la Mejor Consola de Videojuegos en 2023?"}

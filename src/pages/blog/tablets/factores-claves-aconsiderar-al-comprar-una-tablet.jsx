@@ -16,6 +16,10 @@ export default function SmartPhones() {
       <HeadS
         title={"Factores Clave a Considerar al Comprar una Tableta - Guía Completa"}
         description={"Descubre los factores clave que debes considerar al comprar una tableta. Lee nuestra guía completa para tomar decisiones informadas y elegir la tableta perfecta para ti."}
+        keywords={"Factores Clave a Considerar al Comprar una Tableta, Guía Completa para Elegir la Tableta Perfecta, Reseñas de Factores a Evaluar en la Compra de una Tablet, Comparativa de Tabletas en el Mercado, Elegir la Tableta Adecuada según tus Necesidades, Consejos para Selección de Tablet, Tecnología en Tabletas, Experiencia de Uso con Tablets, Rendimiento y Funcionalidades en Tabletas, Selección de Dispositivo según tus Preferencias, Innovación y Rendimiento en Tablets, Guía para Compra de Tablet"}
+        urlC={"/blog/tablets/factores-claves-aconsiderar-al-comprar-una-tablet"}
+        url={"/blog/tablets/factores-claves-aconsiderar-al-comprar-una-tablet"}
+        img={tablets1}
       />
       <BlogPage 
         titulo={"Factores Clave a Considerar al Comprar una Tableta"}

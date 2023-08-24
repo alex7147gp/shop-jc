@@ -16,6 +16,10 @@ export default function SmartPhones() {
       <HeadS
         title={"Tablets para Dibujo: Creatividad al Alcance de tu Mano - Guía Completa"}
         description={"Descubre cómo las tablets para dibujo te brindan creatividad al alcance de tu mano. Explora nuestra guía completa y elige la herramienta perfecta para dar vida a tus ideas artísticas."}
+        keywords={"Tablets para Dibujo, Creatividad al Alcance de tu Mano, Guía Completa de Tablets para Artistas y Diseñadores, Reseñas de Tablets para Dibujo y Diseño, Comparativa de Tablets para Creación Visual, Elegir la Tablet Adecuada para Dibujar, Consejos para Selección de Tablets para Arte, Tecnología en Tablets para Creatividad, Experiencia de Uso con Tablets para Dibujo, Rendimiento y Precisión en Tablets para Artistas, Selección de Tablet según tus Necesidades Creativas, Innovación en Tablets para Dibujantes y Diseñadores"}
+        urlC={"/blog/tablets/las-mejores-tablets-para-dibujo"}
+        url={"/blog/tablets/las-mejores-tablets-para-dibujo"}
+        img={tablets2}
       />
       <BlogPage 
         titulo={"Tablets para Dibujo: Creatividad al Alcance de tu Mano"}

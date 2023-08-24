@@ -1,8 +1,11 @@
 import audio1 from "@images/audio-bluethooth.jpg";
 import accessories1 from "@images/accessories1.jpg";
-import accessories2 from "@images/accessories2.jpg";
 
+import accessories2 from "@images/accessories2.jpg";
 import accessories3 from "@images/accessories3.jpg";
+
+import accessories4 from "@images/accessories4.jpg";
+import accessories5 from "@images/accessories5.jpg";
 
 const ProductsA =  [
   {
@@ -40,6 +43,24 @@ const ProductsA =  [
     "categoria": "accessories",
     "fecha": "actualizado agosto 21, 2023",
     "url": "blog/accessories/los-mejores-drones-para-fotografia-aerea"
+  },
+  {
+    "id": "B11GGGBKRQ",
+    "titulo": "¿Qué drone es adecuado para principiantes?",
+    "descripcion": "El mundo de los drones ha ganado popularidad en los últimos años, y cada vez más personas se sienten atraídas por la idea de volar estos dispositivos tecnológicos. Si eres un principiante en el mundo de los drones y estás buscando el modelo adecuado para empezar, esta guía te proporcionará toda la información que necesitas para tomar una decisión informada.",
+    "imagen": accessories4,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 23, 2023",
+    "url": "blog/accessories/que-drone-es-adecuado-para-principiantes"
+  },
+  {
+    "id": "B20GGGBKRQ",
+    "titulo": "Unidades de Estado Sólido (SSD): Acelera tu Computadora",
+    "descripcion": "Las Unidades de Estado Sólido (SSD) han revolucionado la forma en que experimentamos la velocidad y el rendimiento en nuestras computadoras. Estos dispositivos de almacenamiento han reemplazado gradualmente a los discos duros convencionales, ofreciendo una mejora significativa en la velocidad de acceso a los datos y en la capacidad de respuesta general de las computadoras. En este artículo, exploraremos a fondo qué son las Unidades de Estado Sólido, cómo funcionan y cómo pueden acelerar tu computadora de manera impresionante.",
+    "imagen": accessories5,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 24, 2023",
+    "url": "blog/accessories/unidades-de-estado-solido-acelera-tu-computadora"
   }
 ];
 

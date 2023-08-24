@@ -16,6 +16,10 @@ export default function SmartPhones() {
       <HeadS
         title={"¿Cuál es la Mejor Laptop para Trabajo y Estudio? Guía y Recomendaciones"}
         description={" Descubre la mejor laptop para trabajo y estudio. Lee nuestra guía y recomendaciones para tomar decisiones informadas y maximizar tu productividad."}
+        keywords={"¿Cuál es la Mejor Laptop para Trabajo y Estudio?, Guía y Recomendaciones de Laptops para Labor y Educación, Elegir Laptop para Tareas de Trabajo y Estudio, Mejores Opciones de Portátiles para Productividad, Reseñas de Laptops para Trabajo, Comparativa de Laptops para Estudio, Cómo Seleccionar la Laptop Ideal, Tecnología para Rendimiento en Tareas de Trabajo, Experiencia de Uso en Tareas Profesionales y Estudiantiles, Rendimiento y Durabilidad en Laptops para Productividad, Consejos para Elegir Laptop para Trabajo y Estudio, Recomendaciones de Laptops para Tareas Laborales y Educativas"}
+        urlC={"/blog/computers/cual-es-la-mejor-laptop-para-el-trabajo-y-estudio"}
+        url={"/blog/computers/cual-es-la-mejor-laptop-para-el-trabajo-y-estudio"}
+        img={laptops}
       />
       <BlogPage 
         titulo={"¿Cuál es la Mejor Laptop para Trabajo y Estudio?"}

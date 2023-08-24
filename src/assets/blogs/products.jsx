@@ -8,10 +8,17 @@ import pcGaming from "@images/pc-gaming.jpg";
 import tablets1 from "@images/tablets1.jpg";
 import laptops from "@images/laptops.jpg";
 import smartPhones2 from "@images/smartPhones2.jpg";
+import smartPhones3 from "@images/smartPhones3.jpg";
 import audio1 from "@images/audio-bluethooth.jpg";
-import laptops1 from "@images/laptops1.jpg";
 
+import laptops1 from "@images/laptops1.jpg";
 import tablets2 from "@images/tablets2.jpg";
+import smartPhones5 from "@images/smartPhones5.jpg";
+import smartPhones6 from "@images/smartPhones6.jpg";
+import computers3 from "@images/computers3.jpg";
+import accessories4 from "@images/accessories4.jpg";
+import tablets4 from "@images/tablets4.jpg";
+import accessories5 from "@images/accessories5.jpg";
 
 const Productsb =  [
   {
@@ -95,7 +102,16 @@ const Productsb =  [
     "fecha": "actualizado agosto 16, 2023",
     "url": "blog/accessories/lod-mejores-auriculares-bluethooth-para-tu-smartphone"
   },
-    {
+  {
+    "id": "B02GGGBKRQ",
+    "titulo": "Cómo Elegir el Teléfono Android Perfecto: Factores Clave",
+    "descripcion": "En el vasto mundo de los teléfonos Android, la elección del dispositivo perfecto puede ser un desafío abrumador. Con una amplia gama de marcas, modelos y características, es importante considerar varios factores clave antes de tomar una decisión. En este artículo, te guiaré a través de los aspectos más importantes que debes tener en cuenta al elegir el teléfono Android perfecto para ti.",
+    "imagen": smartPhones3,
+    "categoria": "smartphones",
+    "fecha": "actualizado agosto 10, 2023",
+    "url": "blog/smartPhones/como-elegir-el-telefono-perfecto"
+  },
+  {
     "id": "B00GGGBKRQ",
     "titulo": "Computadoras de Escritorio vs Portátiles: Cuál Elegir",
     "descripcion": "En el mundo actual, la elección entre una computadora de escritorio y una laptop es una decisión importante que depende de tus necesidades, estilo de vida y preferencias. Ambos dispositivos tienen sus propias ventajas y desventajas, y en este artículo exploraremos en detalle las características de cada uno para ayudarte a tomar la mejor decisión según tus requerimientos.",
@@ -112,7 +128,62 @@ const Productsb =  [
     "categoria": "computers",
     "fecha": "actualizado agosto 17, 2023",
     "url": "blog/computers/las-mejores-tablets-para-dibujo"
+  },
+  {
+    "id": "B20GGGBKRQ",
+    "titulo": "¿Cuál es el mejor teléfono Android en cuanto a duración de batería?",
+    "descripcion": "En el mundo actual, donde la tecnología móvil desempeña un papel crucial en nuestra vida diaria, la duración de la batería se ha convertido en uno de los factores más importantes al elegir un teléfono Android. A medida que los dispositivos móviles continúan mejorando en términos de rendimiento y funciones, también lo hacen en términos de consumo de energía. En este artículo, exploraremos los teléfonos Android que se destacan por su excepcional duración de batería y cómo pueden brindarte una experiencia móvil sin preocupaciones.",
+    "imagen": smartPhones5,
+    "categoria": "smartphones",
+    "fecha": "actualizado agosto 22, 2023",
+    "url": "blog/smartPhones/mejores-telefonos-en-cuanto-a-bateria"
+  },
+  {
+    "id": "B02GGGBKRQ",
+    "titulo": "¿Qué modelo de teléfono Android es mejor para fotografía?",
+    "descripcion": "En la era actual de la fotografía móvil, donde capturar momentos especiales se ha vuelto más accesible que nunca, la elección del teléfono adecuado puede marcar la diferencia en la calidad de tus fotos. Los fabricantes de teléfonos Android han puesto un énfasis significativo en mejorar las capacidades fotográficas de sus dispositivos, lo que ha llevado a una amplia gama de modelos que se destacan en este aspecto. En este artículo, exploraremos algunos de los modelos de teléfonos Android que ofrecen una experiencia fotográfica excepcional y cómo pueden elevar tu creatividad.",
+    "imagen": smartPhones6,
+    "categoria": "smartphones",
+    "fecha": "actualizado agosto 22, 2023",
+    "url": "blog/smartPhones/mejores-telefonos-para-fotografias"
+  },
+  {
+    "id": "B01GGGBKRQ",
+    "titulo": "MacBook vs Windows Laptop: Elige la Mejor laptop",
+    "descripcion": "La eterna comparación entre MacBook y laptops con Windows ha sido una discusión común entre los usuarios de computadoras en todo el mundo. Ambas opciones tienen sus propias ventajas y desventajas, y elegir entre ellas puede ser una tarea desafiante. En este artículo, exploraremos en detalle las diferencias y similitudes entre MacBook y laptops con Windows, con el objetivo de ayudarte a tomar una decisión informada sobre cuál es la mejor opción para ti.",
+    "imagen": computers3,
+    "categoria": "computers",
+    "fecha": "actualizado agosto 23, 2023",
+    "url": "blog/computers/cual-es-mejor-laptop-entre-macbook-y-windows"
+  },
+  {
+    "id": "B01GGGBKRQ",
+    "titulo": "¿Qué drone es adecuado para principiantes?",
+    "descripcion": "El mundo de los drones ha ganado popularidad en los últimos años, y cada vez más personas se sienten atraídas por la idea de volar estos dispositivos tecnológicos. Si eres un principiante en el mundo de los drones y estás buscando el modelo adecuado para empezar, esta guía te proporcionará toda la información que necesitas para tomar una decisión informada.",
+    "imagen": accessories4,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 23, 2023",
+    "url": "blog/accessories/que-drone-es-adecuado-para-principiantes"
+  },
+  {
+    "id": "B11GGGBKRQ",
+    "titulo": "iPad vs Android Tablet: Cuál es la Mejor Opción",
+    "descripcion": "La elección entre un iPad y una Tablet Android puede ser un dilema para muchos consumidores. Ambos ofrecen características únicas y diferentes experiencias de uso. En esta comparativa, exploraremos las diferencias clave entre estos dispositivos para ayudarte a determinar cuál es la mejor opción según tus necesidades y preferencias.",
+    "imagen": tablets4,
+    "categoria": "tablets",
+    "fecha": "actualizado agosto 24, 2023",
+    "url": "blog/tablets/ipad-vs-android-cual-es-mejor"
+  },
+  {
+    "id": "B20GGGBKRQ",
+    "titulo": "Unidades de Estado Sólido (SSD): Acelera tu Computadora",
+    "descripcion": "Las Unidades de Estado Sólido (SSD) han revolucionado la forma en que experimentamos la velocidad y el rendimiento en nuestras computadoras. Estos dispositivos de almacenamiento han reemplazado gradualmente a los discos duros convencionales, ofreciendo una mejora significativa en la velocidad de acceso a los datos y en la capacidad de respuesta general de las computadoras. En este artículo, exploraremos a fondo qué son las Unidades de Estado Sólido, cómo funcionan y cómo pueden acelerar tu computadora de manera impresionante.",
+    "imagen": accessories5,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 24, 2023",
+    "url": "blog/accessories/unidades-de-estado-solido-acelera-tu-computadora"
   }
+
 ];
 
 export default Productsb;

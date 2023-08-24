@@ -16,6 +16,10 @@ export default function SmartPhones() {
       <HeadS
         title={"Cómo Elegir la Computadora Perfecta para Gaming - Guía Completa"}
         description={" Encuentra la guía completa para elegir la computadora perfecta para gaming. Aprende sobre componentes esenciales y consideraciones clave para una experiencia de juego excepcional."}
+        keywords={"Cómo Elegir la Computadora Perfecta para Gaming, Guía Completa de Elección de PC Gamer, Mejores Opciones para Gaming, Reseñas de Computadoras para Juegos, Comparativa de Equipos para Jugadores, Elegir la Mejor PC Gamer, Consejos para Selección de Computadora de Gaming, Tecnología en Computadoras para Juegos, Experiencia de Juego Óptima, Rendimiento y Gráficos en PC Gaming, Selección de Componentes para Juegos, Consejos para Armar tu PC Gamer, Mejorar Experiencia de Juego, Hardware para Jugadores, Tecnología de Gráficos en PC, Potencia y Rendimiento en Juegos"}
+        urlC={"/blog/gaming/como-elegir-la-computadora-perfecta-para-gaming"}
+        url={"/blog/gaming/como-elegir-la-computadora-perfecta-para-gaming"}
+        img={gaming}
       />
       <BlogPage 
         titulo={"Cómo Elegir la Computadora Perfecta para Gaming"}

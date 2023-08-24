@@ -5,7 +5,7 @@ import CategorieOfert from "@components/CategorieOfert";
 import ReviewOfert from "@components/ReviewOfert";
 
 import audio1 from "@images/audio-bluethooth.jpg";
-import productsd from '@blogs/products';
+import productsA from '@blogs/accessories';
 
 export default function SmartPhones() {
   return (
@@ -14,8 +14,12 @@ export default function SmartPhones() {
       margin: "0px",
       }}>
       <HeadS
-        title={"Los Mejores Auriculares Bluetooth para tu Smartphone - Guía de Compra"}
+        title={"Los Mejores Auriculares Bluetooth para tu Smartphone - Guía de Completa"}
         description={"Descubre los mejores auriculares Bluetooth para tu smartphone. Nuestra guía de compra te ayudará a elegir la opción perfecta para disfrutar de un sonido excepcional en tu dispositivo móvil."}
+        keywords={"Los Mejores Auriculares Bluetooth, Auriculares inalámbricos, Guía Completa de Auriculares Bluetooth, Auriculares para Smartphone, Mejores opciones de auriculares, Reseñas de Auriculares Bluetooth, Comparativa de Auriculares para Smartphone, Elegir Auriculares inalámbricos, Consejos para Auriculares Bluetooth, Tecnología de auriculares inalámbricos, Auriculares con calidad de sonido, Conectar auriculares a Smartphone, Compatibilidad con teléfonos móviles, Funciones de auriculares para Smartphone, Experiencia de audio inalámbrico, Selección de auriculares para tu dispositivo móvil"}
+        urlC={"/blog/accessories/los-mejores-auriculares-bluethooth-para-tu-smartphone"}
+        url={"/blog/accessories/los-mejores-auriculares-bluethooth-para-tu-smartphone"}
+        img={audio1}
       />
       <BlogPage 
         titulo={"Auriculares Bluetooth: Los Mejores para tu Smartphone"}
@@ -57,7 +61,7 @@ export default function SmartPhones() {
         precio2={40}
         url2={"https://amzn.to/3qxYR99"}
       />
-      <ReviewOfert product={productsd} article={"accessories"} />
+      <ReviewOfert product={productsA} article={"accessories"} />
       <CategorieOfert />
     </div>
   );

@@ -16,6 +16,10 @@ export default function SmartPhones() {
       <HeadS
         title={"Ratones Ergonómicos para Gaming: Precisión y Comodidad"}
         description={"Descubre cómo los ratones ergonómicos para gaming ofrecen precisión y comodidad. Explora nuestra guía completa y elige el ratón perfecto para mejorar tu experiencia de juego con mayor ergonomía y rendimiento."}
+        keywords={"Ratones Ergonómicos para Gaming, Precisión y Comodidad en Ratones, Guía de Ratones Ergonómicos para Jugadores, Mejorar Experiencia con Ratones Ergonómicos, Reseñas de Ratones para Gaming, Comparativa de Ratones Ergonómicos, Elegir el Ratón Ergonómico Adecuado, Consejos para Uso de Ratones Ergonómicos, Tecnología en Ratones para Jugadores, Experiencia de Juego Cómoda y Precisa, Diseño Ergonómico en Ratones, Selección de Ratón para Tu Estilo de Juego, Mejora de Rendimiento con Ratones Ergonómicos, Ergonomía y Precisión en Juegos"}
+        urlC={"/blog/gaming/los-mejores-ratones-ergonomicos-para-gaming"}
+        url={"/blog/gaming/los-mejores-ratones-ergonomicos-para-gaming"}
+        img={gaming1}
       />
       <BlogPage 
         titulo={"Ratones Ergonómicos para Gaming: Precisión y Comodidad"}

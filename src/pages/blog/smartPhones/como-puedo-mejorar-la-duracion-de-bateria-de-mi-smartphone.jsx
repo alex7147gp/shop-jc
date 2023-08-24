@@ -5,7 +5,7 @@ import CategorieOfert from "@components/CategorieOfert";
 import ReviewOfert from "@components/ReviewOfert";
 
 import smartPhones2 from "@images/smartPhones2.jpg";
-import productsG from '@blogs/gaming';
+import productsS from '@blogs/smartphones';
 
 export default function SmartPhones() {
   return (
@@ -16,6 +16,10 @@ export default function SmartPhones() {
       <HeadS
         title={"¿Cómo Puedo Mejorar la Duración de la Batería de mi Smartphone? Consejos Efectivos"}
         description={"Aprende cómo mejorar la duración de la batería de tu smartphone con consejos efectivos. Maximiza la autonomía de tu dispositivo y optimiza su rendimiento."}
+        keywords={"¿Cómo Puedo Mejorar la Duración de la Batería de mi Smartphone?, Consejos Efectivos para Ahorrar Batería en tu Teléfono Móvil, Guía para Extender la Vida de la Batería de tu Smartphone, Reseñas de Estrategias para Ahorro de Batería, Consejos Prácticos para Aumentar Duración de Batería, Tecnología para Optimización de Batería en Smartphones, Experiencia de Uso con Batería Duradera, Rendimiento y Consumo de Batería en Teléfonos Móviles, Consejos para Prolongar Tiempo de Uso, Mejoras en Duración de Batería, Cómo Maximizar Autonomía de Batería en tu Smartphone"}
+        urlC={"/blog/smartPhones/como-puedo-mejorar-la-duracion-de-bateria-de-mi-smartphone"}
+        url={"/blog/smartPhones/como-puedo-mejorar-la-duracion-de-bateria-de-mi-smartphone"}
+        img={smartPhones2}
       />
       <BlogPage 
         titulo={"¿Cómo Puedo Mejorar la Duración de la Batería de mi Smartphone?"}
@@ -54,7 +58,7 @@ export default function SmartPhones() {
         precio2={169}
         url2={"https://amzn.to/47tRsbC"}
       />
-      <ReviewOfert product={productsG} article={"smartPhones"} />
+      <ReviewOfert product={productsS} article={"smartPhones"} />
       <CategorieOfert />
     </div>
   );

@@ -16,6 +16,10 @@ export default function SmartPhones() {
       <HeadS
         title={"Comparación Computadoras de Escritorio vs Portátiles - ¿Cuál Elegir?"}
         description={"Descubre las diferencias entre computadoras de escritorio y portátiles. Te ayudamos a elegir la opción adecuada según tus necesidades y estilo de vida."}
+        keywords={"Comparación Computadoras de Escritorio vs Portátiles, ¿Cuál Elegir?, Guía de Elección entre PC de Escritorio y Laptops, Ventajas y Desventajas de Computadoras de Escritorio, Comparativa de Rendimiento entre PC y Portátiles, Elección de Equipo Informático, Reseñas de Computadoras de Escritorio, Comparativa de Portátiles, Cómo Decidir entre una PC de Escritorio o una Laptop, Tecnología para Elección de Equipo Informático, Experiencia de Uso con Computadoras de Escritorio y Portátiles, Rendimiento y Portabilidad, Criterios para Elegir entre PC y Laptops, Comparación de Características, Elegir Equipo Informático para tus Necesidades"}
+        urlC={"/blog/computers/computadora-de-escritorio-versus-laptop-cual-es-mejor"}
+        url={"/blog/computers/computadora-de-escritorio-versus-laptop-cual-es-mejor"}
+        img={laptops1}
       />
       <BlogPage 
         titulo={"Computadoras de Escritorio vs Portátiles: Cuál Elegir"}

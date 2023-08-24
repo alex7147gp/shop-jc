@@ -4,6 +4,8 @@ import tablets1 from "@images/tablets1.jpg";
 import tablets2 from "@images/tablets2.jpg";
 import tablets3 from "@images/tablets3.jpg";
 
+import tablets4 from "@images/tablets4.jpg";
+
 const ProductsT =  [
   {
     "id": "B08GGGBKRQ",
@@ -40,6 +42,15 @@ const ProductsT =  [
     "categoria": "tablets",
     "fecha": "actualizado agosto 21, 2023",
     "url": "blog/tablets/las-mejores-tablets-para-lectura"
+  },
+  {
+    "id": "B11GGGBKRQ",
+    "titulo": "iPad vs Android Tablet: Cuál es la Mejor Opción",
+    "descripcion": "La elección entre un iPad y una Tablet Android puede ser un dilema para muchos consumidores. Ambos ofrecen características únicas y diferentes experiencias de uso. En esta comparativa, exploraremos las diferencias clave entre estos dispositivos para ayudarte a determinar cuál es la mejor opción según tus necesidades y preferencias.",
+    "imagen": tablets4,
+    "categoria": "tablets",
+    "fecha": "actualizado agosto 24, 2023",
+    "url": "blog/tablets/ipad-vs-android-cual-es-mejor"
   }
 ];
 

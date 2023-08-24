@@ -5,6 +5,7 @@ import ReviewOfert from "@components/ReviewOfert";
 import CategorieOfert from "@components/CategorieOfert";
 
 import productsS from '@blogs/smartphones';
+import smartPhones from "@images/smartPhones.jpg";
 
 export default function SmartPhones() {
   
@@ -16,6 +17,10 @@ export default function SmartPhones() {
       <HeadS
         title={"¡Descubre la Tecnología Móvil en Detalle con Nuestras Reseñas de Smartphones!"}
         description={"Encuentra los mejores smartphones a través de nuestras reseñas detalladas. Opiniones imparciales y análisis exhaustivos para ayudarte a tomar decisiones informadas."}
+        keywords={"Artículos sobre smartphones, Análisis de teléfonos inteligentes, Reseñas de dispositivos móviles, Novedades en smartphones, Guías de compra de smartphones, Últimas tendencias en tecnología móvil, Mejores smartphones del mercado, Comparativas de modelos de smartphones, Opiniones sobre cámaras de smartphones, Novedades en accesorios para móviles, Reviews de dispositivos Android, Artículos sobre dispositivos iOS, Lo último en tecnología de pantallas para smartphones, Consejos para elegir un smartphone, Artículos sobre innovación en smartphones, Cobertura de novedades en dispositivos móviles, Guías de uso de smartphones, Artículos sobre actualizaciones de software para smartphones, Novedades en baterías y carga rápida, Análisis detallados de características de smartphones"}
+        urlC={"/blog/smartPhones"}
+        url={"/blog/smartPhones"}
+        img={smartPhones}
       />
       <HeadPage 
         title={"Reseñas de Smartphones - Encuentra los Mejores"}

@@ -13,9 +13,13 @@ export default function SmartPhones() {
       padding: "0px",
       margin: "0px",
       }}>
-      <HeadS
-        title={" Cómo Elegir el Teléfono Android Perfecto: Factores Clave a Considerar"}
+      <HeadS 
+        title={"Cómo Elegir el Teléfono Android Perfecto: Factores Clave a Considerar"}
         description={"Descubre los factores clave que debes considerar al elegir el teléfono Android perfecto para ti. Compara características y opciones para tomar la mejor decisión."}
+        keywords={"Cómo Elegir el Teléfono Android Perfecto, Factores Clave a Considerar en la Elección de un Smartphone Android, Guía para Seleccionar el Mejor Teléfono Móvil, Reseñas de Teléfonos Android, Comparativa de Smartphones Android, Elegir el Teléfono Adecuado para tus Necesidades, Consejos para Selección de Teléfonos Android, Tecnología en Smartphones Android, Experiencia de Uso con Teléfonos Móviles, Rendimiento y Características en Teléfonos Android, Selección de Dispositivo según tus Preferencias, Mejorar Experiencia Móvil con un Teléfono Android Adecuado, Innovación y Rendimiento en Smartphones Android"}
+        urlC={"/blog/smartPhones/como-elegir-el-telefono-perfecto"}
+        url={"/blog/smartPhones/como-elegir-el-telefono-perfecto"}
+        img={smartPhones3}
       />
       <BlogPage 
         titulo={"Cómo Elegir el Teléfono Android Perfecto: Factores Clave"}

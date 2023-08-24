@@ -16,6 +16,10 @@ export default function SmartPhones() {
       <HeadS
         title={"Lentes para Smartphones: Eleva tus Fotografías - Guía Completa"}
         description={"Descubre cómo los lentes para smartphones pueden elevar tus fotografías. Explora nuestra guía completa y aprende cómo mejorar tu experiencia fotográfica con accesorios profesionales para tu dispositivo móvil."}
+        keywords={"Lentes para Smartphones, Guía Completa de Lentes para Móviles, Mejores Lentes para Fotografía Móvil, Fotografía con Lentes para Smartphones, Elección de Lentes para tu Teléfono, Reseñas de Lentes para Fotografía de Móvil, Comparativa de Lentes para Smartphones, Mejorar Fotografías con Lentes para Teléfonos, Consejos para Fotografía Móvil con Lentes, Ampliar las Posibilidades Fotográficas, Creatividad en Fotografía con Lentes, Captura de Imágenes Mejorada, Experiencia de Fotografía con Lentes para Smartphones, Fotografía Profesional con tu Teléfono, Compatibilidad de Lentes con Móviles"}
+        urlC={"/blog/accessories/los-mejores-lentes-para-smartphones"}
+        url={"/blog/accessories/los-mejores-lentes-para-smartphones"}
+        img={accessories1}
       />
       <BlogPage 
         titulo={"Lentes para Smartphones: Eleva tus Fotografías"}

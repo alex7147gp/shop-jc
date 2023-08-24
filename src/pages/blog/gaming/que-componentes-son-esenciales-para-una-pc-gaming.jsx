@@ -16,6 +16,10 @@ export default function SmartPhones() {
       <HeadS
         title={"¿Qué Componentes son Esenciales para una PC de Gaming? Guía Completa"}
         description={"Descubre los componentes esenciales para una PC de gaming. Lee nuestra guía completa y construye la máquina perfecta para una experiencia de juego increíble."}
+        keywords={"¿Qué Componentes son Esenciales para una PC de Gaming?, Guía Completa de Componentes para PC Gamer, Mejores Opciones de Hardware para Juegos, Reseñas de Componentes para Computadoras de Gaming, Comparativa de Hardware para PC Gamer, Elegir los Componentes Adecuados para tu PC de Gaming, Consejos para Selección de Hardware de Gaming, Tecnología en Componentes para Juegos, Experiencia de Juego Óptima en PC Gamer, Rendimiento y Gráficos en Componentes Gaming, Selección de Piezas para Armar tu PC Gamer, Potencia y Rendimiento en Juegos, Hardware de Alto Rendimiento para Juegos"}
+        urlC={"/blog/gaming/que-componentes-son-esenciales-para-una-pc-gaming"}
+        url={"/blog/gaming/que-componentes-son-esenciales-para-una-pc-gaming"}
+        img={pcGaming}
       />
       <BlogPage 
         titulo={"¿Qué Componentes son Esenciales para una PC de Gaming?"}

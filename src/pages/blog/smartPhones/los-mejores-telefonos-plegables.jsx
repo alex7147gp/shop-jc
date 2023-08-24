@@ -16,8 +16,12 @@ export default function SmartPhones() {
       <HeadS
         title={"Los Mejores Teléfonos Plegables que Cambiarán tu Experiencia Móvil"}
         description={"Descubre los mejores teléfonos plegables que transformarán tu experiencia móvil. Explora diseños innovadores y características avanzadas para una nueva era de comunicación."}
+        keywords={"Los Mejores Teléfonos Plegables, Cambio en Experiencia Móvil con Teléfonos Plegables, Guía de los Teléfonos Plegables más Destacados, Reseñas de Dispositivos Móviles Plegables, Tecnología en Teléfonos de Pantalla Plegable, Comparativa de Teléfonos Plegables, Elegir el Mejor Smartphone Plegable, Innovación y Cambio en Móviles con Pantalla Flexible, Experiencia de Uso con Teléfonos Plegables, Rendimiento y Características en Dispositivos Móviles Plegables, Selección de Teléfonos para una Experiencia Diferente"}
+        urlC={"/blog/smartPhones/los-mejores-telefonos-plegables"}
+        url={"/blog/smartPhones/los-mejores-telefonos-plegables"}
+        img={phonePlegable}
       />
-      <BlogPage 
+      <BlogPage
         titulo={"Los Mejores Teléfonos Plegables que Cambiarán tu Experiencia Móvil"}
         intro={"En el dinámico mundo de la tecnología móvil, la innovación continúa sorprendiéndonos, y los teléfonos plegables son un claro ejemplo de ello. Estos dispositivos revolucionarios han llegado para cambiar la forma en que interactuamos con nuestros smartphones. En este artículo, exploraremos los mejores teléfonos plegables disponibles en el mercado que están destinados a transformar por completo tu experiencia móvil."}
         img={phonePlegable}

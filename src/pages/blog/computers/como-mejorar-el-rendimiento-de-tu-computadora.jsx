@@ -16,6 +16,10 @@ export default function SmartPhones() {
       <HeadS
         title={"Cómo Mejorar el Rendimiento de tu Computadora: Guía Práctica"}
         description={"Descubre cómo mejorar el rendimiento de tu computadora con nuestra guía práctica. Aprende consejos y técnicas efectivas para optimizar el funcionamiento de tu dispositivo y potenciar su velocidad y eficiencia."}
+        keywords={"Cómo Mejorar el Rendimiento de tu Computadora, Guía Práctica de Optimización, Mejorar el Rendimiento de tu PC, Optimizar Computadora para Mayor Velocidad, Consejos para Acelerar tu PC, Reseñas de Mejoras de Rendimiento, Comparativa de Soluciones de Optimización, Cómo Optimizar tu Equipo, Tecnología para Mejorar el Rendimiento, Experiencia de Rendimiento Mejorado, Soluciones para Computadoras Lentas, Rendimiento y Velocidad en PC, Aumentar Rendimiento de Computadoras, Trucos para Acelerar tu PC, Herramientas de Optimización Informática"}
+        urlC={"/blog/computers/como-mejorar-el-rendimiento-de-tu-computadora"}
+        url={"/blog/computers/como-mejorar-el-rendimiento-de-tu-computadora"}
+        img={computers1}
       />
       <BlogPage 
         titulo={"Cómo Mejorar el Rendimiento de tu Computadora: Guía Práctica"}

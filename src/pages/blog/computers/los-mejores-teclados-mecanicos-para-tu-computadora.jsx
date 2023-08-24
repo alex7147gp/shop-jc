@@ -16,6 +16,10 @@ export default function SmartPhones() {
       <HeadS
         title={"Teclados Mecánicos para Computadoras: Eleva tu Experiencia al Escribir"}
         description={"Descubre cómo los teclados mecánicos para computadoras pueden elevar tu experiencia al escribir. Explora diferentes tipos de teclados y elige el adecuado para mayor comodidad y productividad."}
+        keywords={"Teclados Mecánicos para Computadoras, Eleva tu Experiencia al Escribir, Guía de Teclados Mecánicos, Mejorar Escritura con Teclados Mecánicos, Beneficios de Teclados Mecánicos, Reseñas de Teclados para Computadoras, Comparativa de Teclados Mecánicos, Elegir el Teclado Mecánico Adecuado, Consejos para Usar Teclados Mecánicos, Tecnología de Teclados Mecánicos, Experiencia de Escritura más Cómoda y Precisa, Tipos de Interruptores para Teclados Mecánicos, Selección de Teclado para tu Estilo de Escritura, Mejora de Productividad con Teclados Mecánicos"}
+        urlC={"/blog/computers/los-mejores-teclados-mecanicos-para-tu-computadora"}
+        url={"/blog/computers/los-mejores-teclados-mecanicos-para-tu-computadora"}
+        img={computers2}
       />
       <BlogPage 
         titulo={"Teclados Mecánicos para Computadoras: Eleva tu Experiencia"}
