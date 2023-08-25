@@ -5,6 +5,7 @@ import tablets2 from "@images/tablets2.jpg";
 import tablets3 from "@images/tablets3.jpg";
 
 import tablets4 from "@images/tablets4.jpg";
+import tablets5 from "@images/tablets5.jpg";
 
 const ProductsT =  [
   {
@@ -51,6 +52,15 @@ const ProductsT =  [
     "categoria": "tablets",
     "fecha": "actualizado agosto 24, 2023",
     "url": "blog/tablets/ipad-vs-android-cual-es-mejor"
+  },
+  {
+    "id": "B20GGGBKRQ",
+    "titulo": "Tablets Plegables: El Futuro de la Tecnología Portátil",
+    "descripcion": "La tecnología portátil ha avanzado a pasos agigantados en las últimas décadas, y los dispositivos plegables están emergiendo como una innovación revolucionaria en este campo. Las tablets plegables, en particular, están capturando la imaginación de los entusiastas de la tecnología y los consumidores por igual. En este artículo, exploraremos el emocionante mundo de las tablets plegables, sus beneficios, desafíos y cómo están moldeando el futuro de la tecnología portátil.",
+    "imagen": tablets5,
+    "categoria": "tablets",
+    "fecha": "actualizado agosto 25, 2023",
+    "url": "blog/tablets/las-mejores-tablets-plegables"
   }
 ];
 

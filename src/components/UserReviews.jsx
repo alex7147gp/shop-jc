@@ -1,7 +1,7 @@
 import styles from "@styles/UserReviews.module.scss";
 
 
-const UserReviews = ({ pre1, res1, pre2, res2, pre3, res3 }) => {
+const UserReviews = ({ pre1, res1, pre2, res2, pre3 = null, res3 }) => {
   return (
     <div className={styles.userReviews}>
       <h2 className={styles.h2} >Preguntas frecuentes:</h2>
@@ -18,12 +18,13 @@ const UserReviews = ({ pre1, res1, pre2, res2, pre3, res3 }) => {
             {res2}
           </p>
         </li>
-        <li>
-          <span className={styles.userName}>{pre3}</span>
-          <p className={styles.reviewText}>
-            {res3}
-          </p>
-        </li>
+        { pre3 && <li>
+            <span className={styles.userName}>{pre3}</span>
+            < p className={styles.reviewText}>
+              {res3}
+            </p>
+          </li>
+        }    
       </ul>
     </div>
   );

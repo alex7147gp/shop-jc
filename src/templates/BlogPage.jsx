@@ -1,8 +1,8 @@
 import GuiaHeader from '@components/GuiaHeader';
 import EspecificacionesTecnicas from '@components/EspecificacionesTecnicas';
 import RendimientoGraficos from '@components/RendimientoGraficos';
+import UserReviews from '@components/UserReviews';
 import Conclusion from '@components/Conclusion';
-
 
 import styles from "@styles/BlogPage.module.scss";
 
@@ -38,7 +38,29 @@ const BlogPage = ({
   tituloOp1,
   descOp1,
   tituloOp2,
-  descOp2
+  descOp2,
+  tituloRends = null,
+  titulor1s,
+  descr1s,
+  titulor2s,
+  descr2s,
+  titulor3s,
+  descr3s,
+  tituloOp1s,
+  descOp1s,
+  tituloOp2s,
+  descOp2s,
+  imagen2s,
+  tituloP2s,
+  descripcion2s,
+  precio2s,
+  url2s,
+  pre1,
+  res1,
+  pre2,
+  res2,
+  pre3,
+  res3,
   }) => {
   return (
     <div className={styles.blogContainer}>
@@ -75,6 +97,35 @@ const BlogPage = ({
         precio={precio2}
         url={url2}
       />
+      {
+        titulor1s && <RendimientoGraficos
+        tituloRend={tituloRends}
+        titulor1={titulor1s}
+        descr1={descr1s}
+        titulor2={titulor2s}
+        descr2={descr2s}
+        titulor3={titulor3s}
+        descr3={descr3s}
+        tituloOp1={tituloOp1s}
+        descOp1={descOp1s}
+        tituloOp2={tituloOp2s}
+        descOp2={descOp2s}
+        imagen={imagen2s}
+        titulo={tituloP2s} 
+        descripcion={descripcion2s}
+        precio={precio2s}
+        url={url2s}
+      /> 
+      }
+      { pre1 && <UserReviews 
+          pre1={pre1}
+          res1={res1}
+          pre2={pre2}
+          res2={res2}
+          pre3={pre3}
+          res3={res3}
+        />
+      }
       <Conclusion dconclucion={dconclucion}/>
     </div>
   );

@@ -7,18 +7,18 @@ import Image from 'next/image';
 import styles from '@styles/ReviewOfert.module.scss';
 
 
-const ReviewOfert = ({ product, article = "Articles"}) => {
+const ReviewOfert = ({ product, article = "Articles", cantidad = 6}) => {
 
   const productsa = product ? product : products;
 
-	return (
+  return (
     <>
      <div className={styles.container}>
       <Link href={`/blog/${article == "Articles" ? "" : article}`}>
         <h3 className={styles.h1}>{article}</h3>
       </Link>
       <div className={styles.articulosContainer}>
-        {productsa.slice(0, 6).map((articulo) => (
+        {productsa.slice(0, cantidad).map((articulo) => (
           <div className={styles.articulo} key={articulo.id}>
             <div className={styles.productImage}>
               <Image 

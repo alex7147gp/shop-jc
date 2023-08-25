@@ -65,7 +65,7 @@ const RendimientoGraficos = ({
             precio={precio}
             url={url}
         />
-        }
+        } 
       </ul>
     </div>
   );

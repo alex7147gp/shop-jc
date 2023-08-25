@@ -6,6 +6,7 @@ import accessories3 from "@images/accessories3.jpg";
 
 import accessories4 from "@images/accessories4.jpg";
 import accessories5 from "@images/accessories5.jpg";
+import accessories6 from "@images/accessories6.jpg";
 
 const ProductsA =  [
   {
@@ -61,6 +62,15 @@ const ProductsA =  [
     "categoria": "accessories",
     "fecha": "actualizado agosto 24, 2023",
     "url": "blog/accessories/unidades-de-estado-solido-acelera-tu-computadora"
+  },
+  {
+    "id": "B20GGGBKRQ",
+    "titulo": "Trípodes para Smartphones: Estabilidad en tus Fotografías",
+    "descripcion": "La fotografía con smartphones se ha convertido en una parte integral de nuestras vidas. Capturamos momentos especiales, paisajes impresionantes y selfies creativos con la facilidad y la conveniencia que nos ofrece la tecnología móvil. Sin embargo, incluso los smartphones más avanzados pueden tener dificultades para mantener la estabilidad y la nitidez en ciertas situaciones. Es aquí donde entran en juego los trípodes para smartphones, proporcionando la estabilidad necesaria para tomar fotografías y videos excepcionales. En este artículo, exploraremos todo sobre los trípodes para smartphones, sus beneficios, tipos disponibles y cómo pueden mejorar significativamente tu experiencia fotográfica móvil.",
+    "imagen": accessories6,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 25, 2023",
+    "url": "blog/accessories/tripodes-para-smartphone"
   }
 ];
 
