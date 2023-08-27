@@ -1,5 +1,6 @@
 import Script from "next/script";
 import Header from "@components/Header";
+import Navigation from "@components/Navigation";
 import AppContext from "@context/AppContext";
 import useInitialState from "@hooks/useInitialState";
 import { Footer }  from "@components/Footer";
@@ -24,6 +25,7 @@ function MyApp({ Component, pageProps }) {
         `}
       </Script>
       <Header />
+      <Navigation />
       <Component {...pageProps} />
       <Footer />
     </AppContext.Provider>

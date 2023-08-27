@@ -5,6 +5,7 @@ import computers1 from "@images/computers1.jpg";
 import computers2 from "@images/computers2.jpg";
 
 import computers3 from "@images/computers3.jpg";
+import computers4 from "@images/computers4.jpg";
 
 const ProductsC =  [
   {
@@ -26,7 +27,7 @@ const ProductsC =  [
     "url": "blog/computers/computadora-de-escritorio-versus-laptop-cual-es-mejor"
   },
   {
-    "id": "B01GGGBKRQ",
+    "id": "B10GGGBKRQ",
     "titulo": "Cómo Mejorar el Rendimiento de tu Computadora: Guía Práctica",
     "descripcion": "Tu computadora es una herramienta indispensable en tu vida diaria, ya sea para trabajar, estudiar, entretenerse o mantenerse conectado con el mundo. Con el tiempo, es posible que notes que su rendimiento disminuye. Las aplicaciones tardan más en abrirse, los programas se ejecutan lentamente y la multitarea se vuelve un desafío. Pero no te preocupes, hay medidas que puedes tomar para mejorar el rendimiento de tu computadora y devolverle su agilidad original. En esta guía práctica, te presentamos consejos y trucos para optimizar tu PC y hacer que funcione como nueva.",
     "imagen": computers1,
@@ -44,13 +45,22 @@ const ProductsC =  [
     "url": "blog/computers/los-mejores-teclados-mecanicos-para-tu-computadora"
   },
   {
-    "id": "B01GGGBKRQ",
+    "id": "B11GGGBKRQ",
     "titulo": "MacBook vs Windows Laptop: Elige la Mejor laptop",
     "descripcion": "La eterna comparación entre MacBook y laptops con Windows ha sido una discusión común entre los usuarios de computadoras en todo el mundo. Ambas opciones tienen sus propias ventajas y desventajas, y elegir entre ellas puede ser una tarea desafiante. En este artículo, exploraremos en detalle las diferencias y similitudes entre MacBook y laptops con Windows, con el objetivo de ayudarte a tomar una decisión informada sobre cuál es la mejor opción para ti.",
     "imagen": computers3,
     "categoria": "computers",
     "fecha": "actualizado agosto 23, 2023",
     "url": "blog/computers/cual-es-mejor-laptop-entre-macbook-y-windows"
+  },
+  {
+    "id": "B10GGGBKRQ",
+    "titulo": "Mi Computadora no Enciende: Pasos para Solucionarlo",
+    "descripcion": "La frustración de encender tu computadora y encontrar que no responde es una experiencia común pero desagradable. Sin embargo, no todo está perdido. En esta guía, exploraremos los posibles pasos para solucionar este problema y devolverle la vida a tu computadora. Desde problemas de hardware hasta soluciones de software, aquí tienes una lista exhaustiva de cómo abordar el desafío cuando tu computadora no enciende.",
+    "imagen": computers4,
+    "categoria": "computers",
+    "fecha": "actualizado agosto 27, 2023",
+    "url": "blog/computers/mi-computadora-no-enciende-pasos-a-seguir"
   }
 ];
 

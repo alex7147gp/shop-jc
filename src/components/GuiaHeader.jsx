@@ -9,9 +9,9 @@ const GuiaHeader = ({titulo, intro, img}) => {
         <Image
           className={styles.image}
           src={img}
-          alt="Guía para elegir la Computadora Perfecta para Gaming"
-          width={350}  
-          height={280}  
+          alt={titulo}
+          width={750}  
+          height={380}
         />
       </div>
       <div className={styles.textContainer}>

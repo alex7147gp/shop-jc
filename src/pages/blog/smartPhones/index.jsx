@@ -26,7 +26,7 @@ export default function SmartPhones() {
         title={"Reseñas de Smartphones - Encuentra los Mejores"}
         description={"Entra en el emocionante mundo de la tecnología móvil con nuestras reseñas de smartphones. Explora análisis minuciosos y descubre los pros y contras de los últimos modelos. Desde las cámaras de alta resolución hasta el rendimiento y la duración de la batería, estamos aquí para ayudarte a encontrar el smartphone perfecto para tu estilo de vida. ¡Prepárate para una experiencia móvil excepcional!"} 
       />
-      <ReviewOfert product={productsS} article={"smartPhones"} />
+      <ReviewOfert product={productsS} article={"smartPhones"} cantidad={10} />
       <CategorieOfert />
     </div>
   );

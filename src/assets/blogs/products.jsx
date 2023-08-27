@@ -21,6 +21,8 @@ import tablets4 from "@images/tablets4.jpg";
 import accessories5 from "@images/accessories5.jpg";
 import tablets5 from "@images/tablets5.jpg";
 import accessories6 from "@images/accessories6.jpg";
+import computers4 from "@images/computers4.jpg";
+import smartPhones7 from "@images/smartPhones7.jpg";
 
 const Productsb =  [
   {
@@ -202,6 +204,24 @@ const Productsb =  [
     "categoria": "accessories",
     "fecha": "actualizado agosto 25, 2023",
     "url": "blog/accessories/tripodes-para-smartphone"
+  },
+  {
+    "id": "B10GGGBKRQ",
+    "titulo": "Mi Computadora no Enciende: Pasos para Solucionarlo",
+    "descripcion": "La frustración de encender tu computadora y encontrar que no responde es una experiencia común pero desagradable. Sin embargo, no todo está perdido. En esta guía, exploraremos los posibles pasos para solucionar este problema y devolverle la vida a tu computadora. Desde problemas de hardware hasta soluciones de software, aquí tienes una lista exhaustiva de cómo abordar el desafío cuando tu computadora no enciende.",
+    "imagen": computers4,
+    "categoria": "computers",
+    "fecha": "actualizado agosto 27, 2023",
+    "url": "blog/computers/mi-computadora-no-enciende-pasos-a-seguir"
+  },
+  {
+    "id": "B02GGGBKRQ",
+    "titulo": "¿Qué teléfono Android es mejor para juegos y rendimiento?",
+    "descripcion": "Los juegos móviles han evolucionado significativamente en los últimos años, y con ello, la demanda de teléfonos Android potentes y optimizados para juegos ha aumentado. En este artículo, exploraremos los mejores teléfonos Android para juegos y rendimiento, considerando sus características, potencia de procesamiento y capacidades gráficas. Si eres un entusiasta de los juegos móviles, esta guía te ayudará a tomar una decisión informada sobre qué dispositivo es el más adecuado para tus necesidades.",
+    "imagen": smartPhones7,
+    "categoria": "smartphones",
+    "fecha": "actualizado agosto 27, 2023",
+    "url": "blog/smartPhones/mejores-telefonos-para-juegos"
   }
 
 ];

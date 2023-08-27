@@ -25,7 +25,7 @@ export default function Reviews() {
        title={"Reseñas Tecnológicas - Encuentra los Mejores Productos"}
        description={"¿Interesado en la última tecnología? Sumérgete en el mundo de la innovación con nuestras reseñas tecnológicas. Desde smartphones hasta dispositivos inteligentes y wearables, te ofrecemos un análisis detallado de los productos más novedosos. Toma decisiones informadas y mantente a la vanguardia tecnológica. ¡Prepárate para un futuro lleno de avances tecnológicos emocionantes!"}
       />
-      <ReviewOfert product={productsS} article={"smartPhones"} />
+      <ReviewOfert product={productsS} article={"smartPhones"} cantidad={10} />
       <ReviewOfert product={productsG} article={"gaming"} />
       <ReviewOfert product={productsC} article={"computers"} />
       <ReviewOfert product={productsT} article={"tablets"} />

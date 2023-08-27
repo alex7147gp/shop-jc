@@ -26,7 +26,7 @@ export default function Accessories() {
         title={"Reseñas de Accesorios Tech - Opiniones y Recomendaciones"}
         description={"Explora nuestras reseñas de accesorios tech para tomar decisiones informadas. Descubre opiniones y recomendaciones sobre los últimos gadgets y complementos tecnológicos."} 
       />
-      <ReviewOfert product={productsA} article={"accessories"} />
+      <ReviewOfert product={productsA} article={"accessories"} cantidad={10} />
       <CategorieOfert />
     </div>
   );

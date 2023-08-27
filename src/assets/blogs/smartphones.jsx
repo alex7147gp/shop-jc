@@ -6,6 +6,7 @@ import smartPhones4 from "@images/smartPhones4.jpg";
 
 import smartPhones5 from "@images/smartPhones5.jpg";
 import smartPhones6 from "@images/smartPhones6.jpg";
+import smartPhones7 from "@images/smartPhones7.jpg";
 
 const ProductsS =  [
   {
@@ -61,6 +62,15 @@ const ProductsS =  [
     "categoria": "smartphones",
     "fecha": "actualizado agosto 22, 2023",
     "url": "blog/smartPhones/mejores-telefonos-para-fotografias"
+  },
+  {
+    "id": "B02GGGBKRQ",
+    "titulo": "¿Qué teléfono Android es mejor para juegos y rendimiento?",
+    "descripcion": "Los juegos móviles han evolucionado significativamente en los últimos años, y con ello, la demanda de teléfonos Android potentes y optimizados para juegos ha aumentado. En este artículo, exploraremos los mejores teléfonos Android para juegos y rendimiento, considerando sus características, potencia de procesamiento y capacidades gráficas. Si eres un entusiasta de los juegos móviles, esta guía te ayudará a tomar una decisión informada sobre qué dispositivo es el más adecuado para tus necesidades.",
+    "imagen": smartPhones7,
+    "categoria": "smartphones",
+    "fecha": "actualizado agosto 27, 2023",
+    "url": "blog/smartPhones/mejores-telefonos-para-juegos"
   }
 ];
 

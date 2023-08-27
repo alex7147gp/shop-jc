@@ -5,7 +5,7 @@ import CategorieOfert from "@components/CategorieOfert";
 import ReviewOfert from "@components/ReviewOfert";
 
 import accessories5 from "@images/accessories5.jpg";
-import productsT from '@blogs/tablets';
+import productsA from '@blogs/accessories';
 
 export default function SmartPhones() {
   return (
@@ -59,7 +59,7 @@ export default function SmartPhones() {
         precio2={80}
         url2={"https://amzn.to/3stsCc0"}
       />
-      <ReviewOfert product={productsT} article={"tablets"} />
+      <ReviewOfert product={productsA} article={"accessories"} cantidad={10} />
       <CategorieOfert />
     </div>
   );
