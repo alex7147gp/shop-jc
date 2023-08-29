@@ -7,6 +7,9 @@ import smartPhones4 from "@images/smartPhones4.jpg";
 import smartPhones5 from "@images/smartPhones5.jpg";
 import smartPhones6 from "@images/smartPhones6.jpg";
 import smartPhones7 from "@images/smartPhones7.jpg";
+import smartPhones8 from "@images/smartPhones8.jpg";
+
+
 
 const ProductsS =  [
   {
@@ -71,6 +74,15 @@ const ProductsS =  [
     "categoria": "smartphones",
     "fecha": "actualizado agosto 27, 2023",
     "url": "blog/smartPhones/mejores-telefonos-para-juegos"
+  },
+  {
+    "id": "B22GGGBKRQ",
+    "titulo": "¿Qué Teléfono Google Pixel Deberías Comprar?",
+    "descripcion": "En el mundo de los teléfonos inteligentes, la marca Google Pixel se ha destacado por ofrecer dispositivos que combinan un sistema operativo Android puro con hardware de alta calidad. Si estás buscando un nuevo teléfono Google Pixel, este artículo te guiará a través de las opciones disponibles y te ayudará a decidir cuál es el más adecuado para ti.",
+    "imagen": smartPhones8,
+    "categoria": "smartphones",
+    "fecha": "actualizado agosto 28, 2023",
+    "url": "blog/smartPhones/mejores-telefonos-google-pixel"
   }
 ];
 

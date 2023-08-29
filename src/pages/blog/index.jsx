@@ -27,7 +27,7 @@ export default function Reviews() {
       />
       <ReviewOfert product={productsS} article={"smartPhones"} cantidad={10} />
       <ReviewOfert product={productsG} article={"gaming"} />
-      <ReviewOfert product={productsC} article={"computers"} />
+      <ReviewOfert product={productsC} article={"computers"} cantidad={10} />
       <ReviewOfert product={productsT} article={"tablets"} />
       <ReviewOfert product={productsA} article={"accessories"} cantidad={10} />
       <CategorieOfert />

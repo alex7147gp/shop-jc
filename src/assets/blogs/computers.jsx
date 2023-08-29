@@ -6,6 +6,7 @@ import computers2 from "@images/computers2.jpg";
 
 import computers3 from "@images/computers3.jpg";
 import computers4 from "@images/computers4.jpg";
+import computers5 from "@images/computers5.jpg";
 
 const ProductsC =  [
   {
@@ -54,13 +55,22 @@ const ProductsC =  [
     "url": "blog/computers/cual-es-mejor-laptop-entre-macbook-y-windows"
   },
   {
-    "id": "B10GGGBKRQ",
+    "id": "B20GGGBKRQ",
     "titulo": "Mi Computadora no Enciende: Pasos para Solucionarlo",
     "descripcion": "La frustración de encender tu computadora y encontrar que no responde es una experiencia común pero desagradable. Sin embargo, no todo está perdido. En esta guía, exploraremos los posibles pasos para solucionar este problema y devolverle la vida a tu computadora. Desde problemas de hardware hasta soluciones de software, aquí tienes una lista exhaustiva de cómo abordar el desafío cuando tu computadora no enciende.",
     "imagen": computers4,
     "categoria": "computers",
     "fecha": "actualizado agosto 27, 2023",
     "url": "blog/computers/mi-computadora-no-enciende-pasos-a-seguir"
+  },
+  {
+    "id": "B02GGGBKRQ",
+    "titulo": "Construir tu Propia PC: La Clave para un Rendimiento Superior",
+    "descripcion": "Construir tu propia PC es una experiencia emocionante y gratificante que te permite crear una máquina personalizada según tus necesidades y preferencias. En este artículo, exploraremos en detalle los pasos y ventajas de construir tu propia PC, así como los componentes esenciales, consejos útiles y respuestas a preguntas comunes.",
+    "imagen": computers5,
+    "categoria": "computers",
+    "fecha": "actualizado agosto 29, 2023",
+    "url": "blog/computers/construye-tu-propia-pc"
   }
 ];
 

@@ -7,6 +7,9 @@ import accessories3 from "@images/accessories3.jpg";
 import accessories4 from "@images/accessories4.jpg";
 import accessories5 from "@images/accessories5.jpg";
 import accessories6 from "@images/accessories6.jpg";
+import accessories7 from "@images/accessories7.jpg";
+import accessories8 from "@images/accessories8.jpg";
+
 
 const ProductsA =  [
   {
@@ -71,6 +74,24 @@ const ProductsA =  [
     "categoria": "accessories",
     "fecha": "actualizado agosto 25, 2023",
     "url": "blog/accessories/tripodes-para-smartphone"
+  },
+  {
+    "id": "B02GGGBKRQ",
+    "titulo": "Fundas para Smartphones: Protección y Estilo en uno",
+    "descripcion": "En el mundo actual, nuestros smartphones son más que simples dispositivos de comunicación; se han convertido en una extensión de nuestro estilo de vida. Estos dispositivos móviles almacenan nuestra información personal, capturan nuestros recuerdos más preciados y nos mantienen conectados con el mundo. Por lo tanto, protegerlos se ha vuelto esencial. Las fundas para smartphones no solo ofrecen una capa de protección vital contra caídas y arañazos, sino que también permiten expresar nuestro estilo personal. En este artículo, exploraremos cómo las fundas para smartphones han evolucionado para ofrecer una combinación perfecta de protección y estilo, y cómo puedes elegir la funda perfecta para tu dispositivo.",
+    "imagen": accessories7,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 28, 2023",
+    "url": "blog/accessories/mejores-fundas-para-smartphones"
+  },
+  {
+    "id": "B22GGGBKRQ",
+    "titulo": "Los Mejores Administradores de Contraseñas: Guía Completa",
+    "descripcion": "En la era digital actual, mantener tus cuentas y datos seguros es esencial. Los administradores de contraseñas se han convertido en una herramienta fundamental para gestionar y proteger las numerosas contraseñas que utilizamos en línea. En esta guía completa, exploraremos la importancia de los administradores de contraseñas, sus características clave y las mejores opciones disponibles en el mercado.",
+    "imagen": accessories8,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 29, 2023",
+    "url": "blog/accessories/mejores-administradores-de-contrasenas"
   }
 ];
 

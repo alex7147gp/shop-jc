@@ -23,6 +23,10 @@ import tablets5 from "@images/tablets5.jpg";
 import accessories6 from "@images/accessories6.jpg";
 import computers4 from "@images/computers4.jpg";
 import smartPhones7 from "@images/smartPhones7.jpg";
+import smartPhones8 from "@images/smartPhones8.jpg";
+import accessories7 from "@images/accessories7.jpg";
+import computers5 from "@images/computers5.jpg";
+import accessories8 from "@images/accessories8.jpg";
 
 const Productsb =  [
   {
@@ -222,7 +226,44 @@ const Productsb =  [
     "categoria": "smartphones",
     "fecha": "actualizado agosto 27, 2023",
     "url": "blog/smartPhones/mejores-telefonos-para-juegos"
+  },
+  {
+    "id": "B22GGGBKRQ",
+    "titulo": "¿Qué Teléfono Google Pixel Deberías Comprar?",
+    "descripcion": "En el mundo de los teléfonos inteligentes, la marca Google Pixel se ha destacado por ofrecer dispositivos que combinan un sistema operativo Android puro con hardware de alta calidad. Si estás buscando un nuevo teléfono Google Pixel, este artículo te guiará a través de las opciones disponibles y te ayudará a decidir cuál es el más adecuado para ti.",
+    "imagen": smartPhones8,
+    "categoria": "smartphones",
+    "fecha": "actualizado agosto 28, 2023",
+    "url": "blog/smartPhones/mejores-telefonos-gogle-pixel"
+  },
+  {
+    "id": "B02GGGBKRQ",
+    "titulo": "Fundas para Smartphones: Protección y Estilo en uno",
+    "descripcion": "En el mundo actual, nuestros smartphones son más que simples dispositivos de comunicación; se han convertido en una extensión de nuestro estilo de vida. Estos dispositivos móviles almacenan nuestra información personal, capturan nuestros recuerdos más preciados y nos mantienen conectados con el mundo. Por lo tanto, protegerlos se ha vuelto esencial. Las fundas para smartphones no solo ofrecen una capa de protección vital contra caídas y arañazos, sino que también permiten expresar nuestro estilo personal. En este artículo, exploraremos cómo las fundas para smartphones han evolucionado para ofrecer una combinación perfecta de protección y estilo, y cómo puedes elegir la funda perfecta para tu dispositivo.",
+    "imagen": accessories7,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 28, 2023",
+    "url": "blog/accessories/mejores-fundas-para-smartphones"
+  },
+  {
+    "id": "B02GGGBKRQ",
+    "titulo": "Construir tu Propia PC: La Clave para un Rendimiento Superior",
+    "descripcion": "Construir tu propia PC es una experiencia emocionante y gratificante que te permite crear una máquina personalizada según tus necesidades y preferencias. En este artículo, exploraremos en detalle los pasos y ventajas de construir tu propia PC, así como los componentes esenciales, consejos útiles y respuestas a preguntas comunes.",
+    "imagen": computers5,
+    "categoria": "computers",
+    "fecha": "actualizado agosto 29, 2023",
+    "url": "blog/computers/construye-tu-propia-pc"
+  },
+  {
+    "id": "B02GGGBKRQ",
+    "titulo": "Los Mejores Administradores de Contraseñas: Guía Completa",
+    "descripcion": "En la era digital actual, mantener tus cuentas y datos seguros es esencial. Los administradores de contraseñas se han convertido en una herramienta fundamental para gestionar y proteger las numerosas contraseñas que utilizamos en línea. En esta guía completa, exploraremos la importancia de los administradores de contraseñas, sus características clave y las mejores opciones disponibles en el mercado.",
+    "imagen": accessories8,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 29, 2023",
+    "url": "blog/accessories/mejores-administradores-de-contrasenas"
   }
+
 
 ];
 
