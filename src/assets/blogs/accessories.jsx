@@ -9,6 +9,7 @@ import accessories5 from "@images/accessories5.jpg";
 import accessories6 from "@images/accessories6.jpg";
 import accessories7 from "@images/accessories7.jpg";
 import accessories8 from "@images/accessories8.jpg";
+import accessories9 from "@images/accessories9.jpg";
 
 
 const ProductsA =  [
@@ -92,6 +93,15 @@ const ProductsA =  [
     "categoria": "accessories",
     "fecha": "actualizado agosto 29, 2023",
     "url": "blog/accessories/mejores-administradores-de-contrasenas"
+  },
+  {
+    "id": "B30GGGBKRQ",
+    "titulo": "Las 18 Mejores Baterías Portátiles: Guía Completa",
+    "descripcion": "Las baterías portátiles se han convertido en un accesorio esencial para mantener nuestros dispositivos cargados en cualquier lugar y en cualquier momento. Ya sea que estés viajando, trabajando o disfrutando de actividades al aire libre, una batería portátil confiable puede ser tu salvación cuando la batería de tu dispositivo está agotándose rápidamente. En esta guía, te presentaremos las 18 mejores baterías portátiles disponibles en el mercado y te ayudaremos a encontrar la opción perfecta para tus necesidades de carga.",
+    "imagen": accessories9,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 30, 2023",
+    "url": "blog/accessories/mejores-baterias-portatiles"
   }
 ];
 

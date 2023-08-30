@@ -27,6 +27,8 @@ import smartPhones8 from "@images/smartPhones8.jpg";
 import accessories7 from "@images/accessories7.jpg";
 import computers5 from "@images/computers5.jpg";
 import accessories8 from "@images/accessories8.jpg";
+import gaming2 from "@images/gaming2.jpg";
+import accessories9 from "@images/accessories9.jpg";
 
 const Productsb =  [
   {
@@ -262,6 +264,24 @@ const Productsb =  [
     "categoria": "accessories",
     "fecha": "actualizado agosto 29, 2023",
     "url": "blog/accessories/mejores-administradores-de-contrasenas"
+  },
+  {
+    "id": "B20GGGBKRQ",
+    "titulo": "¿Qué consola Xbox es mejor para juegos en 4K?",
+    "descripcion": "Las consolas Xbox han sido líderes en la industria de los videojuegos durante años, y con el advenimiento de los juegos en 4K, han llevado la experiencia de juego a un nivel completamente nuevo. Si bien hay varias opciones disponibles, como Xbox Series X, Xbox Series S y Xbox One X, es fundamental entender las diferencias y características de cada una para tomar la decisión correcta según tus necesidades y preferencias.",
+    "imagen": gaming2,
+    "categoria": "gaming",
+    "fecha": "actualizado agosto 30, 2023",
+    "url": "blog/gaming/mejores-consolas-xbox-para-juegos-4k"
+  },
+  {
+    "id": "B30GGGBKRQ",
+    "titulo": "Las 18 Mejores Baterías Portátiles: Guía Completa",
+    "descripcion": "Las baterías portátiles se han convertido en un accesorio esencial para mantener nuestros dispositivos cargados en cualquier lugar y en cualquier momento. Ya sea que estés viajando, trabajando o disfrutando de actividades al aire libre, una batería portátil confiable puede ser tu salvación cuando la batería de tu dispositivo está agotándose rápidamente. En esta guía, te presentaremos las 18 mejores baterías portátiles disponibles en el mercado y te ayudaremos a encontrar la opción perfecta para tus necesidades de carga.",
+    "imagen": accessories9,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 20, 2023",
+    "url": "blog/accessories/mejores-baterias-portatiles"
   }
 
 

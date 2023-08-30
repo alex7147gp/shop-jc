@@ -4,6 +4,8 @@ import consola from "@images/consola.jpg";
 import pcGaming from "@images/pc-gaming.jpg";
 import gaming1 from "@images/gaming1.jpg";
 
+import gaming2 from "@images/gaming2.jpg";
+
 const ProductsG =  [
   {
     "id": "B08GGGBKRQ",
@@ -40,6 +42,15 @@ const ProductsG =  [
     "categoria": "gaming",
     "fecha": "actualizado agosto 19, 2023",
     "url": "blog/gaming/los-mejores-ratones-ergonomicos-para-gaming"
+  },
+  {
+    "id": "B20GGGBKRQ",
+    "titulo": "¿Qué consola Xbox es mejor para juegos en 4K?",
+    "descripcion": "Las consolas Xbox han sido líderes en la industria de los videojuegos durante años, y con el advenimiento de los juegos en 4K, han llevado la experiencia de juego a un nivel completamente nuevo. Si bien hay varias opciones disponibles, como Xbox Series X, Xbox Series S y Xbox One X, es fundamental entender las diferencias y características de cada una para tomar la decisión correcta según tus necesidades y preferencias.",
+    "imagen": gaming2,
+    "categoria": "gaming",
+    "fecha": "actualizado agosto 30, 2023",
+    "url": "blog/gaming/mejores-consolas-xbox-para-juegos-4k"
   }
 ];
 
