@@ -29,6 +29,10 @@ import computers5 from "@images/computers5.jpg";
 import accessories8 from "@images/accessories8.jpg";
 import gaming2 from "@images/gaming2.jpg";
 import accessories9 from "@images/accessories9.jpg";
+import accessories10 from "@images/accessories10.jpg";
+import accessories11 from "@images/accessories11.jpg";
+import gaming3 from "@images/gaming3.jpg";
+import gaming4 from "@images/gaming4.jpg";
 
 const Productsb =  [
   {
@@ -282,6 +286,42 @@ const Productsb =  [
     "categoria": "accessories",
     "fecha": "actualizado agosto 20, 2023",
     "url": "blog/accessories/mejores-baterias-portatiles"
+  },
+  {
+    "id": "B03GGGBKRQ",
+    "titulo": "¿Cuáles son las mejores bicicletas eléctricas en el mercado?",
+    "descripcion": "Las bicicletas eléctricas han ganado popularidad en los últimos años como una alternativa sostenible y eficiente para los desplazamientos urbanos y la recreación. Con una combinación de pedaleo tradicional y asistencia eléctrica, estas bicicletas ofrecen una experiencia única que combina el ejercicio con la comodidad. En esta guía, exploraremos las mejores bicicletas eléctricas disponibles en el mercado, así como los beneficios y factores clave a considerar al elegir la adecuada para ti.",
+    "imagen": accessories10,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 31, 2023",
+    "url": "blog/accessories/las-mejores-bicicletas-electricas"
+  },
+  {
+    "id": "B33GGGBKRQ",
+    "titulo": "Las 5 Mejores Sillas de Oficina: Guía Completa",
+    "descripcion": "En el entorno laboral actual, pasar largas horas sentado en una silla de oficina es común. Por esta razón, contar con una silla de oficina ergonómica de calidad es esencial para garantizar la comodidad y la salud mientras trabajas. En esta guía, exploraremos las 5 mejores sillas de oficina disponibles en el mercado y te proporcionaremos una completa orientación para que puedas elegir la silla perfecta para tus necesidades.",
+    "imagen": accessories11,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 31, 2023",
+    "url": "blog/accessories/las-5-mejores-sillas-de-oficina"
+  },
+  {
+    "id": "B02GGGBKRQ",
+    "titulo": "Configuración Óptima de PC Gaming",
+    "descripcion": "El mundo del PC gaming ofrece una inmersión y calidad visual que ningún otro sistema puede igualar. Sin embargo, para alcanzar ese nivel de rendimiento, es crucial tener una configuración óptima. Desde la potencia de tu tarjeta gráfica hasta la velocidad de tu unidad de almacenamiento, cada detalle cuenta.",
+    "imagen": gaming3,
+    "categoria": "gaming",
+    "fecha": "actualizado septiembre 1, 2023",
+    "url": "blog/gaming/optimisacion-optima-para-pc-gaming.jsx"
+  },
+  {
+    "id": "B22GGGBKRQ",
+    "titulo": "Los Dispositivos de Realidad Virtual más Avanzados",
+    "descripcion": "La realidad virtual es una tecnología que ha estado en desarrollo durante décadas, pero en los últimos años, ha avanzado a pasos agigantados. Hoy en día, los dispositivos de realidad virtual nos permiten sumergirnos en mundos virtuales de una manera que nunca antes habríamos imaginado. Desde la industria del juego hasta la medicina, la RV está transformando la forma en que interactuamos con la información y el entretenimiento.",
+    "imagen": gaming4,
+    "categoria": "gaming",
+    "fecha": "actualizado septiembre 1, 2023",
+    "url": "blog/gaming/los-mejores-dispositivos-de-realidad-virtual"
   }
 
 

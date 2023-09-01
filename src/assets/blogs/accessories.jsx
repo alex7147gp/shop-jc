@@ -11,6 +11,8 @@ import accessories7 from "@images/accessories7.jpg";
 import accessories8 from "@images/accessories8.jpg";
 import accessories9 from "@images/accessories9.jpg";
 
+import accessories10 from "@images/accessories10.jpg";
+import accessories11 from "@images/accessories11.jpg";
 
 const ProductsA =  [
   {
@@ -102,6 +104,24 @@ const ProductsA =  [
     "categoria": "accessories",
     "fecha": "actualizado agosto 30, 2023",
     "url": "blog/accessories/mejores-baterias-portatiles"
+  },
+  {
+    "id": "B03GGGBKRQ",
+    "titulo": "¿Cuáles son las mejores bicicletas eléctricas en el mercado?",
+    "descripcion": "Las bicicletas eléctricas han ganado popularidad en los últimos años como una alternativa sostenible y eficiente para los desplazamientos urbanos y la recreación. Con una combinación de pedaleo tradicional y asistencia eléctrica, estas bicicletas ofrecen una experiencia única que combina el ejercicio con la comodidad. En esta guía, exploraremos las mejores bicicletas eléctricas disponibles en el mercado, así como los beneficios y factores clave a considerar al elegir la adecuada para ti.",
+    "imagen": accessories10,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 31, 2023",
+    "url": "blog/accessories/las-mejores-bicicletas-electricas"
+  },
+  {
+    "id": "B33GGGBKRQ",
+    "titulo": "Las 5 Mejores Sillas de Oficina: Guía Completa",
+    "descripcion": "En el entorno laboral actual, pasar largas horas sentado en una silla de oficina es común. Por esta razón, contar con una silla de oficina ergonómica de calidad es esencial para garantizar la comodidad y la salud mientras trabajas. En esta guía, exploraremos las 5 mejores sillas de oficina disponibles en el mercado y te proporcionaremos una completa orientación para que puedas elegir la silla perfecta para tus necesidades.",
+    "imagen": accessories11,
+    "categoria": "accessories",
+    "fecha": "actualizado agosto 31, 2023",
+    "url": "blog/accessories/las-5-mejores-sillas-de-oficina"
   }
 ];
 

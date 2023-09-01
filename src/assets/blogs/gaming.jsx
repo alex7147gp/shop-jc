@@ -5,6 +5,8 @@ import pcGaming from "@images/pc-gaming.jpg";
 import gaming1 from "@images/gaming1.jpg";
 
 import gaming2 from "@images/gaming2.jpg";
+import gaming3 from "@images/gaming3.jpg";
+import gaming4 from "@images/gaming4.jpg";
 
 const ProductsG =  [
   {
@@ -51,7 +53,26 @@ const ProductsG =  [
     "categoria": "gaming",
     "fecha": "actualizado agosto 30, 2023",
     "url": "blog/gaming/mejores-consolas-xbox-para-juegos-4k"
+  },
+  {
+    "id": "B02GGGBKRQ",
+    "titulo": "Configuración Óptima de PC Gaming",
+    "descripcion": "El mundo del PC gaming ofrece una inmersión y calidad visual que ningún otro sistema puede igualar. Sin embargo, para alcanzar ese nivel de rendimiento, es crucial tener una configuración óptima. Desde la potencia de tu tarjeta gráfica hasta la velocidad de tu unidad de almacenamiento, cada detalle cuenta.",
+    "imagen": gaming3,
+    "categoria": "gaming",
+    "fecha": "actualizado septiembre 1, 2023",
+    "url": "blog/gaming/optimisacion-optima-para-pc-gaming"
+  },
+  {
+    "id": "B22GGGBKRQ",
+    "titulo": "Los Dispositivos de Realidad Virtual más Avanzados",
+    "descripcion": "La realidad virtual es una tecnología que ha estado en desarrollo durante décadas, pero en los últimos años, ha avanzado a pasos agigantados. Hoy en día, los dispositivos de realidad virtual nos permiten sumergirnos en mundos virtuales de una manera que nunca antes habríamos imaginado. Desde la industria del juego hasta la medicina, la RV está transformando la forma en que interactuamos con la información y el entretenimiento.",
+    "imagen": gaming4,
+    "categoria": "gaming",
+    "fecha": "actualizado septiembre 1, 2023",
+    "url": "blog/gaming/los-mejores-dispositivos-de-realidad-virtual"
   }
+
 ];
 
 export default ProductsG;
