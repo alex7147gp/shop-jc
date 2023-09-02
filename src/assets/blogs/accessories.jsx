@@ -13,6 +13,8 @@ import accessories9 from "@images/accessories9.jpg";
 
 import accessories10 from "@images/accessories10.jpg";
 import accessories11 from "@images/accessories11.jpg";
+import accessories12 from "@images/accessories12.jpg";
+import accessories13 from "@images/accessories13.jpg";
 
 const ProductsA =  [
   {
@@ -122,6 +124,24 @@ const ProductsA =  [
     "categoria": "accessories",
     "fecha": "actualizado agosto 31, 2023",
     "url": "blog/accessories/las-5-mejores-sillas-de-oficina"
+  },
+  {
+    "id": "B33GGGBKRQ",
+    "titulo": "Relojes Inteligentes Deportivos: Tu Entrenador Personal",
+    "descripcion": "En el mundo actual, donde el bienestar y la salud son prioridades, los relojes inteligentes deportivos se han convertido en un compañero esencial para aquellos que buscan llevar un estilo de vida activo y saludable. Estos dispositivos no solo proporcionan la hora, sino que también funcionan como un entrenador personal que te acompaña en tus actividades físicas y te ayuda a alcanzar tus metas de acondicionamiento físico. En este artículo, exploraremos en detalle cómo estos relojes inteligentes deportivos actúan como tu entrenador personal y cómo pueden mejorar tu rendimiento y bienestar general.",
+    "imagen": accessories12,
+    "categoria": "accessories",
+    "fecha": "actualizado septiembre 2, 2023",
+    "url": "blog/accessories/mejores-relojs-inteligentes"
+  },
+  {
+    "id": "B33GGGBKRQ",
+    "titulo": "Las Mejores Mochilas para Portátiles: Guía Completa",
+    "descripcion": "En un mundo donde la tecnología móvil es omnipresente, nuestras laptops se han convertido en compañeras indispensables en nuestra vida cotidiana. Ya sea para trabajar, estudiar o entretenernos, los portátiles son herramientas versátiles que nos permiten llevar a cabo una amplia gama de tareas. Sin embargo, esta versatilidad viene con la necesidad de transportar nuestros dispositivos de manera segura y cómoda. Aquí es donde entran en juego las mochilas para portátiles.",
+    "imagen": accessories13,
+    "categoria": "accessories",
+    "fecha": "actualizado septiembre 2, 2023",
+    "url": "blog/accessories/las-mejores-mochilas-para-portatiles"
   }
 ];
 
