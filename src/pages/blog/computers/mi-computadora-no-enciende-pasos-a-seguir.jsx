@@ -42,9 +42,6 @@ export default function SmartPhones() {
         //option1
         tituloOp1={"Verificar el Botón de Encendido"}
         descOp1={"Asegúrate de que el botón de encendido esté funcionando correctamente. A veces, un botón atascado puede evitar que la computadora se encienda."}
-        //option2
-        tituloOp2={""}
-        descOp2={""}
         //Option new
         tituloRends={"Soluciones de software"}
         titulor1s={"Modo de Seguridad"}
@@ -56,9 +53,6 @@ export default function SmartPhones() {
         //option1
         tituloOp1s={"Restaurar Sistema Operativo"}
         descOp1s={"Si el sistema operativo está dañado, es posible que debas reinstalarlo o restaurarlo a un punto anterior en el tiempo."}
-        //option2
-        tituloOp2s={""}
-        descOp2s={""}
         //faqs
         pre1={"¿Qué debo hacer si mi computadora hace un sonido extraño al encenderse?"}
         res1={"Si escuchas sonidos inusuales, como pitidos repetitivos, consulta el manual de la placa base para identificar el significado del sonido. Esto puede ser una pista importante para el problema."}

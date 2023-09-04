@@ -7,6 +7,9 @@ import computers2 from "@images/computers2.jpg";
 import computers3 from "@images/computers3.jpg";
 import computers4 from "@images/computers4.jpg";
 import computers5 from "@images/computers5.jpg";
+import computers6 from "@images/computers6.jpg";
+import computers7 from "@images/computers7.jpg";
+
 
 const ProductsC =  [
   {
@@ -71,7 +74,26 @@ const ProductsC =  [
     "categoria": "computers",
     "fecha": "actualizado agosto 29, 2023",
     "url": "blog/computers/construye-tu-propia-pc"
+  },
+  {
+    "id": "B22GGGBKRQ",
+    "titulo": "Solucionando Problemas de Sonido en Videojuegos",
+    "descripcion": "El sonido es una parte esencial de la experiencia de juego. Los efectos de sonido inmersivos, la música envolvente y las voces de los personajes son elementos que pueden sumergirte por completo en el mundo virtual de tus videojuegos favoritos. Sin embargo, no siempre es un camino sin obstáculos. Los problemas de sonido pueden surgir en cualquier momento y arruinar tu inmersión en el juego. Pero no te preocupes, esta guía está aquí para ayudarte a solucionar esos problemas y asegurarte de que el audio de tus videojuegos vuelva a ser nítido y claro.",
+    "imagen": computers6,
+    "categoria": "computers",
+    "fecha": "actualizado  septiembre 4, 2023",
+    "url": "blog/computers/solucion-a-problemas-de-sonido"
+  },
+  {
+    "id": "B30GGGBKRQ",
+    "titulo": "Solución de Problemas de Controladores: Guía Completa",
+    "descripcion": "En la era digital actual, los controladores o drivers son componentes fundamentales para el funcionamiento adecuado de cualquier dispositivo o hardware en una computadora. Ya sea que estés utilizando una impresora, una tarjeta gráfica, o cualquier otro periférico, los controladores juegan un papel esencial para garantizar que todo funcione sin problemas. Sin embargo, en ocasiones, pueden surgir problemas que requieren soluciones rápidas y efectivas. En esta guía completa sobre la 'Solución de Problemas de Controladores', exploraremos todo lo que necesitas saber para abordar estos desafíos de manera eficaz.",
+    "imagen": computers7,
+    "categoria": "computers",
+    "fecha": "actualizado septienbre 4, 2023",
+    "url": "blog/computers/solucion-a-problemas-de-controladores"
   }
+
 ];
 
 export default ProductsC;

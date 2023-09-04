@@ -7,6 +7,9 @@ import gaming1 from "@images/gaming1.jpg";
 import gaming2 from "@images/gaming2.jpg";
 import gaming3 from "@images/gaming3.jpg";
 import gaming4 from "@images/gaming4.jpg";
+import gaming5 from "@images/gaming5.jpg";
+import gaming6 from "@images/gaming6.jpg";
+
 
 const ProductsG =  [
   {
@@ -71,6 +74,24 @@ const ProductsG =  [
     "categoria": "gaming",
     "fecha": "actualizado septiembre 1, 2023",
     "url": "blog/gaming/los-mejores-dispositivos-de-realidad-virtual"
+  },
+  {
+    "id": "B30GGGBKRQ",
+    "titulo": "Mejora el Rendimiento de tus Juegos: Soluciones para FPS Bajos",
+    "descripcion": "Los videojuegos son una forma popular de entretenimiento en la actualidad, y para muchos jugadores, obtener un rendimiento óptimo es esencial para disfrutar de una experiencia de juego fluida y envolvente. Sin embargo, es común encontrarse con problemas de FPS (fotogramas por segundo) bajos que pueden arruinar la diversión. En esta guía completa, exploraremos soluciones efectivas para mejorar el rendimiento de tus juegos y resolver problemas de FPS bajos.",
+    "imagen": gaming5,
+    "categoria": "gaming",
+    "fecha": "actualizado septiembre 3, 2023",
+    "url": "blog/gaming/soluciones-para-fps-bajos"
+  },
+  {
+    "id": "B03GGGBKRQ",
+    "titulo": "Elimina la Pantalla en Negro: Soluciones para Jugadores",
+    "descripcion": "La frustración de los jugadores al encontrarse con una pantalla en negro mientras intentan disfrutar de sus videojuegos favoritos es comprensible. Este problema, conocido como 'pantalla en negro', puede arruinar por completo la experiencia de juego. Pero no te preocupes, estás en el lugar correcto para encontrar soluciones efectivas para este inconveniente. En esta guía completa, exploraremos las causas detrás de la pantalla en negro y te proporcionaremos las mejores soluciones para eliminarla de una vez por todas.",
+    "imagen": gaming6,
+    "categoria": "gaming",
+    "fecha": "actualizado septiembre 3, 2023",
+    "url": "blog/gaming/elimina-la-pantalla-en-negro"
   }
 
 ];

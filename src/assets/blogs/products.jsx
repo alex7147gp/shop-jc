@@ -35,6 +35,10 @@ import gaming3 from "@images/gaming3.jpg";
 import gaming4 from "@images/gaming4.jpg";
 import accessories12 from "@images/accessories12.jpg";
 import accessories13 from "@images/accessories13.jpg";
+import gaming5 from "@images/gaming5.jpg";
+import gaming6 from "@images/gaming6.jpg";
+import computers6 from "@images/computers6.jpg";
+import computers7 from "@images/computers7.jpg";
 
 const Productsb =  [
   {
@@ -342,8 +346,43 @@ const Productsb =  [
     "categoria": "accessories",
     "fecha": "actualizado septiembre 2, 2023",
     "url": "blog/accessories/las-mejores-mochilas-para-portatiles"
+  },
+  {
+    "id": "B30GGGBKRQ",
+    "titulo": "Mejora el Rendimiento de tus Juegos: Soluciones para FPS Bajos",
+    "descripcion": "Los videojuegos son una forma popular de entretenimiento en la actualidad, y para muchos jugadores, obtener un rendimiento óptimo es esencial para disfrutar de una experiencia de juego fluida y envolvente. Sin embargo, es común encontrarse con problemas de FPS (fotogramas por segundo) bajos que pueden arruinar la diversión. En esta guía completa, exploraremos soluciones efectivas para mejorar el rendimiento de tus juegos y resolver problemas de FPS bajos.",
+    "imagen": gaming5,
+    "categoria": "gaming",
+    "fecha": "actualizado septiembre 3, 2023",
+    "url": "blog/gaming/soluciones-para-fps-bajos"
+  },
+  {
+    "id": "B03GGGBKRQ",
+    "titulo": "Elimina la Pantalla en Negro: Soluciones para Jugadores",
+    "descripcion": "La frustración de los jugadores al encontrarse con una pantalla en negro mientras intentan disfrutar de sus videojuegos favoritos es comprensible. Este problema, conocido como 'pantalla en negro', puede arruinar por completo la experiencia de juego. Pero no te preocupes, estás en el lugar correcto para encontrar soluciones efectivas para este inconveniente. En esta guía completa, exploraremos las causas detrás de la pantalla en negro y te proporcionaremos las mejores soluciones para eliminarla de una vez por todas.",
+    "imagen": gaming6,
+    "categoria": "gaming",
+    "fecha": "actualizado septiembre 3, 2023",
+    "url": "blog/gaming/elimina-la-pantalla-en-negro"
+  },
+  {
+    "id": "B22GGGBKRQ",
+    "titulo": "Solucionando Problemas de Sonido en Videojuegos",
+    "descripcion": "El sonido es una parte esencial de la experiencia de juego. Los efectos de sonido inmersivos, la música envolvente y las voces de los personajes son elementos que pueden sumergirte por completo en el mundo virtual de tus videojuegos favoritos. Sin embargo, no siempre es un camino sin obstáculos. Los problemas de sonido pueden surgir en cualquier momento y arruinar tu inmersión en el juego. Pero no te preocupes, esta guía está aquí para ayudarte a solucionar esos problemas y asegurarte de que el audio de tus videojuegos vuelva a ser nítido y claro.",
+    "imagen": computers6,
+    "categoria": "computers",
+    "fecha": "actualizado  septiembre 4, 2023",
+    "url": "blog/computers/solucion-a-problemas-de-sonido"
+  },
+  {
+    "id": "B30GGGBKRQ",
+    "titulo": "Solución de Problemas de Controladores: Guía Completa",
+    "descripcion": "En la era digital actual, los controladores o drivers son componentes fundamentales para el funcionamiento adecuado de cualquier dispositivo o hardware en una computadora. Ya sea que estés utilizando una impresora, una tarjeta gráfica, o cualquier otro periférico, los controladores juegan un papel esencial para garantizar que todo funcione sin problemas. Sin embargo, en ocasiones, pueden surgir problemas que requieren soluciones rápidas y efectivas. En esta guía completa sobre la 'Solución de Problemas de Controladores', exploraremos todo lo que necesitas saber para abordar estos desafíos de manera eficaz.",
+    "imagen": computers7,
+    "categoria": "computers",
+    "fecha": "actualizado septienbre 4, 2023",
+    "url": "blog/computers/construye-tu-propia-pc"
   }
-
 
 ];
 
