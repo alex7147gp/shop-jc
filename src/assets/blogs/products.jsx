@@ -39,6 +39,8 @@ import gaming5 from "@images/gaming5.jpg";
 import gaming6 from "@images/gaming6.jpg";
 import computers6 from "@images/computers6.jpg";
 import computers7 from "@images/computers7.jpg";
+import accessories14 from "@images/accessories14.jpg";
+import accessories15 from "@images/accessories15.jpg";
 
 const Productsb =  [
   {
@@ -382,6 +384,24 @@ const Productsb =  [
     "categoria": "computers",
     "fecha": "actualizado septienbre 4, 2023",
     "url": "blog/computers/construye-tu-propia-pc"
+  },
+  {
+    "id": "B40GGGBKRQ",
+    "titulo": "¿Cuáles son los mejores rastreadores de actividad física para principiantes?",
+    "descripcion": "Si estás considerando dar tus primeros pasos hacia un estilo de vida más activo y saludable, un rastreador de actividad física puede ser tu mejor aliado. Estos dispositivos te ayudan a monitorear tus movimientos, establecer metas de ejercicio y mantenerte motivado en tu viaje hacia una mejor salud. Pero, con tantas opciones disponibles en el mercado, puede ser abrumador elegir el adecuado, especialmente si eres un principiante en el mundo del fitness.",
+    "imagen": accessories14,
+    "categoria": "accessories",
+    "fecha": "actualizado septiembre 5, 2023",
+    "url": "blog/accessories/los-mejores-rastreadores-de-actividad-fisica"
+  },
+  {
+    "id": "B04GGGBKRQ",
+    "titulo": "Los Mejores Altavoces Bluetooth para Eventos al Aire Libre",
+    "descripcion": "La música es una parte esencial de cualquier evento al aire libre, ya sea un picnic en el parque, una barbacoa en la playa o una fiesta en el jardín. Y para disfrutar de un sonido de alta calidad en estos entornos, los altavoces Bluetooth son la elección perfecta. Pero, ¿cuáles son los mejores altavoces Bluetooth para eventos al aire libre? En esta guía, te presentaremos una selección de los mejores altavoces Bluetooth diseñados para brindarte un sonido excepcional en tus aventuras al aire libre.",
+    "imagen": accessories15,
+    "categoria": "accessories",
+    "fecha": "actualizado septiembre 5, 2023",
+    "url": "blog/accessories/los-mejores-altavoces-al-aire-libre"
   }
 
 ];

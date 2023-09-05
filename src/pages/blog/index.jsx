@@ -29,7 +29,7 @@ export default function Reviews() {
       <ReviewOfert product={productsG} article={"gaming"} cantidad={10} />
       <ReviewOfert product={productsC} article={"computers"} cantidad={10} />
       <ReviewOfert product={productsT} article={"tablets"} />
-      <ReviewOfert product={productsA} article={"accessories"} cantidad={15} />
+      <ReviewOfert product={productsA} article={"accessories"} cantidad={20} />
       <CategorieOfert />
     </div>
   );
