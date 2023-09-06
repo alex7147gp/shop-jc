@@ -17,6 +17,7 @@ import accessories12 from "@images/accessories12.jpg";
 import accessories13 from "@images/accessories13.jpg";
 import accessories14 from "@images/accessories14.jpg";
 import accessories15 from "@images/accessories15.jpg";
+import accessories16 from "@images/accessories16.jpg";
 
 const ProductsA =  [
   {
@@ -162,6 +163,15 @@ const ProductsA =  [
     "categoria": "accessories",
     "fecha": "actualizado septiembre 5, 2023",
     "url": "blog/accessories/los-mejores-altavoces-al-aire-libre"
+  },
+  {
+    "id": "B44GGGBKRQ",
+    "titulo": "¿Cuál es el mejor patinete eléctrico en 2023?",
+    "descripcion": "La movilidad urbana está en constante evolución, y los patinetes eléctricos se han convertido en una opción popular para desplazarse por la ciudad de manera rápida y sostenible. Con la creciente variedad de modelos en el mercado, surge la pregunta: ¿Cuál es el mejor patinete eléctrico en 2023? En este artículo, exploraremos las opciones líderes en la industria, desde modelos plegables hasta patinetes de larga distancia, para ayudarte a tomar una decisión informada.",
+    "imagen": accessories16,
+    "categoria": "accessories",
+    "fecha": "actualizado septiembre 6, 2023",
+    "url": "blog/accessories/los-mejores-monopatines-electricos"
   }
 
 ];

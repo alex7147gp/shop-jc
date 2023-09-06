@@ -6,6 +6,7 @@ import tablets3 from "@images/tablets3.jpg";
 
 import tablets4 from "@images/tablets4.jpg";
 import tablets5 from "@images/tablets5.jpg";
+import tablets6 from "@images/tablets6.jpg";
 
 const ProductsT =  [
   {
@@ -61,7 +62,17 @@ const ProductsT =  [
     "categoria": "tablets",
     "fecha": "actualizado agosto 25, 2023",
     "url": "blog/tablets/las-mejores-tablets-plegables"
+  },
+  {
+    "id": "B02GGGBKRQ",
+    "titulo": "Mejores Marcas de Tablets: Encuentra Calidad Garantizada",
+    "descripcion": "Las tablets se han convertido en un componente esencial de nuestras vidas en la era digital. Desde la navegación por Internet hasta la productividad en el trabajo y la relajación con juegos y películas, estos dispositivos versátiles desempeñan un papel fundamental. Sin embargo, con la creciente cantidad de marcas de tablets en el mercado, encontrar la adecuada puede ser un desafío. En esta guía, te presentaremos las mejores marcas de tablets que ofrecen calidad garantizada.",
+    "imagen": tablets6,
+    "categoria": "tablets",
+    "fecha": "actualizado septiembre 6, 2023",
+    "url": "blog/tablets/mejores-tablets-del-mercado"
   }
+
 ];
 
 export default ProductsT;

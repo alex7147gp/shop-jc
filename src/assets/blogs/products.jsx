@@ -41,6 +41,8 @@ import computers6 from "@images/computers6.jpg";
 import computers7 from "@images/computers7.jpg";
 import accessories14 from "@images/accessories14.jpg";
 import accessories15 from "@images/accessories15.jpg";
+import tablets6 from "@images/tablets6.jpg";
+import accessories16 from "@images/accessories16.jpg";
 
 const Productsb =  [
   {
@@ -402,7 +404,26 @@ const Productsb =  [
     "categoria": "accessories",
     "fecha": "actualizado septiembre 5, 2023",
     "url": "blog/accessories/los-mejores-altavoces-al-aire-libre"
+  },
+  {
+    "id": "B02GGGBKRQ",
+    "titulo": "Mejores Marcas de Tablets: Encuentra Calidad Garantizada",
+    "descripcion": "Las tablets se han convertido en un componente esencial de nuestras vidas en la era digital. Desde la navegación por Internet hasta la productividad en el trabajo y la relajación con juegos y películas, estos dispositivos versátiles desempeñan un papel fundamental. Sin embargo, con la creciente cantidad de marcas de tablets en el mercado, encontrar la adecuada puede ser un desafío. En esta guía, te presentaremos las mejores marcas de tablets que ofrecen calidad garantizada.",
+    "imagen": tablets6,
+    "categoria": "tablets",
+    "fecha": "actualizado septiembre 6, 2023",
+    "url": "blog/tablets/mejores-tablets-del-mercado"
+  },
+  {
+    "id": "B44GGGBKRQ",
+    "titulo": "¿Cuál es el mejor patinete eléctrico en 2023?",
+    "descripcion": "La movilidad urbana está en constante evolución, y los patinetes eléctricos se han convertido en una opción popular para desplazarse por la ciudad de manera rápida y sostenible. Con la creciente variedad de modelos en el mercado, surge la pregunta: ¿Cuál es el mejor patinete eléctrico en 2023? En este artículo, exploraremos las opciones líderes en la industria, desde modelos plegables hasta patinetes de larga distancia, para ayudarte a tomar una decisión informada.",
+    "imagen": accessories16,
+    "categoria": "accessories",
+    "fecha": "actualizado septiembre 6, 2023",
+    "url": "blog/accessories/los-mejores-monopatines-electricos"
   }
+
 
 ];
 

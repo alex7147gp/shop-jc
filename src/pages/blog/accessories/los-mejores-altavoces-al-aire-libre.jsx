@@ -18,7 +18,7 @@ export default function SmartPhones() {
         description={"Descubre los altavoces Bluetooth ideales para tus eventos al aire libre. Sonido de alta calidad en cualquier lugar."}
         keywords={"Altavoces Bluetooth para exteriores, Sonido al aire libre, Altavoces inalámbricos portátiles, Altavoces resistentes al agua, Sonido de alta calidad al aire libre, Altavoces para eventos al aire libre, Altavoces para fiestas al aire libre, Altavoces para actividades al aire libre, Altavoces para picnic, Altavoces para barbacoas, Música al aire libre, Altavoces para acampar, Conectividad Bluetooth, Altavoces para excursiones, Batería de larga duración, Altavoces para piscinas, Altavoces para playa, Rendimiento de sonido al aire libre, Altavoces resistentes a golpes, Altavoces para deportes al aire libre, Experiencia de audio al aire libre, Altavoces para eventos deportivos al aire libre, Altavoces para parques, Altavoces para jardines, Altavoces para terrazas, Altavoces para eventos al aire libre económicos."}
         urlC={"/blog/accessories/los-mejores-altavoces-al-aire-libre"}
-        url={"blog/accessories/los-mejores-altavoces-al-aire-libre"}
+        url={"/blog/accessories/los-mejores-altavoces-al-aire-libre"}
       />
       <BlogPage 
         titulo={"los Mejores Altavoces Bluetooth para Eventos al Aire Libre"}
