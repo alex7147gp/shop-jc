@@ -43,6 +43,8 @@ import accessories14 from "@images/accessories14.jpg";
 import accessories15 from "@images/accessories15.jpg";
 import tablets6 from "@images/tablets6.jpg";
 import accessories16 from "@images/accessories16.jpg";
+import gaming7 from "@images/gaming7.jpg";
+import accessories17 from "@images/accessories17.jpg";
 
 const Productsb =  [
   {
@@ -422,6 +424,24 @@ const Productsb =  [
     "categoria": "accessories",
     "fecha": "actualizado septiembre 6, 2023",
     "url": "blog/accessories/los-mejores-monopatines-electricos"
+  },
+  {
+    "id": "B33GGGBKRQ",
+    "titulo": "Reparación y Mantenimiento de Consolas: Mantén tus Dispositivos en Óptimas Condiciones",
+    "descripcion": "La reparación y mantenimiento de consolas es una preocupación común para los amantes de los videojuegos y los usuarios habituales de estos dispositivos de entretenimiento. Ya sea que poseas una consola de última generación o una reliquia retro, conocer cómo mantenerla en funcionamiento óptimo y, en caso de problemas, cómo repararla, puede prolongar la vida útil de tu consola y ahorrarte dinero a largo plazo.",
+    "imagen": gaming7,
+    "categoria": "gaming",
+    "fecha": "actualizado septiembre 8, 2023",
+    "url": "blog/gaming/reparacion-y-mantenimiento-de-consolas"
+  },
+  {
+    "id": "B44GGGBKRQ",
+    "titulo": "Soportes para Tablets Ajustables: Comodidad en tus Manos",
+    "descripcion": "Los soportes para tablets ajustables se han convertido en un accesorio esencial en la vida moderna. Con la creciente dependencia de las tablets en diversas actividades diarias, desde el trabajo hasta el entretenimiento, contar con un soporte ajustable puede marcar la diferencia en términos de comodidad y ergonomía. En este artículo, exploraremos en detalle todo lo que necesitas saber sobre estos prácticos dispositivos, desde cómo funcionan hasta las mejores marcas disponibles en el mercado.",
+    "imagen": accessories17,
+    "categoria": "accessories",
+    "fecha": "actualizado septiembre 8, 2023",
+    "url": "blog/accessories/soportes-para-tablets"
   }
 
 

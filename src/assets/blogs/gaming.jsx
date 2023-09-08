@@ -9,7 +9,7 @@ import gaming3 from "@images/gaming3.jpg";
 import gaming4 from "@images/gaming4.jpg";
 import gaming5 from "@images/gaming5.jpg";
 import gaming6 from "@images/gaming6.jpg";
-
+import gaming7 from "@images/gaming7.jpg";
 
 const ProductsG =  [
   {
@@ -92,8 +92,18 @@ const ProductsG =  [
     "categoria": "gaming",
     "fecha": "actualizado septiembre 3, 2023",
     "url": "blog/gaming/elimina-la-pantalla-en-negro"
+  },
+  {
+    "id": "B33GGGBKRQ",
+    "titulo": "Reparación y Mantenimiento de Consolas: Mantén tus Dispositivos en Óptimas Condiciones",
+    "descripcion": "La reparación y mantenimiento de consolas es una preocupación común para los amantes de los videojuegos y los usuarios habituales de estos dispositivos de entretenimiento. Ya sea que poseas una consola de última generación o una reliquia retro, conocer cómo mantenerla en funcionamiento óptimo y, en caso de problemas, cómo repararla, puede prolongar la vida útil de tu consola y ahorrarte dinero a largo plazo.",
+    "imagen": gaming7,
+    "categoria": "gaming",
+    "fecha": "actualizado septiembre 8, 2023",
+    "url": "blog/gaming/reparacion-y-mantenimiento-de-consolas"
   }
 
+  
 ];
 
 export default ProductsG;

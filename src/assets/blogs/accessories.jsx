@@ -18,6 +18,7 @@ import accessories13 from "@images/accessories13.jpg";
 import accessories14 from "@images/accessories14.jpg";
 import accessories15 from "@images/accessories15.jpg";
 import accessories16 from "@images/accessories16.jpg";
+import accessories17 from "@images/accessories17.jpg";
 
 const ProductsA =  [
   {
@@ -172,6 +173,15 @@ const ProductsA =  [
     "categoria": "accessories",
     "fecha": "actualizado septiembre 6, 2023",
     "url": "blog/accessories/los-mejores-monopatines-electricos"
+  },
+  {
+    "id": "B44GGGBKRQ",
+    "titulo": "Soportes para Tablets Ajustables: Comodidad en tus Manos",
+    "descripcion": "Los soportes para tablets ajustables se han convertido en un accesorio esencial en la vida moderna. Con la creciente dependencia de las tablets en diversas actividades diarias, desde el trabajo hasta el entretenimiento, contar con un soporte ajustable puede marcar la diferencia en términos de comodidad y ergonomía. En este artículo, exploraremos en detalle todo lo que necesitas saber sobre estos prácticos dispositivos, desde cómo funcionan hasta las mejores marcas disponibles en el mercado.",
+    "imagen": accessories17,
+    "categoria": "accessories",
+    "fecha": "actualizado septiembre 8, 2023",
+    "url": "blog/accessories/soportes-para-tablets"
   }
 
 ];
