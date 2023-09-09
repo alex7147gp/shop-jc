@@ -19,6 +19,8 @@ import accessories14 from "@images/accessories14.jpg";
 import accessories15 from "@images/accessories15.jpg";
 import accessories16 from "@images/accessories16.jpg";
 import accessories17 from "@images/accessories17.jpg";
+import accessories18 from "@images/accessories18.jpg";
+import accessories19 from "@images/accessories19.jpg";
 
 const ProductsA =  [
   {
@@ -182,6 +184,24 @@ const ProductsA =  [
     "categoria": "accessories",
     "fecha": "actualizado septiembre 8, 2023",
     "url": "blog/accessories/soportes-para-tablets"
+  },
+  {
+    "id": "B50GGGBKRQ",
+    "titulo": "Formas de Mejorar tu Wi-Fi y Acelerar tu Conexión a Internet",
+    "descripcion": "El Wi-Fi se ha convertido en una parte esencial de nuestras vidas. Ya sea para trabajar, jugar, estudiar o simplemente mantenernos conectados con amigos y familiares, dependemos en gran medida de una conexión Wi-Fi rápida y estable. Pero, a veces, esa conexión puede ser lenta o inestable, lo que puede ser frustrante. ¿Cómo puedes mejorar tu Wi-Fi y acelerar tu conexión a Internet? En este artículo, exploraremos una serie de formas efectivas de hacerlo.",
+    "imagen": accessories18,
+    "categoria": "accessories",
+    "fecha": "actualizado septiembre 9, 2023",
+    "url": "blog/accessories/formas-de-mejorar-tu-wifi"
+  },
+  {
+    "id": "B05GGGBKRQ",
+    "titulo": "Trabajar desde Casa: Consejos para el Éxito en el Teletrabajo",
+    "descripcion": "En la era digital actual, trabajar desde casa se ha convertido en una opción cada vez más popular. Ya sea que seas un trabajador independiente, un emprendedor o un empleado remoto, trabajar desde casa ofrece flexibilidad y comodidad. Sin embargo, para tener éxito en un entorno de trabajo en casa, es fundamental contar con las herramientas y la mentalidad adecuadas. En este artículo, exploraremos todo lo que necesitas para trabajar desde casa de manera efectiva y productiva.",
+    "imagen": accessories19,
+    "categoria": "accessories",
+    "fecha": "actualizado septiembre 9, 2023",
+    "url": "blog/accessories/trabajar-desde-casa"
   }
 
 ];
