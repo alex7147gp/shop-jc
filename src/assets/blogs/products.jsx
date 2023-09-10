@@ -47,6 +47,8 @@ import gaming7 from "@images/gaming7.jpg";
 import accessories17 from "@images/accessories17.jpg";
 import accessories18 from "@images/accessories18.jpg";
 import accessories19 from "@images/accessories19.jpg";
+import accessories20 from "@images/accessories20.jpg";
+import accessories21 from "@images/accessories21.jpg";
 
 const Productsb =  [
   {
@@ -462,6 +464,24 @@ const Productsb =  [
     "categoria": "accessories",
     "fecha": "actualizado septiembre 9, 2023",
     "url": "blog/accessories/trabajar-desde-casa"
+  },
+    {
+    "id": "B05GGGBKRQ",
+    "titulo": "¿Qué Son los Drones con Seguimiento Automático?",
+    "descripcion": "Los drones con seguimiento automático han revolucionado la forma en que interactuamos con la tecnología y el mundo que nos rodea. Estas asombrosas máquinas voladoras son capaces de seguirnos, filmarnos y fotografiarnos sin necesidad de un piloto humano. En este artículo, exploraremos en profundidad cómo funcionan los drones con seguimiento automático, sus componentes clave, usos, ventajas y desafíos, así como su emocionante futuro.",
+    "imagen": accessories20,
+    "categoria": "accessories",
+    "fecha": "actualizado septiembre 10, 2023",
+    "url": "blog/accessories/drones-de-seguimiento-automatico"
+  },
+  {
+    "id": "B05GGGBKRQ",
+    "titulo": "¿Qué plataforma de contenido es compatible con los visores de realidad virtual?",
+    "descripcion": "La evolución tecnológica ha transformado la forma en que vivimos y experimentamos el mundo que nos rodea. Uno de los avances más emocionantes en este ámbito es la realidad virtual (RV), que nos permite sumergirnos en mundos digitales inmersivos. Sin embargo, para disfrutar plenamente de esta experiencia, debemos elegir la plataforma de contenido adecuada. En este artículo, exploraremos las mejores opciones disponibles y cómo puedes encontrar la plataforma ideal para tu visor de RV.",
+    "imagen": accessories21,
+    "categoria": "accessories",
+    "fecha": "actualizado septiembre 10, 2023",
+    "url": "blog/accessories/plataformas-para-realidad-virtual"
   }
 
 ];
