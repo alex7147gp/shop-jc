@@ -1,37 +1,59 @@
-import styles from '@styles/Footer.module.scss';
+import React, { useState, useEffect } from "react";
+import styles from '../styles/Footer.module.scss';
 import Link from "next/link";
 
+import { getCategoryList } from '../../api';
+
+import { useTranslation } from 'next-i18next';
+
+
 export const Footer = () => {
+
+  
+
+  let locale = '';
+  
+  if (typeof window !== 'undefined') {
+    locale = window.location.pathname.split('/')[1];
+  }
+
+  const [categorie, setCategorie] = useState([]);
+  const { t } = useTranslation(['footer']);
+
+  useEffect(() => {
+    
+    const fetchData = async () => {
+      try {
+        const data = await getCategoryList({ limit: 10, locale });
+        setCategorie(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, [locale]);
+
 	return (
       <div className={styles.global}>
         <div className={styles.Fot} >
           <div className={styles['right']} >
-            <h2>Mejores</h2>
+            <h2>{t('bests')}</h2>
             <ul>
-              <li>
-                <Link href="/smartPhones">Smartphones</Link>
-              </li>
-              <li>
-                <Link href="/computers">Computers, laptops</Link>
-              </li>
-              <li>
-                <Link href="/smartHomeDevices">smart home devices</Link>
-              </li>
-              <li>
-                <Link href="/accessories">Accessories</Link>
-              </li>
-              <li>
-                <Link href="/gaming">Gaming and consoles</Link>
-              </li>
+              {categorie.map(item =>  
+                <li key={item.id} >
+                  <Link href={`/blog/${item.slug}`}>{item.titleShow}</Link>
+                </li>
+              )}  
             </ul>
           </div>
           <div className={styles['middle']}>
             <h2>Contactar</h2>
-            <ul>
-             <li><Link href="/PoliticaDePrivacidad">Política de privacidad</Link></li>
-             <li><Link href="/TerminosDelServicio">Términos del servicio</Link></li>
-            </ul>
-          </div>
+               <ul>
+                 <li><Link href="/PoliticaDePrivacidad">{t('politicaPrivate')}</Link></li>
+                 <li><Link href="/TerminosDelServicio">{t('servicesTerm')}</Link></li>
+               </ul>
+          </div> 
           <div className={styles['left']}>
             <ul>
              <li>johncedillo77@gmail.com</li>
@@ -40,9 +62,8 @@ export const Footer = () => {
           </div>
         </div>
         <div className={styles.spa}>
-          <span>Amazon, Amazon Prime, el logo de Amazon y el logo de Amazon Prime son marcas registradas de Amazon, Inc. o sus filiales
-          </span>
-          <span className={styles.spa2}>Copyright © 2023 van MejoresResenas.com</span>    
+          <span>{t('amazon')}</span>
+          <span className={styles.spa2}>{t('copyrigth')}</span>    
         </div>
       </div>
 	);

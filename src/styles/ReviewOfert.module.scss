@@ -1,18 +1,18 @@
 @import 'vars';
 
 .container {
-  max-width: 900px;
+  max-width: 90%;
   margin: 0 auto;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-top: solid;
 }
 
 .h1 {
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 34px;
+  margin-bottom: 40px;
   cursor: pointer;
 }
  

@@ -1,11 +1,11 @@
 import React from 'react';
-import ProductList from '@containers/ProductList';
+import ProductList from '../containers/ProductList';
 
-import Slider from "@components/Slider";
-import HeadPage from "@components/HeadPage";
+import Slider from "../components/Slider";
+import HeadPage from "../components/HeadPage";
 
-import ReviewOfert from "@components/ReviewOfert";
-import CategorieOfert from "@components/CategorieOfert";
+import ReviewOfert from "../components/ReviewOfert";
+import CategorieOfert from "../components/CategorieOfert";
 
 const Page = ({ title, description, products }) => {
 	return (

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import styles from '@styles/ProductA.module.scss';
+import styles from '../styles/ProductA.module.scss';
 
 
 const ProductoA = ({ imagen, titulo, descripcion, precio, url }) => {

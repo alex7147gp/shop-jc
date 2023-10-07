@@ -1,22 +1,30 @@
-import React, {useState ,useEffect} from "react";
-import styles from '@styles/Ofert.module.scss';
+import React, { useState ,useEffect } from "react";
+import { useTranslation } from 'next-i18next';
 
-
-
+import styles from '../styles/Ofert.module.scss';
 
 
 import Link from 'next/link';
 
-const list = [{
-  oferts:'Need an last minute Gift? Check out whit code FROSTY',
-  },{
-  oferts:'Take an Extra 30% Off Select Styles whit code FROSTY',
-  }
-];
-
 const Ofert = () => {
 	 
-   const [activo, setActivo] = useState(true);
+
+  const { t } = useTranslation(['ofert']);
+
+  const ofert1 = t('ofert1');
+
+  const ofert2 = t('ofert2');
+
+  const list = [{
+    oferts: ofert1,
+  },{
+    oferts: ofert2,
+  }
+];
+  
+  const [activo, setActivo] = useState(true);
+
+
 
    useEffect(() => {
    	const interval = setInterval(() => {
@@ -36,7 +44,7 @@ const Ofert = () => {
           <p className={styles.Desc} > 
            {ofert.oferts}
           </p>
-          <Link href="/" style={{color:'white'}}>Shop Now</Link>
+          <Link href="https://www.amazon.com/primebigdealdays?ref=CG_ac_ss_230927_Inspiration_pbdd" style={{color:'white'}}>{t('shop')}</Link>
         </div>
         )}
      </div>

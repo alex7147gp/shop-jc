@@ -1,32 +1,57 @@
-import HeadS from "@components/Head";
-import HeadPage from "@components/HeadPage";
+import HeadS from "../../../components/Head";
+import HeadPage from "../../../components/HeadPage";
 
-import ReviewOfert from "@components/ReviewOfert";
-import CategorieOfert from "@components/CategorieOfert";
+import ReviewOfert from "../../../components/ReviewOfert";
+import CategorieOfert from "../../../components/CategorieOfert";
 
-import productsC from '@blogs/computers';
-import computers from "@images/computers.jpg";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { getCategoryList, getBlogListByCategory } from '../../../../api';
 
-export default function SmartPhones() {
+export const getStaticProps = async ({ locale }) => {
+
+
+
+  const categorie = await getCategoryList({ limit: 10, locale });
+  const { entries, category } = await getBlogListByCategory({
+      category: 'computers',
+      limit: 12,
+      locale: locale,
+    });
+  const i18nConf = await serverSideTranslations(locale || 'default-locale');
+
+  return {
+    props: {
+      categorie,
+      entries,
+      category,
+      ...i18nConf
+    },
+    revalidate: 5 * 60,
+  };
+};
+
+
+export default function Accessories({ categorie, entries, category }) {
+
   return (
     <div style={{
       padding: "0px",
       margin: "0px",
       }}>
       <HeadS
-        title={"¡Explora el Universo Tecnológico a través de Nuestras Reseñas de Computadoras!"}
-        description={"Encuentra las mejores reseñas de computadoras en línea. Lee análisis detallados y opiniones para tomar decisiones informadas en tus compras tecnológicas."}
-        keywords={"Artículos sobre computadoras, Análisis de PCs, Reseñas de laptops, Novedades en hardware de computadoras, Guías de compra de ordenadores, Últimas tendencias en tecnología informática, Mejores equipos de escritorio, Comparativas de portátiles, Opiniones sobre periféricos, Novedades en componentes de PC, Reviews de accesorios para computadoras, Artículos sobre software de computadoras, Lo último en tecnología de procesadores, Consejos para mantenimiento de PCs, Artículos sobre sistemas operativos, Guías de actualización de hardware, Cobertura de novedades en tecnología informática, Artículos sobre computadoras gaming, Novedades en equipos de alto rendimiento, Análisis detallados de hardware, Guías de programación informática, Artículos sobre seguridad informática"}
-        urlC={"/blog/computers"}
-        url={"/blog/computers"}
-        img={computers}
+        title={category.titleCeo}
+        description={category.descriptionCeo}
+        keywords={category.keywords}
+        urlC={`/blog/${category.slug}`}
+        url={`/blog/${category.slug}`}
       />
       <HeadPage 
-        title={"Reseñas de Computadoras - Encuentra las Mejores"}
-        description={"Adéntrate en el mundo de la tecnología con nuestras reseñas de computadoras. Descubre análisis exhaustivos, comparativas y opiniones genuinas que te ayudarán a elegir la computadora perfecta para tus necesidades. Desde rendimiento hasta diseño, estamos aquí para guiarte en tu elección tecnológica. ¡Prepárate para tomar decisiones informadas y encontrar la computadora de tus sueños!"} 
+        title={category.title}
+        description={category.description}
+        image={category.icon}
       />
-      <ReviewOfert product={productsC} article={"computers"} cantidad={10} />
-      <CategorieOfert />
+      <ReviewOfert blogs={entries} article={category.slug} cantidad={category.length} />
+      <CategorieOfert categorie={categorie} />
     </div>
   );
 };

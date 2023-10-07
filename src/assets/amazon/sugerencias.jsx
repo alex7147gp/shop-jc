@@ -1,8 +1,8 @@
+import React from 'react';
 
 
 
-
-const SugerenciasList = [
+export const SugerenciasList = [
     <iframe 
         title="title-1"
         key={1}
@@ -13,7 +13,7 @@ const SugerenciasList = [
         scrolling="no" 
         frameBorder="0" 
         src="//rcm-eu.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=jcshop08-21&language=es_ES&o=30&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B082DJTBNF&linkId=f6a318f18db165c3b0f70652851925f8">  	
-    </iframe>,
+    </iframe>, 
     <iframe 
       title="title-2"
       key={2}
@@ -93,4 +93,8 @@ const SugerenciasList = [
     </iframe>
 ];
 
-export default SugerenciasList;
+export const SugerenciaOne = ({ index }) => {
+  
+  return SugerenciasList[index] || null;
+
+};

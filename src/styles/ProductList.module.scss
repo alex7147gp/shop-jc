@@ -1,5 +1,20 @@
 @import 'vars';
 
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
 .main-container {
   padding: 16px;
 }

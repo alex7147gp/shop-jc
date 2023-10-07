@@ -6,6 +6,39 @@
   margin: 0 auto;
   padding: 20px;
   padding-top: 80px;
+  position: relative;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  marging-top: 15px;
+  text-transform: none;
+  font-family: BreveText, helvetica, sans-serif;
+  font-feature-settings: normal;
+  font-style: normal;
+  letter-spacing: 0.00568421em;
+  line-break: auto;
+  line-height: 1.47368em;
+  font-size: 19px;
+  font-weight: 400;
+  overflow-wrap: normal;
+  color: rgb(26, 26, 26);
+}
+
+
+.sugerenciaOne {
+  position: fixed;
+  top: 80px; /* Ajusta el valor según tu diseño */
+  width: 200px;
+  height: 100%;
+  z-index: 1;
 }
 
 /* Estilos para la separación entre secciones */

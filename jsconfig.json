@@ -55,7 +55,10 @@
             ],
             "@baners/*": [
                 "assets/baners/*"
-            ]
+            ],
+            "@api/*": [
+                "api/*"
+            ],
         }
     }
 }

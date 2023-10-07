@@ -1,14 +1,14 @@
 import { useState } from "react";
 
 
-import styles from '@styles/Slider.module.scss';
+import styles from '../styles/Slider.module.scss';
 
 
 
 import Image from "next/image";
 import Link from "next/link";
 
-import Products from "@amazon/products";
+import Products from "../assets/amazon/products";
 
 
 const Silder = ({ products }) => {

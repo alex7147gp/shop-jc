@@ -7,29 +7,45 @@
     "build": "next build",
     "export": "next build && next export",
     "start": "next start",
-    "generate-sitemap": "npx next-sitemap",
+    "generate-sitemap": "npx sitemap.js",
     "lint": "next lint",
-    "lint:fix": "eslint src/ --fix"
+    "lint:fix": "eslint src/ --fix",
+    "type-check": "tsc --noEmit",
+    "build:schema": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
+    "apollo-server": "^3.12.1",
     "axios": "^0.27.2",
+    "contentful": "^10.5.2",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prettier": "^4.2.1",
+    "graphql": "^16.8.0",
+    "i18next": "^23.5.1",
+    "i18next-browser-languagedetector": "^7.1.0",
+    "i18next-http-backend": "^2.2.2",
     "is-callable": "^1.2.6",
     "next": "12.3.0",
+    "next-i18next": "^14.0.3",
     "next-pwa": "^5.6.0",
     "prettier": "^2.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-i18next": "^13.2.2",
+    "react-query": "^3.39.3",
     "sass": "^1.54.9",
     "xmlbuilder2": "^3.1.1"
   },
   "devDependencies": {
+    "@contentful/rich-text-plain-text-renderer": "^16.0.7",
+    "@contentful/rich-text-react-renderer": "^15.17.2",
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/typescript-graphql-request": "^5.0.0",
+    "@graphql-codegen/typescript-operations": "^4.0.1",
     "@types/react": "18.0.28",
     "eslint": "8.23.1",
     "eslint-config-next": "^12.3.0",
-    "typescript": "5.0.2",
+    "typescript": "^5.0.2",
     "xmlbuilder": "^15.1.1"
   }
 }

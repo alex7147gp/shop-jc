@@ -3,10 +3,11 @@
 
 
 .Container {
+  margin-top: 60px;
   width: calc(100%);
   display:flex;
   overflow-x:hidden;
-}
+} 
 
 .Wrapper {
   display: flex;  

@@ -1,13 +1,37 @@
-import HeadS from "@components/Head";
-import HeadPage from "@components/HeadPage";
+import HeadS from "../../../components/Head";
+import HeadPage from "../../../components/HeadPage";
 
-import ReviewOfert from "@components/ReviewOfert";
-import CategorieOfert from "@components/CategorieOfert";
+import ReviewOfert from "../../../components/ReviewOfert";
+import CategorieOfert from "../../../components/CategorieOfert";
 
-import productsS from '@blogs/smartphones';
-import smartPhones from "@images/smartPhones.jpg";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { getCategoryList, getBlogListByCategory } from '../../../../api';
 
-export default function SmartPhones() {
+export const getStaticProps = async ({ locale }) => {
+
+
+
+  const categorie = await getCategoryList({ limit: 10, locale });
+  const { entries, category } = await getBlogListByCategory({
+      category: 'smartphones',
+      limit: 12,
+      locale: locale,
+    });
+  const i18nConf = await serverSideTranslations(locale || 'default-locale');
+
+  return {
+    props: {
+      categorie,
+      entries,
+      category,
+      ...i18nConf
+    },
+    revalidate: 5 * 60,
+  };
+};
+
+
+export default function Accessories({ categorie, entries, category }) {
   
   return (
     <div style={{
@@ -15,19 +39,19 @@ export default function SmartPhones() {
       margin: "0px",
       }}>
       <HeadS
-        title={"¡Descubre la Tecnología Móvil en Detalle con Nuestras Reseñas de Smartphones!"}
-        description={"Encuentra los mejores smartphones a través de nuestras reseñas detalladas. Opiniones imparciales y análisis exhaustivos para ayudarte a tomar decisiones informadas."}
-        keywords={"Artículos sobre smartphones, Análisis de teléfonos inteligentes, Reseñas de dispositivos móviles, Novedades en smartphones, Guías de compra de smartphones, Últimas tendencias en tecnología móvil, Mejores smartphones del mercado, Comparativas de modelos de smartphones, Opiniones sobre cámaras de smartphones, Novedades en accesorios para móviles, Reviews de dispositivos Android, Artículos sobre dispositivos iOS, Lo último en tecnología de pantallas para smartphones, Consejos para elegir un smartphone, Artículos sobre innovación en smartphones, Cobertura de novedades en dispositivos móviles, Guías de uso de smartphones, Artículos sobre actualizaciones de software para smartphones, Novedades en baterías y carga rápida, Análisis detallados de características de smartphones"}
-        urlC={"/blog/smartPhones"}
-        url={"/blog/smartPhones"}
-        img={smartPhones}
+        title={category.titleCeo}
+        description={category.descriptionCeo}
+        keywords={category.keywords}
+        urlC={`/blog/${category.slug}`}
+        url={`/blog/${category.slug}`}
       />
       <HeadPage 
-        title={"Reseñas de Smartphones - Encuentra los Mejores"}
-        description={"Entra en el emocionante mundo de la tecnología móvil con nuestras reseñas de smartphones. Explora análisis minuciosos y descubre los pros y contras de los últimos modelos. Desde las cámaras de alta resolución hasta el rendimiento y la duración de la batería, estamos aquí para ayudarte a encontrar el smartphone perfecto para tu estilo de vida. ¡Prepárate para una experiencia móvil excepcional!"} 
+        title={category.title}
+        description={category.description}
+        image={category.icon}
       />
-      <ReviewOfert product={productsS} article={"smartPhones"} cantidad={10} />
-      <CategorieOfert />
+      <ReviewOfert blogs={entries} article={category.titleShow} cantidad={category.length} />
+      <CategorieOfert categorie={categorie} />
     </div>
   );
 };

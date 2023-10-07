@@ -1,4 +1,4 @@
-import styles from '@styles/Conclusion.module.scss';
+import styles from '../styles/Conclusion.module.scss';
 
 const Conclusion = ({ dconclucion }) => {
   return (

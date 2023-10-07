@@ -1,4 +1,4 @@
-import styles from '@styles/GuiaHeader.module.scss';
+import styles from '../styles/GuiaHeader.module.scss';
 import Image from 'next/image';
 
 

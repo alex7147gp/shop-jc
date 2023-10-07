@@ -1,31 +1,35 @@
-import categories from '@amazon/categories';
+import categories from '../assets/amazon/categories';
 
 
 import Link from 'next/link';
 import Image from 'next/image';
 
-import styles from '@styles/CategorieOfert.module.scss';
 
+import { useTranslation } from 'next-i18next';
+
+import styles from '../styles/CategorieOfert.module.scss';
 
 const CategorieOfert = ({ categorie }) => {
+
+  const { t } = useTranslation(['categorieOfert']);
 
   const categoriea = categorie ? categorie : categories;
 
 	return (
     <div className={styles.ContainerA}>
-     <h3>Recomedation</h3>
+     <h3>{t('recomendations')}</h3>
        <div className={styles.ContainerOfert}>
-         {categoriea.slice(0,4).map(item =>
+         {categoriea.slice(0,8).map(item =>
               <div className={styles.Container} key={categoriea.id}>
-                  <h4 className={styles.Title}>{item.title}</h4>
+                  <h4 className={styles.Title}>{item.titleShow}</h4>
                   <Image 
-                    src={item.img} 
-                    alt={item.title} 
+                    src={item.icon.url} 
+                    alt={item.icon.title} 
 			              width={200} 
                     height={200}  
 			            />
                   <div className={styles.Info}>
-                    <Link href={`/${item.url}`} target="_blank">
+                    <Link href={`/blog/${item.slug}`} target="_blank">
                       <button className={styles.Button}>See more</button>      
                     </Link>
                   </div>

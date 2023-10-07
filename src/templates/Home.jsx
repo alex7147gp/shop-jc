@@ -1,29 +1,24 @@
 import React from 'react';
-import ProductList from '@containers/ProductList';
+import ProductList from '../containers/ProductList';
 
-import Slider from "@components/Slider";
-import HeadPage from "@components/HeadPage";
-
-import ReviewOfert from "@components/ReviewOfert";
-import CategorieOfert from "@components/CategorieOfert";
-
-import products from "@amazon/products";
-import categories from '@amazon/categories';
+import Slider from "../components/Slider";
 
 
-import productsb from '@blogs/products';
+import ReviewOfert from "../components/ReviewOfert";
+import CategorieOfert from "../components/CategorieOfert";
 
-const Home = () => {
+import Ofert from "../components/Ofert";
+import products from "../assets/amazon/products";
+
+
+const Home = ({ blogs, categorie }) => {
 	return (
 		<>
-		  <HeadPage 
-            title={"JCshop"}
-            description={"Productos minusiosamente comparados de bajo costo y alta calidad"} 
-          />
+		  <Ofert/>
 	      <Slider products={products} />
 	      <ProductList products={products}/>
-	      <ReviewOfert product={productsb} />
-          <CategorieOfert categorie={categories} />
+	      <ReviewOfert blogs={blogs} />
+          <CategorieOfert categorie={categorie} />
 		</>
 	);
 };
