@@ -20,7 +20,7 @@ const CategorieOfert = ({ categorie }) => {
      <h3>{t('recomendations')}</h3>
        <div className={styles.ContainerOfert}>
          {categoriea.slice(0,8).map(item =>
-              <div className={styles.Container} key={categoriea.id}>
+              <div className={styles.Container} key={item.id}>
                   <h4 className={styles.Title}>{item.titleShow}</h4>
                   <Image 
                     src={item.icon.url} 

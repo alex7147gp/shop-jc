@@ -40,7 +40,7 @@ const Ofert = () => {
     <div className={styles.Container}> 
      <div className={styles.Wrapper} style={{ transform: `translateX(-${activo == true ? 100 : 0}vw)`}}> 
        {list.map(ofert=>   
-        <div className={styles.SliderO} key={list.index}>
+        <div className={styles.SliderO} key={ofert.index}>
           <p className={styles.Desc} > 
            {ofert.oferts}
           </p>

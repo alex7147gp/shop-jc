@@ -61,9 +61,9 @@ const Silder = ({ products }) => {
             <div className={styles.InfoContainer}>
               <h1 className={styles.Title}>{slider.titulo.substring(0, 60)}...</h1>
               <p className={styles.Description}>{slider.descripcion.substring(0, 120)}...</p>          
-              <Link href={slider.url}  itemId={slider._id} target="_blank">
+              <Link href={slider.url}  itemID={slider._id} target="_blank">
                 <button className={styles.Button}>shop now</button>
-              </Link>  
+              </Link>
             </div>
           </div>
           )}   
