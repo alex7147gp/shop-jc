@@ -15,7 +15,7 @@ export const getStaticProps = async ({ locale }) => {
   const { entries, category } = await getBlogListByCategory({
       category: 'computers',
       limit: 12,
-      locale: 'en-US',
+      locale: locale,
     });
   const i18nConf = await serverSideTranslations(locale || 'default-locale');
 
