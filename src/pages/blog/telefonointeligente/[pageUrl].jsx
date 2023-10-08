@@ -27,7 +27,7 @@ export const getStaticPaths = async ({ locales }) => {
   const { entries } = await getBlogListByCategory({
     category: 'telefonointeligente',
     limit: 12,
-    locale: locales,
+    locale: 'es',
   });
 
   const paths = flatMap(entries.map((articulo) => ({

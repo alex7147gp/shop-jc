@@ -29,8 +29,8 @@ const CategorieOfert = ({ categorie }) => {
                     height={200}  
 			            />
                   <div className={styles.Info}>
-                    <Link href={`/blog/${item.slug}`} target="_blank">
-                      <button className={styles.Button}>See more</button>      
+                    <Link href={`/blog/${item.slug}`} >
+                      <button className={styles.Button}>{t('seeMore')} </button>      
                     </Link>
                   </div>
               </div>

@@ -24,11 +24,11 @@ export const getStaticPaths = async ({ locales }) => {
     throw new Error('Uh, did you forget configure locales in your Next.js config');
   }
 
-    const { entries } = await getBlogListByCategory({
-      category: 'computadoras',
-      limit: 12,
-      locale: locales,
-    });
+  const { entries } = await getBlogListByCategory({
+    category: 'computadoras',
+    limit: 12,
+    locale: 'es',
+  });
 
   const paths = flatMap(entries.map((articulo) => ({
     params: {
