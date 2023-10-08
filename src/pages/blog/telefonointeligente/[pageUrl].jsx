@@ -33,7 +33,7 @@ export const getStaticPaths = async ({ locales }) => {
   const paths = flatMap(entries.map((articulo) => ({
     params: {
       pageUrl: articulo.pageUrl,
-    },W
+    },
   })),
   (path) => locales.map((loc) => ({ locale: loc, ...path}))
   );
