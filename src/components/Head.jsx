@@ -33,8 +33,7 @@ return (
       <meta property="og:description" content={description} key="ogdesc" />
       <meta property="og:site_name" content="jcshop" />
       <meta property="og:url" content={`https://www.jcshop.shop${url}`} />
-
-      {/* Etiqueta para la versión en español */}
+      
       {locale === 'es' && (
         <link
           rel="alternate"
@@ -43,7 +42,6 @@ return (
         />
       )}
 
-      {/* Etiqueta para la versión en inglés */}
       {locale === 'en-US' && (
         <link
           rel="alternate"

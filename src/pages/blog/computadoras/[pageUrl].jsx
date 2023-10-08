@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { flatMap } from 'lodash';
-import { getBlog, getBlogPageList, getContentfulAssetById, getCategoryList } from '../../../../api';
+import { getBlog, getBlogListByCategory, getContentfulAssetById, getCategoryList } from '../../../../api';
 import HeadS from "../../../components/Head";
 
 import GuiaHeader from '../../../components/GuiaHeader';
@@ -24,7 +24,11 @@ export const getStaticPaths = async ({ locales }) => {
     throw new Error('Uh, did you forget configure locales in your Next.js config');
   }
 
-  const entries = await getBlogPageList({ limit: 10 });
+    const { entries } = await getBlogListByCategory({
+      category: 'computadoras',
+      limit: 12,
+      locale: locales,
+    });
 
   const paths = flatMap(entries.map((articulo) => ({
     params: {
