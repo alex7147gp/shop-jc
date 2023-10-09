@@ -27,7 +27,7 @@ export const getStaticPaths = async ({ locales }) => {
   const { entries } = await getBlogListByCategory({
     category: 'videojuegos',
     limit: 12,
-    locale: 'en-US',
+    locale: 'es',
   });
 
   const paths = flatMap(entries.map((articulo) => ({
