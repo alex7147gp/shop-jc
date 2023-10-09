@@ -11,6 +11,12 @@ import styles from '../styles/CategorieOfert.module.scss';
 
 const CategorieOfert = ({ categorie }) => {
 
+  let locale = '';
+  
+  if (typeof window !== 'undefined') {
+    locale = window.location.pathname.split('/')[1];
+  }
+
   const { t } = useTranslation(['categorieOfert']);
 
   const categoriea = categorie ? categorie : categories;

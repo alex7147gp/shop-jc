@@ -9,11 +9,11 @@ import { getCategoryList, getBlogListByCategory } from '../../../../api';
 
 export const getStaticProps = async ({ locale }) => {
 
-
+  const categoryLocal = 'computers';
 
   const categorie = await getCategoryList({ limit: 10, locale });
   const { entries, category } = await getBlogListByCategory({
-      category: 'computers',
+      category: categoryLocal,
       limit: 12,
       locale: locale,
     });

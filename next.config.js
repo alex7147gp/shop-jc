@@ -25,24 +25,24 @@ const nextConfig = {
     return [
       // Rutas en español
       { 
-        source: '/es/blog/:category/telefonosinteligentes/:pageUrl*',
-        destination: '/es/blog/telefonosinteligentes/:pageUrl*',
+        source: '/es/blog/:category/smartphones/:pageUrl*',
+        destination: '/es/blog/smartphones/:pageUrl*',
       },
       {
-        source: '/es/blog/:category/accesorios/:pageUrl*',
-        destination: '/es/blog/accesorios/:pageUrl*',
+        source: '/es/blog/:category/accessories/:pageUrl*',
+        destination: '/es/blog/accessories/:pageUrl*',
       },
       {
-        source: '/es/blog/:category/computadoras/:pageUrl*',
-        destination: '/es/blog/computadoras/:pageUrl*',
+        source: '/es/blog/:category/computers/:pageUrl*',
+        destination: '/es/blog/computers/:pageUrl*',
       },
       {
-        source: '/es/blog/:category/videojuegos/:pageUrl*',
-        destination: '/es/blog/videojuegos/:pageUrl*',
+        source: '/es/blog/:category/gaming/:pageUrl*',
+        destination: '/es/blog/gaming/:pageUrl*',
       },
       {
-        source: '/es/blog/:category/tabletas/:pageUrl*',
-        destination: "/es/blog/tabletas/:pageUrl*",
+        source: '/es/blog/:category/tablets/:pageUrl*',
+        destination: "/es/blog/tablets/:pageUrl*",
       },
       {
         source: '/es/PoliticaDePrivacidad',
@@ -54,8 +54,8 @@ const nextConfig = {
       },
       // Rutas en inglés
       {
-        source: '/en-US/blog/:category/smartPhones/:pageUrl*',
-        destination: '/en-US/blog/smartPhones/:pageUrl*',
+        source: '/en-US/blog/:category/smartphones/:pageUrl*',
+        destination: '/en-US/blog/smartphones/:pageUrl*',
       },
       {
         source: '/en-US/blog/:category/accessories/:pageUrl*',
@@ -71,7 +71,7 @@ const nextConfig = {
       },
       {
         source: '/en-US/blog/:category/tablets/:pageUrl*',
-        destination: '/en-US/blog:category/tablets/:pageUrl*',
+        destination: '/en-US/blog/tablets/:pageUrl*',
       },
       {
         source: '/en-US/PoliticaDePrivacidad',

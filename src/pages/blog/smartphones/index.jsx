@@ -9,11 +9,11 @@ import { getCategoryList, getBlogListByCategory } from '../../../../api';
 
 export const getStaticProps = async ({ locale }) => {
 
-
+  const categoryLocal = 'smartphones';
 
   const categorie = await getCategoryList({ limit: 10, locale });
   const { entries, category } = await getBlogListByCategory({
-      category: 'computadoras',
+      category:categoryLocal,
       limit: 12,
       locale: locale,
     });
@@ -32,7 +32,7 @@ export const getStaticProps = async ({ locale }) => {
 
 
 export default function Accessories({ categorie, entries, category }) {
-
+  
   return (
     <div style={{
       padding: "0px",
@@ -50,7 +50,7 @@ export default function Accessories({ categorie, entries, category }) {
         description={category.description}
         image={category.icon}
       />
-      <ReviewOfert blogs={entries} article={category.slug} cantidad={category.length} />
+      <ReviewOfert blogs={entries} article={category.titleShow} cantidad={category.length} />
       <CategorieOfert categorie={categorie} />
     </div>
   );

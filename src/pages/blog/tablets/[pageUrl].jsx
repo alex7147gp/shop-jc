@@ -19,31 +19,36 @@ import styles from "../../../styles/BlogPage.module.scss";
 import stylesImg from "../../../styles/Image.module.scss";
 
 export const getStaticPaths = async ({ locales }) => {
-
-  if(locales === undefined) {
-    throw new Error('Uh, did you forget configure locales in your Next.js config');
+  if (locales === undefined) {
+    throw new Error('Uh, ¿olvidaste configurar los locales en tu archivo de configuración de Next.js?');
   }
 
-  const { entries } = await getBlogListByCategory({
-    category: 'tablets',
-    limit: 12,
-    locale: 'en-US',
-  });
+  const paths = [];
 
-  const paths = flatMap(entries.map((articulo) => ({
-    params: {
-      pageUrl: articulo.pageUrl,
-    },
-  })),
-  (path) => locales.map((loc) => ({ locale: loc, ...path}))
-  );
+  for (const loc of locales) {
+    const categoryLocal = 'tablets';
+
+    const { entries } = await getBlogListByCategory({
+      category: categoryLocal,
+      limit: 12,
+      locale: loc,
+    });
+
+    const localePaths = entries.map((articulo) => ({
+      params: {
+        pageUrl: articulo.pageUrl,
+      },
+      locale: loc,
+    }));
+
+    paths.push(...localePaths);
+  }
 
   return {
     paths,
-
     fallback: true,
   };
-}; 
+};
 
 export const getStaticProps = async ({ params, preview, locale }) => {
   
