@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
-import { flatMap } from 'lodash';
 import { getBlog, getBlogListByCategory, getContentfulAssetById, getCategoryList } from '../../../../api';
 import HeadS from "../../../components/Head";
+
 
 import GuiaHeader from '../../../components/GuiaHeader';
 import Conclusion from '../../../components/Conclusion';
