@@ -189,7 +189,7 @@ export default function ArticlePage({ blog, categorie }) {
       />
       <Conclusion dconclucion={blog.conclucion} />
 
-    </div>
+    </div> 
     <ReviewOfert 
       blogs={blog.recommendedPostsCollection} 
       article={blog.category.titleShow} 

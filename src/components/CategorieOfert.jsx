@@ -15,6 +15,8 @@ const CategorieOfert = ({ categorie }) => {
 
   const categoriea = categorie ? categorie : categories;
 
+  const text = t('seeMore')
+
 	return (
     <div className={styles.ContainerA}>
      <h3>{t('recomendations')}</h3>
@@ -30,7 +32,7 @@ const CategorieOfert = ({ categorie }) => {
 			            />
                   <div className={styles.Info}>
                     <Link href={`/blog/${item.slug}`} >
-                      <button className={styles.Button}>{t('seeMore')} </button>      
+                      <button className={styles.Button}>{ text == 'seeMore' ? 'See more' : text} </button>      
                     </Link>
                   </div>
               </div>

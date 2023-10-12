@@ -6,4 +6,5 @@ Allow: /
 Host: https://jcshop.shop
 
 # Sitemaps
-Sitemap: https://jcshop.shop/sitemap.xml
+Sitemap: https://www.jcshop.shop/sitemap-es.xml
+Sitemap: https://www.jcshop.shop/sitemap-en.xml

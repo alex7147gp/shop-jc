@@ -20,10 +20,12 @@ const Header = () => {
   const [categorie, setCategorie] = useState([]);
   const { t } = useTranslation(['header']);
 
+  const locales = locale == '' ? 'en-US' : locale
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await getCategoryList({ limit: 10, locale });
+        const data = await getCategoryList({ limit: 10, locales });
         setCategorie(data);
       } catch (error) {
         console.error('Error fetching data:', error);

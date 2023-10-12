@@ -8,7 +8,7 @@ import { useTranslation } from 'next-i18next';
 import styles from '../styles/ReviewOfert.module.scss';
 
 
-const ReviewOfert = ({ blogs = null, article = "Articles", cantidad = 6, url =null}) => {
+const ReviewOfert = ({ blogs = null, article = "Articles", cantidad = 6, url = null}) => {
 
 
   const { t } = useTranslation(['categorieOfert']);
@@ -46,5 +46,5 @@ const ReviewOfert = ({ blogs = null, article = "Articles", cantidad = 6, url =nu
     </>  
 	);
 };
-
+ 
 export default ReviewOfert;

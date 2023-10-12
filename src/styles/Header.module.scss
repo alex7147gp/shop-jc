@@ -16,7 +16,6 @@
 }
 .nav-logo { 
     display: flex;
-	width: 50px;
     margin: 0 1m 0 0;
     cursor: pointer;
 }
@@ -116,6 +115,9 @@
 
 
 @media (max-width: 640px) {
+	.Nav {
+	  padding: 0;
+    }
 	.menu {
 		display: block;
 	}
