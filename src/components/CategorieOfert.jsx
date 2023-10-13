@@ -15,7 +15,7 @@ const CategorieOfert = ({ categorie }) => {
 
   const categoriea = categorie ? categorie : categories;
 
-  const text = t('seeMore')
+  const text = t('seeMore');
 
 	return (
     <div className={styles.ContainerA}>

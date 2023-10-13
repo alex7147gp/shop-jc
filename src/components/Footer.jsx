@@ -20,13 +20,13 @@ export const Footer = () => {
   const [categorie, setCategorie] = useState([]);
   const { t } = useTranslation(['footer']);
 
-  const locales = locale == '' ? 'en-US' : locale
+  const locales = locale == '' ? 'en-US' : locale;
 
   useEffect(() => {
     
     const fetchData = async () => {
       try {
-        const data = await getCategoryList({ limit: 10, locales });
+        const data = await getCategoryList({ limit: 10, locale: locales });
         setCategorie(data);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -34,7 +34,7 @@ export const Footer = () => {
     };
 
     fetchData();
-  }, [locale]);
+  }, [locales]);
 
 	return (
       <div className={styles.global}>
