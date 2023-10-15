@@ -11,22 +11,17 @@ export const Footer = () => {
 
   
 
-  let locale = '';
-  
-  if (typeof window !== 'undefined') {
-    locale = window.location.pathname.split('/')[1];
-  }
+  const locale = typeof window !== 'undefined' ? window.location.pathname.split('/')[1] || 'en-US' : 'en-US';
 
   const [categorie, setCategorie] = useState([]);
   const { t } = useTranslation(['footer']);
 
-  const locales = locale == '' ? 'en-US' : locale;
 
   useEffect(() => {
     
     const fetchData = async () => {
       try {
-        const data = await getCategoryList({ limit: 10, locale: locales });
+        const data = await getCategoryList({ limit: 10, locale });
         setCategorie(data);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -34,7 +29,7 @@ export const Footer = () => {
     };
 
     fetchData();
-  }, [locales]);
+  }, [locale]);
 
 	return (
       <div className={styles.global}>

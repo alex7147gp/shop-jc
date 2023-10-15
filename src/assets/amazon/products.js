@@ -11,7 +11,7 @@ const Products =  [
     "categoria": "Electronica",
     "precio": "$139.99",
     "url": "https://www.amazon.com/KOORUI-Computer-Compatible-DisplayPort-Adjustable/dp/B0BNDZWC3L?keywords=KOORUI%2BMonitor%2BCurvo%2B-%2B23%2C6%2BPulgadas%2BFull%2BHD%E2%80%A6&qid=1679861113&s=pc&sr=1-1-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFGWVo1M0ZPMjlHSlImZW5jcnlwdGVkSWQ9QTAwMzY5MDUzSkg2T0k0WEtSWDIyJmVuY3J5cHRlZEFkSWQ9QTAwNjM2MTQzOFhLM0NVRlY5UUdQJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1&linkCode=li2&tag=jcshop0d8-20&linkId=d211348d0c32aace4009fad836924463&language=en_US&ref_=as_li_ss_il"
-  },
+  }, 
   {
     "id": "B08HFFX3T9",
     "titulo": "Apple iPhone 12 Pro Max, 256GB, Graphite - Fully Unlocked (Renewed)",

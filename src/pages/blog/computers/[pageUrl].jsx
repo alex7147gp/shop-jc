@@ -4,12 +4,8 @@ import { getBlog, getBlogListByCategory, getContentfulAssetById, getCategoryList
 import HeadS from "../../../components/Head";
 
 
-import GuiaHeader from '../../../components/GuiaHeader';
-import Conclusion from '../../../components/Conclusion';
-
 import ProductA from "../../../components/ProductA";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-
 
 import CategorieOfert from "../../../components/CategorieOfert";
 import ReviewOfert from "../../../components/ReviewOfert";

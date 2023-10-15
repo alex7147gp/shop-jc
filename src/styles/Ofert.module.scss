@@ -32,13 +32,22 @@
 }
 
 @media (max-width: 640px) {
+  
   .Container {
-    width:100%;
-    display: none;
-    overflow-x:hidden;
+    margin-top: 16px; /* Reduce el margen en dispositivos móviles */
   }
+
+  .Wrapper {
+    /* Puedes ajustar estilos adicionales o anular estilos aquí si es necesario */
+  }
+
   .SliderO {
-    font-size: 10px;
+    height: 30px; /* Reduzca el alto en dispositivos móviles si es necesario */
+    font-size: 12px; /* Reduzca el tamaño de fuente en dispositivos móviles si es necesario */
+  }
+
+  .Desc {
+    /* Puedes ajustar estilos adicionales o anular estilos aquí si es necesario */
   }
 
 }

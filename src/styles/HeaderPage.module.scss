@@ -24,3 +24,16 @@
 	flex: 2;
 	flex-direction: column;
 }
+
+@media (max-width: 640px) {
+  
+  .HeadP {
+    flex-direction: column;
+  }
+
+  .containerImage {
+    align-items: center;
+    justify-content: center;
+  }
+
+}

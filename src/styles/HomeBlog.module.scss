@@ -1,0 +1,132 @@
+@import 'vars';
+
+
+/* Estilos para el contenedor principal */
+.homeBlogComponent {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Estilos para la sección "Lo más visto" (Izquierda) */
+
+.mostViewed {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centra el contenido */
+}
+
+.mostViewed h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.mostViewed ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mostViewed li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: solid;
+  padding-bottom: 20px;
+}
+
+.mostViewed a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Estilos para la sección "Destacado del Día" (Centro) */
+.featuredBlog {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centra el contenido */
+  justify-content: center;
+}
+
+.featuredBlog h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #007bff;
+}
+
+.featuredBlog h3 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.featuredBlog p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: system-ui;
+}
+
+.featuredBlog a {
+  text-decoration: none;
+}
+
+/* Estilos para la sección "Ofertas del Día" (Derecha) */
+.dailyOffers {
+  flex: 0.5;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centra el contenido */
+}
+
+.dailyOffers h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.dailyOffers ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dailyOffers li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: solid;
+  padding-bottom: 20px;
+}
+
+.dailyOffers h4 {
+  font-size: 18px;
+  color: #333;
+}
+
+.dailyOffers p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.dailyOffers strong {
+  font-size: 18px;
+  color: #007bff;
+}
+
+@media (max-width: 640px) {
+
+  .homeBlogComponent {
+    display: none;
+  }
+}
