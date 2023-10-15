@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';  // Importa la etiqueta Image
-import products from '../assets/blogs/products';
 
 import { useTranslation } from 'next-i18next';
+
 
 import styles from '../styles/HomeBlog.module.scss';
 
