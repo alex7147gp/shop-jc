@@ -23,7 +23,7 @@ const Home = ({ blogs, categorie }) => {
   	const randomIndex = Math.floor(Math.random() * blogs.length);
     setBlogOne(blogs[randomIndex]);
   
-  }, [blogOne]);
+  }, []);
 
 	return (
 		<>

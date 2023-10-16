@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';  // Importa la etiqueta Image
 
 import { useTranslation } from 'next-i18next';
-
+import Link from "next/link";
 
 import styles from '../styles/HomeBlog.module.scss';
 
@@ -10,7 +10,7 @@ const HomeBlogComponent = ({ mostViewedBlogs, featuredBlog, dailyOffers }) => {
 
   const { t } = useTranslation(['categorieOfert']);
 
-  
+
   return (
     <div className={styles.homeBlogComponent}>
       <div className={styles.mostViewed}>
@@ -25,11 +25,11 @@ const HomeBlogComponent = ({ mostViewedBlogs, featuredBlog, dailyOffers }) => {
                 height={180}
               />
               <p>{blog.update}</p>
-              <a href={`/blog/${blog.slug}`}>{blog.title}</a>
+              <Link href={`/blog/${blog.category.slug}/${blog.pageUrl}`}>{blog.title}</Link>
             </li>
           ))}
         </ul>
-      </div>
+      </div>  
       <div className={styles.featuredBlog}>
         <h2>{t('featuredBlog')}</h2>
         <div>
@@ -39,7 +39,7 @@ const HomeBlogComponent = ({ mostViewedBlogs, featuredBlog, dailyOffers }) => {
             width={680}
             height={450}
           />
-          <a href={`/blog/${featuredBlog.slug}`}><h3>{featuredBlog.title}</h3></a>
+          <Link href={`/blog/${featuredBlog.category.slug}/${featuredBlog.pageUrl}`}><h3>{featuredBlog.title}</h3></Link>
           <p>{featuredBlog.intro.substring(0, 400)}</p>
         </div>
       </div>
@@ -54,8 +54,8 @@ const HomeBlogComponent = ({ mostViewedBlogs, featuredBlog, dailyOffers }) => {
                 width={100}
                 height={75}
               />
-              <h4>{offer.titulo.substring(0, 30)}</h4>
-              <strong>Precio: ${offer.precio}</strong>
+              <Link href={offer.url} target="_blank"><h4>{offer.titulo.substring(0, 30)}</h4></Link>
+              <strong>Precio: {offer.precio}</strong>
             </li>
           ))}
         </ul>
