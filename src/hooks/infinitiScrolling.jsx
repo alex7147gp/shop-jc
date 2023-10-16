@@ -51,7 +51,7 @@ function BlogSection() {
   return (
     <div>
       {categories.map((category, index) => (
-        <ReviewOfert key={category} blogs={categoryBlogs[category] || []} article={category} />
+        <ReviewOfert key={index} blogs={categoryBlogs[category] || []} article={category} />
       ))}
       <InfiniteScroll
         dataLength={categoryBlogs[categories[currentCategoryIndex]] ? categoryBlogs[categories[currentCategoryIndex]].length : 0}
