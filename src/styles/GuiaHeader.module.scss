@@ -5,16 +5,16 @@
 .container {
   display: flex;
   align-items: center;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   flex-direction: column;
-}
+}   
 
 .imageContainer {
   padding: 10px;
   border-radius: 8px;
-}
+} 
 
 .image {
   max-width: 100%;
@@ -27,12 +27,29 @@
 }
 
 .title {
-  font-size: 28px;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 10px;
+  border-top: 8.5px solid #000;
+  padding-top: 4px;
+  font-size: 3.25rem;
+  line-height: 3.4375rem;
+  font-family: nyt-franklin,helvetica,sans-serif;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #000;
 }
 
 .intro {
   line-height: 1.6;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-transform: none;
+  font-family: BreveText, helvetica, sans-serif;
+  font-feature-settings: normal;
+  font-style: normal;
+  letter-spacing: 0.00568421em;
+  line-break: auto;
+  line-height: 1.47368em;
+  font-size: 19px;
+  font-weight: 400;
+  overflow-wrap: normal;
+  color: rgb(26, 26, 26);
 }

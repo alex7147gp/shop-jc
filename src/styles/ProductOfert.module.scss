@@ -1,0 +1,22 @@
+@import 'vars';
+
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}   
+
+.imageContainer {
+  padding: 70px;
+  border-radius: 8px;
+} 
+
+
+.textContainer {
+  flex: 2;
+}
+
+

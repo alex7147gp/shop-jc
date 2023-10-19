@@ -4,17 +4,22 @@ import { getBlog, getBlogListByCategory, getContentfulAssetById, getCategoryList
 import HeadS from "../../../components/Head";
 
 
+
+
 import GuiaHeader from '../../../components/GuiaHeader';
 import Conclusion from '../../../components/Conclusion';
 
-import ProductA from "../../../components/ProductA";
+import ProductOfert from "../../../components/ProductOfert";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
 
 import CategorieOfert from "../../../components/CategorieOfert";
 import ReviewOfert from "../../../components/ReviewOfert";
+
+import products from "../../../assets/amazon/products";
+
 import Image from 'next/image';
-import styles from "../../../styles/BlogPage.module.scss";
+import styles from "../../../styles/BlogPageOld.module.scss";
 
 import stylesImg from "../../../styles/Image.module.scss";
 
@@ -170,26 +175,34 @@ export default function ArticlePage({ blog, categorie }) {
         url={blog.urlCanonical}
       />
       <GuiaHeader titulo={blog.title} intro={blog.intro} img={blog.image.url} />
-      <ProductA
-        imagen={blog.productI}
-        titulo={blog.productT}
-        descripcion={blog.productD}
-        precio={blog.productP}
-        url={blog.productUrl}
+      <ProductOfert 
+        productI={blog.productI}
+        productT={blog.productT}
+        productD={blog.productD}
+        productP={blog.productP}
+        productUrl={blog.productUrl}
+        productOfert={"blogs"}
+        recommendedPosts={blog.recommendedPostsCollection}
+        products={products}
       />
       <div className={styles.container}>
-        {renderedRichText}
+        <div className={styles.contentRich}>
+          {renderedRichText}
+        </div>
       </div>
-      <ProductA
-        imagen={blog.productI2}
-        titulo={blog.productT2}
-        descripcion={blog.productD2}
-        precio={blog.productP2}
-        url={blog.productUrl2}
+      <ProductOfert 
+        productI={blog.productI2}
+        productT={blog.productT2}
+        productD={blog.productD2}
+        productP={blog.productP2}
+        productUrl={blog.productUrl}
+        productOfert={"ofers"}
+        recommendedPosts={blog.recommendedPostsCollection}
+        products={products}
       />
       <Conclusion dconclucion={blog.conclucion} />
 
-    </div> 
+    </div>
     <ReviewOfert 
       blogs={blog.recommendedPostsCollection} 
       article={blog.category.titleShow} 

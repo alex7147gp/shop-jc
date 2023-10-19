@@ -1,0 +1,41 @@
+@import 'vars';
+
+
+.ListLeft {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  align-items: flex-start; /* Alinea los elementos a la izquierda */
+}
+
+.mostViewed {
+  background-color: #f1f3f9; /* Fondo del contenedor */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.h2 {
+  font-size: 24px; /* Tamaño del título */
+  margin-bottom: 40px; /* Espaciado inferior */
+}
+
+.ul {
+  list-style: none; /* Quita los puntos de lista */
+  padding: 0;
+  margin: 0;
+}
+
+.li {
+  margin-bottom: 20px; /* Espaciado inferior entre elementos de la lista */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para la imagen */
+.img {
+  border-radius: 8px; /* Bordes redondeados para las imágenes */
+}
+
+.p {
+  margin-top: 15px; /* Espaciado superior para el párrafo */
+}
