@@ -15,8 +15,7 @@ const ProductOfert = ({
   productOfert,
   recommendedPosts,
   products,
-  mostViewed = "Most Viewed",
-  dailyOffers = "Daily Offers" 
+  locale
   }) => {
   return (
     <div className={styles.container}>
@@ -32,9 +31,9 @@ const ProductOfert = ({
       <div className={styles.textContainer}>
         {
           productOfert == "blogs" ?
-            <ListLeft mostViewedBlogs={recommendedPosts} mostViewed={mostViewed}/>
+            <ListLeft mostViewedBlogs={recommendedPosts} locale={locale}/>
           :
-            <ListRight dailyOffers={products} dailyOffersTitle={dailyOffers}/>   
+            <ListRight dailyOffers={products} locale={locale}/>   
 
         }
       </div> 

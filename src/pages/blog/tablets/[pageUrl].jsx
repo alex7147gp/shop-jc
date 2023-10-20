@@ -31,7 +31,7 @@ export const getStaticPaths = async ({ locales }) => {
   const paths = [];
 
   for (const loc of locales) {
-    const categoryLocal = 'computers';
+    const categoryLocal = 'tablets';
 
     const { entries } = await getBlogListByCategory({
       category: categoryLocal,

@@ -6,12 +6,12 @@ import Link from "next/link";
 
 import styles from '../styles/ListRight.module.scss';
 
-const ListRight = ({ dailyOffers, dailyOffersTitle }) => {
+const ListRight = ({ dailyOffers, locale }) => {
 
   return ( 
     <div className={styles.ListRight}>
       <div className={styles.dailyOffers}>
-        <h2 className={styles.h2}>{dailyOffersTitle}</h2>
+        <h2 className={styles.h2}>{locale == "es" ? "Ofertas diarias" : "Daily offers"}</h2>
         <ul className={styles.ul}>
           {dailyOffers.slice(0, 3).map((offer) => (
             <li className={styles.li} key={offer.id}>

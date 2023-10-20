@@ -6,12 +6,13 @@ import Link from "next/link";
 
 import styles from '../styles/ListLeft.module.scss';
 
-const ListLeft = ({ mostViewedBlogs, mostViewed }) => {
+const ListLeft = ({ mostViewedBlogs, locale }) => {
+
 
   return (
     <div className={styles.ListLeft}>
       <div className={styles.mostViewed}>
-        <h2 className={styles.h2}>{mostViewed}</h2>
+        <h2 className={styles.h2}>{locale == "es" ? "Mas vistos" : "Most Viewed"}</h2>
         <ul className={styles.ul}>
           {mostViewedBlogs.slice(0, 3).map((blog) => (
             <li className={styles.li} key={blog.id}>

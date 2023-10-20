@@ -4,6 +4,8 @@ import Home from "../templates/Home";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { getBlogPageList, getCategoryList } from '../../api';
 
+import { useTranslation } from 'next-i18next';
+
 import logo from '../assets/icons/logo.jpeg';
 
 
@@ -25,15 +27,17 @@ export const getStaticProps = async ({ locale }) => {
 
 export default function HomeOne({ blogs, categorie }) {
 
+  const { t } = useTranslation(['categorieOfert']);
+
   return (
     <div style={{
       padding: "0px",
       margin: "0px",
       }}>
       <HeadS
-        title={"JC shop"}
-        description={"Los mejores productos comparados minusiosamente para que compre los mejores"}
-        keywords={"Tecnología, Reseñas de tecnología, Artículos de tecnología, Smartphones, Tablets, Computadoras, Accesorios tecnológicos, Audífonos inteligentes, Últimas novedades tecnológicas, Gadgets electrónicos, Comparativas de dispositivos, Innovación tecnológica, Mejores smartphones, Análisis de tablets, Guías de compra tecnológica, Dispositivos móviles, Tecnología móvil, Reviews de productos electrónicos, Tendencias tecnológicas, Noticias de tecnología"}
+        title={t("titleCeo")}
+        description={t("descriptionCeo")}
+        keywords={t("keywordsCeo")}
         urlC={"/"}
         url={"/"}
         img={logo}

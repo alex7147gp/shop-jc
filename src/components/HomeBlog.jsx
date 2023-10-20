@@ -28,7 +28,7 @@ const HomeBlogComponent = ({ mostViewedBlogs, featuredBlog, dailyOffers }) => {
               <Link href={`/blog/${blog.category.slug}/${blog.pageUrl}`}>{blog.title}</Link>
             </li>
           ))}
-        </ul>
+        </ul> 
       </div>  
       <div className={styles.featuredBlog}>
         <h2>{t('featuredBlog')}</h2>

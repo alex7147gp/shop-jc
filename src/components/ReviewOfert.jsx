@@ -37,8 +37,8 @@ const ReviewOfert = ({ blogs = null, article = "Articles", cantidad = 6, url = n
             <Link href={`/blog/${articulo.category.slug}/${articulo.pageUrl}`}>
               <h4 className={styles.h2}>{articulo.title}</h4>
             </Link>
-            <p className={styles.p}>{articulo.update}</p>
-            <p className={styles.p}>{articulo.intro}</p>
+            <p className={styles.span}>{articulo.update}</p>
+            <p className={styles.p}>{articulo.intro.substring(0, 400)}</p>
           </div>
         ))} 
       </div>

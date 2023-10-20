@@ -49,3 +49,19 @@
 .span {
   color: #00a859;
 }
+
+@media (max-width: 640px) {
+
+  .ListRight {
+    padding-top: 10px;
+  }
+
+  .ul {
+    display: flex;
+  }
+
+  .li {
+    padding: 10px;
+  }
+
+}

@@ -11,16 +11,17 @@ import Search from '../assets/logos/icons8-search.svg';
 
 const Header = () => { 
 
-  const locale = typeof window !== 'undefined' ? window.location.pathname.split('/')[1] || 'en-US' : 'en-US';
+  const locale = typeof window !== 'undefined' && window.location.pathname.split('/')[1];
+
+  const locales = locale == "es" ? locale : "en-US";
 
   const [categorie, setCategorie] = useState([]);
   const { t } = useTranslation(['header']);
 
-
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await getCategoryList({ limit: 10, locale });
+        const data = await getCategoryList({ limit: 10, locale: locales });
         setCategorie(data);
       } catch (error) {
         console.error('Error fetching data:', error);

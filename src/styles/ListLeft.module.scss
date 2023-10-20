@@ -39,3 +39,19 @@
 .p {
   margin-top: 15px; /* Espaciado superior para el párrafo */
 }
+
+@media (max-width: 640px) {
+
+  .ListLeft {
+    padding-top: 10px;
+  }
+
+  .ul {
+    display: flex;
+  }
+
+  .li {
+    padding: 10px;
+  }
+
+}
