@@ -76,6 +76,7 @@ export const getStaticProps = async ({ params, preview, locale }) => {
         props: {
           blog,
           categorie,
+          locale,
         },
         revalidate: 5 * 60,
       };
@@ -140,7 +141,7 @@ function EmbeddedAsset({ assetId }) {
   );
 }
 
-export default function ArticlePage({ blog, categorie }) {
+export default function ArticlePage({ blog, categorie, locale }) {
 
   const router = useRouter();
 
@@ -184,6 +185,7 @@ export default function ArticlePage({ blog, categorie }) {
         productOfert={"blogs"}
         recommendedPosts={blog.recommendedPostsCollection}
         products={products}
+        locale={locale}
       />
       <div className={styles.container}>
         <div className={styles.contentRich}>
@@ -199,6 +201,7 @@ export default function ArticlePage({ blog, categorie }) {
         productOfert={"ofers"}
         recommendedPosts={blog.recommendedPostsCollection}
         products={products}
+        locale={locale}
       />
       <Conclusion dconclucion={blog.conclucion} />
 
