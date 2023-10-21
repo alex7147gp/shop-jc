@@ -33,7 +33,7 @@ const Home = ({ blogs, categorie }) => {
 	      <ProductList products={products}/>
 	      <ReviewOfert blogs={blogs} />
 	      <BlogSection/>
-          <CategorieOfert categorie={categorie} />
+         <CategorieOfert categorie={categorie} />
 		</>
 	);
 };

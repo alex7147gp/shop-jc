@@ -16,6 +16,8 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import CategorieOfert from "../../../components/CategorieOfert";
 import ReviewOfert from "../../../components/ReviewOfert";
 
+import BlogSection from "../../../hooks/infinitiScrolling";
+
 import products from "../../../assets/amazon/products";
 
 import Image from 'next/image';
@@ -204,14 +206,14 @@ export default function ArticlePage({ blog, categorie, locale }) {
         locale={locale}
       />
       <Conclusion dconclucion={blog.conclucion} />
-
     </div>
     <ReviewOfert 
       blogs={blog.recommendedPostsCollection} 
-      article={blog.category.titleShow} 
+      article={locale == "es" ? "Lo mas visto" : "Trending stories"} 
       cantidad={blog.recommendedPostsCollection.length} 
       url={blog.category.slug}
      />
+     <BlogSection/>
     <CategorieOfert categorie={categorie} />
     </div>
   );

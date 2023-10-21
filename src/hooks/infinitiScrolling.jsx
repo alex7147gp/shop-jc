@@ -57,7 +57,7 @@ function BlogSection() {
         dataLength={categoryBlogs[categories[currentCategoryIndex]] ? categoryBlogs[categories[currentCategoryIndex]].length : 0}
         next={() => {
           // La lógica de cambio de categoría ahora está dentro de loadMoreBlogs
-        }}
+        }} 
         hasMore={hasMore}
         loader={<h4>Cargando...</h4>}
         //endMessage={
