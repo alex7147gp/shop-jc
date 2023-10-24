@@ -59,11 +59,11 @@ const Header = () => {
 			<div className={styles['navbar-left']}>
 				<ul>
 				  {categorie.map((article) => (
-            <li key={article.id} >
+            <li className={styles.li} key={article.id} >
 						  <Link href={`/blog/${article.slug}`}>{article.titleShow}</Link>
 					  </li>
 				  ))}
-				</ul>
+				</ul> 
 			</div>
 		  </nav>	
 	    </>	

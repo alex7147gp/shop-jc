@@ -8,14 +8,18 @@ function BlogSection() {
   const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
   const [categoryBlogs, setCategoryBlogs] = useState({});
   const [hasMore, setHasMore] = useState(true);
+  
   const locale = typeof window !== 'undefined' ? window.location.pathname.split('/')[1] || 'en-US' : 'en-US';
 
   const loadMoreBlogs = async (category) => {
+    
+    const locales = locale == "blog" ? "en-US" : locale;
+
     try {
       const response = await getBlogListByCategory({
         category,
         limit: 12,
-        locale,
+        locales,
         skip: categoryBlogs[category] ? categoryBlogs[category].length : 0,
       });
 

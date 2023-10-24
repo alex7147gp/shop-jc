@@ -36,7 +36,7 @@ const ProductOfert = ({
             <ListRight dailyOffers={products} locale={locale}/>   
 
         }
-      </div> 
+      </div>  
     </div>
   );
 }; 

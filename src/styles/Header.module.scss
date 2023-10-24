@@ -94,6 +94,7 @@
 	display: flex;
 }
 
+
 .nabvar-right li:first-of-type{
 	margin: 0 1m 0 0;
 }
@@ -121,5 +122,11 @@
 	}
 	.navbar-search {
 	  display: none;
+	}
+	.navbar-left {
+	  width: -webkit-fill-available;
+	}
+	.li {
+	  font-size: larger;
 	}
 }

@@ -7,7 +7,6 @@ import styles from '../styles/ProductA.module.scss';
 const ProductoA = ({ imagen, titulo, descripcion, precio, url }) => {
   return (
     <div className={styles.container}>
-      <Link href={url} target="_blank">
         <Image
           className={styles.imagen} 
           src={imagen} 
@@ -15,8 +14,9 @@ const ProductoA = ({ imagen, titulo, descripcion, precio, url }) => {
           width={200} 
           height={200}        
       />
+      <Link href={url} target="_blank">
+        <h3 className={styles.titulo}>{titulo}</h3>
       </Link>
-      <h3 className={styles.titulo}>{titulo}</h3>
       <p className={styles.descripcion}>{descripcion}</p>
       <p className={styles.precio}>Precio: {precio}</p>
       <p className={styles.ahorro}>Ahorra: 20%</p>
