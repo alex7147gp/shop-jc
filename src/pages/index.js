@@ -19,13 +19,14 @@ export const getStaticProps = async ({ locale }) => {
     props: {
       blogs,
       categorie,
+      locale,
       ...i18nConf
     },
     revalidate: 5 * 60,
   };
 };
 
-export default function HomeOne({ blogs, categorie }) {
+export default function HomeOne({ blogs, categorie, locale }) {
 
   const { t } = useTranslation(['categorieOfert']);
 
@@ -42,7 +43,7 @@ export default function HomeOne({ blogs, categorie }) {
         url={"/"}
         img={logo}
       />
-      <Home blogs={blogs} categorie={categorie} />
+      <Home blogs={blogs} categorie={categorie} locale={locale} />
     </div>
   );
 };

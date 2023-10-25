@@ -31,7 +31,7 @@ const ReviewOfert = ({ blogs = null, article = "Articles", cantidad = 6, url = n
                 src={articulo.image.url} 
                 alt={articulo.title} 
                 width={350} 
-                height={250}  
+                height={250}   
               /> 
             </div>
             <Link href={`/blog/${articulo.category.slug}/${articulo.pageUrl}`}>

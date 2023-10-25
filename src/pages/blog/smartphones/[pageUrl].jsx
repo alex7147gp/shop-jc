@@ -214,7 +214,7 @@ export default function ArticlePage({ blog, categorie, locale }) {
       cantidad={blog.recommendedPostsCollection.length} 
       url={blog.category.slug}
      />
-     <BlogSection/>
+     <BlogSection locale={locale} />
     <CategorieOfert categorie={categorie} />
     </div>
   );

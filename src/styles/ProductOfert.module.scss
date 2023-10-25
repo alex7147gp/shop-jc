@@ -17,7 +17,6 @@
 
 .textContainer {
   flex: 2;
-  max-width: 200px;
 }
 
 @media (max-width: 640px) {
@@ -29,6 +28,8 @@
   .imageContainer {
     padding: 10px;
   }
+
+  
 
 }
 

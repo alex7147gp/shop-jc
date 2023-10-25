@@ -19,8 +19,8 @@ const ListLeft = ({ mostViewedBlogs, locale }) => {
               <Image
                 src={blog.image.url}
                 alt={"Imagen de blog: " + blog.image.title} // Modifica el atributo alt
-                width={150}
-                height={100}
+                width={200}
+                height={150}
               />
               <Link href={`/blog/${blog.category.slug}/${blog.pageUrl}`}>
                 <h4 className={styles.p}>{blog.title}</h4>

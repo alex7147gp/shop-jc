@@ -14,7 +14,7 @@ import products from "../assets/amazon/products";
 
 
 
-const Home = ({ blogs, categorie }) => {
+const Home = ({ blogs, categorie, locale }) => {
 
   const [blogOne, setBlogOne] =  useState(blogs[0]);
 
@@ -32,7 +32,7 @@ const Home = ({ blogs, categorie }) => {
 	      <HomeBlogComponent mostViewedBlogs={blogs} featuredBlog={blogOne} dailyOffers={products} />
 	      <ProductList products={products}/>
 	      <ReviewOfert blogs={blogs} />
-	      <BlogSection/>
+	      <BlogSection locale={locale} />
          <CategorieOfert categorie={categorie} />
 		</>
 	);

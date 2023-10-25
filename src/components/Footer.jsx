@@ -37,26 +37,26 @@ export const Footer = () => {
       <div className={styles.global}>
         <div className={styles.Fot} >
           <div className={styles['right']} >
-            <h2>{t('bests')}</h2>
+            <h2 className={styles.h2}>{t('bests')}</h2>
             <ul>
               {categorie.map(item =>  
-                <li key={item.id} >
+                <li className={styles.li} key={item.id} >
                   <Link href={`/blog/${item.slug}`}>{item.titleShow}</Link>
                 </li>
               )}  
             </ul>
-          </div>
+          </div> 
           <div className={styles['middle']}>
-            <h2>Contactar</h2>
+            <h2 className={styles.h2}>Contactar</h2>
                <ul>
-                 <li><Link href="/PoliticaDePrivacidad">{t('politicaPrivate')}</Link></li>
-                 <li><Link href="/TerminosDelServicio">{t('servicesTerm')}</Link></li>
+                 <li className={styles.li} ><Link href="/PoliticaDePrivacidad">{t('politicaPrivate')}</Link></li>
+                 <li className={styles.li} ><Link href="/TerminosDelServicio">{t('servicesTerm')}</Link></li>
                </ul>
           </div> 
           <div className={styles['left']}>
             <ul>
-             <li>johncedillo77@gmail.com</li>
-             <li>JCshop</li>
+             <li className={styles.li}>johncedillo77@gmail.com</li>
+             <li className={styles.li}>JCshop</li>
             </ul>
           </div>
         </div>

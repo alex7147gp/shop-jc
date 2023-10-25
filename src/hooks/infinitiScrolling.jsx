@@ -3,23 +3,19 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 import { getBlogListByCategory } from '../../api';
 import ReviewOfert from '../components/ReviewOfert';
 
-function BlogSection() {
+function BlogSection({ locale }) {
   const categories = ['accessories', 'smartphones', 'computers', 'gaming', 'tablets'];
   const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
   const [categoryBlogs, setCategoryBlogs] = useState({});
   const [hasMore, setHasMore] = useState(true);
   
-  const locale = typeof window !== 'undefined' ? window.location.pathname.split('/')[1] || 'en-US' : 'en-US';
-
   const loadMoreBlogs = async (category) => {
     
-    const locales = locale == "blog" ? "en-US" : locale;
-
     try {
       const response = await getBlogListByCategory({
         category,
         limit: 12,
-        locales,
+        locale,
         skip: categoryBlogs[category] ? categoryBlogs[category].length : 0,
       });
 
