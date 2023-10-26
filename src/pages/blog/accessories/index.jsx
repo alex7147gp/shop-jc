@@ -50,7 +50,7 @@ export default function Accessories({ categorie, entries, category }) {
         description={category.description}
         image={category.icon}
       /> 
-      <ReviewOfert blogs={entries} article={category.slug} cantidad={category.length} />
+      <ReviewOfert blogs={entries} article={category.slug} cantidad={entries.length} />
       <CategorieOfert categorie={categorie} />
     </div>
   );

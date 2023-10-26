@@ -15,7 +15,7 @@ const HeadS = ({
     
     if (typeof window !== 'undefined') {
       locale = window.location.pathname.split('/')[1];
-    }
+    } 
 
 return (
     <Head>

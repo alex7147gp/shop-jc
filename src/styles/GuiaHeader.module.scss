@@ -53,3 +53,10 @@
   overflow-wrap: normal;
   color: rgb(26, 26, 26);
 }
+
+@media (max-width: 640px) {
+  
+  .intro {
+    font-size: 24px;
+  }
+}

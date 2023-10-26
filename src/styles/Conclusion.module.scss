@@ -30,3 +30,10 @@
   overflow-wrap: normal;
   color: rgb(26, 26, 26);
 }
+
+@media (max-width: 640px) {
+  
+  .p {
+    font-size: 24px;
+  }
+}

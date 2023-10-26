@@ -73,14 +73,14 @@
 
 @media (max-width: 640px) {
   .global {
-	  width: 100%; 
+	  width: max-content;
   }
 
   .h2 {
-    font-size: 18px;
+    font-size: 26px;
   }
 
   .li {
-    font-size: 16px;
+    font-size: 24px;
   }
 }

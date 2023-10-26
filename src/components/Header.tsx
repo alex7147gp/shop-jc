@@ -30,7 +30,7 @@ const Header = () => {
 
     fetchData();
   }, [locale]);
-
+ 
 	return (
 		<>
 		  <nav className={styles.Nav}>

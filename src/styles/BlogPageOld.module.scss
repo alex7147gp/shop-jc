@@ -60,3 +60,28 @@
 .blogContainer > * {
   margin-bottom: 30px;
 }
+
+@media (max-width: 640px) {
+  /* Aumenta el tamaño del texto en dispositivos móviles */
+  .container p {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  /* Ajusta el ancho de los contenedores principales para que se ajusten a la pantalla */
+  .blogContainer, .MostViewed, .ProductsInOffer, .container, .contentRich {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  /* Puedes reducir o eliminar el padding-top en .blogContainer si es necesario */
+  .blogContainer {
+    padding-top: 40px;
+  }
+
+  /* Puedes modificar la posición de los elementos pegajosos o eliminarlos si no son adecuados para dispositivos móviles */
+  .MostViewed, .ProductsInOffer {
+    position: static;
+    width: auto;
+  }
+}
