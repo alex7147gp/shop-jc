@@ -4,7 +4,6 @@
 
 .container {
   display: flex;
-  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -31,10 +30,14 @@
   padding-top: 4px;
   font-size: 3.25rem;
   line-height: 3.4375rem;
-  font-family: nyt-franklin,helvetica,sans-serif;
+  font-family: 'Lobster', cursive;
   font-weight: 900;
   letter-spacing: -1px;
   color: #000;
+}
+
+.span {
+  padding-bottom: 20px;
 }
 
 .intro {

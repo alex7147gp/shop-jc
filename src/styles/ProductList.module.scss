@@ -11,11 +11,17 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 34px;
   margin-bottom: 40px;
+  padding-top: 4px;
+  font-size: 3.25rem;
+  line-height: 3.4375rem;
+  font-family: 'Lobster', cursive;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #000;
 }
 
-.main-container {
+.main-container { 
   padding: 16px;
 }
 

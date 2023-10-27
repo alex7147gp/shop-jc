@@ -35,14 +35,14 @@ const Header = () => {
 		<>
 		  <nav className={styles.Nav}>
             <div className={styles['navbar-logo']}>	
-            	<ul>
-            		<li>
-            	      <Link href="/">
-					            <Image width={40} height={40} src={logo} alt="logo" className={styles['nav-logo']} />
-				            </Link>
-            		</li>
-            		<li className={styles.Logo}>JCshop</li>
-            	</ul>
+            	<Link href="/">
+                <ul>
+            		  <li>
+					          <Image width={40} height={40} src={logo} alt="logo" className={styles['nav-logo']} />
+            		  </li>
+            		  <li className={styles.Logo}>JCshop</li>
+            	  </ul>
+              </Link>
 			      </div>
 		    <div className={styles['navbar-search']}>
               <div>

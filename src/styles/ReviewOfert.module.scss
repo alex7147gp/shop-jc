@@ -10,10 +10,17 @@
 }
 
 .h1 {
-  text-align: center;
-  font-size: 34px;
   margin-bottom: 40px;
   cursor: pointer;
+  border-bottom: 8.5px solid #000;
+  padding-top: 4px;
+  font-size: 3.25rem;
+  line-height: 3.4375rem;
+  font-family: 'Lobster', cursive;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #000;
+  display: inline-block;
 }
  
 .articulosContainer {

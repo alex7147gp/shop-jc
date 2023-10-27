@@ -14,7 +14,7 @@ const HomeBlogComponent = ({ mostViewedBlogs, featuredBlog, dailyOffers }) => {
   return (
     <div className={styles.homeBlogComponent}>
       <div className={styles.mostViewed}>
-        <h2>{t('mostViewedBlogs')}</h2>
+        <h2 className={styles.h2}>{t('mostViewedBlogs')}</h2>
         <ul>
           {mostViewedBlogs.slice(0, 3).map((blog) => (
             <li key={blog.id}>
@@ -31,20 +31,22 @@ const HomeBlogComponent = ({ mostViewedBlogs, featuredBlog, dailyOffers }) => {
         </ul> 
       </div>  
       <div className={styles.featuredBlog}>
-        <h2>{t('featuredBlog')}</h2>
         <div>
+          <Link href={`/blog/${featuredBlog.category.slug}/${featuredBlog.pageUrl}`}>
+            <h2 className={styles.h2}>{featuredBlog.title}</h2>
+          </Link>
           <Image
             src={featuredBlog.image.url}
             alt={"Imagen destacada del día: " + featuredBlog.image.title} // Modifica el atributo alt
             width={680}
             height={450}
           />
-          <Link href={`/blog/${featuredBlog.category.slug}/${featuredBlog.pageUrl}`}><h3>{featuredBlog.title}</h3></Link>
+          <span className={styles.span}>{featuredBlog.update}</span>
           <p>{featuredBlog.intro.substring(0, 400)}</p>
         </div>
       </div>
       <div className={styles.dailyOffers}>
-        <h2>{t('dailyOffers')}</h2>
+        <h2 className={styles.h2}>{t('dailyOffers')}</h2>
         <ul>
           {dailyOffers.slice(0, 4).map((offer) => (
             <li key={offer.id}>

@@ -177,7 +177,12 @@ export default function ArticlePage({ blog, categorie, locale }) {
         urlC={blog.urlCeo}
         url={blog.urlCanonical}
       />
-      <GuiaHeader titulo={blog.title} intro={blog.intro} img={blog.image.url} />
+      <GuiaHeader
+        titulo={blog.title}
+        intro={blog.intro}
+        img={blog.image.url}
+        update={blog.update}
+      />
       <ProductOfert 
         productI={blog.productI}
         productT={blog.productT}
