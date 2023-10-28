@@ -15,7 +15,7 @@ const ProductItem = ({ product }) => {
 			<div className={styles.Image}>
 			    <Image 
 			      src={product.imagen} 
-			      alt={product.title} 
+			      alt={product.titulo} 
                   layout="responsive"
                   width={80} 
                   height={80}
