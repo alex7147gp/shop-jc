@@ -38,8 +38,8 @@ const HomeBlogComponent = ({ mostViewedBlogs, featuredBlog, dailyOffers }) => {
           <Image
             src={featuredBlog.image.url}
             alt={"Imagen destacada del día: " + featuredBlog.image.title} // Modifica el atributo alt
-            width={680}
-            height={450}
+            width={649}
+            height={427}
           />
           <span className={styles.span}>{featuredBlog.update}</span>
           <p>{featuredBlog.intro.substring(0, 400)}</p>

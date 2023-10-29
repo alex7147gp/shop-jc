@@ -47,7 +47,12 @@
 
 .mostViewed a {
   text-decoration: none;
-  color: #007bff;
+  font-size: 1.20rem;
+  font-family: 'Lobster', cursive;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-align: initial;
+  color: #000;
 }
 
 /* Estilos para la sección "Destacado del Día" (Centro) */
@@ -131,6 +136,7 @@
 
 .dailyOffers h4 {
   font-size: 18px;
+  text-align: initial;
   color: #333;
 }
 
@@ -142,6 +148,7 @@
 
 .dailyOffers strong {
   font-size: 18px;
+  font-weight: bold;
   color: #007bff;
 }
 

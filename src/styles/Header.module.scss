@@ -86,6 +86,15 @@
     padding: 0;
 }
 
+.li {
+  font-size: 1.20rem;
+  line-height: 3.4375rem;
+  font-family: 'Lobster', cursive;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: #000;
+}
+
 .navbar-left ul,
 .navbar-right ul {
 	list-style: none;
@@ -106,7 +115,6 @@
 .navbar-left ul li a,
 .navbar-right ul li a {
 	text-decoration: none;
-	color: $--very-light-pink;
 	border: 1px solid $--white;
 	padding: 8px;
 	border-radius: 8px;

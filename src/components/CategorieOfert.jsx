@@ -32,7 +32,7 @@ const CategorieOfert = ({ categorie }) => {
 			            />
                   <div className={styles.Info}>
                     <Link href={`/blog/${item.slug}`} >
-                      <button className={styles.Button}>{ text == 'seeMore' ? 'See more' : text} </button>      
+                      <button className={styles.Button}>{ text == 'seeMore' ? `See ${item.titleShow}` : `${text} ${item.titleShow}`} </button>      
                     </Link>
                   </div>
               </div>

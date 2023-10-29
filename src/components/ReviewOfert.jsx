@@ -39,7 +39,7 @@ const ReviewOfert = ({ blogs = null, article = "Articles", cantidad = 6, url = n
             </Link>
             <p className={styles.span}>{articulo.update}</p>
             <p className={styles.p}>{articulo.intro.substring(0, 400)}</p>
-          </div>
+          </div> 
         ))} 
       </div>
     </div>
