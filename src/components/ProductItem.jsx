@@ -25,10 +25,10 @@ const ProductItem = ({ product }) => {
 			<div className={styles['product-info']}>
 				<div>
 					<Link href={product.url} target="_blank">
-					  <h2>{product.titulo.substring(0, 60)}...</h2>
+					  <h2>{product.titulo.substring(0, 40)}...</h2>
 					</Link>
 					<p>{product.precio}</p>
-				</div>
+				</div> 
 			</div>
 		</div>
 	);
