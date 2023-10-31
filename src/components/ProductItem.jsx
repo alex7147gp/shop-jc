@@ -2,14 +2,10 @@ import React from 'react';
 import styles from '../styles/ProductItem.module.scss';
 import Image from 'next/image';
 
-import { useTranslation } from 'next-i18next';
-
 import Link from "next/link";
 
 
 const ProductItem = ({ product }) => {
-
-    const { t } = useTranslation(['ofert']);
     
     return (
 		<div className={styles.ProductItem}>
