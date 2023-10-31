@@ -2,32 +2,33 @@ import React from 'react';
 import styles from '../styles/ProductItem.module.scss';
 import Image from 'next/image';
 
+import { useTranslation } from 'next-i18next';
+
 import Link from "next/link";
 
 
 const ProductItem = ({ product }) => {
 
-
+    const { t } = useTranslation(['ofert']);
     
-
     return (
 		<div className={styles.ProductItem}>
-			<div className={styles.Image}>
+			<div className={styles.ImageContainer}>
 			    <Image 
 			      src={product.imagen} 
 			      alt={product.titulo} 
                   layout="responsive"
-                  width={80} 
-                  height={80}
+                  width={200} 
+                  height={200}
 
 			   />
 			</div>       
 			<div className={styles['product-info']}>
 				<div>
+					<h2>{product.titulo.substring(0, 40)}...</h2>
 					<Link href={product.url} target="_blank">
-					  <h2>{product.titulo.substring(0, 40)}...</h2>
+					  <p>{`Precio: ${product.precio}`}</p>
 					</Link>
-					<p>{product.precio}</p>
 				</div> 
 			</div>
 		</div>

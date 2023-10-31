@@ -56,8 +56,8 @@ const HomeBlogComponent = ({ mostViewedBlogs, featuredBlog, dailyOffers }) => {
                 width={100}
                 height={75}
               />
-              <Link href={offer.url} target="_blank"><h3>{offer.titulo.substring(0, 30)}</h3></Link>
-              <strong>Precio: {offer.precio}</strong>
+              <h3>{offer.titulo.substring(0, 30)}</h3>
+              <Link href={offer.url} target="_blank"><strong>Precio: {offer.precio}</strong></Link>
             </li>
           ))}
         </ul>

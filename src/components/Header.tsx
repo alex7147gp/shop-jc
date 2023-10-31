@@ -61,7 +61,7 @@ const Header = () => {
 				  {categorie.map((article) => (
             <li className={styles.li} key={article.id} >
 						  <Link href={`/blog/${article.slug}`}>{article.titleShow}</Link>
-					  </li>
+					  </li> 
 				  ))}
 				</ul> 
 			</div>

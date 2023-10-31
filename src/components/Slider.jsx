@@ -69,8 +69,13 @@ const Slider = ({ products }) => {
       >
         {product.slice(0, 8).map((slider) => (
           <div className={styles.Slide} style={{ backgroundColor: "#f1f3f9" }} key={slider.id}>
-            <div className={styles.ImgContainer}>
-              <Image src={slider.imagen} alt={slider.titulo} layout="responsive" width={50} height={30} />
+            <div className={styles.ImgContainer}> 
+              <Image 
+                src={slider.imagen}
+                alt={slider.titulo}
+                layout="responsive"
+                width={50}
+                height={30} />
             </div>
             <div className={styles.InfoContainer}>
               <h1 className={styles.Title}>{slider.titulo.substring(0, 60)}...</h1>
