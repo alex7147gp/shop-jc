@@ -19,7 +19,7 @@ const CategorieOfert = ({ categorie }) => {
 
 	return (
     <div className={styles.ContainerA}>
-     <h3>{t('recomendations')}</h3>
+     <h3 className={styles.h3}>{t('recomendations')}</h3>
        <div className={styles.ContainerOfert}>
          {categoriea.slice(0,8).map(item =>
               <div className={styles.Container} key={item.id}>
@@ -38,7 +38,7 @@ const CategorieOfert = ({ categorie }) => {
               </div>
         	
        )}
-       </div> 
+       </div>  
      </div>  
 	);
 };

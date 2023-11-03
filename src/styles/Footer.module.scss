@@ -72,15 +72,17 @@
 }
 
 @media (max-width: 640px) {
-  .global {
-	  width: max-content;
+  .Fot {
+    justify-content: none;
+    flex-direction: column;
   }
 
   .h2 {
-    font-size: 26px;
+    font-size: 46px;
   }
 
-  .li {
-    font-size: 24px;
-  }
+  .right li, .middle li, .left li {
+	  font-size: 35px;
+	  margin: 15px;
+  }  
 }

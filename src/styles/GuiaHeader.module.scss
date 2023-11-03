@@ -30,7 +30,7 @@
   padding-top: 4px;
   font-size: 3.25rem;
   line-height: 3.4375rem;
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster';
   font-weight: 900;
   letter-spacing: -1px;
   color: #000;
@@ -58,8 +58,23 @@
 }
 
 @media (max-width: 640px) {
-  
+  .title {
+    border-top: 8.5px solid #000;
+    padding-top: 4px;
+    font-size: 55px;
+    line-height: 3.4375rem;
+    font-family: 'Lobster';
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: #000;
+  }
+
+  .span {
+    font-size: 25px; 
+    padding-bottom: 20px;
+  }
+
   .intro {
-    font-size: 24px;
+    font-size: 32px;
   }
 }

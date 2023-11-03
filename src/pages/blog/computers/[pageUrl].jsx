@@ -49,7 +49,7 @@ export const getStaticPaths = async ({ locales }) => {
     }));
 
     paths.push(...localePaths);
-  }
+  } 
 
   return {
     paths,

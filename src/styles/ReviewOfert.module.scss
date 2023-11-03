@@ -16,7 +16,7 @@
   padding-top: 4px;
   font-size: 3.25rem;
   line-height: 3.4375rem;
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster';
   font-weight: 900;
   letter-spacing: -1px;
   color: #000;
@@ -54,7 +54,7 @@
 
 .span {
   font-size: 1.20rem;
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster';
   font-weight: 900;
   letter-spacing: -1px;
   color: #000;
@@ -70,6 +70,16 @@
     padding: 10px;
   }
 
+  .h1 {
+    
+    cursor: pointer;
+    border-bottom: 8.5px solid #000;
+    padding-top: 4px;
+    font-size: 3.25rem;
+    color: #000;
+    display: inline-block;
+}
+
   .articulosContainer {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -82,11 +92,17 @@
     justify-content: center;
   }
 
+  .span {
+    font-size: 25px;
+    font-family: 'Lobster';
+    color: #000;
+}
+
   .h2 {
-    font-size: 26px;
+    font-size: 30px;
   }
 
   .p {
-    font-size: 22px;
+    font-size: 30px;
   }
  }

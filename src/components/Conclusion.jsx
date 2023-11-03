@@ -1,6 +1,6 @@
 import styles from '../styles/Conclusion.module.scss';
 
-const Conclusion = ({ dconclucion }) => {
+const Conclusion = ({ dconclucion }) => { 
   return (
     <div className={styles.container}>
       <h2 className={styles.h2}>Conclucion</h2>

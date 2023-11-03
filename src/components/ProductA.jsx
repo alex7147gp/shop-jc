@@ -16,7 +16,7 @@ const ProductoA = ({ imagen, titulo, descripcion, precio, url }) => {
       />
       <Link href={url} target="_blank">
         <h3 className={styles.titulo}>{titulo}</h3>
-      </Link>
+      </Link> 
       <p className={styles.descripcion}>{descripcion}</p>
       <p className={styles.precio}>Precio: {precio}</p>
       <p className={styles.ahorro}>Ahorra: 20%</p>

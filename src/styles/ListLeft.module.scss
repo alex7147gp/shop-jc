@@ -46,6 +46,16 @@
     padding-top: 10px;
   }
 
+  .h2 {
+    font-size: 34px; /* Tamaño del título */
+    margin-bottom: 40px; /* Espaciado inferior */
+  }
+
+  .p {
+    font-size: 20px;
+    margin-top: 15px; /* Espaciado superior para el párrafo */
+  }
+
   .ul {
     display: flex;
   }
@@ -55,4 +65,4 @@
     max-width: 250px;
   }
 
-}
+} 

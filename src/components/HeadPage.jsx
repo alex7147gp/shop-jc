@@ -19,8 +19,8 @@ const HeadPage = ({ title, description, image = null }) => {
             </div>
            } 
           <div className={styles.containerText}>
-            <h1>{title}</h1>
-            <p>{description}</p>
+            <h1 className={styles.h1}>{title}</h1>
+            <p className={styles.p}>{description}</p>
           </div>
         </div>
       </div>   

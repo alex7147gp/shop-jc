@@ -24,7 +24,7 @@ const ProductItem = ({ product }) => {
 					<h2>{product.titulo.substring(0, 40)}...</h2>
 					<Link href={product.url} target="_blank">
 					  <p>{`Precio: ${product.precio}`}</p>
-					</Link>
+					</Link> 
 				</div> 
 			</div>
 		</div>

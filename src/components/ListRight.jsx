@@ -21,9 +21,9 @@ const ListRight = ({ dailyOffers, locale }) => {
                 width={150}
                 height={100}
               />
-              <Link href={offer.url} target="_blank"><h4>{offer.titulo.substring(0, 30)}</h4></Link>
+              <Link href={offer.url} target="_blank"><h4 className={styles.h4}>{offer.titulo.substring(0, 30)}</h4></Link>
               <strong className={styles.strong}>Precio: <span className={styles.span}>{offer.precio}</span></strong>
-            </li>
+            </li> 
           ))}
         </ul>
       </div>

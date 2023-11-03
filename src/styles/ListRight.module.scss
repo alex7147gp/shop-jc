@@ -56,9 +56,23 @@
     padding-top: 10px;
   }
 
-  .ul {
-    display: flex;
+  .h2 {
+    font-size: 34px; /* Tamaño del título */
+    margin-bottom: 40px; /* Espaciado inferior */
   }
+
+  .h4 {
+    font-size: 20px; /* Tamaño del título del producto */
+    margin-top: 5px; /* Espaciado superior para el título */
+  }
+
+  .strong {
+    font-size: 20px;
+  }
+
+  .ul {
+    display: flex; 
+  } 
 
   .li {
     padding: 10px;

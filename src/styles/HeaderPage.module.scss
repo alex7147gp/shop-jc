@@ -29,11 +29,18 @@
   
   .HeadP {
     flex-direction: column;
-  }
+  } 
 
   .containerImage {
     align-items: center;
     justify-content: center;
   }
 
+  .h1 {
+    font-size: 35px;
+  }
+
+  .p {
+    font-size: 25px;
+  }
 }

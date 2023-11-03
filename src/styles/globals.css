@@ -17,6 +17,6 @@ a {
 
 @media (max-width: 640px) {
   body {
-    width: fit-content;
+    min-width: 900px;
   }
 }

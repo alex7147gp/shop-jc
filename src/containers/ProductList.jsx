@@ -23,7 +23,7 @@ const ProductList = ({ products }) => {
 				  {product.map(product => ( 
 					  <ProductItem product={product} key={product.id} />
 				  ))}
-			  </div>
+			  </div> 
 		  </section>
 	    </div>
 	);

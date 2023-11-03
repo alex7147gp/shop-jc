@@ -39,7 +39,7 @@ const ProductInfo = ({ product }) => {
                   Ver oferta
                 </button>
               </Link>  
-           </div>
+           </div> 
           </div> 
         </div>
  

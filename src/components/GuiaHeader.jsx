@@ -18,7 +18,7 @@ const GuiaHeader = ({titulo, intro, img, update}) => {
       </div>
       <div className={styles.textContainer}>
         <p className={styles.intro}>
-          {intro}
+          {intro} 
         </p>
       </div> 
     </div>
