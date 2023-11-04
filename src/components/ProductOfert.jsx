@@ -25,7 +25,7 @@ const ProductOfert = ({
         titulo={productT}
         descripcion={productD}
         precio={productP}
-        url={productUrl}
+        url={productUrl} 
       />
       </div>
       <div className={styles.textContainer}>

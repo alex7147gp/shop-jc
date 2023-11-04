@@ -26,7 +26,7 @@ const ListLeft = ({ mostViewedBlogs, locale }) => {
                 <h4 className={styles.p}>{blog.title}</h4>
               </Link>
             </li>
-          ))}
+          ))} 
         </ul>
       </div>  
     </div> 
