@@ -21,10 +21,11 @@ const HomeBlogComponent = ({ mostViewedBlogs, featuredBlog, dailyOffers }) => {
               <Image
                 src={blog.image.url}
                 alt={"Imagen de blog: " + blog.image.title} // Modifica el atributo alt
-                width={280}
-                height={180}
+                layout="responsive"
+                width={250}
+                height={150}
               />
-              <p>{blog.update}</p>
+              <p>{blog.update}</p> 
               <Link href={`/blog/${blog.category.slug}/${blog.pageUrl}`}>{blog.title}</Link>
             </li>
           ))}
@@ -38,6 +39,7 @@ const HomeBlogComponent = ({ mostViewedBlogs, featuredBlog, dailyOffers }) => {
           <Image
             src={featuredBlog.image.url}
             alt={"Imagen destacada del día: " + featuredBlog.image.title} // Modifica el atributo alt
+            layout="responsive"
             width={649}
             height={427}
           />
@@ -50,12 +52,15 @@ const HomeBlogComponent = ({ mostViewedBlogs, featuredBlog, dailyOffers }) => {
         <ul>
           {dailyOffers.slice(0, 4).map((offer) => (
             <li key={offer.id}>
-              <Image
-                src={offer.imagen}
-                alt={"Imagen de oferta: " + offer.titulo} // Modifica el atributo alt
-                width={100}
-                height={75}
-              />
+              <div className={styles.imgContainer}>
+                <Image
+                  src={offer.imagen}
+                  alt={"Imagen de oferta: " + offer.titulo} // Modifica el atributo alt
+                  layout="responsive"
+                  width={100}
+                  height={75}
+                />
+              </div>
               <h3>{offer.titulo.substring(0, 30)}</h3>
               <Link href={offer.url} target="_blank"><strong>Precio: {offer.precio}</strong></Link>
             </li> 

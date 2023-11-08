@@ -14,8 +14,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Script
-        async
+        defer
         src="https://www.googletagmanager.com/gtag/js?id=G-PZ99Y7KNEL"
+        onLoad={() => {
+          
+        }}
       />
       <Script id="google-analytics" strategy="afterInteractive">
         {`

@@ -30,6 +30,7 @@ const ReviewOfert = ({ blogs = null, article = "Articles", cantidad = 6, url = n
               <Image 
                 src={articulo.image.url} 
                 alt={articulo.title} 
+                layout="responsive"
                 width={384} 
                 height={256}    
               /> 

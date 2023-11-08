@@ -27,7 +27,8 @@ const CategorieOfert = ({ categorie }) => {
                   <Image 
                     src={item.icon.url} 
                     alt={item.icon.title} 
-			              width={200} 
+			              layout="responsive"
+                    width={200} 
                     height={200}  
 			            />
                   <div className={styles.Info}>

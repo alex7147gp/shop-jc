@@ -15,7 +15,7 @@ const ProductItem = ({ product }) => {
 			      alt={product.titulo} 
                   layout="responsive"
                   width={200} 
-                  height={200}
+                  height={100} 
 
 			   />
 			</div>       

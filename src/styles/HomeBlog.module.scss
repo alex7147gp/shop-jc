@@ -116,7 +116,7 @@
   line-height: 3.4375rem;
   font-family: 'Lobster', cursive;
   font-weight: 900;
-  letter-spacing: -1px;
+  letter-spacing: -1px; 
   color: #000;
 } 
 
@@ -132,6 +132,11 @@
   margin-bottom: 20px;
   border-bottom: solid;
   padding-bottom: 20px;
+}
+
+.imgContainer {
+  width: 50%;
+  height: 50%;
 }
 
 .dailyOffers h4 {
