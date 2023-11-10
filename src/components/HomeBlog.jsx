@@ -42,6 +42,7 @@ const HomeBlogComponent = ({ mostViewedBlogs, featuredBlog, dailyOffers }) => {
             layout="responsive"
             width={649}
             height={427}
+            loading="eager"
           />
           <span className={styles.span}>{featuredBlog.update}</span>
           <p>{featuredBlog.intro.substring(0, 400)}</p>
