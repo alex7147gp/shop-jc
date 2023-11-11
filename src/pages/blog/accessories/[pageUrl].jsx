@@ -197,7 +197,7 @@ export default function ArticlePage({ blog, categorie, locale }) {
       <div className={styles.container}>
         <div className={styles.contentRich}>
           {renderedRichText}
-        </div>
+        </div> 
       </div>
       <ProductOfert 
         productI={blog.productI2}

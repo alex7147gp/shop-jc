@@ -24,6 +24,7 @@ const HomeBlogComponent = ({ mostViewedBlogs, featuredBlog, dailyOffers }) => {
                 layout="responsive"
                 width={250}
                 height={150}
+                loading="eager"
               />
               <p>{blog.update}</p> 
               <Link href={`/blog/${blog.category.slug}/${blog.pageUrl}`}>{blog.title}</Link>
@@ -36,7 +37,7 @@ const HomeBlogComponent = ({ mostViewedBlogs, featuredBlog, dailyOffers }) => {
           <Link href={`/blog/${featuredBlog.category.slug}/${featuredBlog.pageUrl}`}>
             <h2 className={styles.h2}>{featuredBlog.title}</h2>
           </Link>
-          <Image
+          <Image 
             src={featuredBlog.image.url}
             alt={"Imagen destacada del día: " + featuredBlog.image.title} // Modifica el atributo alt
             layout="responsive"

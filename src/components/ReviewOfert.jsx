@@ -32,7 +32,7 @@ const ReviewOfert = ({ blogs = null, article = "Articles", cantidad = 6, url = n
                 alt={articulo.title} 
                 layout="responsive"
                 width={384} 
-                height={256}    
+                height={256}     
               /> 
             </div>
             <Link href={`/blog/${articulo.category.slug}/${articulo.pageUrl}`}>

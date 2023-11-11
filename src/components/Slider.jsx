@@ -82,7 +82,7 @@ const Slider = ({ products }) => {
               <p className={styles.Description}>{slider.descripcion.substring(0, 120)}...</p>
               <Link href={slider.url} itemID={slider._id} target="_blank">
                 <button className={styles.Button}>{t('shop')}</button>
-              </Link>
+              </Link> 
             </div>
           </div>
         ))}
