@@ -24,7 +24,7 @@ const ListLeft = ({ mostViewedBlogs, locale }) => {
               />
               <Link href={`/blog/${blog.category.slug}/${blog.pageUrl}`}>
                 <h4 className={styles.p}>{blog.title}</h4>
-              </Link>
+              </Link> 
             </li>
           ))} 
         </ul>
