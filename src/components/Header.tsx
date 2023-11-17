@@ -6,6 +6,7 @@ import styles from '../styles/Header.module.scss';
 
 import { useTranslation } from 'next-i18next';
 import { getCategoryList } from '../../api';
+import Top from './Top';
 import Search from '../assets/logos/icons8-search.svg';
 
 
@@ -18,6 +19,8 @@ const Header = () => {
   const [categorie, setCategorie] = useState([]);
   const { t } = useTranslation(['header']);
 
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -26,7 +29,7 @@ const Header = () => {
       } catch (error) {
         console.error('Error fetching data:', error);
       } 
-    };
+    }; 
 
     fetchData();
   }, [locale]);
@@ -65,6 +68,7 @@ const Header = () => {
 				  ))}
 				</ul> 
 			</div>
+      <Top menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
 		  </nav>	
 	    </>	
 	);

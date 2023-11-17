@@ -172,7 +172,7 @@ export default function ArticlePage({ blog, categorie, locale }) {
     <div className={styles.blogContainer}>
       <HeadS
         title={blog.titleCeo}
-        description={blog.descriptionCep}
+        description={blog.descripctionCep}
         keywords={blog.keywords}
         urlC={blog.urlCeo}
         url={blog.urlCanonical}

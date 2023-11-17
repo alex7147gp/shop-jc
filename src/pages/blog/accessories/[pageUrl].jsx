@@ -184,7 +184,7 @@ export default function ArticlePage({ blog, categorie, locale }) {
         update={blog.update}
       />
       <ProductOfert 
-        productI={blog.productI}
+        productI={blog.productI} 
         productT={blog.productT}
         productD={blog.productD}
         productP={blog.productP}

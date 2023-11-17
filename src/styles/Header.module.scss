@@ -138,10 +138,14 @@
 	}
 
 	.Logo {
-	  font-size: 34px;
+	  font-size: 50px;
+	  padding: 15px;
 	  font-family: 'Copperplate', 'Papyrus', fantasy;
 	}
     
+    .navbar-left {
+      display: none;
+    }    
 
 	.li {
       font-size: 28px
