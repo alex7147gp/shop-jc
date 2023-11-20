@@ -18,12 +18,12 @@ const Topbar = ({menuOpen, setMenuOpen}) =>{
   };
 
 	return(
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${menuOpen ? styles.active : ''}`}>
       <div className={styles.right}>
         <div className={styles.salsa}>
-          <spam className={styles.punto1} style={{color:`${menuOpen === true ? 'white':'black'}`}}></spam>
-          <spam className={styles.punto2} style={{color:`${menuOpen === true ? 'white':'black'}`}}></spam>
-           <spam className={styles.punto3} style={{color:`${menuOpen === true ? 'white':'black'}`}}></spam>
+          <spam className={styles.punto1} ></spam>
+          <spam className={styles.punto2} ></spam>
+           <spam className={styles.punto3} ></spam>
         </div>        
         <div 
           className={styles.hamburger} 
@@ -31,9 +31,9 @@ const Topbar = ({menuOpen, setMenuOpen}) =>{
           onKeyPress={handleKeyPress}
           tabIndex={0}
           role={"button"}>
-            <spam className={styles.linea1} style={{color:`${menuOpen === true ? 'white':'black'}`}}></spam >
-            <spam className={styles.linea2} style={{color:`${menuOpen === true ? 'white':'black'}`}}></spam>
-            <spam className={styles.linea3} style={{color:`${menuOpen === true ? 'white':'black'}`}}></spam>
+            <spam className={styles.linea1} ></spam >
+            <spam className={styles.linea2} ></spam>
+            <spam className={styles.linea3} ></spam>
         </div>          
       </div>
     </div>  

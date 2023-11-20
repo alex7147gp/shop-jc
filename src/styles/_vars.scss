@@ -7,4 +7,11 @@ $--sm: 14px;
 $--md: 16px;
 $--lg: 18px;
 $mainColor: #171e40;
+$width: 760px;
+
+@mixin mobile {
+	@media (max-width: #{$width}){
+		@content
+	}
+}
 

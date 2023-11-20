@@ -1,8 +1,10 @@
+import React, { useState } from 'react';
 import Script from "next/script";
 import Header from "../components/Header";
 import Navigation from "../components/Navigation";
 import { QueryProvider } from '../../api/QueryProvider';
 import { Footer }  from "../components/Footer";
+import Menu from "../components/Menu";
 
 import { appWithTranslation } from 'next-i18next';
 import "../styles/globals.css";
@@ -11,6 +13,8 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
 
   
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div>
       <Script
@@ -29,7 +33,8 @@ function MyApp({ Component, pageProps }) {
         `}
       </Script>
       <QueryProvider>
-        <Header />
+        <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+        <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <Navigation />
         <Component {...pageProps} />
         <Footer />

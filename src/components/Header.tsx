@@ -10,7 +10,7 @@ import Top from './Top';
 import Search from '../assets/logos/icons8-search.svg';
 
 
-const Header = () => { 
+const Header = ({ menuOpen, setMenuOpen }) => { 
 
   const locale = typeof window !== 'undefined' && window.location.pathname.split('/')[1];
 
@@ -18,8 +18,6 @@ const Header = () => {
 
   const [categorie, setCategorie] = useState([]);
   const { t } = useTranslation(['header']);
-
-  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {

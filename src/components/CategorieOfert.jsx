@@ -30,8 +30,8 @@ const CategorieOfert = ({ categorie }) => {
 			              layout="responsive"
                     width={200} 
                     height={200}  
-			            />
-                  <div className={styles.Info}>
+			            />  
+                  <div className={styles.Info}> 
                     <Link href={`/blog/${item.slug}`} >
                       <button className={styles.Button}>{ text == 'seeMore' ? `See ${item.titleShow}` : `${text} ${item.titleShow}`} </button>      
                     </Link>

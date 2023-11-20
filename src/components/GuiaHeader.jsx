@@ -12,8 +12,8 @@ const GuiaHeader = ({titulo, intro, img, update}) => {
           className={styles.image}
           src={img}
           alt={titulo}  
-          width={1150}  
-          height={780}
+          width={1000}  
+          height={650} 
         /> 
       </div>
       <div className={styles.textContainer}>

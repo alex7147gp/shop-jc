@@ -8,13 +8,10 @@
     justify-content:  space-between;
 
   .right{
-              
-             
-                display: none;
            
                 .salsa{
                   width: 3px;
-                  height: 20px;
+                  height: 26px;
                   display: flex;
                   flex-direction: column;
                   justify-content: space-between;
@@ -24,14 +21,14 @@
                   spam{
                     width: 100%;
                     height: 3px;
-                    background-Color: $mainColor;
+                    background-color: $mainColor;
                     
                   }
                 }
         	
                 .hamburger{
-                   width: 24px;
-                   height: 20px;
+                   width: 34px;
+                   height: 26px;
                    display: flex;
                    flex-direction: column;
                    justify-content: space-between;
@@ -55,20 +52,19 @@
 
 &.active{
 
-        background-color: $mainColor;
-        color: white;
+        
 
         .hamburger{
            spam{
              &:first-child{
-               background-color: white;
+               
                transform: rotate(45deg);
              }
              &:nth-child(2){
               opacity: 0;
              }
              &:last-child{
-               background-color: white;
+  
                transform: rotate(-45deg);
 
              }
@@ -79,14 +75,14 @@
            spam{
              &:first-child{
               
-               transform: traslate(3px, 0px);
+               transform: translate(3px, 0px);
              }
              &:nth-child(2){
               opacity: 0;
              }
              &:last-child{
               
-               transform: traslate(3px, 0px);
+               transform: translate(3px, 0px);
 
              }
 
@@ -95,8 +91,8 @@
     }
 
   
-
 }
+
 @media (max-width: 640px) {
   .wrapper {
     display: flex;
