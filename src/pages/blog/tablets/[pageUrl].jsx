@@ -167,8 +167,6 @@ export default function ArticlePage({ blog, categorie, locale }) {
 
   const renderedRichText = documentToReactComponents(richText, options);
 
-  console.log(blog)
-
   return (
     <div>
     <div className={styles.blogContainer}>
