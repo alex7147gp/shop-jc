@@ -167,6 +167,8 @@ export default function ArticlePage({ blog, categorie, locale }) {
 
   const renderedRichText = documentToReactComponents(richText, options);
 
+  console.log(blog)
+
   return (
     <div>
     <div className={styles.blogContainer}>
@@ -181,7 +183,7 @@ export default function ArticlePage({ blog, categorie, locale }) {
         titulo={blog.title}
         intro={blog.intro}
         img={blog.image.url}
-        upate={blog.update}
+        update={blog.update}
       />
       <ProductOfert 
         productI={blog.productI}

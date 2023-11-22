@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 
 const GuiaHeader = ({titulo, intro, img, update}) => {
+
   return (
     <div className={styles.container}>
     <h1 className={styles.title}>{titulo}</h1>
@@ -12,8 +13,8 @@ const GuiaHeader = ({titulo, intro, img, update}) => {
           className={styles.image}
           src={img}
           alt={titulo}  
-          width={1000}  
-          height={650} 
+          width={900}  
+          height={500} 
         /> 
       </div>
       <div className={styles.textContainer}>

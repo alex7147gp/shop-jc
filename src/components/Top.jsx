@@ -21,9 +21,9 @@ const Topbar = ({menuOpen, setMenuOpen}) =>{
     <div className={`${styles.wrapper} ${menuOpen ? styles.active : ''}`}>
       <div className={styles.right}>
         <div className={styles.salsa}>
-          <spam className={styles.punto1} ></spam>
-          <spam className={styles.punto2} ></spam>
-           <spam className={styles.punto3} ></spam>
+          <span className={styles.punto1} ></span>
+          <span className={styles.punto2} ></span>
+           <span className={styles.punto3} ></span>
         </div>        
         <div 
           className={styles.hamburger} 
@@ -31,9 +31,9 @@ const Topbar = ({menuOpen, setMenuOpen}) =>{
           onKeyPress={handleKeyPress}
           tabIndex={0}
           role={"button"}>
-            <spam className={styles.linea1} ></spam >
-            <spam className={styles.linea2} ></spam>
-            <spam className={styles.linea3} ></spam>
+            <span className={styles.linea1} ></span >
+            <span className={styles.linea2} ></span>
+            <span className={styles.linea3} ></span>
         </div>          
       </div>
     </div>  
