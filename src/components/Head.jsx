@@ -9,20 +9,16 @@ const HeadS = ({
   keywords,
   urlC = null,
   url,
+  locale
   }) => {
 
-    let locale = '';
-    
-    if (typeof window !== 'undefined') {
-      locale = window.location.pathname.split('/')[1];
-    } 
 
 return (
     <Head>
       <title>{title} | JcShop</title>
       <meta name="description" content={description} key="desc" />
       <meta name="keywords" content={keywords} key="keywords" />
-      <meta name="robots" content="index, follow" key="robots" />
+      <meta name="robots" content="index, follow" key="robots" /> 
       {
         url && <link
           rel="canonical"

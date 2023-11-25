@@ -175,13 +175,13 @@ export type IAssetLinkingCollections = {
   blogPageCollection?: Maybe<IBlogPageCollection>;
   categoryCollection?: Maybe<ICategoryCollection>;
   entryCollection?: Maybe<IEntryCollection>;
+  newsCollection?: Maybe<INewsCollection>;
 };
 
 
 export type IAssetLinkingCollectionsBlogPageCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']['input']>;
   locale?: InputMaybe<Scalars['String']['input']>;
-  order?: InputMaybe<Array<InputMaybe<IAssetLinkingCollectionsBlogPageCollectionOrder>>>;
   preview?: InputMaybe<Scalars['Boolean']['input']>;
   skip?: InputMaybe<Scalars['Int']['input']>;
 };
@@ -190,7 +190,6 @@ export type IAssetLinkingCollectionsBlogPageCollectionArgs = {
 export type IAssetLinkingCollectionsCategoryCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']['input']>;
   locale?: InputMaybe<Scalars['String']['input']>;
-  order?: InputMaybe<Array<InputMaybe<IAssetLinkingCollectionsCategoryCollectionOrder>>>;
   preview?: InputMaybe<Scalars['Boolean']['input']>;
   skip?: InputMaybe<Scalars['Int']['input']>;
 };
@@ -203,69 +202,13 @@ export type IAssetLinkingCollectionsEntryCollectionArgs = {
   skip?: InputMaybe<Scalars['Int']['input']>;
 };
 
-export enum IAssetLinkingCollectionsBlogPageCollectionOrder {
-  CategoriesAsc = 'categories_ASC',
-  CategoriesDesc = 'categories_DESC',
-  DescripctionCepAsc = 'descripctionCep_ASC',
-  DescripctionCepDesc = 'descripctionCep_DESC',
-  PageUrlAsc = 'pageUrl_ASC',
-  PageUrlDesc = 'pageUrl_DESC',
-  ProductD2Asc = 'productD2_ASC',
-  ProductD2Desc = 'productD2_DESC',
-  ProductDAsc = 'productD_ASC',
-  ProductDDesc = 'productD_DESC',
-  ProductI2Asc = 'productI2_ASC',
-  ProductI2Desc = 'productI2_DESC',
-  ProductIAsc = 'productI_ASC',
-  ProductIDesc = 'productI_DESC',
-  ProductP2Asc = 'productP2_ASC',
-  ProductP2Desc = 'productP2_DESC',
-  ProductPAsc = 'productP_ASC',
-  ProductPDesc = 'productP_DESC',
-  ProductT2Asc = 'productT2_ASC',
-  ProductT2Desc = 'productT2_DESC',
-  ProductTAsc = 'productT_ASC',
-  ProductTDesc = 'productT_DESC',
-  ProductUrl2Asc = 'productUrl2_ASC',
-  ProductUrl2Desc = 'productUrl2_DESC',
-  ProductUrlAsc = 'productUrl_ASC',
-  ProductUrlDesc = 'productUrl_DESC',
-  SysFirstPublishedAtAsc = 'sys_firstPublishedAt_ASC',
-  SysFirstPublishedAtDesc = 'sys_firstPublishedAt_DESC',
-  SysIdAsc = 'sys_id_ASC',
-  SysIdDesc = 'sys_id_DESC',
-  SysPublishedAtAsc = 'sys_publishedAt_ASC',
-  SysPublishedAtDesc = 'sys_publishedAt_DESC',
-  SysPublishedVersionAsc = 'sys_publishedVersion_ASC',
-  SysPublishedVersionDesc = 'sys_publishedVersion_DESC',
-  TitleCeoAsc = 'titleCeo_ASC',
-  TitleCeoDesc = 'titleCeo_DESC',
-  TitleAsc = 'title_ASC',
-  TitleDesc = 'title_DESC',
-  UpdateAsc = 'update_ASC',
-  UpdateDesc = 'update_DESC',
-  UrlCanonicalAsc = 'urlCanonical_ASC',
-  UrlCanonicalDesc = 'urlCanonical_DESC',
-  UrlCeoAsc = 'urlCeo_ASC',
-  UrlCeoDesc = 'urlCeo_DESC'
-}
 
-export enum IAssetLinkingCollectionsCategoryCollectionOrder {
-  SlugAsc = 'slug_ASC',
-  SlugDesc = 'slug_DESC',
-  SysFirstPublishedAtAsc = 'sys_firstPublishedAt_ASC',
-  SysFirstPublishedAtDesc = 'sys_firstPublishedAt_DESC',
-  SysIdAsc = 'sys_id_ASC',
-  SysIdDesc = 'sys_id_DESC',
-  SysPublishedAtAsc = 'sys_publishedAt_ASC',
-  SysPublishedAtDesc = 'sys_publishedAt_DESC',
-  SysPublishedVersionAsc = 'sys_publishedVersion_ASC',
-  SysPublishedVersionDesc = 'sys_publishedVersion_DESC',
-  TitleShowAsc = 'titleShow_ASC',
-  TitleShowDesc = 'titleShow_DESC',
-  TitleAsc = 'title_ASC',
-  TitleDesc = 'title_DESC'
-}
+export type IAssetLinkingCollectionsNewsCollectionArgs = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  locale?: InputMaybe<Scalars['String']['input']>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+};
 
 export enum IAssetOrder {
   ContentTypeAsc = 'contentType_ASC',
@@ -322,7 +265,6 @@ export type IBlogPage = IEntry & {
   urlCanonical?: Maybe<Scalars['String']['output']>;
   urlCeo?: Maybe<Scalars['String']['output']>;
 };
-
 
 /** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/blogPage) */
 export type IBlogPageBodyArgs = {
@@ -516,6 +458,8 @@ export type IBlogPageBodyLinks = {
 export type IBlogPageBodyResources = {
   __typename?: 'BlogPageBodyResources';
   block: Array<IResourceLink>;
+  hyperlink: Array<IResourceLink>;
+  inline: Array<IResourceLink>;
 };
 
 export type IBlogPageCollection = {
@@ -696,6 +640,7 @@ export type IBlogPageLinkingCollections = {
   __typename?: 'BlogPageLinkingCollections';
   blogPageCollection?: Maybe<IBlogPageCollection>;
   entryCollection?: Maybe<IEntryCollection>;
+  newsCollection?: Maybe<INewsCollection>;
 };
 
 
@@ -711,6 +656,15 @@ export type IBlogPageLinkingCollectionsBlogPageCollectionArgs = {
 export type IBlogPageLinkingCollectionsEntryCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']['input']>;
   locale?: InputMaybe<Scalars['String']['input']>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+export type IBlogPageLinkingCollectionsNewsCollectionArgs = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  locale?: InputMaybe<Scalars['String']['input']>;
+  order?: InputMaybe<Array<InputMaybe<IBlogPageLinkingCollectionsNewsCollectionOrder>>>;
   preview?: InputMaybe<Scalars['Boolean']['input']>;
   skip?: InputMaybe<Scalars['Int']['input']>;
 };
@@ -742,6 +696,33 @@ export enum IBlogPageLinkingCollectionsBlogPageCollectionOrder {
   ProductUrl2Desc = 'productUrl2_DESC',
   ProductUrlAsc = 'productUrl_ASC',
   ProductUrlDesc = 'productUrl_DESC',
+  SysFirstPublishedAtAsc = 'sys_firstPublishedAt_ASC',
+  SysFirstPublishedAtDesc = 'sys_firstPublishedAt_DESC',
+  SysIdAsc = 'sys_id_ASC',
+  SysIdDesc = 'sys_id_DESC',
+  SysPublishedAtAsc = 'sys_publishedAt_ASC',
+  SysPublishedAtDesc = 'sys_publishedAt_DESC',
+  SysPublishedVersionAsc = 'sys_publishedVersion_ASC',
+  SysPublishedVersionDesc = 'sys_publishedVersion_DESC',
+  TitleCeoAsc = 'titleCeo_ASC',
+  TitleCeoDesc = 'titleCeo_DESC',
+  TitleAsc = 'title_ASC',
+  TitleDesc = 'title_DESC',
+  UpdateAsc = 'update_ASC',
+  UpdateDesc = 'update_DESC',
+  UrlCanonicalAsc = 'urlCanonical_ASC',
+  UrlCanonicalDesc = 'urlCanonical_DESC',
+  UrlCeoAsc = 'urlCeo_ASC',
+  UrlCeoDesc = 'urlCeo_DESC'
+}
+
+export enum IBlogPageLinkingCollectionsNewsCollectionOrder {
+  CategoriesAsc = 'categories_ASC',
+  CategoriesDesc = 'categories_DESC',
+  DescripctionCepAsc = 'descripctionCep_ASC',
+  DescripctionCepDesc = 'descripctionCep_DESC',
+  PageUrlAsc = 'pageUrl_ASC',
+  PageUrlDesc = 'pageUrl_DESC',
   SysFirstPublishedAtAsc = 'sys_firstPublishedAt_ASC',
   SysFirstPublishedAtDesc = 'sys_firstPublishedAt_DESC',
   SysIdAsc = 'sys_id_ASC',
@@ -812,9 +793,9 @@ export enum IBlogPageOrder {
 export type IBlogPageRecommendedPostsCollection = {
   __typename?: 'BlogPageRecommendedPostsCollection';
   items: Array<Maybe<IBlogPage>>;
-  limit?: Scalars['Int']['output'];
-  skip?: Scalars['Int']['output'];
-  total?: Scalars['Int']['output'];
+  limit: Scalars['Int']['output'];
+  skip: Scalars['Int']['output'];
+  total: Scalars['Int']['output'];
 };
 
 export enum IBlogPageRecommendedPostsCollectionOrder {
@@ -1004,6 +985,7 @@ export type ICategoryLinkingCollections = {
   __typename?: 'CategoryLinkingCollections';
   blogPageCollection?: Maybe<IBlogPageCollection>;
   entryCollection?: Maybe<IEntryCollection>;
+  newsCollection?: Maybe<INewsCollection>;
 };
 
 
@@ -1019,6 +1001,15 @@ export type ICategoryLinkingCollectionsBlogPageCollectionArgs = {
 export type ICategoryLinkingCollectionsEntryCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']['input']>;
   locale?: InputMaybe<Scalars['String']['input']>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+export type ICategoryLinkingCollectionsNewsCollectionArgs = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  locale?: InputMaybe<Scalars['String']['input']>;
+  order?: InputMaybe<Array<InputMaybe<ICategoryLinkingCollectionsNewsCollectionOrder>>>;
   preview?: InputMaybe<Scalars['Boolean']['input']>;
   skip?: InputMaybe<Scalars['Int']['input']>;
 };
@@ -1050,6 +1041,33 @@ export enum ICategoryLinkingCollectionsBlogPageCollectionOrder {
   ProductUrl2Desc = 'productUrl2_DESC',
   ProductUrlAsc = 'productUrl_ASC',
   ProductUrlDesc = 'productUrl_DESC',
+  SysFirstPublishedAtAsc = 'sys_firstPublishedAt_ASC',
+  SysFirstPublishedAtDesc = 'sys_firstPublishedAt_DESC',
+  SysIdAsc = 'sys_id_ASC',
+  SysIdDesc = 'sys_id_DESC',
+  SysPublishedAtAsc = 'sys_publishedAt_ASC',
+  SysPublishedAtDesc = 'sys_publishedAt_DESC',
+  SysPublishedVersionAsc = 'sys_publishedVersion_ASC',
+  SysPublishedVersionDesc = 'sys_publishedVersion_DESC',
+  TitleCeoAsc = 'titleCeo_ASC',
+  TitleCeoDesc = 'titleCeo_DESC',
+  TitleAsc = 'title_ASC',
+  TitleDesc = 'title_DESC',
+  UpdateAsc = 'update_ASC',
+  UpdateDesc = 'update_DESC',
+  UrlCanonicalAsc = 'urlCanonical_ASC',
+  UrlCanonicalDesc = 'urlCanonical_DESC',
+  UrlCeoAsc = 'urlCeo_ASC',
+  UrlCeoDesc = 'urlCeo_DESC'
+}
+
+export enum ICategoryLinkingCollectionsNewsCollectionOrder {
+  CategoriesAsc = 'categories_ASC',
+  CategoriesDesc = 'categories_DESC',
+  DescripctionCepAsc = 'descripctionCep_ASC',
+  DescripctionCepDesc = 'descripctionCep_DESC',
+  PageUrlAsc = 'pageUrl_ASC',
+  PageUrlDesc = 'pageUrl_DESC',
   SysFirstPublishedAtAsc = 'sys_firstPublishedAt_ASC',
   SysFirstPublishedAtDesc = 'sys_firstPublishedAt_DESC',
   SysIdAsc = 'sys_id_ASC',
@@ -1239,6 +1257,347 @@ export type IImageTransformOptions = {
   width?: InputMaybe<Scalars['Dimension']['input']>;
 };
 
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INews = IEntry & {
+  __typename?: 'News';
+  body?: Maybe<INewsBody>;
+  categories?: Maybe<Scalars['String']['output']>;
+  category?: Maybe<ICategory>;
+  contentfulMetadata: IContentfulMetadata;
+  descripctionCep?: Maybe<Scalars['String']['output']>;
+  image?: Maybe<IAsset>;
+  intro?: Maybe<Scalars['String']['output']>;
+  keywords?: Maybe<Scalars['String']['output']>;
+  linkedFrom?: Maybe<INewsLinkingCollections>;
+  pageUrl?: Maybe<Scalars['String']['output']>;
+  recommendedPostsCollection?: Maybe<INewsRecommendedPostsCollection>;
+  sys: ISys;
+  title?: Maybe<Scalars['String']['output']>;
+  titleCeo?: Maybe<Scalars['String']['output']>;
+  update?: Maybe<Scalars['String']['output']>;
+  urlCanonical?: Maybe<Scalars['String']['output']>;
+  urlCeo?: Maybe<Scalars['String']['output']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INewsBodyArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INewsCategoriesArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INewsCategoryArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+  where?: InputMaybe<ICategoryFilter>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INewsDescripctionCepArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INewsImageArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INewsIntroArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INewsKeywordsArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INewsLinkedFromArgs = {
+  allowedLocales?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INewsPageUrlArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INewsRecommendedPostsCollectionArgs = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  locale?: InputMaybe<Scalars['String']['input']>;
+  order?: InputMaybe<Array<InputMaybe<INewsRecommendedPostsCollectionOrder>>>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+  where?: InputMaybe<IBlogPageFilter>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INewsTitleArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INewsTitleCeoArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INewsUpdateArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INewsUrlCanonicalArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INewsUrlCeoArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type INewsBody = {
+  __typename?: 'NewsBody';
+  json: Scalars['JSON']['output'];
+  links: INewsBodyLinks;
+};
+
+export type INewsBodyAssets = {
+  __typename?: 'NewsBodyAssets';
+  block: Array<Maybe<IAsset>>;
+  hyperlink: Array<Maybe<IAsset>>;
+};
+
+export type INewsBodyEntries = {
+  __typename?: 'NewsBodyEntries';
+  block: Array<Maybe<IEntry>>;
+  hyperlink: Array<Maybe<IEntry>>;
+  inline: Array<Maybe<IEntry>>;
+};
+
+export type INewsBodyLinks = {
+  __typename?: 'NewsBodyLinks';
+  assets: INewsBodyAssets;
+  entries: INewsBodyEntries;
+  resources: INewsBodyResources;
+};
+
+export type INewsBodyResources = {
+  __typename?: 'NewsBodyResources';
+  block: Array<IResourceLink>;
+  hyperlink: Array<IResourceLink>;
+  inline: Array<IResourceLink>;
+};
+
+export type INewsCollection = {
+  __typename?: 'NewsCollection';
+  items: Array<Maybe<INews>>;
+  limit: Scalars['Int']['output'];
+  skip: Scalars['Int']['output'];
+  total: Scalars['Int']['output'];
+};
+
+export type INewsFilter = {
+  AND?: InputMaybe<Array<InputMaybe<INewsFilter>>>;
+  OR?: InputMaybe<Array<InputMaybe<INewsFilter>>>;
+  body_contains?: InputMaybe<Scalars['String']['input']>;
+  body_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  body_not_contains?: InputMaybe<Scalars['String']['input']>;
+  categories?: InputMaybe<Scalars['String']['input']>;
+  categories_contains?: InputMaybe<Scalars['String']['input']>;
+  categories_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  categories_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  categories_not?: InputMaybe<Scalars['String']['input']>;
+  categories_not_contains?: InputMaybe<Scalars['String']['input']>;
+  categories_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  category?: InputMaybe<ICfCategoryNestedFilter>;
+  category_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  contentfulMetadata?: InputMaybe<IContentfulMetadataFilter>;
+  descripctionCep?: InputMaybe<Scalars['String']['input']>;
+  descripctionCep_contains?: InputMaybe<Scalars['String']['input']>;
+  descripctionCep_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  descripctionCep_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  descripctionCep_not?: InputMaybe<Scalars['String']['input']>;
+  descripctionCep_not_contains?: InputMaybe<Scalars['String']['input']>;
+  descripctionCep_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  image_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  intro?: InputMaybe<Scalars['String']['input']>;
+  intro_contains?: InputMaybe<Scalars['String']['input']>;
+  intro_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  intro_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  intro_not?: InputMaybe<Scalars['String']['input']>;
+  intro_not_contains?: InputMaybe<Scalars['String']['input']>;
+  intro_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  keywords?: InputMaybe<Scalars['String']['input']>;
+  keywords_contains?: InputMaybe<Scalars['String']['input']>;
+  keywords_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  keywords_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  keywords_not?: InputMaybe<Scalars['String']['input']>;
+  keywords_not_contains?: InputMaybe<Scalars['String']['input']>;
+  keywords_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  pageUrl?: InputMaybe<Scalars['String']['input']>;
+  pageUrl_contains?: InputMaybe<Scalars['String']['input']>;
+  pageUrl_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  pageUrl_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  pageUrl_not?: InputMaybe<Scalars['String']['input']>;
+  pageUrl_not_contains?: InputMaybe<Scalars['String']['input']>;
+  pageUrl_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  recommendedPosts?: InputMaybe<ICfBlogPageNestedFilter>;
+  recommendedPostsCollection_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  sys?: InputMaybe<ISysFilter>;
+  title?: InputMaybe<Scalars['String']['input']>;
+  titleCeo?: InputMaybe<Scalars['String']['input']>;
+  titleCeo_contains?: InputMaybe<Scalars['String']['input']>;
+  titleCeo_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  titleCeo_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  titleCeo_not?: InputMaybe<Scalars['String']['input']>;
+  titleCeo_not_contains?: InputMaybe<Scalars['String']['input']>;
+  titleCeo_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  title_contains?: InputMaybe<Scalars['String']['input']>;
+  title_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  title_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  title_not?: InputMaybe<Scalars['String']['input']>;
+  title_not_contains?: InputMaybe<Scalars['String']['input']>;
+  title_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  update?: InputMaybe<Scalars['String']['input']>;
+  update_contains?: InputMaybe<Scalars['String']['input']>;
+  update_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  update_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  update_not?: InputMaybe<Scalars['String']['input']>;
+  update_not_contains?: InputMaybe<Scalars['String']['input']>;
+  update_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  urlCanonical?: InputMaybe<Scalars['String']['input']>;
+  urlCanonical_contains?: InputMaybe<Scalars['String']['input']>;
+  urlCanonical_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  urlCanonical_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  urlCanonical_not?: InputMaybe<Scalars['String']['input']>;
+  urlCanonical_not_contains?: InputMaybe<Scalars['String']['input']>;
+  urlCanonical_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  urlCeo?: InputMaybe<Scalars['String']['input']>;
+  urlCeo_contains?: InputMaybe<Scalars['String']['input']>;
+  urlCeo_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  urlCeo_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  urlCeo_not?: InputMaybe<Scalars['String']['input']>;
+  urlCeo_not_contains?: InputMaybe<Scalars['String']['input']>;
+  urlCeo_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type INewsLinkingCollections = {
+  __typename?: 'NewsLinkingCollections';
+  entryCollection?: Maybe<IEntryCollection>;
+};
+
+
+export type INewsLinkingCollectionsEntryCollectionArgs = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  locale?: InputMaybe<Scalars['String']['input']>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+};
+
+export enum INewsOrder {
+  CategoriesAsc = 'categories_ASC',
+  CategoriesDesc = 'categories_DESC',
+  DescripctionCepAsc = 'descripctionCep_ASC',
+  DescripctionCepDesc = 'descripctionCep_DESC',
+  PageUrlAsc = 'pageUrl_ASC',
+  PageUrlDesc = 'pageUrl_DESC',
+  SysFirstPublishedAtAsc = 'sys_firstPublishedAt_ASC',
+  SysFirstPublishedAtDesc = 'sys_firstPublishedAt_DESC',
+  SysIdAsc = 'sys_id_ASC',
+  SysIdDesc = 'sys_id_DESC',
+  SysPublishedAtAsc = 'sys_publishedAt_ASC',
+  SysPublishedAtDesc = 'sys_publishedAt_DESC',
+  SysPublishedVersionAsc = 'sys_publishedVersion_ASC',
+  SysPublishedVersionDesc = 'sys_publishedVersion_DESC',
+  TitleCeoAsc = 'titleCeo_ASC',
+  TitleCeoDesc = 'titleCeo_DESC',
+  TitleAsc = 'title_ASC',
+  TitleDesc = 'title_DESC',
+  UpdateAsc = 'update_ASC',
+  UpdateDesc = 'update_DESC',
+  UrlCanonicalAsc = 'urlCanonical_ASC',
+  UrlCanonicalDesc = 'urlCanonical_DESC',
+  UrlCeoAsc = 'urlCeo_ASC',
+  UrlCeoDesc = 'urlCeo_DESC'
+}
+
+export type INewsRecommendedPostsCollection = {
+  __typename?: 'NewsRecommendedPostsCollection';
+  items: Array<Maybe<IBlogPage>>;
+  limit: Scalars['Int']['output'];
+  skip: Scalars['Int']['output'];
+  total: Scalars['Int']['output'];
+};
+
+export enum INewsRecommendedPostsCollectionOrder {
+  CategoriesAsc = 'categories_ASC',
+  CategoriesDesc = 'categories_DESC',
+  DescripctionCepAsc = 'descripctionCep_ASC',
+  DescripctionCepDesc = 'descripctionCep_DESC',
+  PageUrlAsc = 'pageUrl_ASC',
+  PageUrlDesc = 'pageUrl_DESC',
+  ProductD2Asc = 'productD2_ASC',
+  ProductD2Desc = 'productD2_DESC',
+  ProductDAsc = 'productD_ASC',
+  ProductDDesc = 'productD_DESC',
+  ProductI2Asc = 'productI2_ASC',
+  ProductI2Desc = 'productI2_DESC',
+  ProductIAsc = 'productI_ASC',
+  ProductIDesc = 'productI_DESC',
+  ProductP2Asc = 'productP2_ASC',
+  ProductP2Desc = 'productP2_DESC',
+  ProductPAsc = 'productP_ASC',
+  ProductPDesc = 'productP_DESC',
+  ProductT2Asc = 'productT2_ASC',
+  ProductT2Desc = 'productT2_DESC',
+  ProductTAsc = 'productT_ASC',
+  ProductTDesc = 'productT_DESC',
+  ProductUrl2Asc = 'productUrl2_ASC',
+  ProductUrl2Desc = 'productUrl2_DESC',
+  ProductUrlAsc = 'productUrl_ASC',
+  ProductUrlDesc = 'productUrl_DESC',
+  SysFirstPublishedAtAsc = 'sys_firstPublishedAt_ASC',
+  SysFirstPublishedAtDesc = 'sys_firstPublishedAt_DESC',
+  SysIdAsc = 'sys_id_ASC',
+  SysIdDesc = 'sys_id_DESC',
+  SysPublishedAtAsc = 'sys_publishedAt_ASC',
+  SysPublishedAtDesc = 'sys_publishedAt_DESC',
+  SysPublishedVersionAsc = 'sys_publishedVersion_ASC',
+  SysPublishedVersionDesc = 'sys_publishedVersion_DESC',
+  TitleCeoAsc = 'titleCeo_ASC',
+  TitleCeoDesc = 'titleCeo_DESC',
+  TitleAsc = 'title_ASC',
+  TitleDesc = 'title_DESC',
+  UpdateAsc = 'update_ASC',
+  UpdateDesc = 'update_DESC',
+  UrlCanonicalAsc = 'urlCanonical_ASC',
+  UrlCanonicalDesc = 'urlCanonical_DESC',
+  UrlCeoAsc = 'urlCeo_ASC',
+  UrlCeoDesc = 'urlCeo_DESC'
+}
+
 export type IQuery = {
   __typename?: 'Query';
   asset?: Maybe<IAsset>;
@@ -1248,6 +1607,8 @@ export type IQuery = {
   category?: Maybe<ICategory>;
   categoryCollection?: Maybe<ICategoryCollection>;
   entryCollection?: Maybe<IEntryCollection>;
+  news?: Maybe<INews>;
+  newsCollection?: Maybe<INewsCollection>;
 };
 
 
@@ -1309,6 +1670,23 @@ export type IQueryEntryCollectionArgs = {
   preview?: InputMaybe<Scalars['Boolean']['input']>;
   skip?: InputMaybe<Scalars['Int']['input']>;
   where?: InputMaybe<IEntryFilter>;
+};
+
+
+export type IQueryNewsArgs = {
+  id: Scalars['String']['input'];
+  locale?: InputMaybe<Scalars['String']['input']>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+export type IQueryNewsCollectionArgs = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  locale?: InputMaybe<Scalars['String']['input']>;
+  order?: InputMaybe<Array<InputMaybe<INewsOrder>>>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+  where?: InputMaybe<INewsFilter>;
 };
 
 export type IResourceLink = {
@@ -1617,6 +1995,28 @@ export type IGetblogQueryVariables = Exact<{
 
 export type IGetblogQuery = { __typename?: 'Query', blogPageCollection?: { __typename?: 'BlogPageCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, keywords?: string | null, urlCeo?: string | null, urlCanonical?: string | null, productT?: string | null, productI?: string | null, productD?: string | null, productP?: number | null, productUrl?: string | null, productT2?: string | null, productI2?: string | null, productD2?: string | null, productP2?: number | null, productUrl2?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, body?: { __typename?: 'BlogPageBody', json: any } | null, recommendedPostsCollection?: { __typename?: 'BlogPageRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null };
 
+export type INewsRecommendedPostsCollectionFragment = { __typename?: 'NewsRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> };
+
+export type INewsFieldsFragment = { __typename?: 'News', pageUrl?: string | null, title?: string | null, intro?: string | null, titleCeo?: string | null, descripctionCep?: string | null, keywords?: string | null, urlCeo?: string | null, urlCanonical?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, body?: { __typename?: 'NewsBody', json: any } | null, recommendedPostsCollection?: { __typename?: 'NewsRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null };
+
+export type IGetNewsListQueryVariables = Exact<{
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+  locale?: InputMaybe<Scalars['String']['input']>;
+}>;
+
+
+export type IGetNewsListQuery = { __typename?: 'Query', newsCollection?: { __typename?: 'NewsCollection', total: number, skip: number, limit: number, items: Array<{ __typename?: 'News', pageUrl?: string | null, title?: string | null, intro?: string | null, titleCeo?: string | null, descripctionCep?: string | null, keywords?: string | null, urlCeo?: string | null, urlCanonical?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, body?: { __typename?: 'NewsBody', json: any } | null, recommendedPostsCollection?: { __typename?: 'NewsRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null };
+
+export type IGetNewsQueryVariables = Exact<{
+  pageUrl: Scalars['String']['input'];
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+  locale?: InputMaybe<Scalars['String']['input']>;
+}>;
+
+
+export type IGetNewsQuery = { __typename?: 'Query', newsCollection?: { __typename?: 'NewsCollection', items: Array<{ __typename?: 'News', pageUrl?: string | null, title?: string | null, intro?: string | null, titleCeo?: string | null, descripctionCep?: string | null, keywords?: string | null, urlCeo?: string | null, urlCanonical?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, body?: { __typename?: 'NewsBody', json: any } | null, recommendedPostsCollection?: { __typename?: 'NewsRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null };
+
 export type ISearchBlogQueryVariables = Exact<{
   term: Scalars['String']['input'];
   locale?: InputMaybe<Scalars['String']['input']>;
@@ -1735,6 +2135,59 @@ export const BlogFieldsFragmentDoc = gql`
     ${AssetFieldsFragmentDoc}
 ${RecommendedPostsCollectionFragmentDoc}
 ${CategoryFieldsFragmentDoc}`;
+export const NewsRecommendedPostsCollectionFragmentDoc = gql`
+    fragment newsRecommendedPostsCollection on NewsRecommendedPostsCollection {
+  items {
+    sys {
+      id
+    }
+    pageUrl
+    title
+    intro
+    image {
+      ...AssetFields
+    }
+    conclucion
+    titleCeo
+    descripctionCep
+    category {
+      ...CategoryFields
+    }
+    update
+  }
+}
+    ${AssetFieldsFragmentDoc}
+${CategoryFieldsFragmentDoc}`;
+export const NewsFieldsFragmentDoc = gql`
+    fragment NewsFields on News {
+  sys {
+    id
+  }
+  pageUrl
+  title
+  intro
+  image {
+    ...AssetFields
+  }
+  body {
+    json
+  }
+  recommendedPostsCollection {
+    ...newsRecommendedPostsCollection
+  }
+  titleCeo
+  descripctionCep
+  keywords
+  urlCeo
+  urlCanonical
+  category {
+    ...CategoryFields
+  }
+  update
+}
+    ${AssetFieldsFragmentDoc}
+${NewsRecommendedPostsCollectionFragmentDoc}
+${CategoryFieldsFragmentDoc}`;
 export const GetblogPageListDocument = gql`
     query getblogPageList($limit: Int = 10, $skip: Int = 0, $locale: String) {
   blogPageCollection(limit: $limit, skip: $skip, locale: $locale) {
@@ -1761,6 +2214,32 @@ export const GetblogDocument = gql`
   }
 }
     ${BlogFieldsFragmentDoc}`;
+export const GetNewsListDocument = gql`
+    query getNewsList($limit: Int = 10, $skip: Int = 0, $locale: String) {
+  newsCollection(limit: $limit, skip: $skip, locale: $locale) {
+    total
+    skip
+    limit
+    items {
+      ...NewsFields
+    }
+  }
+}
+    ${NewsFieldsFragmentDoc}`;
+export const GetNewsDocument = gql`
+    query getNews($pageUrl: String!, $preview: Boolean = false, $locale: String) {
+  newsCollection(
+    where: {pageUrl: $pageUrl}
+    preview: $preview
+    limit: 1
+    locale: $locale
+  ) {
+    items {
+      ...NewsFields
+    }
+  }
+}
+    ${NewsFieldsFragmentDoc}`;
 export const SearchBlogDocument = gql`
     query searchBlog($term: String!, $locale: String, $limit: Int = 10, $skip: Int = 0) {
   blogPageCollection(
@@ -1819,6 +2298,12 @@ export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = 
     },
     getblog(variables: IGetblogQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<IGetblogQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<IGetblogQuery>(GetblogDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'getblog', 'query');
+    },
+    getNewsList(variables?: IGetNewsListQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<IGetNewsListQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<IGetNewsListQuery>(GetNewsListDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'getNewsList', 'query');
+    },
+    getNews(variables: IGetNewsQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<IGetNewsQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<IGetNewsQuery>(GetNewsDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'getNews', 'query');
     },
     searchBlog(variables: ISearchBlogQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<ISearchBlogQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<ISearchBlogQuery>(SearchBlogDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'searchBlog', 'query');

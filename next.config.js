@@ -45,6 +45,10 @@ const nextConfig = {
         destination: "/es/blog/tablets/:pageUrl*",
       },
       {
+        source: '/es/news/:pageUrl*',
+        destination: "/es/news/:pageUrl*",
+      },
+      {
         source: '/es/PoliticaDePrivacidad',
         destination: "/es/PoliticaDePrivacidad",
       },
@@ -72,6 +76,10 @@ const nextConfig = {
       {
         source: '/en-US/blog/:category/tablets/:pageUrl*',
         destination: '/en-US/blog/tablets/:pageUrl*',
+      },
+      {
+        source: '/en-US/news/:pageUrl*',
+        destination: '/en-US/news/:pageUrl*',
       },
       {
         source: '/en-US/PoliticaDePrivacidad',

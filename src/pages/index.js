@@ -2,7 +2,7 @@ import HeadS from "../components/Head";
 import Home from "../templates/Home";
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { getBlogPageList, getCategoryList } from '../../api';
+import { getBlogPageList, getCategoryList, getNewsList } from '../../api';
 
 import { useTranslation } from 'next-i18next';
 
@@ -13,12 +13,14 @@ export const getStaticProps = async ({ locale }) => {
 
   const blogs = await getBlogPageList({ limit: 10, locale });
   const categorie = await getCategoryList({ limit: 10, locale });
+  const news = await getNewsList({ limit: 10, locale});
   const i18nConf = await serverSideTranslations(locale || 'default-locale');
 
   return {
     props: {
       blogs,
       categorie,
+      news,
       locale,
       ...i18nConf
     },
@@ -26,7 +28,7 @@ export const getStaticProps = async ({ locale }) => {
   };
 };
 
-export default function HomeOne({ blogs, categorie, locale }) {
+export default function HomeOne({ blogs, categorie, news, locale }) {
 
   const { t } = useTranslation(['categorieOfert']);
 
@@ -42,8 +44,9 @@ export default function HomeOne({ blogs, categorie, locale }) {
         urlC={"/"}
         url={"/"}
         img={logo}
+        locale={locale}
       />
-      <Home blogs={blogs} categorie={categorie} locale={locale} />
+      <Home blogs={blogs} categorie={categorie} news={news} locale={locale} />
     </div>
   );
 };

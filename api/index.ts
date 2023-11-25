@@ -5,13 +5,14 @@ import {
   ISearchBlogQueryVariables,
   IGetCategoryListQueryVariables,
   IGetBlogListByCategoryQueryVariables,
+  IGetNewsListQueryVariables
 } from './generated/graphql'
 import axios from 'axios'
 import * as selectors from './selectors'
 
 
 
-import { Blog } from './resources'
+import { Blog, News } from './resources'
 
 import { Category } from './resources'
 
@@ -78,6 +79,56 @@ export function getBlog(
       }
 
       return selectors.selectBlogPage(responseData.blogPageCollection.items[0])
+    })
+}
+
+export function getNewsList(
+  args?: IGetNewsListQueryVariables
+): Promise<News[]> {
+
+  return api
+    .getNewsList({ limit: 10, skip: 0, ...args })
+    .then((responseData) => {
+
+      if (!responseData || !responseData.newsCollection) {
+
+        throw new Error(`Unexpected response data from API`)
+      }
+
+      return selectors.selectNews(responseData.newsCollection)
+    })
+    .catch((error) => {
+      console.error('Error fetching news pages:', error)
+      throw error
+    })
+}
+
+export function getNews(
+  pageUrl: string,
+  isPreview = false,
+  locale?: string
+): Promise<News> {
+
+  const extraHeaders: HeadersInit = {}
+  if (isPreview) {
+    // Use the preview access token for auth
+    extraHeaders['Authorization'] = `Bearer ${process.env.PREVIEW_ACCESS_TOKEN}`
+  }
+
+  return api
+    .getNews({ pageUrl, preview: isPreview, locale }, extraHeaders)
+    .then((responseData) => {
+
+      if (
+        responseData == null ||
+        responseData.newsCollection == null ||
+        responseData.newsCollection.items.length < 1
+      ) {
+
+        throw new Error(`News with pageUrl: "${pageUrl}" not found`)
+      }
+
+      return selectors.selectNew(responseData.newsCollection.items[0])
     })
 }
 

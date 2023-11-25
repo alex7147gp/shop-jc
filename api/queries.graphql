@@ -81,6 +81,7 @@ fragment BlogFields on BlogPage {
   update
 }
 
+
 query getblogPageList(
   $limit: Int = 10
   $skip: Int = 0
@@ -108,6 +109,85 @@ query getblog($pageUrl: String!, $preview: Boolean = false, $locale: String) {
     }
   }
 }
+
+
+fragment newsRecommendedPostsCollection on NewsRecommendedPostsCollection {
+  items {
+      sys {
+        id
+      }
+      pageUrl
+      title
+      intro
+      image {
+        ...AssetFields
+      }
+      conclucion
+      titleCeo
+      descripctionCep
+      category {
+       ...CategoryFields
+      }
+      update
+  }
+}
+
+fragment NewsFields on News {
+  sys {
+    id
+  }
+  pageUrl
+  title
+  intro
+  image {
+    ...AssetFields
+  }
+  body {
+    json
+  },
+  recommendedPostsCollection {
+    ...newsRecommendedPostsCollection
+  }
+  titleCeo
+  descripctionCep
+  keywords
+  urlCeo
+  urlCanonical
+  category {
+    ...CategoryFields
+  }
+  update
+}
+
+
+query getNewsList(
+  $limit: Int = 10
+  $skip: Int = 0
+  $locale: String
+) {
+  newsCollection(limit: $limit, skip: $skip, locale: $locale) {
+    total
+    skip
+    limit
+    items {
+      ...NewsFields
+    }
+  }
+}
+
+query getNews($pageUrl: String!, $preview: Boolean = false, $locale: String) {
+  newsCollection(
+    where: { pageUrl: $pageUrl }
+    preview: $preview
+    limit: 1
+    locale: $locale
+  ) {
+    items {
+      ...NewsFields
+    }
+  }
+}
+
 
 query searchBlog(
   $term: String!

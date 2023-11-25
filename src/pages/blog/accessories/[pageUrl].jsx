@@ -174,15 +174,17 @@ export default function ArticlePage({ blog, categorie, locale }) {
         title={blog.titleCeo}
         description={blog.descripctionCep}
         keywords={blog.keywords}
-        urlC={blog.urlCeo}
-        url={blog.urlCanonical}
+        urlC={`/${blog.category.slug}/${blog.urlCeo}`}
+        url={`/${blog.category.slug}/${blog.urlCanonical}`}
       />
       <GuiaHeader 
         titulo={blog.title}
         intro={blog.intro}
         img={blog.image.url}
         update={blog.update}
+        locale={locale}
       />
+      {blog.productT &&
       <ProductOfert 
         productI={blog.productI} 
         productT={blog.productT}
@@ -194,11 +196,13 @@ export default function ArticlePage({ blog, categorie, locale }) {
         products={products}
         locale={locale}
       />
+      }
       <div className={styles.container}>
         <div className={styles.contentRich}>
           {renderedRichText}
         </div> 
       </div>
+      {blog.productT2 &&
       <ProductOfert 
         productI={blog.productI2}
         productT={blog.productT2}
@@ -210,6 +214,7 @@ export default function ArticlePage({ blog, categorie, locale }) {
         products={products}
         locale={locale}
       />
+      }
       <Conclusion dconclucion={blog.conclucion} />
     </div>
     <ReviewOfert 

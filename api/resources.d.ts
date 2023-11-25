@@ -70,6 +70,37 @@ export type Blog = {
   update?: string
 } | undefined
 
+type RecommendedNews = {
+  id : Json
+  pageUrl?: string
+  title?: string
+  intro?: string
+  image?: Image
+  conclucion?: string
+  titleCeo?: string
+  descripctionCep?: string
+  category?: Category
+  update: string
+}
+
+export type News = {
+  id: Json
+  title?: string
+  pageUrl?: string
+  intro?: string
+  body?: RichText
+  image?: Image
+  recommendedPosts?: RecommendedNews
+  category?: Category
+  conclucion?: string
+  titleCeo?: string
+  descripctionCep?: string
+  keywords?: string
+  urlCeo?: string
+  urlCanonical?: string
+  update?: string
+} | undefined
+
 type PaginatedList<T> = {
   limit: number
   skip: number
