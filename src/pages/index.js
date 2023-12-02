@@ -2,7 +2,7 @@ import HeadS from "../components/Head";
 import Home from "../templates/Home";
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { getBlogPageList, getCategoryList, getNewsList } from '../../api';
+import { getBlogPageList, getCategoryList, getNewsList, getTutorialsList } from '../../api';
 
 import { useTranslation } from 'next-i18next';
 
@@ -14,6 +14,7 @@ export const getStaticProps = async ({ locale }) => {
   const blogs = await getBlogPageList({ limit: 10, locale });
   const categorie = await getCategoryList({ limit: 10, locale });
   const news = await getNewsList({ limit: 10, locale});
+  const tutorials = await getTutorialsList({ limit: 10, locale});
   const i18nConf = await serverSideTranslations(locale || 'default-locale');
 
   return {
@@ -21,6 +22,7 @@ export const getStaticProps = async ({ locale }) => {
       blogs,
       categorie,
       news,
+      tutorials,
       locale,
       ...i18nConf
     },
@@ -28,7 +30,7 @@ export const getStaticProps = async ({ locale }) => {
   };
 };
 
-export default function HomeOne({ blogs, categorie, news, locale }) {
+export default function HomeOne({ blogs, categorie, news, tutorials, locale }) {
 
   const { t } = useTranslation(['categorieOfert']);
 
@@ -46,7 +48,8 @@ export default function HomeOne({ blogs, categorie, news, locale }) {
         img={logo}
         locale={locale}
       />
-      <Home blogs={blogs} categorie={categorie} news={news} locale={locale} />
+      <Home 
+        blogs={blogs} categorie={categorie} news={news} tutorials={tutorials} locale={locale} />
     </div>
   );
 };

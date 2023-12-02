@@ -128,6 +128,7 @@ fragment newsRecommendedPostsCollection on NewsRecommendedPostsCollection {
       category {
        ...CategoryFields
       }
+      type
       update
   }
 }
@@ -156,6 +157,7 @@ fragment NewsFields on News {
   category {
     ...CategoryFields
   }
+  type
   update
 }
 
@@ -188,6 +190,84 @@ query getNews($pageUrl: String!, $preview: Boolean = false, $locale: String) {
   }
 }
 
+fragment tutorialsRecommendedPostsCollection on TutorialsRecommendedPostsCollection {
+  items {
+      sys {
+        id
+      }
+      pageUrl
+      title
+      intro
+      image {
+        ...AssetFields
+      }
+      conclucion
+      titleCeo
+      descripctionCep
+      category {
+       ...CategoryFields
+      }
+      type
+      update
+  }
+}
+
+fragment TutorialsFields on Tutorials {
+  sys {
+    id
+  }
+  pageUrl
+  title
+  intro
+  image {
+    ...AssetFields
+  }
+  body {
+    json
+  },
+  recommendedPostsCollection {
+    ...tutorialsRecommendedPostsCollection
+  }
+  titleCeo
+  descripctionCep
+  keywords
+  urlCeo
+  urlCanonical
+  category {
+    ...CategoryFields
+  }
+  type
+  update
+}
+
+
+query getTutorialsList(
+  $limit: Int = 10
+  $skip: Int = 0
+  $locale: String
+) {
+  tutorialsCollection(limit: $limit, skip: $skip, locale: $locale) {
+    total
+    skip
+    limit
+    items {
+      ...TutorialsFields
+    }
+  }
+}
+
+query getTutorials($pageUrl: String!, $preview: Boolean = false, $locale: String) {
+  tutorialsCollection(
+    where: { pageUrl: $pageUrl }
+    preview: $preview
+    limit: 1
+    locale: $locale
+  ) {
+    items {
+      ...TutorialsFields
+    }
+  }
+}
 
 query searchBlog(
   $term: String!

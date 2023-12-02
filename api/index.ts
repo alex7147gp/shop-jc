@@ -5,14 +5,15 @@ import {
   ISearchBlogQueryVariables,
   IGetCategoryListQueryVariables,
   IGetBlogListByCategoryQueryVariables,
-  IGetNewsListQueryVariables
+  IGetNewsListQueryVariables,
+  IGetTutorialsListQueryVariables
 } from './generated/graphql'
 import axios from 'axios'
 import * as selectors from './selectors'
 
 
 
-import { Blog, News } from './resources'
+import { Blog, News, Tutorials } from './resources'
 
 import { Category } from './resources'
 
@@ -129,6 +130,56 @@ export function getNews(
       }
 
       return selectors.selectNew(responseData.newsCollection.items[0])
+    })
+}
+
+export function getTutorialsList(
+  args?: IGetTutorialsListQueryVariables
+): Promise<Tutorials[]> {
+
+  return api
+    .getTutorialsList({ limit: 10, skip: 0, ...args })
+    .then((responseData) => {
+
+      if (!responseData || !responseData.tutorialsCollection) {
+
+        throw new Error(`Unexpected response data from API`)
+      }
+
+      return selectors.selectTutorials(responseData.tutorialsCollection)
+    })
+    .catch((error) => {
+      console.error('Error fetching news pages:', error)
+      throw error
+    })
+}
+
+export function getTutorials(
+  pageUrl: string,
+  isPreview = false,
+  locale?: string
+): Promise<Tutorials> {
+
+  const extraHeaders: HeadersInit = {}
+  if (isPreview) {
+    // Use the preview access token for auth
+    extraHeaders['Authorization'] = `Bearer ${process.env.PREVIEW_ACCESS_TOKEN}`
+  }
+
+  return api
+    .getTutorials({ pageUrl, preview: isPreview, locale }, extraHeaders)
+    .then((responseData) => {
+
+      if (
+        responseData == null ||
+        responseData.tutorialsCollection == null ||
+        responseData.tutorialsCollection.items.length < 1
+      ) {
+
+        throw new Error(`Tutorials with pageUrl: "${pageUrl}" not found`)
+      }
+
+      return selectors.selectTutorial(responseData.tutorialsCollection.items[0])
     })
 }
 

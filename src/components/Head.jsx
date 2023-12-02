@@ -28,7 +28,7 @@ return (
       <meta property="og:title" content={title} key="ogtitle" />
       <meta property="og:description" content={description} key="ogdesc" />
       <meta property="og:site_name" content="jcshop" />
-      <meta property="og:url" content={`https://www.jcshop.shop${url}`} />
+      <meta property="og:url" content={`https://www.jcshop.shop${locale == 'es' ? '/es/' : '/'}${url}`} />
       
       {locale === 'es' && (
         <link

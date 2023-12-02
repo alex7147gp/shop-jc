@@ -59,7 +59,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
 		    </div>
 			<div className={styles['navbar-left']}>
 				<ul>
-				  {categorie.map((article) => (
+				  {categorie.slice(0,5).map((article) => (
             <li className={styles.li} key={article.id} >
 						  <Link href={`/blog/${article.slug}`}>{article.titleShow}</Link>
 					  </li> 

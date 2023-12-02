@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
-import { getNews, getNewsList, getTutorialsList, getContentfulAssetById, getCategoryList } from '../../../api';
+import { getTutorials, getTutorialsList, getNewsList, getContentfulAssetById, getCategoryList } from '../../../api';
 import HeadS from "../../components/Head";
 
 
@@ -27,12 +27,12 @@ export const getStaticPaths = async ({ locales }) => {
 
   for (const loc of locales) {
 
-    const news = await getNewsList({
+    const tutorials = await getTutorialsList({
       limit: 12,
       locale: loc,
     });
 
-    const localePaths = (news || []).map((articulo) => ({
+    const localePaths = (tutorials || []).map((articulo) => ({
       params: {
         pageUrl: articulo.pageUrl,
       },
@@ -61,20 +61,20 @@ export const getStaticProps = async ({ params, preview, locale }) => {
 
   try{
 
-    const news = await getNews(pageUrl, preview, locale);
+    const tutorials = await getTutorials(pageUrl, preview, locale);
 
     const categorie = await getCategoryList({ limit: 10, locale });
 
-    const newsList = await getNewsList({ limit: 12, locale });
-
     const tutorialsList = await getTutorialsList({ limit: 12, locale });
+
+    const newsList = await getNewsList({ limit: 12, locale });
 
       return {
         props: {
-          news,
+          tutorials,
           categorie,
-          newsList,
           tutorialsList,
+          newsList,
           locale,
         },
         revalidate: 5 * 60,
@@ -140,11 +140,11 @@ function EmbeddedAsset({ assetId }) {
   );
 }
 
-export default function ArticlePage({ news, categorie, newsList, tutorialsList, locale }) {
+export default function ArticlePage({ tutorials, categorie, tutorialsList, newsList, locale }) {
 
   const router = useRouter();
 
-  if (news == null){
+  if (tutorials == null){
     return(
       <div>
         Page not found
@@ -160,7 +160,7 @@ export default function ArticlePage({ news, categorie, newsList, tutorialsList, 
     );
   }
 
-  const richText = news.body; 
+  const richText = tutorials.body; 
 
   const renderedRichText = documentToReactComponents(richText, options);
 
@@ -168,17 +168,17 @@ export default function ArticlePage({ news, categorie, newsList, tutorialsList, 
     <div>
     <div className={styles.blogContainer}>
       <HeadS
-        title={news.titleCeo}
-        description={news.descripctionCep}
-        keywords={news.keywords}
-        urlC={`/${news.urlCeo}`}
-        url={`/${news.urlCanonical}`}
+        title={tutorials.titleCeo}
+        description={tutorials.descripctionCep}
+        keywords={tutorials.keywords}
+        urlC={`/${tutorials.urlCeo}`}
+        url={`/${tutorials.urlCanonical}`}
       />
       <GuiaHeader 
-        titulo={news.title}
-        intro={news.intro}
-        img={news.image.url}
-        update={news.update}
+        titulo={tutorials.title}
+        intro={tutorials.intro}
+        img={tutorials.image.url}
+        update={tutorials.update}
         locale={locale}
       />
       <div className={styles.container}>
@@ -188,20 +188,20 @@ export default function ArticlePage({ news, categorie, newsList, tutorialsList, 
       </div>
     </div>
     <ReviewOfert 
-      blogs={newsList} 
-      article={locale == "es" ? "Noticias" : "News"}
-      urlN='news'
-    />
-    <ReviewOfert 
       blogs={tutorialsList} 
       article={locale == "es" ? "Tutoriales" : "Tutorials"}
-      urlN='tutorials'
+      urlN ='tutorials'
     />
     <ReviewOfert 
-      blogs={news.recommendedPostsCollection} 
+      blogs={newsList} 
+      article={locale == "es" ? "Noticias" : "News"}
+      urlN ='news'
+    />
+    <ReviewOfert 
+      blogs={tutorials.recommendedPostsCollection} 
       article={locale == "es" ? "Lo mas visto" : "Trending stories"} 
-      cantidad={news.recommendedPostsCollection.length} 
-      url={news.category.slug}
+      cantidad={tutorials.recommendedPostsCollection.length} 
+      url={tutorials.category.slug} 
      />
     <BlogSection locale={locale} />
     <CategorieOfert categorie={categorie} />

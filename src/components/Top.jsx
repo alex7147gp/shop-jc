@@ -30,7 +30,9 @@ const Topbar = ({menuOpen, setMenuOpen}) =>{
           onClick={toggleMenu}
           onKeyPress={handleKeyPress}
           tabIndex={0}
-          role={"button"}>
+          role={"button"}
+          aria-label={"Abrir menú"}
+          >
             <span className={styles.linea1} ></span >
             <span className={styles.linea2} ></span>
             <span className={styles.linea3} ></span>

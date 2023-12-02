@@ -176,6 +176,7 @@ export type IAssetLinkingCollections = {
   categoryCollection?: Maybe<ICategoryCollection>;
   entryCollection?: Maybe<IEntryCollection>;
   newsCollection?: Maybe<INewsCollection>;
+  tutorialsCollection?: Maybe<ITutorialsCollection>;
 };
 
 
@@ -204,6 +205,14 @@ export type IAssetLinkingCollectionsEntryCollectionArgs = {
 
 
 export type IAssetLinkingCollectionsNewsCollectionArgs = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  locale?: InputMaybe<Scalars['String']['input']>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+export type IAssetLinkingCollectionsTutorialsCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']['input']>;
   locale?: InputMaybe<Scalars['String']['input']>;
   preview?: InputMaybe<Scalars['Boolean']['input']>;
@@ -261,10 +270,12 @@ export type IBlogPage = IEntry & {
   sys: ISys;
   title?: Maybe<Scalars['String']['output']>;
   titleCeo?: Maybe<Scalars['String']['output']>;
+  type?: Maybe<Scalars['String']['output']>;
   update?: Maybe<Scalars['String']['output']>;
   urlCanonical?: Maybe<Scalars['String']['output']>;
   urlCeo?: Maybe<Scalars['String']['output']>;
 };
+
 
 /** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/blogPage) */
 export type IBlogPageBodyArgs = {
@@ -408,6 +419,12 @@ export type IBlogPageTitleArgs = {
 
 /** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/blogPage) */
 export type IBlogPageTitleCeoArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/blogPage) */
+export type IBlogPageTypeArgs = {
   locale?: InputMaybe<Scalars['String']['input']>;
 };
 
@@ -613,6 +630,13 @@ export type IBlogPageFilter = {
   title_not?: InputMaybe<Scalars['String']['input']>;
   title_not_contains?: InputMaybe<Scalars['String']['input']>;
   title_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  type?: InputMaybe<Scalars['String']['input']>;
+  type_contains?: InputMaybe<Scalars['String']['input']>;
+  type_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  type_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  type_not?: InputMaybe<Scalars['String']['input']>;
+  type_not_contains?: InputMaybe<Scalars['String']['input']>;
+  type_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   update?: InputMaybe<Scalars['String']['input']>;
   update_contains?: InputMaybe<Scalars['String']['input']>;
   update_exists?: InputMaybe<Scalars['Boolean']['input']>;
@@ -641,6 +665,7 @@ export type IBlogPageLinkingCollections = {
   blogPageCollection?: Maybe<IBlogPageCollection>;
   entryCollection?: Maybe<IEntryCollection>;
   newsCollection?: Maybe<INewsCollection>;
+  tutorialsCollection?: Maybe<ITutorialsCollection>;
 };
 
 
@@ -665,6 +690,15 @@ export type IBlogPageLinkingCollectionsNewsCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']['input']>;
   locale?: InputMaybe<Scalars['String']['input']>;
   order?: InputMaybe<Array<InputMaybe<IBlogPageLinkingCollectionsNewsCollectionOrder>>>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+export type IBlogPageLinkingCollectionsTutorialsCollectionArgs = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  locale?: InputMaybe<Scalars['String']['input']>;
+  order?: InputMaybe<Array<InputMaybe<IBlogPageLinkingCollectionsTutorialsCollectionOrder>>>;
   preview?: InputMaybe<Scalars['Boolean']['input']>;
   skip?: InputMaybe<Scalars['Int']['input']>;
 };
@@ -708,6 +742,8 @@ export enum IBlogPageLinkingCollectionsBlogPageCollectionOrder {
   TitleCeoDesc = 'titleCeo_DESC',
   TitleAsc = 'title_ASC',
   TitleDesc = 'title_DESC',
+  TypeAsc = 'type_ASC',
+  TypeDesc = 'type_DESC',
   UpdateAsc = 'update_ASC',
   UpdateDesc = 'update_DESC',
   UrlCanonicalAsc = 'urlCanonical_ASC',
@@ -735,6 +771,37 @@ export enum IBlogPageLinkingCollectionsNewsCollectionOrder {
   TitleCeoDesc = 'titleCeo_DESC',
   TitleAsc = 'title_ASC',
   TitleDesc = 'title_DESC',
+  TypeAsc = 'type_ASC',
+  TypeDesc = 'type_DESC',
+  UpdateAsc = 'update_ASC',
+  UpdateDesc = 'update_DESC',
+  UrlCanonicalAsc = 'urlCanonical_ASC',
+  UrlCanonicalDesc = 'urlCanonical_DESC',
+  UrlCeoAsc = 'urlCeo_ASC',
+  UrlCeoDesc = 'urlCeo_DESC'
+}
+
+export enum IBlogPageLinkingCollectionsTutorialsCollectionOrder {
+  CategoriesAsc = 'categories_ASC',
+  CategoriesDesc = 'categories_DESC',
+  DescripctionCepAsc = 'descripctionCep_ASC',
+  DescripctionCepDesc = 'descripctionCep_DESC',
+  PageUrlAsc = 'pageUrl_ASC',
+  PageUrlDesc = 'pageUrl_DESC',
+  SysFirstPublishedAtAsc = 'sys_firstPublishedAt_ASC',
+  SysFirstPublishedAtDesc = 'sys_firstPublishedAt_DESC',
+  SysIdAsc = 'sys_id_ASC',
+  SysIdDesc = 'sys_id_DESC',
+  SysPublishedAtAsc = 'sys_publishedAt_ASC',
+  SysPublishedAtDesc = 'sys_publishedAt_DESC',
+  SysPublishedVersionAsc = 'sys_publishedVersion_ASC',
+  SysPublishedVersionDesc = 'sys_publishedVersion_DESC',
+  TitleCeoAsc = 'titleCeo_ASC',
+  TitleCeoDesc = 'titleCeo_DESC',
+  TitleAsc = 'title_ASC',
+  TitleDesc = 'title_DESC',
+  TypeAsc = 'type_ASC',
+  TypeDesc = 'type_DESC',
   UpdateAsc = 'update_ASC',
   UpdateDesc = 'update_DESC',
   UrlCanonicalAsc = 'urlCanonical_ASC',
@@ -782,6 +849,8 @@ export enum IBlogPageOrder {
   TitleCeoDesc = 'titleCeo_DESC',
   TitleAsc = 'title_ASC',
   TitleDesc = 'title_DESC',
+  TypeAsc = 'type_ASC',
+  TypeDesc = 'type_DESC',
   UpdateAsc = 'update_ASC',
   UpdateDesc = 'update_DESC',
   UrlCanonicalAsc = 'urlCanonical_ASC',
@@ -837,6 +906,8 @@ export enum IBlogPageRecommendedPostsCollectionOrder {
   TitleCeoDesc = 'titleCeo_DESC',
   TitleAsc = 'title_ASC',
   TitleDesc = 'title_DESC',
+  TypeAsc = 'type_ASC',
+  TypeDesc = 'type_DESC',
   UpdateAsc = 'update_ASC',
   UpdateDesc = 'update_DESC',
   UrlCanonicalAsc = 'urlCanonical_ASC',
@@ -986,6 +1057,7 @@ export type ICategoryLinkingCollections = {
   blogPageCollection?: Maybe<IBlogPageCollection>;
   entryCollection?: Maybe<IEntryCollection>;
   newsCollection?: Maybe<INewsCollection>;
+  tutorialsCollection?: Maybe<ITutorialsCollection>;
 };
 
 
@@ -1010,6 +1082,15 @@ export type ICategoryLinkingCollectionsNewsCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']['input']>;
   locale?: InputMaybe<Scalars['String']['input']>;
   order?: InputMaybe<Array<InputMaybe<ICategoryLinkingCollectionsNewsCollectionOrder>>>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+};
+
+
+export type ICategoryLinkingCollectionsTutorialsCollectionArgs = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  locale?: InputMaybe<Scalars['String']['input']>;
+  order?: InputMaybe<Array<InputMaybe<ICategoryLinkingCollectionsTutorialsCollectionOrder>>>;
   preview?: InputMaybe<Scalars['Boolean']['input']>;
   skip?: InputMaybe<Scalars['Int']['input']>;
 };
@@ -1053,6 +1134,8 @@ export enum ICategoryLinkingCollectionsBlogPageCollectionOrder {
   TitleCeoDesc = 'titleCeo_DESC',
   TitleAsc = 'title_ASC',
   TitleDesc = 'title_DESC',
+  TypeAsc = 'type_ASC',
+  TypeDesc = 'type_DESC',
   UpdateAsc = 'update_ASC',
   UpdateDesc = 'update_DESC',
   UrlCanonicalAsc = 'urlCanonical_ASC',
@@ -1080,6 +1163,37 @@ export enum ICategoryLinkingCollectionsNewsCollectionOrder {
   TitleCeoDesc = 'titleCeo_DESC',
   TitleAsc = 'title_ASC',
   TitleDesc = 'title_DESC',
+  TypeAsc = 'type_ASC',
+  TypeDesc = 'type_DESC',
+  UpdateAsc = 'update_ASC',
+  UpdateDesc = 'update_DESC',
+  UrlCanonicalAsc = 'urlCanonical_ASC',
+  UrlCanonicalDesc = 'urlCanonical_DESC',
+  UrlCeoAsc = 'urlCeo_ASC',
+  UrlCeoDesc = 'urlCeo_DESC'
+}
+
+export enum ICategoryLinkingCollectionsTutorialsCollectionOrder {
+  CategoriesAsc = 'categories_ASC',
+  CategoriesDesc = 'categories_DESC',
+  DescripctionCepAsc = 'descripctionCep_ASC',
+  DescripctionCepDesc = 'descripctionCep_DESC',
+  PageUrlAsc = 'pageUrl_ASC',
+  PageUrlDesc = 'pageUrl_DESC',
+  SysFirstPublishedAtAsc = 'sys_firstPublishedAt_ASC',
+  SysFirstPublishedAtDesc = 'sys_firstPublishedAt_DESC',
+  SysIdAsc = 'sys_id_ASC',
+  SysIdDesc = 'sys_id_DESC',
+  SysPublishedAtAsc = 'sys_publishedAt_ASC',
+  SysPublishedAtDesc = 'sys_publishedAt_DESC',
+  SysPublishedVersionAsc = 'sys_publishedVersion_ASC',
+  SysPublishedVersionDesc = 'sys_publishedVersion_DESC',
+  TitleCeoAsc = 'titleCeo_ASC',
+  TitleCeoDesc = 'titleCeo_DESC',
+  TitleAsc = 'title_ASC',
+  TitleDesc = 'title_DESC',
+  TypeAsc = 'type_ASC',
+  TypeDesc = 'type_DESC',
   UpdateAsc = 'update_ASC',
   UpdateDesc = 'update_DESC',
   UrlCanonicalAsc = 'urlCanonical_ASC',
@@ -1274,6 +1388,7 @@ export type INews = IEntry & {
   sys: ISys;
   title?: Maybe<Scalars['String']['output']>;
   titleCeo?: Maybe<Scalars['String']['output']>;
+  type?: Maybe<Scalars['String']['output']>;
   update?: Maybe<Scalars['String']['output']>;
   urlCanonical?: Maybe<Scalars['String']['output']>;
   urlCeo?: Maybe<Scalars['String']['output']>;
@@ -1356,6 +1471,12 @@ export type INewsTitleArgs = {
 
 /** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
 export type INewsTitleCeoArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/news) */
+export type INewsTypeArgs = {
   locale?: InputMaybe<Scalars['String']['input']>;
 };
 
@@ -1480,6 +1601,13 @@ export type INewsFilter = {
   title_not?: InputMaybe<Scalars['String']['input']>;
   title_not_contains?: InputMaybe<Scalars['String']['input']>;
   title_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  type?: InputMaybe<Scalars['String']['input']>;
+  type_contains?: InputMaybe<Scalars['String']['input']>;
+  type_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  type_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  type_not?: InputMaybe<Scalars['String']['input']>;
+  type_not_contains?: InputMaybe<Scalars['String']['input']>;
+  type_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   update?: InputMaybe<Scalars['String']['input']>;
   update_contains?: InputMaybe<Scalars['String']['input']>;
   update_exists?: InputMaybe<Scalars['Boolean']['input']>;
@@ -1535,6 +1663,8 @@ export enum INewsOrder {
   TitleCeoDesc = 'titleCeo_DESC',
   TitleAsc = 'title_ASC',
   TitleDesc = 'title_DESC',
+  TypeAsc = 'type_ASC',
+  TypeDesc = 'type_DESC',
   UpdateAsc = 'update_ASC',
   UpdateDesc = 'update_DESC',
   UrlCanonicalAsc = 'urlCanonical_ASC',
@@ -1590,6 +1720,8 @@ export enum INewsRecommendedPostsCollectionOrder {
   TitleCeoDesc = 'titleCeo_DESC',
   TitleAsc = 'title_ASC',
   TitleDesc = 'title_DESC',
+  TypeAsc = 'type_ASC',
+  TypeDesc = 'type_DESC',
   UpdateAsc = 'update_ASC',
   UpdateDesc = 'update_DESC',
   UrlCanonicalAsc = 'urlCanonical_ASC',
@@ -1609,6 +1741,8 @@ export type IQuery = {
   entryCollection?: Maybe<IEntryCollection>;
   news?: Maybe<INews>;
   newsCollection?: Maybe<INewsCollection>;
+  tutorials?: Maybe<ITutorials>;
+  tutorialsCollection?: Maybe<ITutorialsCollection>;
 };
 
 
@@ -1689,6 +1823,23 @@ export type IQueryNewsCollectionArgs = {
   where?: InputMaybe<INewsFilter>;
 };
 
+
+export type IQueryTutorialsArgs = {
+  id: Scalars['String']['input'];
+  locale?: InputMaybe<Scalars['String']['input']>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+export type IQueryTutorialsCollectionArgs = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  locale?: InputMaybe<Scalars['String']['input']>;
+  order?: InputMaybe<Array<InputMaybe<ITutorialsOrder>>>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+  where?: InputMaybe<ITutorialsFilter>;
+};
+
 export type IResourceLink = {
   __typename?: 'ResourceLink';
   sys: IResourceSys;
@@ -1747,6 +1898,365 @@ export type ISysFilter = {
   publishedVersion_not?: InputMaybe<Scalars['Float']['input']>;
   publishedVersion_not_in?: InputMaybe<Array<InputMaybe<Scalars['Float']['input']>>>;
 };
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorials = IEntry & {
+  __typename?: 'Tutorials';
+  body?: Maybe<ITutorialsBody>;
+  categories?: Maybe<Scalars['String']['output']>;
+  category?: Maybe<ICategory>;
+  contentfulMetadata: IContentfulMetadata;
+  descripctionCep?: Maybe<Scalars['String']['output']>;
+  image?: Maybe<IAsset>;
+  intro?: Maybe<Scalars['String']['output']>;
+  keywords?: Maybe<Scalars['String']['output']>;
+  linkedFrom?: Maybe<ITutorialsLinkingCollections>;
+  pageUrl?: Maybe<Scalars['String']['output']>;
+  recommendedPostsCollection?: Maybe<ITutorialsRecommendedPostsCollection>;
+  sys: ISys;
+  title?: Maybe<Scalars['String']['output']>;
+  titleCeo?: Maybe<Scalars['String']['output']>;
+  type?: Maybe<Scalars['String']['output']>;
+  update?: Maybe<Scalars['String']['output']>;
+  urlCanonical?: Maybe<Scalars['String']['output']>;
+  urlCeo?: Maybe<Scalars['String']['output']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorialsBodyArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorialsCategoriesArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorialsCategoryArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+  where?: InputMaybe<ICategoryFilter>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorialsDescripctionCepArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorialsImageArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorialsIntroArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorialsKeywordsArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorialsLinkedFromArgs = {
+  allowedLocales?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorialsPageUrlArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorialsRecommendedPostsCollectionArgs = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  locale?: InputMaybe<Scalars['String']['input']>;
+  order?: InputMaybe<Array<InputMaybe<ITutorialsRecommendedPostsCollectionOrder>>>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+  where?: InputMaybe<IBlogPageFilter>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorialsTitleArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorialsTitleCeoArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorialsTypeArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorialsUpdateArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorialsUrlCanonicalArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+
+/** Blog page with title, body, image and other recommended posts [See type definition](https://app.contentful.com/spaces/tele5jwzdht7/content_types/tutorials) */
+export type ITutorialsUrlCeoArgs = {
+  locale?: InputMaybe<Scalars['String']['input']>;
+};
+
+export type ITutorialsBody = {
+  __typename?: 'TutorialsBody';
+  json: Scalars['JSON']['output'];
+  links: ITutorialsBodyLinks;
+};
+
+export type ITutorialsBodyAssets = {
+  __typename?: 'TutorialsBodyAssets';
+  block: Array<Maybe<IAsset>>;
+  hyperlink: Array<Maybe<IAsset>>;
+};
+
+export type ITutorialsBodyEntries = {
+  __typename?: 'TutorialsBodyEntries';
+  block: Array<Maybe<IEntry>>;
+  hyperlink: Array<Maybe<IEntry>>;
+  inline: Array<Maybe<IEntry>>;
+};
+
+export type ITutorialsBodyLinks = {
+  __typename?: 'TutorialsBodyLinks';
+  assets: ITutorialsBodyAssets;
+  entries: ITutorialsBodyEntries;
+  resources: ITutorialsBodyResources;
+};
+
+export type ITutorialsBodyResources = {
+  __typename?: 'TutorialsBodyResources';
+  block: Array<IResourceLink>;
+  hyperlink: Array<IResourceLink>;
+  inline: Array<IResourceLink>;
+};
+
+export type ITutorialsCollection = {
+  __typename?: 'TutorialsCollection';
+  items: Array<Maybe<ITutorials>>;
+  limit: Scalars['Int']['output'];
+  skip: Scalars['Int']['output'];
+  total: Scalars['Int']['output'];
+};
+
+export type ITutorialsFilter = {
+  AND?: InputMaybe<Array<InputMaybe<ITutorialsFilter>>>;
+  OR?: InputMaybe<Array<InputMaybe<ITutorialsFilter>>>;
+  body_contains?: InputMaybe<Scalars['String']['input']>;
+  body_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  body_not_contains?: InputMaybe<Scalars['String']['input']>;
+  categories?: InputMaybe<Scalars['String']['input']>;
+  categories_contains?: InputMaybe<Scalars['String']['input']>;
+  categories_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  categories_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  categories_not?: InputMaybe<Scalars['String']['input']>;
+  categories_not_contains?: InputMaybe<Scalars['String']['input']>;
+  categories_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  category?: InputMaybe<ICfCategoryNestedFilter>;
+  category_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  contentfulMetadata?: InputMaybe<IContentfulMetadataFilter>;
+  descripctionCep?: InputMaybe<Scalars['String']['input']>;
+  descripctionCep_contains?: InputMaybe<Scalars['String']['input']>;
+  descripctionCep_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  descripctionCep_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  descripctionCep_not?: InputMaybe<Scalars['String']['input']>;
+  descripctionCep_not_contains?: InputMaybe<Scalars['String']['input']>;
+  descripctionCep_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  image_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  intro?: InputMaybe<Scalars['String']['input']>;
+  intro_contains?: InputMaybe<Scalars['String']['input']>;
+  intro_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  intro_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  intro_not?: InputMaybe<Scalars['String']['input']>;
+  intro_not_contains?: InputMaybe<Scalars['String']['input']>;
+  intro_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  keywords?: InputMaybe<Scalars['String']['input']>;
+  keywords_contains?: InputMaybe<Scalars['String']['input']>;
+  keywords_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  keywords_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  keywords_not?: InputMaybe<Scalars['String']['input']>;
+  keywords_not_contains?: InputMaybe<Scalars['String']['input']>;
+  keywords_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  pageUrl?: InputMaybe<Scalars['String']['input']>;
+  pageUrl_contains?: InputMaybe<Scalars['String']['input']>;
+  pageUrl_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  pageUrl_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  pageUrl_not?: InputMaybe<Scalars['String']['input']>;
+  pageUrl_not_contains?: InputMaybe<Scalars['String']['input']>;
+  pageUrl_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  recommendedPosts?: InputMaybe<ICfBlogPageNestedFilter>;
+  recommendedPostsCollection_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  sys?: InputMaybe<ISysFilter>;
+  title?: InputMaybe<Scalars['String']['input']>;
+  titleCeo?: InputMaybe<Scalars['String']['input']>;
+  titleCeo_contains?: InputMaybe<Scalars['String']['input']>;
+  titleCeo_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  titleCeo_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  titleCeo_not?: InputMaybe<Scalars['String']['input']>;
+  titleCeo_not_contains?: InputMaybe<Scalars['String']['input']>;
+  titleCeo_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  title_contains?: InputMaybe<Scalars['String']['input']>;
+  title_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  title_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  title_not?: InputMaybe<Scalars['String']['input']>;
+  title_not_contains?: InputMaybe<Scalars['String']['input']>;
+  title_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  type?: InputMaybe<Scalars['String']['input']>;
+  type_contains?: InputMaybe<Scalars['String']['input']>;
+  type_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  type_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  type_not?: InputMaybe<Scalars['String']['input']>;
+  type_not_contains?: InputMaybe<Scalars['String']['input']>;
+  type_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  update?: InputMaybe<Scalars['String']['input']>;
+  update_contains?: InputMaybe<Scalars['String']['input']>;
+  update_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  update_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  update_not?: InputMaybe<Scalars['String']['input']>;
+  update_not_contains?: InputMaybe<Scalars['String']['input']>;
+  update_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  urlCanonical?: InputMaybe<Scalars['String']['input']>;
+  urlCanonical_contains?: InputMaybe<Scalars['String']['input']>;
+  urlCanonical_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  urlCanonical_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  urlCanonical_not?: InputMaybe<Scalars['String']['input']>;
+  urlCanonical_not_contains?: InputMaybe<Scalars['String']['input']>;
+  urlCanonical_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  urlCeo?: InputMaybe<Scalars['String']['input']>;
+  urlCeo_contains?: InputMaybe<Scalars['String']['input']>;
+  urlCeo_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  urlCeo_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  urlCeo_not?: InputMaybe<Scalars['String']['input']>;
+  urlCeo_not_contains?: InputMaybe<Scalars['String']['input']>;
+  urlCeo_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+};
+
+export type ITutorialsLinkingCollections = {
+  __typename?: 'TutorialsLinkingCollections';
+  entryCollection?: Maybe<IEntryCollection>;
+};
+
+
+export type ITutorialsLinkingCollectionsEntryCollectionArgs = {
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  locale?: InputMaybe<Scalars['String']['input']>;
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+};
+
+export enum ITutorialsOrder {
+  CategoriesAsc = 'categories_ASC',
+  CategoriesDesc = 'categories_DESC',
+  DescripctionCepAsc = 'descripctionCep_ASC',
+  DescripctionCepDesc = 'descripctionCep_DESC',
+  PageUrlAsc = 'pageUrl_ASC',
+  PageUrlDesc = 'pageUrl_DESC',
+  SysFirstPublishedAtAsc = 'sys_firstPublishedAt_ASC',
+  SysFirstPublishedAtDesc = 'sys_firstPublishedAt_DESC',
+  SysIdAsc = 'sys_id_ASC',
+  SysIdDesc = 'sys_id_DESC',
+  SysPublishedAtAsc = 'sys_publishedAt_ASC',
+  SysPublishedAtDesc = 'sys_publishedAt_DESC',
+  SysPublishedVersionAsc = 'sys_publishedVersion_ASC',
+  SysPublishedVersionDesc = 'sys_publishedVersion_DESC',
+  TitleCeoAsc = 'titleCeo_ASC',
+  TitleCeoDesc = 'titleCeo_DESC',
+  TitleAsc = 'title_ASC',
+  TitleDesc = 'title_DESC',
+  TypeAsc = 'type_ASC',
+  TypeDesc = 'type_DESC',
+  UpdateAsc = 'update_ASC',
+  UpdateDesc = 'update_DESC',
+  UrlCanonicalAsc = 'urlCanonical_ASC',
+  UrlCanonicalDesc = 'urlCanonical_DESC',
+  UrlCeoAsc = 'urlCeo_ASC',
+  UrlCeoDesc = 'urlCeo_DESC'
+}
+
+export type ITutorialsRecommendedPostsCollection = {
+  __typename?: 'TutorialsRecommendedPostsCollection';
+  items: Array<Maybe<IBlogPage>>;
+  limit: Scalars['Int']['output'];
+  skip: Scalars['Int']['output'];
+  total: Scalars['Int']['output'];
+};
+
+export enum ITutorialsRecommendedPostsCollectionOrder {
+  CategoriesAsc = 'categories_ASC',
+  CategoriesDesc = 'categories_DESC',
+  DescripctionCepAsc = 'descripctionCep_ASC',
+  DescripctionCepDesc = 'descripctionCep_DESC',
+  PageUrlAsc = 'pageUrl_ASC',
+  PageUrlDesc = 'pageUrl_DESC',
+  ProductD2Asc = 'productD2_ASC',
+  ProductD2Desc = 'productD2_DESC',
+  ProductDAsc = 'productD_ASC',
+  ProductDDesc = 'productD_DESC',
+  ProductI2Asc = 'productI2_ASC',
+  ProductI2Desc = 'productI2_DESC',
+  ProductIAsc = 'productI_ASC',
+  ProductIDesc = 'productI_DESC',
+  ProductP2Asc = 'productP2_ASC',
+  ProductP2Desc = 'productP2_DESC',
+  ProductPAsc = 'productP_ASC',
+  ProductPDesc = 'productP_DESC',
+  ProductT2Asc = 'productT2_ASC',
+  ProductT2Desc = 'productT2_DESC',
+  ProductTAsc = 'productT_ASC',
+  ProductTDesc = 'productT_DESC',
+  ProductUrl2Asc = 'productUrl2_ASC',
+  ProductUrl2Desc = 'productUrl2_DESC',
+  ProductUrlAsc = 'productUrl_ASC',
+  ProductUrlDesc = 'productUrl_DESC',
+  SysFirstPublishedAtAsc = 'sys_firstPublishedAt_ASC',
+  SysFirstPublishedAtDesc = 'sys_firstPublishedAt_DESC',
+  SysIdAsc = 'sys_id_ASC',
+  SysIdDesc = 'sys_id_DESC',
+  SysPublishedAtAsc = 'sys_publishedAt_ASC',
+  SysPublishedAtDesc = 'sys_publishedAt_DESC',
+  SysPublishedVersionAsc = 'sys_publishedVersion_ASC',
+  SysPublishedVersionDesc = 'sys_publishedVersion_DESC',
+  TitleCeoAsc = 'titleCeo_ASC',
+  TitleCeoDesc = 'titleCeo_DESC',
+  TitleAsc = 'title_ASC',
+  TitleDesc = 'title_DESC',
+  TypeAsc = 'type_ASC',
+  TypeDesc = 'type_DESC',
+  UpdateAsc = 'update_ASC',
+  UpdateDesc = 'update_DESC',
+  UrlCanonicalAsc = 'urlCanonical_ASC',
+  UrlCanonicalDesc = 'urlCanonical_DESC',
+  UrlCeoAsc = 'urlCeo_ASC',
+  UrlCeoDesc = 'urlCeo_DESC'
+}
 
 export type ICfBlogPageNestedFilter = {
   AND?: InputMaybe<Array<InputMaybe<ICfBlogPageNestedFilter>>>;
@@ -1889,6 +2399,13 @@ export type ICfBlogPageNestedFilter = {
   title_not?: InputMaybe<Scalars['String']['input']>;
   title_not_contains?: InputMaybe<Scalars['String']['input']>;
   title_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  type?: InputMaybe<Scalars['String']['input']>;
+  type_contains?: InputMaybe<Scalars['String']['input']>;
+  type_exists?: InputMaybe<Scalars['Boolean']['input']>;
+  type_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
+  type_not?: InputMaybe<Scalars['String']['input']>;
+  type_not_contains?: InputMaybe<Scalars['String']['input']>;
+  type_not_in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
   update?: InputMaybe<Scalars['String']['input']>;
   update_contains?: InputMaybe<Scalars['String']['input']>;
   update_exists?: InputMaybe<Scalars['Boolean']['input']>;
@@ -1995,9 +2512,9 @@ export type IGetblogQueryVariables = Exact<{
 
 export type IGetblogQuery = { __typename?: 'Query', blogPageCollection?: { __typename?: 'BlogPageCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, keywords?: string | null, urlCeo?: string | null, urlCanonical?: string | null, productT?: string | null, productI?: string | null, productD?: string | null, productP?: number | null, productUrl?: string | null, productT2?: string | null, productI2?: string | null, productD2?: string | null, productP2?: number | null, productUrl2?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, body?: { __typename?: 'BlogPageBody', json: any } | null, recommendedPostsCollection?: { __typename?: 'BlogPageRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null };
 
-export type INewsRecommendedPostsCollectionFragment = { __typename?: 'NewsRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> };
+export type INewsRecommendedPostsCollectionFragment = { __typename?: 'NewsRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, type?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> };
 
-export type INewsFieldsFragment = { __typename?: 'News', pageUrl?: string | null, title?: string | null, intro?: string | null, titleCeo?: string | null, descripctionCep?: string | null, keywords?: string | null, urlCeo?: string | null, urlCanonical?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, body?: { __typename?: 'NewsBody', json: any } | null, recommendedPostsCollection?: { __typename?: 'NewsRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null };
+export type INewsFieldsFragment = { __typename?: 'News', pageUrl?: string | null, title?: string | null, intro?: string | null, titleCeo?: string | null, descripctionCep?: string | null, keywords?: string | null, urlCeo?: string | null, urlCanonical?: string | null, type?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, body?: { __typename?: 'NewsBody', json: any } | null, recommendedPostsCollection?: { __typename?: 'NewsRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, type?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null };
 
 export type IGetNewsListQueryVariables = Exact<{
   limit?: InputMaybe<Scalars['Int']['input']>;
@@ -2006,7 +2523,7 @@ export type IGetNewsListQueryVariables = Exact<{
 }>;
 
 
-export type IGetNewsListQuery = { __typename?: 'Query', newsCollection?: { __typename?: 'NewsCollection', total: number, skip: number, limit: number, items: Array<{ __typename?: 'News', pageUrl?: string | null, title?: string | null, intro?: string | null, titleCeo?: string | null, descripctionCep?: string | null, keywords?: string | null, urlCeo?: string | null, urlCanonical?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, body?: { __typename?: 'NewsBody', json: any } | null, recommendedPostsCollection?: { __typename?: 'NewsRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null };
+export type IGetNewsListQuery = { __typename?: 'Query', newsCollection?: { __typename?: 'NewsCollection', total: number, skip: number, limit: number, items: Array<{ __typename?: 'News', pageUrl?: string | null, title?: string | null, intro?: string | null, titleCeo?: string | null, descripctionCep?: string | null, keywords?: string | null, urlCeo?: string | null, urlCanonical?: string | null, type?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, body?: { __typename?: 'NewsBody', json: any } | null, recommendedPostsCollection?: { __typename?: 'NewsRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, type?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null };
 
 export type IGetNewsQueryVariables = Exact<{
   pageUrl: Scalars['String']['input'];
@@ -2015,7 +2532,29 @@ export type IGetNewsQueryVariables = Exact<{
 }>;
 
 
-export type IGetNewsQuery = { __typename?: 'Query', newsCollection?: { __typename?: 'NewsCollection', items: Array<{ __typename?: 'News', pageUrl?: string | null, title?: string | null, intro?: string | null, titleCeo?: string | null, descripctionCep?: string | null, keywords?: string | null, urlCeo?: string | null, urlCanonical?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, body?: { __typename?: 'NewsBody', json: any } | null, recommendedPostsCollection?: { __typename?: 'NewsRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null };
+export type IGetNewsQuery = { __typename?: 'Query', newsCollection?: { __typename?: 'NewsCollection', items: Array<{ __typename?: 'News', pageUrl?: string | null, title?: string | null, intro?: string | null, titleCeo?: string | null, descripctionCep?: string | null, keywords?: string | null, urlCeo?: string | null, urlCanonical?: string | null, type?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, body?: { __typename?: 'NewsBody', json: any } | null, recommendedPostsCollection?: { __typename?: 'NewsRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, type?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null };
+
+export type ITutorialsRecommendedPostsCollectionFragment = { __typename?: 'TutorialsRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, type?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> };
+
+export type ITutorialsFieldsFragment = { __typename?: 'Tutorials', pageUrl?: string | null, title?: string | null, intro?: string | null, titleCeo?: string | null, descripctionCep?: string | null, keywords?: string | null, urlCeo?: string | null, urlCanonical?: string | null, type?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, body?: { __typename?: 'TutorialsBody', json: any } | null, recommendedPostsCollection?: { __typename?: 'TutorialsRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, type?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null };
+
+export type IGetTutorialsListQueryVariables = Exact<{
+  limit?: InputMaybe<Scalars['Int']['input']>;
+  skip?: InputMaybe<Scalars['Int']['input']>;
+  locale?: InputMaybe<Scalars['String']['input']>;
+}>;
+
+
+export type IGetTutorialsListQuery = { __typename?: 'Query', tutorialsCollection?: { __typename?: 'TutorialsCollection', total: number, skip: number, limit: number, items: Array<{ __typename?: 'Tutorials', pageUrl?: string | null, title?: string | null, intro?: string | null, titleCeo?: string | null, descripctionCep?: string | null, keywords?: string | null, urlCeo?: string | null, urlCanonical?: string | null, type?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, body?: { __typename?: 'TutorialsBody', json: any } | null, recommendedPostsCollection?: { __typename?: 'TutorialsRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, type?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null };
+
+export type IGetTutorialsQueryVariables = Exact<{
+  pageUrl: Scalars['String']['input'];
+  preview?: InputMaybe<Scalars['Boolean']['input']>;
+  locale?: InputMaybe<Scalars['String']['input']>;
+}>;
+
+
+export type IGetTutorialsQuery = { __typename?: 'Query', tutorialsCollection?: { __typename?: 'TutorialsCollection', items: Array<{ __typename?: 'Tutorials', pageUrl?: string | null, title?: string | null, intro?: string | null, titleCeo?: string | null, descripctionCep?: string | null, keywords?: string | null, urlCeo?: string | null, urlCanonical?: string | null, type?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, body?: { __typename?: 'TutorialsBody', json: any } | null, recommendedPostsCollection?: { __typename?: 'TutorialsRecommendedPostsCollection', items: Array<{ __typename?: 'BlogPage', pageUrl?: string | null, title?: string | null, intro?: string | null, conclucion?: string | null, titleCeo?: string | null, descripctionCep?: string | null, type?: string | null, update?: string | null, sys: { __typename?: 'Sys', id: string }, image?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null, category?: { __typename?: 'Category', slug?: string | null, title?: string | null, description?: string | null, titleCeo?: string | null, descriptionCeo?: string | null, keywords?: string | null, titleShow?: string | null, sys: { __typename?: 'Sys', id: string }, icon?: { __typename?: 'Asset', title?: string | null, url?: string | null, width?: number | null, height?: number | null } | null } | null } | null> } | null };
 
 export type ISearchBlogQueryVariables = Exact<{
   term: Scalars['String']['input'];
@@ -2153,6 +2692,7 @@ export const NewsRecommendedPostsCollectionFragmentDoc = gql`
     category {
       ...CategoryFields
     }
+    type
     update
   }
 }
@@ -2183,10 +2723,66 @@ export const NewsFieldsFragmentDoc = gql`
   category {
     ...CategoryFields
   }
+  type
   update
 }
     ${AssetFieldsFragmentDoc}
 ${NewsRecommendedPostsCollectionFragmentDoc}
+${CategoryFieldsFragmentDoc}`;
+export const TutorialsRecommendedPostsCollectionFragmentDoc = gql`
+    fragment tutorialsRecommendedPostsCollection on TutorialsRecommendedPostsCollection {
+  items {
+    sys {
+      id
+    }
+    pageUrl
+    title
+    intro
+    image {
+      ...AssetFields
+    }
+    conclucion
+    titleCeo
+    descripctionCep
+    category {
+      ...CategoryFields
+    }
+    type
+    update
+  }
+}
+    ${AssetFieldsFragmentDoc}
+${CategoryFieldsFragmentDoc}`;
+export const TutorialsFieldsFragmentDoc = gql`
+    fragment TutorialsFields on Tutorials {
+  sys {
+    id
+  }
+  pageUrl
+  title
+  intro
+  image {
+    ...AssetFields
+  }
+  body {
+    json
+  }
+  recommendedPostsCollection {
+    ...tutorialsRecommendedPostsCollection
+  }
+  titleCeo
+  descripctionCep
+  keywords
+  urlCeo
+  urlCanonical
+  category {
+    ...CategoryFields
+  }
+  type
+  update
+}
+    ${AssetFieldsFragmentDoc}
+${TutorialsRecommendedPostsCollectionFragmentDoc}
 ${CategoryFieldsFragmentDoc}`;
 export const GetblogPageListDocument = gql`
     query getblogPageList($limit: Int = 10, $skip: Int = 0, $locale: String) {
@@ -2240,6 +2836,32 @@ export const GetNewsDocument = gql`
   }
 }
     ${NewsFieldsFragmentDoc}`;
+export const GetTutorialsListDocument = gql`
+    query getTutorialsList($limit: Int = 10, $skip: Int = 0, $locale: String) {
+  tutorialsCollection(limit: $limit, skip: $skip, locale: $locale) {
+    total
+    skip
+    limit
+    items {
+      ...TutorialsFields
+    }
+  }
+}
+    ${TutorialsFieldsFragmentDoc}`;
+export const GetTutorialsDocument = gql`
+    query getTutorials($pageUrl: String!, $preview: Boolean = false, $locale: String) {
+  tutorialsCollection(
+    where: {pageUrl: $pageUrl}
+    preview: $preview
+    limit: 1
+    locale: $locale
+  ) {
+    items {
+      ...TutorialsFields
+    }
+  }
+}
+    ${TutorialsFieldsFragmentDoc}`;
 export const SearchBlogDocument = gql`
     query searchBlog($term: String!, $locale: String, $limit: Int = 10, $skip: Int = 0) {
   blogPageCollection(
@@ -2304,6 +2926,12 @@ export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = 
     },
     getNews(variables: IGetNewsQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<IGetNewsQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<IGetNewsQuery>(GetNewsDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'getNews', 'query');
+    },
+    getTutorialsList(variables?: IGetTutorialsListQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<IGetTutorialsListQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<IGetTutorialsListQuery>(GetTutorialsListDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'getTutorialsList', 'query');
+    },
+    getTutorials(variables: IGetTutorialsQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<IGetTutorialsQuery> {
+      return withWrapper((wrappedRequestHeaders) => client.request<IGetTutorialsQuery>(GetTutorialsDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'getTutorials', 'query');
     },
     searchBlog(variables: ISearchBlogQueryVariables, requestHeaders?: GraphQLClientRequestHeaders): Promise<ISearchBlogQuery> {
       return withWrapper((wrappedRequestHeaders) => client.request<ISearchBlogQuery>(SearchBlogDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'searchBlog', 'query');

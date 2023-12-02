@@ -4,7 +4,7 @@ import { getBlogListByCategory } from '../../api';
 import ReviewOfert from '../components/ReviewOfert';
 
 function BlogSection({ locale }) {
-  const categories = ['accessories', 'smartphones', 'computers', 'gaming', 'tablets'];
+  const categories = ['accessories', 'smartphones', 'cryptocurrency', 'artificialintelligence', 'computers', 'gaming', 'tablets'];
   const [currentCategoryIndex, setCurrentCategoryIndex] = useState(0);
   const [categoryBlogs, setCategoryBlogs] = useState({});
   const [hasMore, setHasMore] = useState(true);

@@ -1,22 +1,29 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
-import { getNews, getNewsList, getTutorialsList, getContentfulAssetById, getCategoryList } from '../../../api';
-import HeadS from "../../components/Head";
+import { getBlog, getBlogListByCategory, getNewsList, getTutorialsList, getContentfulAssetById, getCategoryList } from '../../../../api';
+import HeadS from "../../../components/Head";
 
 
-import GuiaHeader from '../../components/GuiaHeader';
 
+
+import GuiaHeader from '../../../components/GuiaHeader';
+import Conclusion from '../../../components/Conclusion';
+
+import ProductOfert from "../../../components/ProductOfert";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
-import CategorieOfert from "../../components/CategorieOfert";
-import ReviewOfert from "../../components/ReviewOfert";
 
-import BlogSection from "../../hooks/infinitiScrolling";
+import CategorieOfert from "../../../components/CategorieOfert";
+import ReviewOfert from "../../../components/ReviewOfert";
+
+import BlogSection from "../../../hooks/infinitiScrolling";
+
+import products from "../../../assets/amazon/products";
 
 import Image from 'next/image';
-import styles from "../../styles/BlogPageOld.module.scss";
+import styles from "../../../styles/BlogPageOld.module.scss";
 
-import stylesImg from "../../styles/Image.module.scss";
+import stylesImg from "../../../styles/Image.module.scss";
 
 export const getStaticPaths = async ({ locales }) => {
   if (locales === undefined) {
@@ -26,13 +33,15 @@ export const getStaticPaths = async ({ locales }) => {
   const paths = [];
 
   for (const loc of locales) {
+    const categoryLocal = 'artificialintelligence';
 
-    const news = await getNewsList({
+    const { entries } = await getBlogListByCategory({
+      category: categoryLocal,
       limit: 12,
       locale: loc,
     });
 
-    const localePaths = (news || []).map((articulo) => ({
+    const localePaths = entries.map((articulo) => ({
       params: {
         pageUrl: articulo.pageUrl,
       },
@@ -49,7 +58,7 @@ export const getStaticPaths = async ({ locales }) => {
 };
 
 export const getStaticProps = async ({ params, preview, locale }) => {
-
+  
   const pageUrl = params?.pageUrl;
 
 
@@ -61,17 +70,17 @@ export const getStaticProps = async ({ params, preview, locale }) => {
 
   try{
 
-    const news = await getNews(pageUrl, preview, locale);
-
-    const categorie = await getCategoryList({ limit: 10, locale });
+    const blog = await getBlog(pageUrl, preview, locale);
 
     const newsList = await getNewsList({ limit: 12, locale });
 
     const tutorialsList = await getTutorialsList({ limit: 12, locale });
 
+    const categorie = await getCategoryList({ limit: 10, locale });
+
       return {
         props: {
-          news,
+          blog,
           categorie,
           newsList,
           tutorialsList,
@@ -140,11 +149,11 @@ function EmbeddedAsset({ assetId }) {
   );
 }
 
-export default function ArticlePage({ news, categorie, newsList, tutorialsList, locale }) {
+export default function ArticlePage({ blog, newsList, tutorialsList, categorie, locale }) {
 
   const router = useRouter();
 
-  if (news == null){
+  if (blog == null){
     return(
       <div>
         Page not found
@@ -160,7 +169,7 @@ export default function ArticlePage({ news, categorie, newsList, tutorialsList, 
     );
   }
 
-  const richText = news.body; 
+  const richText = blog.body; 
 
   const renderedRichText = documentToReactComponents(richText, options);
 
@@ -168,24 +177,51 @@ export default function ArticlePage({ news, categorie, newsList, tutorialsList, 
     <div>
     <div className={styles.blogContainer}>
       <HeadS
-        title={news.titleCeo}
-        description={news.descripctionCep}
-        keywords={news.keywords}
-        urlC={`/${news.urlCeo}`}
-        url={`/${news.urlCanonical}`}
+        title={blog.titleCeo}
+        description={blog.descripctionCep}
+        keywords={blog.keywords}
+        urlC={`blog/${blog.category.slug}/${blog.urlCeo}`}
+        url={`blog/${blog.category.slug}/${blog.urlCanonical}`}
       />
       <GuiaHeader 
-        titulo={news.title}
-        intro={news.intro}
-        img={news.image.url}
-        update={news.update}
+        titulo={blog.title}
+        intro={blog.intro}
+        img={blog.image.url}
+        update={blog.update}
         locale={locale}
       />
+      {blog.productT &&
+      <ProductOfert 
+        productI={blog.productI} 
+        productT={blog.productT}
+        productD={blog.productD}
+        productP={blog.productP}
+        productUrl={blog.productUrl}
+        productOfert={"blogs"}
+        recommendedPosts={blog.recommendedPostsCollection}
+        products={products}
+        locale={locale}
+      />
+      }
       <div className={styles.container}>
         <div className={styles.contentRich}>
           {renderedRichText}
         </div> 
       </div>
+      {blog.productT2 &&
+      <ProductOfert 
+        productI={blog.productI2}
+        productT={blog.productT2}
+        productD={blog.productD2}
+        productP={blog.productP2}
+        productUrl={blog.productUrl}
+        productOfert={"ofers"}
+        recommendedPosts={blog.recommendedPostsCollection}
+        products={products}
+        locale={locale}
+      />
+      }
+      <Conclusion dconclucion={blog.conclucion} />
     </div>
     <ReviewOfert 
       blogs={newsList} 
@@ -198,10 +234,10 @@ export default function ArticlePage({ news, categorie, newsList, tutorialsList, 
       urlN='tutorials'
     />
     <ReviewOfert 
-      blogs={news.recommendedPostsCollection} 
+      blogs={blog.recommendedPostsCollection} 
       article={locale == "es" ? "Lo mas visto" : "Trending stories"} 
-      cantidad={news.recommendedPostsCollection.length} 
-      url={news.category.slug}
+      cantidad={blog.recommendedPostsCollection.length} 
+      url={blog.category.slug}
      />
     <BlogSection locale={locale} />
     <CategorieOfert categorie={categorie} />

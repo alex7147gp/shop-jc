@@ -4,9 +4,10 @@ import type {
   IAsset,
   ICategory,
   IBlogPage,
-  INews
+  INews,
+  ITutorials,
 } from './generated/graphql';
-import type { Image, Category, Blog, News } from './resources';
+import type { Image, Category, Blog, News, Tutorials } from './resources';
 
 // Generic utilities
 // ----------------------------------------------------------------
@@ -161,6 +162,7 @@ type PartialNewsRecommendedPost = {
   titleCeo?: string;
   descripctionCep?: string;
   category?: PartialCategory | null;
+  type?: string;
   update?: string;
 
 };
@@ -174,6 +176,7 @@ type PartialNews = Pick<INews,
 'keywords' |
 'urlCeo' |
 'urlCanonical' |
+'type' |
 'update' 
 > &
   PartialEntityWithId & { description?: Maybe<{ json: JSON }> } & { body?: Maybe<{ json: JSON }>; } & {
@@ -210,9 +213,78 @@ export const selectNew = nonEmpty<PartialNews, News>((partialNews) => ({
         // Otras propiedades de BlogPage aquí...
       }))
     : [], // Puedes establecer un valor predeterminado si es null o undefined
+  type: partialNews.update || '',
   update: partialNews.update || '',                   // Hacer opcionales las propiedades opcionales
+}));
+
+type PartialTutorialsRecommendedPost = {
+  sys: {
+    id: string;
+  };
+  pageUrl?: string;
+  title?: string;
+  intro?: string;
+  image?: PartialImageFields | null;
+  titleCeo?: string;
+  descripctionCep?: string;
+  category?: PartialCategory | null;
+  type?: string;
+  update?: string;
+
+};
+
+type PartialTutorials = Pick<ITutorials, 
+'pageUrl' | 
+'title' | 
+'intro' |
+'titleCeo' |
+'descripctionCep' |
+'keywords' |
+'urlCeo' |
+'urlCanonical' |
+'type' |
+'update' 
+> &
+  PartialEntityWithId & { description?: Maybe<{ json: JSON }> } & { body?: Maybe<{ json: JSON }>; } & {
+    image?: Maybe<PartialImageFields> 
+  } & { category?: Maybe<PartialCategory> } & { recommendedPostsCollection?: Maybe<{
+    items: Array<PartialTutorialsRecommendedPost>;
+  }>;}
+
+
+export const selectTutorial = nonEmpty<PartialTutorials, Tutorials>((partialTutorials) => ({
+  id: selectEntityId(partialTutorials),
+  pageUrl: partialTutorials.pageUrl || '', // Hacer opcionales las propiedades opcionales
+  title: partialTutorials.title || '',       // Hacer opcionales las propiedades opcionales
+  intro: partialTutorials.intro || '',       // Hacer opcionales las propiedades opcionales
+  body: partialTutorials.body ? (partialTutorials.body.json as any) : null,
+  titleCeo: partialTutorials.titleCeo || '',     // Hacer opcionales las propiedades opcionales
+  image: partialTutorials.image ? selectImage(partialTutorials.image) : null,
+  category: partialTutorials.category ? selectCategory(partialTutorials.category) : null,
+  descripctionCep: partialTutorials.descripctionCep || '', // Hacer opcionales las propiedades opcionales
+  keywords: partialTutorials.keywords || '',               // Hacer opcionales las propiedades opcionales
+  urlCeo: partialTutorials.urlCeo || '',                   // Hacer opcionales las propiedades opcionales
+  urlCanonical: partialTutorials.urlCanonical || '',       // Hacer opcionales las propiedades opcionales
+   recommendedPostsCollection: partialTutorials.recommendedPostsCollection
+    ? partialTutorials.recommendedPostsCollection.items.map((item) => ({
+        id: selectEntityId(item),
+        pageUrl: item.pageUrl || '',
+        title: item.title || '',
+        intro: item.intro || '',
+        image: item.image ? selectImage(item.image) : null,
+        titleCeo: item.titleCeo || '',
+        descripctionCep: item.descripctionCep || '',
+        category: item.category ? selectCategory(item.category) : null,
+        update: item.update
+        // Otras propiedades de BlogPage aquí...
+      }))
+    : [], // Puedes establecer un valor predeterminado si es null o undefined
+  type: partialTutorials.update || '',
+  update: partialTutorials.update || '',                   // Hacer opcionales las propiedades opcionales
 }));
 
 export const selectBlogPages = selectListOf(selectBlogPage);
 
 export const selectNews = selectListOf(selectNew);
+
+export const selectTutorials = selectListOf(selectTutorial);

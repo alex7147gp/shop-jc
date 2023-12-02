@@ -12,7 +12,7 @@ const ReviewOfert = lazy(() => import('../components/ReviewOfert'));
 const CategorieOfert = lazy(() => import('../components/CategorieOfert'));
 
 
-const Home = ({ blogs, categorie, news, locale }) => {
+const Home = ({ blogs, categorie, news, tutorials, locale }) => {
 
   const [blogOne, setBlogOne] =  useState(blogs[0]);
 
@@ -31,9 +31,10 @@ const Home = ({ blogs, categorie, news, locale }) => {
 	      <Suspense fallback={<div>Loading...</div>}>
 	        <ProductList products={products}/>
 	        <ReviewOfert blogs={blogs} />
-	        <ReviewOfert blogs={news} news={'news'}/>
+	        <ReviewOfert blogs={news} type={'news'} urlN={'news'}/>
+	        <ReviewOfert blogs={tutorials} type={'tutorials'} urlN={'tutorials'}/>
 	        <BlogSection locale={locale} />
-          <CategorieOfert categorie={categorie} />
+          <CategorieOfert categorie={categorie} /> 
         </Suspense>
 		</>
 	);

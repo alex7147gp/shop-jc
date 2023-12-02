@@ -25,6 +25,34 @@ const nextConfig = {
     return [
       // Rutas en español
       { 
+        source: '/es/smartphones',
+        destination: '/es/smartphones',
+      },
+      {
+        source: '/es/accessories',
+        destination: '/es/accessories/',
+      },
+      {
+        source: '/es/computers',
+        destination: '/es/computers',
+      },
+      {
+        source: '/es/gaming',
+        destination: '/es/gaming',
+      },
+      {
+        source: '/es/tablets',
+        destination: "/es/tablets/",
+      },
+      {
+        source: '/es/cryptocurrency',
+        destination: "/es/cryptocurrency",
+      },
+      {
+        source: '/es/artificialintelligence/',
+        destination: "/es/artificialintelligence",
+      },
+      { 
         source: '/es/blog/:category/smartphones/:pageUrl*',
         destination: '/es/blog/smartphones/:pageUrl*',
       },
@@ -45,8 +73,20 @@ const nextConfig = {
         destination: "/es/blog/tablets/:pageUrl*",
       },
       {
+        source: '/es/blog/:category/cryptocurrency/:pageUrl*',
+        destination: "/es/blog/cryptocurrency/:pageUrl*",
+      },
+      {
+        source: '/es/blog/:category/artificialintelligence/:pageUrl*',
+        destination: "/es/blog/artificialintelligence/:pageUrl*",
+      },
+      {
         source: '/es/news/:pageUrl*',
         destination: "/es/news/:pageUrl*",
+      },
+      {
+        source: '/es/tutorials/:pageUrl*',
+        destination: "/es/tutorials/:pageUrl*",
       },
       {
         source: '/es/PoliticaDePrivacidad',
@@ -57,6 +97,34 @@ const nextConfig = {
         destination: "/es/TerminosDelServicio",
       },
       // Rutas en inglés
+      {
+        source: '/en-US/smartphones/',
+        destination: '/en-US/smartphones',
+      },
+      {
+        source: '/en-US/accessories',
+        destination: '/en-US/accessories',
+      },
+      {
+        source: '/en-US/computers',
+        destination: '/en-US/computers',
+      },
+      {
+        source: '/en-US/gaming',
+        destination: '/en-US/gaming',
+      },
+      {
+        source: '/en-US/tablets',
+        destination: '/en-US/tablets',
+      },
+      {
+        source: '/en-US/cryptocurrency',
+        destination: '/en-US/cryptocurrency',
+      },
+      {
+        source: '/en-US/artificialintelligence',
+        destination: '/en-US/artificialintelligence',
+      },
       {
         source: '/en-US/blog/:category/smartphones/:pageUrl*',
         destination: '/en-US/blog/smartphones/:pageUrl*',
@@ -78,8 +146,20 @@ const nextConfig = {
         destination: '/en-US/blog/tablets/:pageUrl*',
       },
       {
+        source: '/en-US/blog/:category/cryptocurrency/:pageUrl*',
+        destination: '/en-US/blog/cryptocurrency/:pageUrl*',
+      },
+      {
+        source: '/en-US/blog/:category/artificialintelligence/:pageUrl*',
+        destination: '/en-US/blog/artificialintelligence/:pageUrl*',
+      },
+      {
         source: '/en-US/news/:pageUrl*',
         destination: '/en-US/news/:pageUrl*',
+      },
+      {
+        source: '/en-US/tutorials/:pageUrl*',
+        destination: '/en-US/tutorials/:pageUrl*',
       },
       {
         source: '/en-US/PoliticaDePrivacidad',

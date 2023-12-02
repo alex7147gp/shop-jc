@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
-import { getBlog, getBlogListByCategory, getContentfulAssetById, getCategoryList } from '../../../../api';
+import { getBlog, getBlogListByCategory, getNewsList, getTutorialsList, getContentfulAssetById, getCategoryList } from '../../../../api';
 import HeadS from "../../../components/Head";
 
 
@@ -72,12 +72,18 @@ export const getStaticProps = async ({ params, preview, locale }) => {
 
     const blog = await getBlog(pageUrl, preview, locale);
 
+    const newsList = await getNewsList({ limit: 12, locale });
+
+    const tutorialsList = await getTutorialsList({ limit: 12, locale });
+
     const categorie = await getCategoryList({ limit: 10, locale });
 
       return {
         props: {
           blog,
           categorie,
+          newsList,
+          tutorialsList,
           locale,
         },
         revalidate: 5 * 60,
@@ -143,7 +149,7 @@ function EmbeddedAsset({ assetId }) {
   );
 }
 
-export default function ArticlePage({ blog, categorie, locale }) {
+export default function ArticlePage({ blog, newsList, tutorialsList, categorie, locale }) {
 
   const router = useRouter();
 
@@ -174,8 +180,8 @@ export default function ArticlePage({ blog, categorie, locale }) {
         title={blog.titleCeo}
         description={blog.descripctionCep}
         keywords={blog.keywords}
-        urlC={`/${blog.category.slug}/${blog.urlCeo}`}
-        url={`/${blog.category.slug}/${blog.urlCanonical}`}
+        urlC={`blog/${blog.category.slug}/${blog.urlCeo}`}
+        url={`blog/${blog.category.slug}/${blog.urlCanonical}`}
       />
       <GuiaHeader 
         titulo={blog.title}
@@ -217,6 +223,16 @@ export default function ArticlePage({ blog, categorie, locale }) {
       }
       <Conclusion dconclucion={blog.conclucion} />
     </div>
+    <ReviewOfert 
+      blogs={newsList} 
+      article={locale == "es" ? "Noticias" : "News"}
+      urlN='news'
+    />
+    <ReviewOfert 
+      blogs={tutorialsList} 
+      article={locale == "es" ? "Tutoriales" : "Tutorials"}
+      urlN='tutorials'
+    />
     <ReviewOfert 
       blogs={blog.recommendedPostsCollection} 
       article={locale == "es" ? "Lo mas visto" : "Trending stories"} 

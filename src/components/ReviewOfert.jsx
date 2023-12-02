@@ -8,7 +8,7 @@ import { useTranslation } from 'next-i18next';
 import styles from '../styles/ReviewOfert.module.scss';
 
 
-const ReviewOfert = ({ blogs = null, news = null, article = "Articles", cantidad = 6, url = null}) => {
+const ReviewOfert = ({ blogs = null, type, urlN, article = "Articles", cantidad = 6, url = null}) => {
 
 
   const { t } = useTranslation(['categorieOfert']);
@@ -22,10 +22,10 @@ const ReviewOfert = ({ blogs = null, news = null, article = "Articles", cantidad
      <div className={styles.container}>
       <Link href={url != null ? `/blog/${url}` : '/'}>
       {
-        news == 'news' ?
-          <h3 className={styles.h1}>{t('news')}</h3>
+        type ?
+          <h3 className={styles.h1}>{t(`${type}`)}</h3>
         : 
-        <h3 className={styles.h1}>{ article !== 'Articles' ? article : articles}</h3>
+          <h3 className={styles.h1}>{ article !== 'Articles' ? article : articles}</h3>
       }
       </Link>
       <div className={styles.articulosContainer}>
@@ -41,14 +41,14 @@ const ReviewOfert = ({ blogs = null, news = null, article = "Articles", cantidad
               /> 
             </div>
             {
-              news == 'news' ? 
-                <Link href={`/news/${articulo.pageUrl}`}>
+              urlN ? 
+                <Link href={`/${urlN}/${articulo.pageUrl}`}>
                   <h4 className={styles.h2}>{articulo.title}</h4>
                 </Link>
               :
                 <Link href={`/blog/${articulo.category.slug}/${articulo.pageUrl}`}>
                   <h4 className={styles.h2}>{articulo.title}</h4>
-                </Link>   
+                </Link>
             }
             <p className={styles.span}>{articulo.update}</p>
             <p className={styles.p}>{articulo.intro.substring(0, 400)}</p>

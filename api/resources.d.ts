@@ -80,6 +80,7 @@ type RecommendedNews = {
   titleCeo?: string
   descripctionCep?: string
   category?: Category
+  type?: string
   update: string
 }
 
@@ -98,6 +99,40 @@ export type News = {
   keywords?: string
   urlCeo?: string
   urlCanonical?: string
+  type?: string
+  update?: string
+} | undefined
+
+type RecommendedTutorials = {
+  id : Json
+  pageUrl?: string
+  title?: string
+  intro?: string
+  image?: Image
+  conclucion?: string
+  titleCeo?: string
+  descripctionCep?: string
+  category?: Category
+  type?: string
+  update: string
+}
+
+export type Tutorials = {
+  id: Json
+  title?: string
+  pageUrl?: string
+  intro?: string
+  body?: RichText
+  image?: Image
+  recommendedPosts?: RecommendedNews
+  category?: Category
+  conclucion?: string
+  titleCeo?: string
+  descripctionCep?: string
+  keywords?: string
+  urlCeo?: string
+  urlCanonical?: string
+  type?: string
   update?: string
 } | undefined
 
