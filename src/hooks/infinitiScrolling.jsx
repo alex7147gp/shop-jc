@@ -28,7 +28,9 @@ function BlogSection({ locale }) {
 
     const nameArticle = categorie.filter(categoria => categoria.slug === name);
 
-    return nameArticle[0].titleShow;
+    const nameCategory = nameArticle[0]?.titleShow;
+
+    return nameCategory;
   };
 
   const loadMoreBlogs = async (category) => {
