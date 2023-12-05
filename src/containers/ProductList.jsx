@@ -20,7 +20,7 @@ const ProductList = ({ products }) => {
 		  <h2 className={styles.h2}>{t('ofert3')}</h2>
 		  <section className={styles['main-container']}>
 			  <div className={styles.ProductList}>
-				  {product.map(product => ( 
+				  {product.slice(0, 8).map(product => ( 
 					  <ProductItem product={product} key={product.id} />
 				  ))}
 			  </div> 

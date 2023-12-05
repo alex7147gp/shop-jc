@@ -1,5 +1,5 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
-import Slider from "../components/Slider";
+
 
 import HomeBlogComponent from "../components/HomeBlog";
 import Ofert from "../components/Ofert";
@@ -26,7 +26,6 @@ const Home = ({ blogs, categorie, news, tutorials, locale }) => {
 	return (
 		<>
 		  <Ofert/>
-	      <Slider products={products} />
 	      <HomeBlogComponent mostViewedBlogs={blogs} featuredBlog={blogOne} dailyOffers={products} />
 	      <Suspense fallback={<div>Loading...</div>}>
 	        <ProductList products={products}/>
