@@ -2,7 +2,7 @@ import styles from '../styles/GuiaHeader.module.scss';
 import Image from 'next/image';
 
 
-const GuiaHeader = ({titulo, intro, img, update}) => {
+const GuiaHeader = ({titulo, intro, img}) => {
 
   return (
     <div className={styles.container}>
