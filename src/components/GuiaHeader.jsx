@@ -7,7 +7,9 @@ const GuiaHeader = ({titulo, intro, img, update}) => {
   return (
     <div className={styles.container}>
     <h1 className={styles.title}>{titulo}</h1>
-    <span className={styles.span}>{update}</span>
+    <p className={styles.intro}>
+      {intro} 
+    </p>
       <div className={styles.imageContainer}>
         <Image
           className={styles.image}
@@ -18,9 +20,6 @@ const GuiaHeader = ({titulo, intro, img, update}) => {
         /> 
       </div>
       <div className={styles.textContainer}>
-        <p className={styles.intro}>
-          {intro} 
-        </p>
       </div> 
     </div>
   );
