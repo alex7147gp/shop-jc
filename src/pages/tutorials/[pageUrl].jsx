@@ -11,7 +11,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import CategorieOfert from "../../components/CategorieOfert";
 import ReviewOfert from "../../components/ReviewOfert";
 
-import SecondHeader from "../../../components/SecondHeader";
+import SecondHeader from "../../components/SecondHeader";
 
 import BlogSection from "../../hooks/infinitiScrolling";
 
