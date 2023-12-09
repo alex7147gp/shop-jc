@@ -9,7 +9,6 @@
 }
 
 .dailyOffers {
-  background-color: #f1f3f9; /* Fondo del contenedor */
   padding: 5px; /* Espaciado interno */
   border-radius: 5px; /* Bordes redondeados */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
@@ -20,7 +19,7 @@
   margin-bottom: 40px; /* Espaciado inferior */
 }
 
-.ul {
+.ul { 
   list-style: none; /* Quita los puntos de lista */
   padding: 0;
   margin: 0;
@@ -67,8 +66,20 @@
   }
 
   .h4 {
-    font-size: 20px; /* Tamaño del título del producto */
-    margin-top: 10px; /* Espaciado superior para el título */
+    line-height: 1.7;
+    margin-bottom: 15px;
+    marging-top: 15px;
+    text-transform: none;
+    font-family: BreveText, helvetica, sans-serif;
+    font-feature-settings: normal;
+    font-style: normal;
+    letter-spacing: 0.00568421em;
+    line-break: auto;
+    line-height: 1.47368em;
+    font-size: 1.835rem;
+    font-weight: 600;
+    overflow-wrap: normal;
+    color: rgb(26, 26, 26);
   }
 
   .strong {

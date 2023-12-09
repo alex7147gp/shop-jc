@@ -16,10 +16,10 @@ const ListRight = ({ dailyOffers, locale }) => {
           {dailyOffers.slice(0, 3).map((offer) => (
             <li className={styles.li} key={offer.id}>
               <Image
-                src={offer.imagen}
+                src={offer.imagen} 
                 alt={"Imagen de oferta: " + offer.titulo} // Modifica el atributo alt
                 width={150}
-                height={100}
+                height={100} 
               />
               <Link href={offer.url} target="_blank"><h4 className={styles.h4}>{offer.titulo.substring(0, 30)}</h4></Link>
               <strong className={styles.strong}>Precio: <span className={styles.span}>{offer.precio}</span></strong>

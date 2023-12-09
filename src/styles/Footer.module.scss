@@ -78,11 +78,32 @@
   }
 
   .h2 {
-    font-size: 46px;
+    margin: 15px;
+	  line-height: 1.77;
+    text-transform: none;
+    font-family: BreveText, helvetica, sans-serif;
+    font-feature-settings: normal;
+    font-style: normal;
+    letter-spacing: 0.00568421em;
+    line-break: auto;
+    line-height: 1.47368em;
+    font-size: 3.825rem;
+    font-weight: 400;
+    overflow-wrap: normal;
   }
 
   .right li, .middle li, .left li {
-	  font-size: 35px;
 	  margin: 15px;
+	  line-height: 1.77;
+    text-transform: none;
+    font-family: BreveText, helvetica, sans-serif;
+    font-feature-settings: normal;
+    font-style: normal;
+    letter-spacing: 0.00568421em;
+    line-break: auto;
+    line-height: 1.47368em;
+    font-size: 2.625rem;
+    font-weight: 400;
+    overflow-wrap: normal;
   }  
 }

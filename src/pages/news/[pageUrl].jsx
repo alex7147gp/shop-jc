@@ -11,6 +11,8 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import CategorieOfert from "../../components/CategorieOfert";
 import ReviewOfert from "../../components/ReviewOfert";
 
+import SecondHeader from "../../../components/SecondHeader";
+
 import BlogSection from "../../hooks/infinitiScrolling";
 
 import Image from 'next/image';
@@ -166,6 +168,7 @@ export default function ArticlePage({ news, categorie, newsList, tutorialsList, 
 
   return (
     <div>
+    <SecondHeader /> 
     <div className={styles.blogContainer}>
       <HeadS
         title={news.titleCeo}

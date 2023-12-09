@@ -48,7 +48,7 @@ export const Footer = () => {
           </div> 
           <div className={styles['middle']}>
             <h2 className={styles.h2}>Contactar</h2>
-               <ul>
+               <ul> 
                  <li className={styles.li} ><Link href="/PoliticaDePrivacidad">{t('politicaPrivate')}</Link></li>
                  <li className={styles.li} ><Link href="/TerminosDelServicio">{t('servicesTerm')}</Link></li>
                </ul>

@@ -3,9 +3,9 @@
 
 
 .Container {
-  margin-top: 60px;
   width: calc(100%);
   display:flex;
+  border-bottom: 0.5px solid $--very-light-pink;
   overflow-x:hidden;
 } 
 

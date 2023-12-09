@@ -34,10 +34,36 @@
 @media (max-width: 640px) {
   
   .h2 {
-    font-size: 40px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    marging-top: 15px;
+    text-transform: none;
+    font-family: BreveText, helvetica, sans-serif;
+    font-feature-settings: normal;
+    font-style: normal;
+    letter-spacing: 0.00568421em;
+    line-break: auto;
+    line-height: 1.47368em;
+    font-size: 2.825rem;
+    font-weight: 600;
+    overflow-wrap: normal;
+    color: rgb(26, 26, 26);
   }
 
   .p {
-    font-size: 32px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    marging-top: 15px;
+    text-transform: none;
+    font-family: BreveText, helvetica, sans-serif;
+    font-feature-settings: normal;
+    font-style: normal;
+    letter-spacing: 0.00568421em;
+    line-break: auto;
+    line-height: 1.47368em;
+    font-size: 2.525rem;
+    font-weight: 400;
+    overflow-wrap: normal;
+    color: rgb(26, 26, 26);
   }
 }

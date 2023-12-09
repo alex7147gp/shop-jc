@@ -8,13 +8,13 @@
 }
 
 .mostViewed {
-  background-color: #f1f3f9; /* Fondo del contenedor */
+
   padding: 5px; /* Espaciado interno */
   border-radius: 5px; /* Bordes redondeados */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-.h2 {
+.h2 { 
   font-size: 24px; /* Tamaño del título */
   margin-bottom: 30px; /* Espaciado inferior */
 }
@@ -33,7 +33,7 @@
 }
 
 /* Estilos para la imagen */
-.img {
+.imagen {
   border-radius: 8px; /* Bordes redondeados para las imágenes */
 }
 
@@ -53,8 +53,20 @@
   }
 
   .p {
-    font-size: 20px;
-    margin-top: 15px; /* Espaciado superior para el párrafo */
+    line-height: 1.7;
+    margin-bottom: 15px;
+    marging-top: 15px;
+    text-transform: none;
+    font-family: BreveText, helvetica, sans-serif;
+    font-feature-settings: normal;
+    font-style: normal;
+    letter-spacing: 0.00568421em;
+    line-break: auto;
+    line-height: 1.47368em;
+    font-size: 1.835rem;
+    font-weight: 600;
+    overflow-wrap: normal;
+    color: rgb(26, 26, 26);
   }
 
   .ul {

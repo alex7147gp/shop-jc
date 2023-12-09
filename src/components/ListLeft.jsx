@@ -17,10 +17,11 @@ const ListLeft = ({ mostViewedBlogs, locale }) => {
           {mostViewedBlogs.slice(0, 3).map((blog) => (
             <li className={styles.li} key={blog.id}>
               <Image
+                className={styles.imagen} 
                 src={blog.image.url}
                 alt={"Imagen de blog: " + blog.image.title} // Modifica el atributo alt
-                width={200}
-                height={150}
+                width={220}
+                height={130} 
               />
               <Link href={`/blog/${blog.category.slug}/${blog.pageUrl}`}>
                 <h4 className={styles.p}>{blog.title}</h4>

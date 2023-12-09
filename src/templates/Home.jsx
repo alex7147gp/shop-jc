@@ -4,6 +4,8 @@ import React, { useState, useEffect, lazy, Suspense } from 'react';
 import HomeBlogComponent from "../components/HomeBlog";
 import Ofert from "../components/Ofert";
 
+import SecondHeader from "../components/SecondHeader";
+
 import products from "../assets/amazon/products";
 
 const ProductList = lazy(() => import('../containers/ProductList'));
@@ -25,11 +27,12 @@ const Home = ({ blogs, categorie, news, tutorials, locale }) => {
 
 	return (
 		<>
-		  <Ofert/>
+		  <SecondHeader />
+		  <Ofert/> 
 	      <HomeBlogComponent mostViewedBlogs={blogs} featuredBlog={blogOne} dailyOffers={products} />
 	      <Suspense fallback={<div>Loading...</div>}>
-	        <ProductList products={products}/>
 	        <ReviewOfert blogs={blogs} />
+	        <ProductList products={products}/>
 	        <ReviewOfert blogs={news} type={'news'} urlN={'news'}/>
 	        <ReviewOfert blogs={tutorials} type={'tutorials'} urlN={'tutorials'}/>
 	        <BlogSection locale={locale} />

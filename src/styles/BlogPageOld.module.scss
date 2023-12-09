@@ -60,7 +60,7 @@
   }
 
 .container p {
-  line-height: 1.6;
+  line-height: 1.77;
   margin-bottom: 15px;
   marging-top: 15px;
   text-transform: none;
@@ -70,7 +70,7 @@
   letter-spacing: 0.00568421em;
   line-break: auto;
   line-height: 1.47368em;
-  font-size: 19px;
+  font-size: 2.125rem;
   font-weight: 400;
   overflow-wrap: normal;
   color: rgb(26, 26, 26);
@@ -126,7 +126,7 @@
   }
 
   .container p {
-    line-height: 1.6;
+    line-height: 1.7;
     margin-bottom: 15px;
     marging-top: 15px;
     text-transform: none;
@@ -136,9 +136,45 @@
     letter-spacing: 0.00568421em;
     line-break: auto;
     line-height: 1.47368em;
-    font-size: 32px;
+    font-size: 2.625rem;
     font-weight: 400;
     overflow-wrap: normal;
     color: rgb(26, 26, 26);
 }
+
+.container h2 {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    marging-top: 15px;
+    text-transform: none;
+    font-family: BreveText, helvetica, sans-serif;
+    font-feature-settings: normal;
+    font-style: normal;
+    letter-spacing: 0.00568421em;
+    line-break: auto;
+    line-height: 1.47368em;
+    font-size: 2.925rem;
+    font-weight: 400;
+    overflow-wrap: normal;
+    color: rgb(26, 26, 26);
+}
+
+.container h3 {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    marging-top: 15px;
+    text-transform: none;
+    font-family: BreveText, helvetica, sans-serif;
+    font-feature-settings: normal;
+    font-style: normal;
+    letter-spacing: 0.00568421em;
+    line-break: auto;
+    line-height: 1.47368em;
+    font-size: 2.825rem;
+    font-weight: 400;
+    overflow-wrap: normal;
+    color: rgb(26, 26, 26);
+}
+
+
 }

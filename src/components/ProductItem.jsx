@@ -26,7 +26,7 @@ const ProductItem = ({ product }) => {
 					  <p>{`Precio: ${product.precio}`}</p>
 					</Link>  
 				</div> 
-			</div>
+			</div> 
 		</div>
 	);
 };
