@@ -4,12 +4,14 @@ import HeadPage from "../../../components/HeadPage";
 import ReviewOfert from "../../../components/ReviewOfert";
 import CategorieOfert from "../../../components/CategorieOfert";
 
+import SecondHeader from "../../../components/SecondHeader";
+
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { getCategoryList, getBlogListByCategory } from '../../../../api';
 
 export const getStaticProps = async ({ locale }) => {
 
-  const categoryLocal = 'smartphones';
+  const categoryLocal = 'smartphone';
 
   const categorie = await getCategoryList({ limit: 10, locale });
   const { entries, category } = await getBlogListByCategory({
@@ -45,6 +47,7 @@ export default function Accessories({ categorie, entries, category }) {
         urlC={`/blog/${category.slug}`}
         url={`/blog/${category.slug}`}
       />
+      <SecondHeader />
       <HeadPage 
         title={category.title}
         description={category.description}

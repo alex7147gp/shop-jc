@@ -4,6 +4,8 @@ import HeadPage from "../../../components/HeadPage";
 import ReviewOfert from "../../../components/ReviewOfert";
 import CategorieOfert from "../../../components/CategorieOfert";
 
+import BlogSection from "../../../hooks/infinitiScrolling";
+
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { getCategoryList, getBlogListByCategory } from '../../../../api';
 
@@ -45,6 +47,7 @@ export default function Accessories({ categorie, entries, category }) {
         urlC={`/blog/${category.slug}`}
         url={`/blog/${category.slug}`}
       />
+      <SecondHeader />
       <HeadPage 
         title={category.title}
         description={category.description}
