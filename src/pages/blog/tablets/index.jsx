@@ -4,7 +4,7 @@ import HeadPage from "../../../components/HeadPage";
 import ReviewOfert from "../../../components/ReviewOfert";
 import CategorieOfert from "../../../components/CategorieOfert";
 
-import BlogSection from "../../../hooks/infinitiScrolling";
+import SecondHeader from "../../../components/SecondHeader";
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { getCategoryList, getBlogListByCategory } from '../../../../api';
