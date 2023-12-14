@@ -24,7 +24,7 @@ return (
       {
         url && <link
           rel="canonical"
-          href={`https://www.jcshop.shop${locale == 'es' ? '/es/' : '/'}${url}`}
+          href={`https://www.jcshop.shop${locale == 'es' ? '/es/' : '/'}${urlC}`}
         />
       }  
       <meta property="og:title" content={title} key="ogtitle" />

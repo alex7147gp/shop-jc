@@ -36,8 +36,6 @@ export const getStaticProps = async ({ locale }) => {
 
 export default function Accessories({ categorie, entries, category, locale }) {
 
-  console.log(locale)
-
   return (
     <div style={{
       padding: "0px",
