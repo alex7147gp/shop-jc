@@ -13,8 +13,6 @@ const HeadS = ({
   }) => {
 
 
-console.log(locale)
-
 return (
     <Head>
       <title>{title} | JcShop</title>
