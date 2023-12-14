@@ -174,8 +174,9 @@ export default function ArticlePage({ tutorials, categorie, tutorialsList, newsL
         title={tutorials.titleCeo}
         description={tutorials.descripctionCep}
         keywords={tutorials.keywords}
-        urlC={`/${tutorials.urlCeo}`}
-        url={`/${tutorials.urlCanonical}`}
+        urlC={`tutorials/${tutorials.urlCeo}`}
+        url={`tutorials/${tutorials.urlCanonical}`}
+        locale={locale}
       />
       <GuiaHeader 
         titulo={tutorials.title}

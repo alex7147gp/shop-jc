@@ -185,6 +185,7 @@ export default function ArticlePage({ blog, newsList, tutorialsList, categorie, 
         keywords={blog.keywords}
         urlC={`blog/${blog.category.slug}/${blog.urlCeo}`}
         url={`blog/${blog.category.slug}/${blog.urlCanonical}`}
+        locale={locale}
       />
       <GuiaHeader 
         titulo={blog.title}

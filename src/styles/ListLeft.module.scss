@@ -70,13 +70,13 @@
   }
 
   .ul {
-    display: flex;
+    
   }
 
   .li {
     padding: 5px;
-    max-width: 250px;
     border: none;
+    flex-direction: row;
   }
 
 } 

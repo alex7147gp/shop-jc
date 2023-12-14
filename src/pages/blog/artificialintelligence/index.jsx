@@ -4,6 +4,8 @@ import HeadPage from "../../../components/HeadPage";
 import ReviewOfert from "../../../components/ReviewOfert";
 import CategorieOfert from "../../../components/CategorieOfert";
 
+import SecondHeader from "../../../components/SecondHeader";
+
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { getCategoryList, getBlogListByCategory } from '../../../../api';
 
@@ -24,6 +26,7 @@ export const getStaticProps = async ({ locale }) => {
       categorie,
       entries,
       category,
+      locale: locale,
       ...i18nConf
     },
     revalidate: 5 * 60,
@@ -31,7 +34,9 @@ export const getStaticProps = async ({ locale }) => {
 };
 
 
-export default function Accessories({ categorie, entries, category }) {
+export default function Accessories({ categorie, entries, category, locale }) {
+
+  console.log(locale)
 
   return (
     <div style={{
@@ -42,15 +47,17 @@ export default function Accessories({ categorie, entries, category }) {
         title={category.titleCeo}
         description={category.descriptionCeo}
         keywords={category.keywords}
-        urlC={`/blog/${category.slug}`}
-        url={`/blog/${category.slug}`}
+        urlC={`blog/${category.slug}`}
+        url={`blog/${category.slug}`}
+        locale={locale}
       />
+      <SecondHeader /> 
       <HeadPage 
         title={category.title}
         description={category.description}
         image={category.icon}
       />
-      <ReviewOfert blogs={entries} article={category.slug} cantidad={entries.length} />
+      <ReviewOfert blogs={entries} article={locale == 'es' ? 'Inteligencia Artificial' : 'Artificial Inteligen'} cantidad={entries.length} />
       <CategorieOfert categorie={categorie} />
     </div>
   );

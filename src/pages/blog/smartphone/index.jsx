@@ -26,6 +26,7 @@ export const getStaticProps = async ({ locale }) => {
       categorie,
       entries,
       category,
+      locale: locale,
       ...i18nConf
     },
     revalidate: 5 * 60,
@@ -33,7 +34,7 @@ export const getStaticProps = async ({ locale }) => {
 };
 
 
-export default function Accessories({ categorie, entries, category }) {
+export default function Accessories({ categorie, entries, category, locale }) {
   
   return (
     <div style={{
@@ -44,8 +45,9 @@ export default function Accessories({ categorie, entries, category }) {
         title={category.titleCeo}
         description={category.descriptionCeo}
         keywords={category.keywords}
-        urlC={`/blog/${category.slug}`}
-        url={`/blog/${category.slug}`}
+        urlC={`blog/${category.slug}`}
+        url={`blog/${category.slug}`}
+        locale={locale}
       />
       <SecondHeader />
       <HeadPage 
@@ -53,7 +55,7 @@ export default function Accessories({ categorie, entries, category }) {
         description={category.description}
         image={category.icon}
       />
-      <ReviewOfert blogs={entries} article={category.titleShow} cantidad={entries.length} />
+      <ReviewOfert blogs={entries} article={locale == 'es' ? 'Telefonos' : 'SmartPhones'} cantidad={entries.length} />
       <CategorieOfert categorie={categorie} />
     </div>
   );

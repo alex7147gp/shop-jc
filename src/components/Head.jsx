@@ -13,6 +13,8 @@ const HeadS = ({
   }) => {
 
 
+console.log(locale)
+
 return (
     <Head>
       <title>{title} | JcShop</title>
@@ -22,9 +24,9 @@ return (
       {
         url && <link
           rel="canonical"
-          href={`https://www.jcshop.shop${urlC}`}
+          href={`https://www.jcshop.shop${locale == 'es' ? '/es/' : '/'}${url}`}
         />
-      }
+      }  
       <meta property="og:title" content={title} key="ogtitle" />
       <meta property="og:description" content={description} key="ogdesc" />
       <meta property="og:site_name" content="jcshop" />
@@ -34,7 +36,7 @@ return (
         <link
           rel="alternate"
           hrefLang="es"
-          href={`https://www.jcshop.shop/es${url}`} // Reemplaza con la URL correcta
+          href={`https://www.jcshop.shop/es/${url}`} // Reemplaza con la URL correcta
         />
       )}
 
@@ -42,7 +44,7 @@ return (
         <link
           rel="alternate"
           hrefLang="en-US"
-          href={`https://www.jcshop.shop/en-US${url}`} // Reemplaza con la URL correcta
+          href={`https://www.jcshop.shop/en-US/${url}`} // Reemplaza con la URL correcta
         />
       )}
 
