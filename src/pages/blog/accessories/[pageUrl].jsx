@@ -12,15 +12,14 @@ import Conclusion from '../../../components/Conclusion';
 import ProductOfert from "../../../components/ProductOfert";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
-
 import CategorieOfert from "../../../components/CategorieOfert";
 import ReviewOfert from "../../../components/ReviewOfert";
 
 import SecondHeader from "../../../components/SecondHeader";
 
-import BlogSection from "../../../hooks/infinitiScrolling";
+import ListLeft from "../../../components/ListLeft";
 
-import products from "../../../assets/amazon/products";
+import BlogSection from "../../../hooks/infinitiScrolling";
 
 import Image from 'next/image';
 import styles from "../../../styles/BlogPageOld.module.scss";
@@ -201,16 +200,19 @@ export default function ArticlePage({ blog, newsList, tutorialsList, categorie, 
         productD={blog.productD}
         productP={blog.productP}
         productUrl={blog.productUrl}
-        productOfert={"blogs"}
-        recommendedPosts={blog.recommendedPostsCollection}
-        products={products}
-        locale={locale}
       />
       }
       <div className={styles.container}>
-        <div className={styles.contentRich}>
-          {renderedRichText}
-        </div> 
+        <div className={styles.contentContainer}>
+          <div className={styles.contentRich}>
+            {renderedRichText}
+          </div> 
+          <div className={styles.cont}>
+            <div className={styles.recommendedContent}>
+              <ListLeft mostViewedBlogs={blog.recommendedPostsCollection} locale={locale}/>
+            </div>
+          </div>
+        </div>
       </div>
       {blog.productT2 &&
       <ProductOfert 
@@ -219,10 +221,6 @@ export default function ArticlePage({ blog, newsList, tutorialsList, categorie, 
         productD={blog.productD2}
         productP={blog.productP2}
         productUrl={blog.productUrl}
-        productOfert={"ofers"}
-        recommendedPosts={blog.recommendedPostsCollection}
-        products={products}
-        locale={locale}
       />
       }
       <Conclusion dconclucion={blog.conclucion} />

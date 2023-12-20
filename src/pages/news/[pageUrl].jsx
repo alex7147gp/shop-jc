@@ -13,6 +13,8 @@ import ReviewOfert from "../../components/ReviewOfert";
 
 import SecondHeader from "../../components/SecondHeader";
 
+import ListLeft from "../../components/ListLeft";
+
 import BlogSection from "../../hooks/infinitiScrolling";
 
 import Image from 'next/image';
@@ -186,9 +188,16 @@ export default function ArticlePage({ news, categorie, newsList, tutorialsList, 
         locale={locale}
       />
       <div className={styles.container}>
-        <div className={styles.contentRich}>
-          {renderedRichText}
-        </div> 
+        <div className={styles.contentContainer}>
+          <div className={styles.contentRich}>
+            {renderedRichText}
+          </div> 
+          <div className={styles.cont}>
+            <div className={styles.recommendedContent}>
+              <ListLeft mostViewedBlogs={news.recommendedPostsCollection} locale={locale}/>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <ReviewOfert 
