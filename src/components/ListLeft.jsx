@@ -18,13 +18,13 @@ const ListLeft = ({ mostViewedBlogs, locale }) => {
             <li className={styles.li} key={blog.id}>
               <Image  
                 className={styles.imagen} 
-                src={blog.image.url}
+                src={blog.image.url} 
                 alt={"Imagen de blog: " + blog.image.title} // Modifica el atributo alt
-                width={200} 
-                height={100} 
+                width={280} 
+                height={150} 
               /> 
-              <Link href={`/blog/${blog.category.slug}/${blog.pageUrl}`}>
-                <h4 className={styles.p}>{blog.title}</h4>
+              <Link className={styles.a} href={`/blog/${blog.category.slug}/${blog.pageUrl}`}>
+                <span className={styles.p}>{blog.title}</span>
               </Link> 
             </li>
           ))} 

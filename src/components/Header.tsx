@@ -16,10 +16,10 @@ const Header = ({ menuOpen, setMenuOpen }) => {
             	<Link href="/">
                 <ul> 
             		  <li>
-					          <Image width={50} height={50} src={logo} alt="logo" className={styles['nav-logo']} />
+					          <Image width={40} height={40} src={logo} alt="logo" className={styles['nav-logo']} />
             		  </li>
             		  <li className={styles.Logo}>JCshop</li>
-            	  </ul>
+            	  </ul> 
               </Link>
 			      </div> 
       <Top menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
