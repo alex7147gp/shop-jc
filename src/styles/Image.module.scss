@@ -3,11 +3,21 @@
 
 .imgContainer {
   padding: 10px;
-  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 } 
 
 .imgSlice {
   max-width: 100%;
   height: auto;
-  border-radius: 8px;
+}
+
+@media (max-width: 640px) {
+
+  .imgSlice {
+    width: 600px;
+    height: 600px;
+  }
+
 }
