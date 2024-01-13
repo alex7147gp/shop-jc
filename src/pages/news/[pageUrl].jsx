@@ -137,8 +137,8 @@ function EmbeddedAsset({ assetId }) {
       <Image className={stylesImg.imgSlice}
         src={`https:${file.url}`}
         alt={title}
-        width={120}
-        height={120}
+        width={320}
+        height={320}
       />
     </div>
   );

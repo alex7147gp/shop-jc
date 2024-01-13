@@ -7,7 +7,7 @@ import Image from 'next/image';
 const HeadPage = ({ title, description, image = null }) => {
 	return(
       <div className={styles.Container}>
-        <Ofert />
+        <Ofert /> 
         <div className={styles.HeadP}>
           { image && <div className={styles.containerImage}>
               <Image 
