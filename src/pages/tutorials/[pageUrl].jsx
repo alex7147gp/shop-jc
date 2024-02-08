@@ -178,12 +178,13 @@ export default function ArticlePage({ tutorials, categorie, tutorialsList, newsL
         keywords={tutorials.keywords}
         urlC={`tutorials/${tutorials.urlCeo}`}
         url={`tutorials/${tutorials.urlCanonical}`}
+        img={tutorials.image.url}
         locale={locale}
       />
       <GuiaHeader 
         titulo={tutorials.title}
         intro={tutorials.intro}
-        img={tutorials.image.url}
+        img={tutorials.image}
         update={tutorials.update}
         locale={locale}
       />

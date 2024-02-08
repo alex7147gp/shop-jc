@@ -184,12 +184,13 @@ export default function ArticlePage({ blog, categorie, newsList, tutorialsList, 
         keywords={blog.keywords}
         urlC={`blog/${blog.category.slug}/${blog.urlCeo}`}
         url={`blog/${blog.category.slug}/${blog.urlCanonical}`}
+        img={blog.image.url}
         locale={locale}
       />
-      <GuiaHeader
+      <GuiaHeader 
         titulo={blog.title}
         intro={blog.intro}
-        img={blog.image.url}
+        img={blog.image}
         update={blog.update}
         locale={locale}
       />

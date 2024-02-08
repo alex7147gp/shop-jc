@@ -48,7 +48,7 @@ return (
 
       {img && <meta
         property="og:image"
-        content={img}
+        href={img}
         key="ogimg"
       />}
     </Head>
