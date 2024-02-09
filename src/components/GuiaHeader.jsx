@@ -4,8 +4,6 @@ import Image from 'next/image';
 
 const GuiaHeader = ({titulo, intro, img}) => {
 
-  console.log(img.title)
-
   return (
     <div className={styles.container}>
     <h1 className={styles.title}>{titulo}</h1>
