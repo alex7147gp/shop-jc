@@ -26,9 +26,25 @@
 
 }	
 
+.logo {
+  display: -webkit-inline-box;
+  padding: 5px;
+  border: 1px solid white;
+}
+
 .middle {
 	width: 30%;
 	padding: 15px
+
+}
+
+.middle h2 {
+  font-size: 30px;
+}
+
+.middle li {
+  font-size: 15px;
+
 }
 
 .left {
@@ -36,16 +52,23 @@
 	padding: 15px;
 }
 
+.right h2, .middle h2, .left h2 {
+  font-size: 30px;
+
+}
+
 .right ul, .middle ul, .left ul {
 	list-style: none;
-    flex-direction: column;
+  flex-direction: column;
 	display: flex;
 	padding: 0;
 
 }
-
+ 
 .right li, .middle li, .left li {
 	margin: 5px;
+  font-size: 15px;
+
 }  
 
 .spa {
@@ -90,6 +113,11 @@
     font-size: 3.825rem;
     font-weight: 400;
     overflow-wrap: normal;
+  }
+
+  .right, .middle, .left {
+    width: 100%;
+
   }
 
   .right li, .middle li, .left li {

@@ -1,16 +1,10 @@
 @import 'vars';
 
-.Nav {
-  margin-top: 64px;
-	display: flex;
-	justify-content: space-between;
-	padding: 0 24px;
-	border-bottom: 0.5px solid $--very-light-pink;
-	background: white;
-	width: calc(100%);
 
+
+.container {
+  display: flex;
 }
-
 
 .navbar-search {
     max-width: 400px;
@@ -18,6 +12,11 @@
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: column;
+}
+
+.search {
+  
 }
 
 .navbar-search div {
@@ -60,10 +59,9 @@
 
 .li {
   font-size: 1.20rem;
-  line-height: 3.4375rem;
   font-family: 'Lobster';
   font-weight: 900;
-  letter-spacing: -1px;
+
   color: #000;
 }
 
@@ -98,17 +96,35 @@
  /* Agrega estilos para la sección de resultados de búsqueda */
 .navbar-search .search-results {
   position: absolute;
-  top: 100%;
+  max-width: 500px;
+  top: 20%;
   left: 0;
   right: 0;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-top: none;
   border-radius: 0 0 5px 5px;
-  z-index: 1000;
-  max-height: 200px;
-  overflow-y: auto;
+  z-index: 1;
+  max-height: 450px;
+  overflow-y: auto; /* Habilita el desplazamiento vertical */
+  scrollbar-width: thin; /* Ancho del scrollbar */
+  scrollbar-color: #ccc transparent; /* Color del scrollbar */
 }
+
+/* Estilos para el scrollbar */
+.navbar-search .search-results::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar */
+}
+
+.navbar-search .search-results::-webkit-scrollbar-track {
+  background: transparent; /* Color de fondo del scrollbar */
+}
+
+.navbar-search .search-results::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Color del thumb (la parte deslizante del scrollbar) */
+  border-radius: 10px; /* Radio de borde del thumb */
+}
+
 
 /* Estilos para cada elemento de resultado de búsqueda */
 .navbar-search .search-results ul {
@@ -129,6 +145,32 @@
 .navbar-search .search-results a {
   color: #000;
   text-decoration: none;
+  
+}
+
+.text {
+  display: flex;
+}
+
+.li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.productImage {
+    margin: 15px;
+    width: 90px;
+    height: 90px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.productImage {
+  max-width: 20%;
+  max-height: 25%;
 }
 
 /* Estilos para el mensaje de "No se encontraron resultados" */
@@ -136,9 +178,3 @@
   padding: 10px;
 }
 
-@media (max-width: 640px) {
-	.Nav {
-	  display: none;
-  }
-    
-}

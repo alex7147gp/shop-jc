@@ -6,6 +6,11 @@ import CategorieOfert from "../../../components/CategorieOfert";
 
 import SecondHeader from "../../../components/SecondHeader";
 
+import Products from "../../../assets/amazon/tablets";
+
+import Slider from "../../../components/Slider";
+
+
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { getCategoryList, getBlogListByCategory } from '../../../../api';
 
@@ -55,6 +60,7 @@ export default function Accessories({ categorie, entries, category, locale }) {
         description={category.description}
         image={category.icon}
       />
+      <Slider products={Products} />
       <ReviewOfert blogs={entries} article={locale == 'es' ? 'Tablets' : 'Tablets'} cantidad={entries.length} />
       <CategorieOfert categorie={categorie} />
     </div>

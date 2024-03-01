@@ -4,15 +4,14 @@
 .container {
   display: flex;
   flex-direction: column;
+  border-top: solid 1px black;
+  margin: 10px;
 }
 
 .h2 {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   margin-bottom: 40px;
-  padding-top: 4px;
+  padding: 5px;
   font-size: 3.25rem;
   line-height: 3.4375rem;
   font-family: 'Lobster';

@@ -204,7 +204,7 @@ export default function ArticlePage({ news, categorie, newsList, tutorialsList, 
     <ReviewOfert 
       blogs={newsList} 
       article={locale == "es" ? "Noticias" : "News"}
-      urlN='news'
+      urlN='news' 
     />
     <ReviewOfert 
       blogs={tutorialsList} 

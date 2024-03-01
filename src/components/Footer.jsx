@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react";
 import styles from '../styles/Footer.module.scss';
 import Link from "next/link";
 
+import logo from '../assets/logos/logo-shop.png';
+import Image from "next/image";
+
+
+
 import { getCategoryList } from '../../api';
 
 import { useTranslation } from 'next-i18next';
@@ -37,7 +42,16 @@ export const Footer = () => {
       <div className={styles.global}>
         <div className={styles.Fot} >
           <div className={styles['right']} >
-            <h2 className={styles.h2}>{t('bests')}</h2>
+            <div className={styles.logo}>
+               <Image width={180} height={50} src={logo} alt="logo" className={styles['nav-logo']} />
+            </div>
+            <ul>
+              <li className={styles.li}>
+                 {t('mision')}
+              </li>
+            </ul>
+          </div> 
+          <div className={styles['middle']}>
             <ul>
               {categorie.map(item =>  
                 <li className={styles.li} key={item.id} >
@@ -46,23 +60,16 @@ export const Footer = () => {
               )}  
             </ul>
           </div> 
-          <div className={styles['middle']}>
-            <h2 className={styles.h2}>Contactar</h2>
+          <div className={styles['left']}>
                <ul> 
                  <li className={styles.li} ><Link href="/PoliticaDePrivacidad">{t('politicaPrivate')}</Link></li>
                  <li className={styles.li} ><Link href="/TerminosDelServicio">{t('servicesTerm')}</Link></li>
                </ul>
-          </div> 
-          <div className={styles['left']}>
-            <ul>
-             <li className={styles.li}>johncedillo77@gmail.com</li>
-             <li className={styles.li}>JCshop</li>
-            </ul>
           </div>
         </div>
         <div className={styles.spa}>
           <span>{t('amazon')}</span>
-          <span className={styles.spa2}>{t('copyrigth')}</span>    
+          <span className={styles.spa2}>{t('copyright')}</span>    
         </div>
       </div>
 	);

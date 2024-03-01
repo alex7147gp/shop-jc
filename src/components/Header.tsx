@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../assets/logos/jc.ico';
+import logo from '../assets/logos/logo-shop.png';
 import styles from '../styles/Header.module.scss';
 
 import Top from './Top';
@@ -16,9 +16,8 @@ const Header = ({ menuOpen, setMenuOpen }) => {
             	<Link href="/">
                 <ul> 
             		  <li>
-					          <Image width={40} height={40} src={logo} alt="logo" className={styles['nav-logo']} />
+					        <Image width={180} height={50} src={logo} alt="logo" className={styles['nav-logo']} />
             		  </li>
-            		  <li className={styles.Logo}>JCshop</li>
             	  </ul> 
               </Link>
 			      </div> 

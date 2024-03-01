@@ -1,4 +1,4 @@
-import categories from '../assets/amazon/categories';
+ import categories from '../assets/amazon/categories';
 
 
 import Link from 'next/link';
@@ -28,8 +28,8 @@ const CategorieOfert = ({ categorie }) => {
                     src={item.icon.url} 
                     alt={item.icon.title} 
 			              layout="responsive"
-                    width={200} 
-                    height={200}  
+                    width={100} 
+                    height={100}  
 			            />  
                   <div className={styles.Info}> 
                     <Link href={`/blog/${item.slug}`} >

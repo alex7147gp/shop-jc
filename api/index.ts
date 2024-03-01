@@ -26,7 +26,7 @@ const client = new GraphQLClient(
       'Content-Type': 'application/json',
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_ACCESS_TOKEN}`,
     },
-  }
+  }   
 )
 
 const api = getSdk(client)

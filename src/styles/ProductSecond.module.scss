@@ -1,0 +1,106 @@
+@import 'vars';
+
+
+
+.productRow {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.productRight {
+  margin-right: 10px;
+  border: 1px solid #ddd; /* Borde del producto */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.productLeft {
+  margin-left: 10px;
+  border: 1px solid #ddd; /* Borde del producto */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.h2 {
+	margin: 10px;
+}
+
+.ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 0px;
+}
+
+.productCard {
+  max-width: 400px; /* Ancho del contenedor del producto (20% - margen) */
+  margin-bottom: 20px; /* Espacio entre productos */
+
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+.containerImg {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.productImage {
+  max-width: 80%;
+  max-height: 95%;
+}
+
+.productInfo {
+  padding: 10px; /* Espaciado interno */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.productTitle {
+  margin-top: 0; /* Elimina el margen superior */
+  font-size: 1.2rem; /* Tamaño del título */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.productDes {
+  margin-top: 0; /* Elimina el margen superior */
+  font-size: 0.8rem; /* Tamaño del título */
+}
+
+.productPrice {
+  margin-bottom: 10px; /* Espaciado inferior */
+  font-weight: bold; /* Negrita */
+}
+
+.productButton {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto */
+  border: none; /* Elimina el borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.productButton:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}
+
+@media (max-width: 640px) {
+  
+  .productRow {
+    flex-direction: column;
+  }
+}

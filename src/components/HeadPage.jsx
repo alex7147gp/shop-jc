@@ -1,5 +1,5 @@
 import styles from '../styles/HeaderPage.module.scss';
-import Ofert from "./Ofert";
+
 
 
 import Image from 'next/image';
@@ -7,7 +7,6 @@ import Image from 'next/image';
 const HeadPage = ({ title, description, image = null }) => {
 	return(
       <div className={styles.Container}>
-        <Ofert /> 
         <div className={styles.HeadP}>
           { image && <div className={styles.containerImage}>
               <Image 

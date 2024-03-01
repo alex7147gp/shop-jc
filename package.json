@@ -38,7 +38,9 @@
     "react-i18next": "^13.2.2",
     "react-infinite-scroll-component": "^6.1.0",
     "react-query": "^3.39.3",
+    "react-slick": "^0.30.2",
     "sass": "^1.54.9",
+    "slick-carousel": "^1.8.1",
     "xmlbuilder2": "^3.1.1"
   },
   "devDependencies": {

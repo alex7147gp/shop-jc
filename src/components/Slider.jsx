@@ -75,7 +75,7 @@ const Slider = ({ products }) => {
                 alt={slider.titulo}
                 layout="responsive"
                 width={200}
-                height={100} /> 
+                height={90} /> 
             </div>
             <div className={styles.InfoContainer}>
               <h1 className={styles.Title}>{slider.titulo.substring(0, 60)}...</h1>

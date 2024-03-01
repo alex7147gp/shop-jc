@@ -1,41 +1,37 @@
-import React, { useState, useEffect, lazy, Suspense } from 'react';
+import React, { lazy, Suspense } from 'react';
 
 
-import HomeBlogComponent from "../components/HomeBlog";
+
 import Ofert from "../components/Ofert";
 
 import SecondHeader from "../components/SecondHeader";
 
-import products from "../assets/amazon/products";
+import ProductGrid from "../components/ProductGrid";
+import ProductSecond from "../components/ProductSecond";
+
+import Products from "../assets/amazon/products";
+
+import offert from "../assets/amazon/offert";
+
+import recommend from "../assets/amazon/recommend";
 
 const ProductList = lazy(() => import('../containers/ProductList'));
-const BlogSection = lazy(() => import('../hooks/infinitiScrolling'));
+
 const ReviewOfert = lazy(() => import('../components/ReviewOfert'));
 const CategorieOfert = lazy(() => import('../components/CategorieOfert'));
 
 
-const Home = ({ blogs, categorie, news, tutorials, locale }) => {
-
-  const [blogOne, setBlogOne] =  useState(blogs[0]);
-
-  useEffect(() => {
-  	
-  	const randomIndex = Math.floor(Math.random() * blogs.length);
-    setBlogOne(blogs[randomIndex]);
-  
-  }, []);
+const Home = ({ blogs, categorie }) => {
 
 	return (
 		<>
 		  <SecondHeader />
 		  <Ofert/> 
-	      <HomeBlogComponent mostViewedBlogs={blogs} featuredBlog={blogOne} dailyOffers={products} />
+	      <ProductGrid products={offert}/>
+        <ProductSecond products1={recommend} products2={Products}/>
 	      <Suspense fallback={<div>Loading...</div>}>
 	        <ReviewOfert blogs={blogs} />
-	        <ProductList products={products}/>
-	        <ReviewOfert blogs={news} type={'news'} urlN={'news'}/>
-	        <ReviewOfert blogs={tutorials} type={'tutorials'} urlN={'tutorials'}/>
-	        <BlogSection locale={locale} />
+	        <ProductList products={Products}/>
           <CategorieOfert categorie={categorie} /> 
         </Suspense>
 		</>
