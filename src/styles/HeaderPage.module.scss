@@ -36,12 +36,13 @@
   } 
 
   .containerImage {
+    display: none;
     align-items: center;
     justify-content: center;
   }
 
   .h1 {
-    font-size: 35px;
+    font-size: 2.8rem; /* Tamaño del título */
   }
 
   .p {
@@ -55,7 +56,7 @@
     letter-spacing: 0.00568421em;
     line-break: auto;
     line-height: 1.47368em;
-    font-size: 2.535rem;
+    font-size: 2.235rem;
     font-weight: 400;
     overflow-wrap: normal;
     color: rgb(26, 26, 26);

@@ -13,7 +13,10 @@ const ProductSecond = ({ products1, products2 }) => {
   return (
     <div className={styles.productRow}>
       <div className={styles.productRight}>
-        <h2 className={styles.h2}>{t('featuredOffers')}</h2>
+        <div className={styles.productText}>
+          <h2 className={styles.h2}>{t('featuredOffers')}</h2>
+          <p className={styles.p1}>{t('offer')}</p>
+        </div>
         <ul className={styles.ul}>
           {products1.slice(0, 2).map((product) => (
           <li key={product.id} className={styles.productCard}>
@@ -38,7 +41,10 @@ const ProductSecond = ({ products1, products2 }) => {
         </ul>  
       </div>
       <div className={styles.productLeft}>
-        <h2 className={styles.h2}>{t('everythingRecommend')}</h2>
+        <div className={styles.productText}>
+          <h2 className={styles.h2}>{t('everythingRecommend')}</h2>
+          <p className={styles.p2}>{t('offer')}</p>
+        </div>
         <ul className={styles.ul}>
           {products2.slice(0, 2).map((product) => (
           <li key={product.id} className={styles.productCard}>

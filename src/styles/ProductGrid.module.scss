@@ -104,4 +104,105 @@
   .ul {
     overflow-x: auto; /* Habilita el desplazamiento vertical */
   }
+
+  /* Estilos para productos en dispositivos móviles */
+.productRow {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border: 1px solid #ddd; /* Borde del producto */
+  border-radius: 5px; /* Bordes redondeados */
+  position: relative;
+  overflow: hidden;
+}
+
+.h2 {
+  margin: 10px;
+}
+
+.ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  overflow-x: auto; /* Habilita el desplazamiento horizontal en dispositivos móviles */
+  -webkit-overflow-scrolling: touch; /* Desplazamiento suave en dispositivos iOS */
+  flex-wrap: nowrap; /* Evita que los elementos se envuelvan en dispositivos móviles */
+}
+
+.productCard {
+  max-width: 250px; /* Ancho máximo del contenedor del producto */
+  margin-bottom: 20px; /* Espacio entre productos */
+  border: 1px solid #ddd; /* Borde del producto */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+.productCard:hover {
+  transform: translateY(-5px); /* Efecto de levantamiento al pasar el mouse */
+}
+
+.containerImg {
+  margin: 10px;
+  width: 220px; /* Tamaño de la imagen del producto en dispositivos móviles */
+  height: 220px; /* Tamaño de la imagen del producto en dispositivos móviles */
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.productImage {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.productInfo {
+  padding: 10px; /* Espaciado interno */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.productTitle {
+  margin-top: 0; /* Elimina el margen superior */
+  font-size: 1.4rem; /* Tamaño del título */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  margin: 5px;
+  padding: 0;
+  text-align: center; /* Alinea el texto al centro */
+}
+
+.productTitle:hover {
+  text-decoration-line: underline;
+}
+
+.productPrice {
+  margin-bottom: 0px; /* Espaciado inferior */
+  color: green;
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem; /* Tamaño del título */
+}
+
+.productButton {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto */
+  border: none; /* Elimina el borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.productButton:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}
 }
