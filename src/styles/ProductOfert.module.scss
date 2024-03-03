@@ -4,12 +4,13 @@
 .container {
   display: flex;
   align-items: center;
-  max-width: 1000px;
+  max-width: 200px;
   margin: 0 auto;
+  justify-content: center;
 }   
 
 .imageContainer {
-  padding: 70px;
+  padding: 20px;
   border-radius: 8px;
 } 
 

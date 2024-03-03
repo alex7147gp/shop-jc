@@ -10,6 +10,7 @@ const ProductOfert = ({
   productD,
   productP,
   productUrl,
+  locale,
   
   
   }) => {
@@ -22,7 +23,8 @@ const ProductOfert = ({
         descripcion={productD}
         precio={productP}
         url={productUrl} 
-      />
+        locale={locale}
+      />  
       </div>
     </div>
   );

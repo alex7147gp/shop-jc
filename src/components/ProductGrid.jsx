@@ -26,7 +26,7 @@ const ProductGrid = ({ products }) => {
               width={100} 
               height={90} 
             />
-          </div>
+          </div>  
           <div className={styles.productInfo}>
               <h3 className={styles.productTitle}>{product.titulo.substring(0, 40)}</h3>
               <p className={styles.productPrice}>{product.oferta}% {t('off')}</p>

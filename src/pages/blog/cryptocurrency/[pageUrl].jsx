@@ -201,6 +201,7 @@ export default function ArticlePage({ blog, newsList, tutorialsList, categorie, 
         productD={blog.productD}
         productP={blog.productP}
         productUrl={blog.productUrl}
+        locale={locale}
       />
       }
       <div className={styles.container}>
@@ -222,6 +223,7 @@ export default function ArticlePage({ blog, newsList, tutorialsList, categorie, 
         productD={blog.productD2}
         productP={blog.productP2}
         productUrl={blog.productUrl}
+        locale={locale}
       />
       }
       <Conclusion dconclucion={blog.conclucion} />

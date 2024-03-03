@@ -1,14 +1,19 @@
-.container {
-  min-width: 800px;
+.Container {
+  min-width: 500px;
   margin: 0 auto;
-  padding: 20px;
+  border: 1px solid #ddd; /* Borde del producto */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  display: flex;
+  flex-direction: column;
+}
 
-  border: 1px solid #ddd;
-  padding: 20px;
+.content {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: justify;
 }
 
 .imagen {
@@ -17,21 +22,36 @@
   cursor: pointer;
 }
 
+.h2 {
+  margin: 20px;
+  padding: 10px;
+  color: white;
+  background-color: green;
+  display: flex;
+  justify-content: flex-end;
+  place-self: flex-end;
+}
+
 .titulo {
   font-size: 20px;
-  margin: 10px 0;
+  margin: 20px 0;
+  text-decoration-line: underline;
 }
 
 .descripcion {
   font-size: 14px;
   color: #666;
-  margin: 10px 0;
+  margin: 20px;
 }
 
 .precio {
   font-size: 18px;
   color: #333;
-  margin: 5px 0;
+  margin: 20px;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  background-color: black;
 }
 
 .ahorro {
