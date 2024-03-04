@@ -9,6 +9,7 @@ const ProductoA = ({ imagen, titulo, descripcion, url, locale, }) => {
   return (
     <div className={styles.Container}>
       <p className={styles.h2}>Oferta</p>
+      <Link href={url} target="_blank">
       <div className={styles.content}>
           <Image
             className={styles.imagen} 
@@ -17,13 +18,12 @@ const ProductoA = ({ imagen, titulo, descripcion, url, locale, }) => {
             width={200} 
             height={200}        
           />
-          <Link href={url} target="_blank">
-            <h3 className={styles.titulo}>{titulo}</h3>
-          </Link> 
+          <h3 className={styles.titulo}>{titulo}</h3>
           <p className={styles.descripcion}>{descripcion}</p>
           <p className={styles.precio}>{locale == 'es' ? 'Comprar ahora' : 'Shop now'}</p>
           <p className={styles.ahorro}>Ahorra: 20%</p>
-      </div>
+      </div> 
+      </Link> 
     </div>
   );
 };

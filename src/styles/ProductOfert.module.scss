@@ -4,9 +4,9 @@
 .container {
   display: flex;
   align-items: center;
-  max-width: 200px;
-  margin: 0 auto;
-  justify-content: center;
+  width: 90%;
+  justify-content: space-between;
+  margin-left: 80px;
 }   
 
 .imageContainer {

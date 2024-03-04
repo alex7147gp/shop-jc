@@ -4,7 +4,9 @@ import styles from '../styles/ProductOfert.module.scss';
 import ProductA from "./ProductA";
 
 
+
 const ProductOfert = ({ 
+
   productI,
   productT,
   productD,
@@ -26,6 +28,7 @@ const ProductOfert = ({
         locale={locale}
       />  
       </div>
+      
     </div>
   );
 }; 
