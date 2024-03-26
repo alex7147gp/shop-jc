@@ -54,7 +54,7 @@ const nextConfig = {
       },
       { 
         source: '/es/blog/:category/smartphone/:pageUrl*',
-        destination: '/es/blog/smartphones/:pageUrl*',
+        destination: '/es/blog/smartphone/:pageUrl*',
       },
       {
         source: '/es/blog/:category/accessories/:pageUrl*',
@@ -127,7 +127,7 @@ const nextConfig = {
       },
       {
         source: '/en-US/blog/:category/smartphone/:pageUrl*',
-        destination: '/en-US/blog/smartphones/:pageUrl*',
+        destination: '/en-US/blog/smartphone/:pageUrl*',
       },
       {
         source: '/en-US/blog/:category/accessories/:pageUrl*',
