@@ -52,6 +52,10 @@ const nextConfig = {
         source: '/es/artificialintelligence/',
         destination: "/es/artificialintelligence",
       },
+      {
+        source: '/es/blog/',
+        destination: "/es/blog",
+      },
       { 
         source: '/es/blog/:category/smartphone/:pageUrl*',
         destination: '/es/blog/smartphone/:pageUrl*',
@@ -124,6 +128,10 @@ const nextConfig = {
       {
         source: '/en-US/artificialintelligence',
         destination: '/en-US/artificialintelligence',
+      },
+      {
+        source: '/en-US/blog',
+        destination: '/en-US/blog',
       },
       {
         source: '/en-US/blog/:category/smartphone/:pageUrl*',

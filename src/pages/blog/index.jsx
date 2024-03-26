@@ -1,5 +1,5 @@
 import HeadS from "../../components/Head";
-import Home from "../../templates/Home";
+import Blog from "../../templates/Blog";
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { getBlogPageList, getCategoryList, getNewsList, getTutorialsList } from '../../../api';
@@ -30,7 +30,7 @@ export const getStaticProps = async ({ locale }) => {
   };
 };
 
-export default function HomeOne({ blogs, categorie, news, tutorials, locale }) {
+export default function BlogOne({ blogs, categorie, news, tutorials, locale }) {
 
   const { t } = useTranslation(['categorieOfert']);
 
@@ -48,7 +48,7 @@ export default function HomeOne({ blogs, categorie, news, tutorials, locale }) {
         img={logo}
         locale={locale}
       />
-      <Home 
+      <Blog 
         blogs={blogs} categorie={categorie} news={news} tutorials={tutorials} locale={locale} />
     </div>
   );
